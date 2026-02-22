@@ -1,6 +1,6 @@
 {
-  "generated": "2026-02-22 14:13:56",
-  "generated_ts": 1771787636.886954,
+  "generated": "2026-02-22 14:14:50",
+  "generated_ts": 1771787690.467457,
   "account_chart": {
     "one_day": {
       "series": [
@@ -5597,7 +5597,7 @@
       "session_len": 57600,
       "x_max": 57600,
       "latest_value": 83834.65,
-      "latest_time": "2026-02-22 14:13"
+      "latest_time": "2026-02-22 14:14"
     },
     "five_day": {
       "series": [
@@ -28221,7 +28221,7 @@
       "session_len": 57600,
       "x_max": 288000,
       "latest_value": 83834.65,
-      "latest_time": "2026-02-22 14:13"
+      "latest_time": "2026-02-22 14:14"
     },
     "all_time": [
       {
@@ -30326,57 +30326,57 @@
     {
       "symbol": "MARA",
       "last_update": "2026-02-20 19:59:00",
-      "age_seconds": 152098,
+      "age_seconds": 152152,
       "fresh": true,
-      "signal_age_seconds": 152098,
+      "signal_age_seconds": 152152,
       "signal_fresh": true
     },
     {
       "symbol": "COIN",
       "last_update": "2026-02-20 19:59:00",
-      "age_seconds": 152098,
+      "age_seconds": 152152,
       "fresh": true,
-      "signal_age_seconds": 152098,
+      "signal_age_seconds": 152152,
       "signal_fresh": true
     },
     {
       "symbol": "TSLA",
       "last_update": "2026-02-20 19:59:00",
-      "age_seconds": 152098,
+      "age_seconds": 152152,
       "fresh": true,
-      "signal_age_seconds": 152098,
+      "signal_age_seconds": 152152,
       "signal_fresh": true
     },
     {
       "symbol": "MSTR",
       "last_update": "2026-02-20 19:59:00",
-      "age_seconds": 152098,
+      "age_seconds": 152152,
       "fresh": true,
-      "signal_age_seconds": 152098,
+      "signal_age_seconds": 152152,
       "signal_fresh": true
     },
     {
       "symbol": "PLTR",
       "last_update": "2026-02-20 19:59:00",
-      "age_seconds": 152098,
+      "age_seconds": 152152,
       "fresh": true,
-      "signal_age_seconds": 152098,
+      "signal_age_seconds": 152152,
       "signal_fresh": true
     },
     {
       "symbol": "NVDA",
       "last_update": "2026-02-20 19:59:00",
-      "age_seconds": 152098,
+      "age_seconds": 152152,
       "fresh": true,
-      "signal_age_seconds": 152098,
+      "signal_age_seconds": 152152,
       "signal_fresh": true
     }
   ],
   "ib_auth": {
-    "5000": true
+    "5000": false
   },
-  "ib_all_ok": true,
-  "ib_auth_info": "OK",
+  "ib_all_ok": false,
+  "ib_auth_info": "ReadTimeout: HTTPSConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=5)",
   "running_bots": [],
   "trade_alignment_issues": [],
   "strategy_warnings": [],
@@ -30459,7 +30459,7 @@
   "aggregate_unrealized_pnl_pct": -0.32,
   "aggregate_unrealized_pnl_dollar": -166.59,
   "total_position_value": 52628.83,
-  "system_ok": true,
+  "system_ok": false,
   "trade_history": [
     {
       "symbol": "PLTR",
