@@ -1,6 +1,6 @@
 {
-  "generated": "2026-02-23 22:39:10",
-  "generated_ts": 1771904350.945664,
+  "generated": "2026-02-23 22:40:01",
+  "generated_ts": 1771904401.646662,
   "account_chart": {
     "one_day": {
       "series": [
@@ -5717,7 +5717,7 @@
       "session_len": 57600,
       "x_max": 57600,
       "latest_value": 82910.08,
-      "latest_time": "2026-02-23 22:38"
+      "latest_time": "2026-02-23 22:39"
     },
     "five_day": {
       "series": [
@@ -34047,7 +34047,7 @@
       "session_len": 57600,
       "x_max": 288000,
       "latest_value": 82910.08,
-      "latest_time": "2026-02-23 22:38"
+      "latest_time": "2026-02-23 22:39"
     },
     "all_time": [
       {
@@ -36096,7 +36096,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 203,
-      "current_price": 400.58,
+      "current_price": 400.61,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -36111,7 +36111,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 23,
-      "current_price": 122.88,
+      "current_price": 122.97,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -36152,57 +36152,57 @@
     {
       "symbol": "MARA",
       "last_update": "2026-02-23 19:59:00",
-      "age_seconds": 9612,
+      "age_seconds": 9663,
       "fresh": true,
-      "signal_age_seconds": 9612,
+      "signal_age_seconds": 9663,
       "signal_fresh": true
     },
     {
       "symbol": "COIN",
       "last_update": "2026-02-23 19:59:00",
-      "age_seconds": 9612,
+      "age_seconds": 9663,
       "fresh": true,
-      "signal_age_seconds": 9612,
+      "signal_age_seconds": 9663,
       "signal_fresh": true
     },
     {
       "symbol": "TSLA",
       "last_update": "2026-02-23 19:59:00",
-      "age_seconds": 9612,
+      "age_seconds": 9663,
       "fresh": true,
-      "signal_age_seconds": 9612,
+      "signal_age_seconds": 9663,
       "signal_fresh": true
     },
     {
       "symbol": "MSTR",
       "last_update": "2026-02-23 19:59:00",
-      "age_seconds": 9612,
+      "age_seconds": 9663,
       "fresh": true,
-      "signal_age_seconds": 9612,
+      "signal_age_seconds": 9663,
       "signal_fresh": true
     },
     {
       "symbol": "PLTR",
       "last_update": "2026-02-23 19:59:00",
-      "age_seconds": 9612,
+      "age_seconds": 9663,
       "fresh": true,
-      "signal_age_seconds": 9612,
+      "signal_age_seconds": 9663,
       "signal_fresh": true
     },
     {
       "symbol": "NVDA",
       "last_update": "2026-02-23 19:59:00",
-      "age_seconds": 9612,
+      "age_seconds": 9663,
       "fresh": true,
-      "signal_age_seconds": 9612,
+      "signal_age_seconds": 9663,
       "signal_fresh": true
     }
   ],
   "ib_auth": {
-    "5000": true
+    "5000": false
   },
-  "ib_all_ok": true,
-  "ib_auth_info": "OK",
+  "ib_all_ok": false,
+  "ib_auth_info": "ReadTimeout: HTTPSConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=5)",
   "running_bots": [],
   "trade_alignment_issues": [],
   "strategy_warnings": [],
@@ -36294,7 +36294,7 @@
   "aggregate_unrealized_pnl_pct": -1.77,
   "aggregate_unrealized_pnl_dollar": -469.04,
   "total_position_value": 25916.18,
-  "system_ok": true,
+  "system_ok": false,
   "trade_history": [
     {
       "symbol": "TSLA",
