@@ -1,6 +1,6 @@
 {
-  "generated": "2026-02-25 18:01:07",
-  "generated_ts": 1772060467.639241,
+  "generated": "2026-02-25 18:02:04",
+  "generated_ts": 1772060524.387705,
   "account_chart": {
     "one_day": {
       "series": [
@@ -4222,6 +4222,11 @@
               "x": 50430.0,
               "y": 82240.08,
               "t": "02/25 18:00"
+            },
+            {
+              "x": 50487.0,
+              "y": 82240.08,
+              "t": "02/25 18:01"
             }
           ]
         }
@@ -4230,9 +4235,9 @@
         "02-25"
       ],
       "session_len": 57600,
-      "x_max": 54068.561768,
+      "x_max": 54125.539532,
       "latest_value": 82240.08,
-      "latest_time": "2026-02-25 18:00"
+      "latest_time": "2026-02-25 18:01"
     },
     "five_day": {
       "series": [
@@ -31313,6 +31318,11 @@
               "x": 280830.0,
               "y": 82240.08,
               "t": "02/25 18:00"
+            },
+            {
+              "x": 280887.0,
+              "y": 82240.08,
+              "t": "02/25 18:01"
             }
           ]
         }
@@ -31325,9 +31335,9 @@
         "02-25"
       ],
       "session_len": 57600,
-      "x_max": 284469.014303,
+      "x_max": 284525.99007,
       "latest_value": 82240.08,
-      "latest_time": "2026-02-25 18:00"
+      "latest_time": "2026-02-25 18:01"
     },
     "all_time": [
       {
@@ -32188,7 +32198,7 @@
       },
       {
         "x": 1737723720000.0,
-        "y": 142774.3
+        "y": 142590.85
       },
       {
         "x": 1737770340000.0,
@@ -32204,7 +32214,7 @@
       },
       {
         "x": 1738050960000.0,
-        "y": 135042.4
+        "y": 135067.86
       },
       {
         "x": 1738155060000.0,
@@ -32236,7 +32246,7 @@
       },
       {
         "x": 1738741260000.0,
-        "y": 129914.3
+        "y": 129917.1
       },
       {
         "x": 1738840260000.0,
@@ -32304,7 +32314,7 @@
       },
       {
         "x": 1739897400000.0,
-        "y": 128216.71
+        "y": 128219.0
       },
       {
         "x": 1739953620000.0,
@@ -32316,7 +32326,7 @@
       },
       {
         "x": 1740060300000.0,
-        "y": 124445.87
+        "y": 124431.46
       },
       {
         "x": 1740129240000.0,
@@ -32408,7 +32418,7 @@
       },
       {
         "x": 1741883160000.0,
-        "y": 125085.34
+        "y": 125083.38
       },
       {
         "x": 1741950960000.0,
@@ -32492,7 +32502,7 @@
       },
       {
         "x": 1743620160000.0,
-        "y": 115161.43
+        "y": 115161.18
       },
       {
         "x": 1743677880000.0,
@@ -32544,7 +32554,7 @@
       },
       {
         "x": 1744372980000.0,
-        "y": 113667.57
+        "y": 113671.06
       },
       {
         "x": 1744427640000.0,
@@ -32576,7 +32586,7 @@
       },
       {
         "x": 1744792680000.0,
-        "y": 113245.92
+        "y": 113253.51
       },
       {
         "x": 1744841280000.0,
@@ -33342,15 +33352,15 @@
       "position": "long",
       "strategy": "l_avgabsret30m_gt_ret60m_lt_ret5m_lt_x_closevsvwap6_gt_4ad8da",
       "entry_price": 8.58,
-      "bars_held": 73,
+      "bars_held": 74,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 14,
-      "current_price": 8.55,
-      "unrealized_pnl": -0.47,
+      "current_price": 8.54,
+      "unrealized_pnl": -0.58,
       "shares": 1522,
-      "position_value": 13013.1,
-      "unrealized_pnl_dollar": -60.88
+      "position_value": 12997.88,
+      "unrealized_pnl_dollar": -76.1
     },
     {
       "symbol": "COIN",
@@ -33361,7 +33371,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 102,
-      "current_price": 182.12,
+      "current_price": 182.48,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -33372,37 +33382,37 @@
       "position": "long",
       "strategy": "l_ret2d_gt_bbwidth60_lt_x_closevsvwap6_gt_b4f55f",
       "entry_price": 416.5301,
-      "bars_held": 172,
+      "bars_held": 173,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 13,
-      "current_price": 416.61,
-      "unrealized_pnl": 0.02,
+      "current_price": 416.5,
+      "unrealized_pnl": -0.01,
       "shares": 31,
-      "position_value": 12914.91,
-      "unrealized_pnl_dollar": 2.48
+      "position_value": 12911.5,
+      "unrealized_pnl_dollar": -0.93
     },
     {
       "symbol": "MSTR",
       "position": "short",
       "strategy": "s_closevssma20_gt_ret5d_lt_x_intradayretu_lt_1fff64",
       "entry_price": 127.01,
-      "bars_held": 691,
+      "bars_held": 692,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 32,
-      "current_price": 134.88,
-      "unrealized_pnl": -6.2,
+      "current_price": 134.98,
+      "unrealized_pnl": -6.28,
       "shares": 104,
-      "position_value": 14027.52,
-      "unrealized_pnl_dollar": -818.48
+      "position_value": 14037.92,
+      "unrealized_pnl_dollar": -828.88
     },
     {
       "symbol": "PLTR",
       "position": "short",
       "strategy": "s_ret480m_lt_ret60m_lt_ret240m_gt_x_posinrange48_lt_4a7108",
       "entry_price": 129.08,
-      "bars_held": 710,
+      "bars_held": 711,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 20,
@@ -33417,64 +33427,64 @@
       "position": "long",
       "strategy": "l_distfromhigh_gt_ret5m_lt_x_posin20drang_gt_15b6ed",
       "entry_price": 201.39,
-      "bars_held": 77,
+      "bars_held": 78,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 12,
-      "current_price": 197.89,
-      "unrealized_pnl": -1.75,
+      "current_price": 197.84,
+      "unrealized_pnl": -1.78,
       "shares": 64,
-      "position_value": 12664.96,
-      "unrealized_pnl_dollar": -225.92
+      "position_value": 12661.76,
+      "unrealized_pnl_dollar": -229.12
     }
   ],
   "data_freshness": [
     {
       "symbol": "MARA",
-      "last_update": "2026-02-25 18:00:00",
-      "age_seconds": 69,
+      "last_update": "2026-02-25 18:01:00",
+      "age_seconds": 68,
       "fresh": true,
-      "signal_age_seconds": 69,
+      "signal_age_seconds": 68,
       "signal_fresh": true
     },
     {
       "symbol": "COIN",
-      "last_update": "2026-02-25 18:00:00",
-      "age_seconds": 69,
+      "last_update": "2026-02-25 18:01:00",
+      "age_seconds": 68,
       "fresh": true,
-      "signal_age_seconds": 69,
+      "signal_age_seconds": 68,
       "signal_fresh": true
     },
     {
       "symbol": "TSLA",
-      "last_update": "2026-02-25 18:00:00",
-      "age_seconds": 69,
+      "last_update": "2026-02-25 18:01:00",
+      "age_seconds": 68,
       "fresh": true,
-      "signal_age_seconds": 69,
+      "signal_age_seconds": 68,
       "signal_fresh": true
     },
     {
       "symbol": "MSTR",
-      "last_update": "2026-02-25 18:00:00",
-      "age_seconds": 69,
+      "last_update": "2026-02-25 18:01:00",
+      "age_seconds": 68,
       "fresh": true,
-      "signal_age_seconds": 69,
+      "signal_age_seconds": 68,
       "signal_fresh": true
     },
     {
       "symbol": "PLTR",
-      "last_update": "2026-02-25 18:00:00",
-      "age_seconds": 69,
+      "last_update": "2026-02-25 18:01:00",
+      "age_seconds": 68,
       "fresh": true,
-      "signal_age_seconds": 69,
+      "signal_age_seconds": 68,
       "signal_fresh": true
     },
     {
       "symbol": "NVDA",
-      "last_update": "2026-02-25 18:00:00",
-      "age_seconds": 69,
+      "last_update": "2026-02-25 18:01:00",
+      "age_seconds": 68,
       "fresh": true,
-      "signal_age_seconds": 69,
+      "signal_age_seconds": 68,
       "signal_fresh": true
     }
   ],
@@ -33571,9 +33581,9 @@
   "live_account_value": 82240.0762500763,
   "live_cash": 16059.318437576294,
   "active_trade_count": 5,
-  "aggregate_unrealized_pnl_pct": -2.4,
-  "aggregate_unrealized_pnl_dollar": -1577.1,
-  "total_position_value": 66284.41,
+  "aggregate_unrealized_pnl_pct": -2.45,
+  "aggregate_unrealized_pnl_dollar": -1609.33,
+  "total_position_value": 66272.98,
   "system_ok": true,
   "trade_history": [
     {
