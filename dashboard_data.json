@@ -1,6 +1,6 @@
 {
-  "generated": "2026-02-25 19:34:51",
-  "generated_ts": 1772066091.769268,
+  "generated": "2026-02-25 19:35:50",
+  "generated_ts": 1772066150.188891,
   "account_chart": {
     "one_day": {
       "series": [
@@ -4702,6 +4702,11 @@
               "x": 56055.0,
               "y": 82168.54,
               "t": "02/25 19:34"
+            },
+            {
+              "x": 56112.0,
+              "y": 82168.54,
+              "t": "02/25 19:35"
             }
           ]
         }
@@ -4712,7 +4717,7 @@
       "session_len": 57600,
       "x_max": 57600,
       "latest_value": 82168.54,
-      "latest_time": "2026-02-25 19:34"
+      "latest_time": "2026-02-25 19:35"
     },
     "five_day": {
       "series": [
@@ -32273,6 +32278,11 @@
               "x": 286455.0,
               "y": 82168.54,
               "t": "02/25 19:34"
+            },
+            {
+              "x": 286512.0,
+              "y": 82168.54,
+              "t": "02/25 19:35"
             }
           ]
         }
@@ -32287,7 +32297,7 @@
       "session_len": 57600,
       "x_max": 288000,
       "latest_value": 82168.54,
-      "latest_time": "2026-02-25 19:34"
+      "latest_time": "2026-02-25 19:35"
     },
     "all_time": [
       {
@@ -34306,11 +34316,11 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 14,
-      "current_price": 8.57,
-      "unrealized_pnl": -0.23,
+      "current_price": 8.56,
+      "unrealized_pnl": -0.35,
       "shares": 1522,
-      "position_value": 13043.54,
-      "unrealized_pnl_dollar": -30.44
+      "position_value": 13028.32,
+      "unrealized_pnl_dollar": -45.66
     },
     {
       "symbol": "COIN",
@@ -34321,41 +34331,41 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 102,
-      "current_price": 182.04,
-      "unrealized_pnl": 0.53,
+      "current_price": 182.2,
+      "unrealized_pnl": 0.62,
       "shares": 71,
-      "position_value": 12924.84,
-      "unrealized_pnl_dollar": 68.16
+      "position_value": 12936.2,
+      "unrealized_pnl_dollar": 79.52
     },
     {
       "symbol": "TSLA",
       "position": "long",
       "strategy": "l_ret2d_gt_bbwidth60_lt_x_closevsvwap6_gt_b4f55f",
       "entry_price": 416.5301,
-      "bars_held": 261,
+      "bars_held": 262,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 13,
-      "current_price": 415.48,
-      "unrealized_pnl": -0.25,
+      "current_price": 415.4,
+      "unrealized_pnl": -0.27,
       "shares": 31,
-      "position_value": 12879.88,
-      "unrealized_pnl_dollar": -32.55
+      "position_value": 12877.4,
+      "unrealized_pnl_dollar": -35.03
     },
     {
       "symbol": "MSTR",
       "position": "short",
       "strategy": "s_closevssma20_gt_ret5d_lt_x_intradayretu_lt_1fff64",
       "entry_price": 127.01,
-      "bars_held": 777,
+      "bars_held": 778,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 32,
-      "current_price": 134.5,
-      "unrealized_pnl": -5.9,
+      "current_price": 134.53,
+      "unrealized_pnl": -5.92,
       "shares": 104,
-      "position_value": 13988.0,
-      "unrealized_pnl_dollar": -778.96
+      "position_value": 13991.12,
+      "unrealized_pnl_dollar": -782.08
     },
     {
       "symbol": "PLTR",
@@ -34377,64 +34387,64 @@
       "position": "long",
       "strategy": "l_distfromhigh_gt_ret5m_lt_x_posin20drang_gt_15b6ed",
       "entry_price": 201.39,
-      "bars_held": 170,
+      "bars_held": 171,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 12,
-      "current_price": 195.35,
-      "unrealized_pnl": -3.01,
+      "current_price": 195.4,
+      "unrealized_pnl": -2.99,
       "shares": 64,
-      "position_value": 12502.4,
-      "unrealized_pnl_dollar": -388.48
+      "position_value": 12505.6,
+      "unrealized_pnl_dollar": -385.28
     }
   ],
   "data_freshness": [
     {
       "symbol": "MARA",
       "last_update": "2026-02-25 19:33:00",
-      "age_seconds": 114,
+      "age_seconds": 171,
       "fresh": true,
-      "signal_age_seconds": 114,
+      "signal_age_seconds": 171,
       "signal_fresh": true
     },
     {
       "symbol": "COIN",
       "last_update": "2026-02-25 19:32:00",
-      "age_seconds": 174,
+      "age_seconds": 231,
       "fresh": true,
-      "signal_age_seconds": 174,
+      "signal_age_seconds": 231,
       "signal_fresh": true
     },
     {
       "symbol": "TSLA",
-      "last_update": "2026-02-25 19:32:00",
-      "age_seconds": 174,
+      "last_update": "2026-02-25 19:34:00",
+      "age_seconds": 111,
       "fresh": true,
-      "signal_age_seconds": 174,
+      "signal_age_seconds": 111,
       "signal_fresh": true
     },
     {
       "symbol": "MSTR",
-      "last_update": "2026-02-25 19:33:00",
-      "age_seconds": 114,
+      "last_update": "2026-02-25 19:34:00",
+      "age_seconds": 111,
       "fresh": true,
-      "signal_age_seconds": 114,
+      "signal_age_seconds": 111,
       "signal_fresh": true
     },
     {
       "symbol": "PLTR",
-      "last_update": "2026-02-25 19:33:00",
-      "age_seconds": 114,
+      "last_update": "2026-02-25 19:34:00",
+      "age_seconds": 111,
       "fresh": true,
-      "signal_age_seconds": 114,
+      "signal_age_seconds": 111,
       "signal_fresh": true
     },
     {
       "symbol": "NVDA",
-      "last_update": "2026-02-25 19:33:00",
-      "age_seconds": 114,
+      "last_update": "2026-02-25 19:34:00",
+      "age_seconds": 111,
       "fresh": true,
-      "signal_age_seconds": 114,
+      "signal_age_seconds": 111,
       "signal_fresh": true
     }
   ],
@@ -34531,9 +34541,9 @@
   "live_account_value": 82168.5371875763,
   "live_cash": 16858.677812576294,
   "active_trade_count": 5,
-  "aggregate_unrealized_pnl_pct": -1.77,
-  "aggregate_unrealized_pnl_dollar": -1162.27,
-  "total_position_value": 65338.66,
+  "aggregate_unrealized_pnl_pct": -1.78,
+  "aggregate_unrealized_pnl_dollar": -1168.53,
+  "total_position_value": 65338.64,
   "system_ok": true,
   "trade_history": [
     {
