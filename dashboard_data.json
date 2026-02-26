@@ -1,6 +1,6 @@
 {
-  "generated": "2026-02-26 04:45:14",
-  "generated_ts": 1772099114.291015,
+  "generated": "2026-02-26 04:46:16",
+  "generated_ts": 1772099176.393338,
   "account_chart": {
     "one_day": {
       "series": [
@@ -247,6 +247,11 @@
               "x": 2680.0,
               "y": 82475.87,
               "t": "02/26 04:44"
+            },
+            {
+              "x": 2742.0,
+              "y": 82475.87,
+              "t": "02/26 04:45"
             }
           ]
         }
@@ -255,9 +260,9 @@
         "02-26"
       ],
       "session_len": 57600,
-      "x_max": 6315.296281,
+      "x_max": 6377.194222,
       "latest_value": 82475.87,
-      "latest_time": "2026-02-26 04:44"
+      "latest_time": "2026-02-26 04:45"
     },
     "five_day": {
       "series": [
@@ -22183,6 +22188,11 @@
               "x": 233080.0,
               "y": 82475.87,
               "t": "02/26 04:44"
+            },
+            {
+              "x": 233142.0,
+              "y": 82475.87,
+              "t": "02/26 04:45"
             }
           ]
         }
@@ -22195,9 +22205,9 @@
         "02-26"
       ],
       "session_len": 57600,
-      "x_max": 236715.622737,
+      "x_max": 236777.504237,
       "latest_value": 82475.87,
-      "latest_time": "2026-02-26 04:44"
+      "latest_time": "2026-02-26 04:45"
     },
     "all_time": [
       {
@@ -24212,7 +24222,7 @@
       "position": "long",
       "strategy": "l_avgabsret30m_gt_ret60m_lt_ret5m_lt_x_closevsvwap6_gt_4ad8da",
       "entry_price": 8.58,
-      "bars_held": 172,
+      "bars_held": 173,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 40,
@@ -24227,15 +24237,15 @@
       "position": "long",
       "strategy": "l_posinrange12_lt_logvolz60m_lt_x_posinrange24_gt_79b1a3",
       "entry_price": 181.0,
-      "bars_held": 98,
+      "bars_held": 99,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 105,
-      "current_price": 184.39,
-      "unrealized_pnl": 1.83,
+      "current_price": 184.47,
+      "unrealized_pnl": 1.87,
       "shares": 71,
-      "position_value": 13091.69,
-      "unrealized_pnl_dollar": 235.01
+      "position_value": 13097.37,
+      "unrealized_pnl_dollar": 240.69
     },
     {
       "symbol": "TSLA",
@@ -24257,15 +24267,15 @@
       "position": "short",
       "strategy": "s_closevssma20_gt_ret5d_lt_x_intradayretu_lt_1fff64",
       "entry_price": 127.01,
-      "bars_held": 835,
+      "bars_held": 836,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 27,
-      "current_price": 135.0,
-      "unrealized_pnl": -6.29,
+      "current_price": 135.27,
+      "unrealized_pnl": -6.5,
       "shares": 104,
-      "position_value": 14040.0,
-      "unrealized_pnl_dollar": -830.96
+      "position_value": 14068.08,
+      "unrealized_pnl_dollar": -859.04
     },
     {
       "symbol": "PLTR",
@@ -24276,7 +24286,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 29,
-      "current_price": 134.19,
+      "current_price": 134.1,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -24287,29 +24297,29 @@
       "position": "long",
       "strategy": "l_distfromhigh_gt_ret5m_lt_x_posin20drang_gt_15b6ed",
       "entry_price": 201.39,
-      "bars_held": 241,
+      "bars_held": 242,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 14,
-      "current_price": 198.26,
-      "unrealized_pnl": -1.57,
+      "current_price": 198.42,
+      "unrealized_pnl": -1.49,
       "shares": 64,
-      "position_value": 12688.64,
-      "unrealized_pnl_dollar": -202.24
+      "position_value": 12698.88,
+      "unrealized_pnl_dollar": -192.0
     }
   ],
   "data_freshness": [
     {
       "symbol": "MARA",
-      "last_update": "2026-02-26 04:41:00",
-      "age_seconds": 258,
+      "last_update": "2026-02-26 04:45:00",
+      "age_seconds": 78,
       "fresh": true,
-      "signal_age_seconds": 258,
+      "signal_age_seconds": 78,
       "signal_fresh": true
     },
     {
       "symbol": "COIN",
-      "last_update": "2026-02-26 04:44:00",
+      "last_update": "2026-02-26 04:45:00",
       "age_seconds": 78,
       "fresh": true,
       "signal_age_seconds": 78,
@@ -24317,7 +24327,7 @@
     },
     {
       "symbol": "TSLA",
-      "last_update": "2026-02-26 04:44:00",
+      "last_update": "2026-02-26 04:45:00",
       "age_seconds": 78,
       "fresh": true,
       "signal_age_seconds": 78,
@@ -24325,7 +24335,7 @@
     },
     {
       "symbol": "MSTR",
-      "last_update": "2026-02-26 04:44:00",
+      "last_update": "2026-02-26 04:45:00",
       "age_seconds": 78,
       "fresh": true,
       "signal_age_seconds": 78,
@@ -24333,7 +24343,7 @@
     },
     {
       "symbol": "PLTR",
-      "last_update": "2026-02-26 04:44:00",
+      "last_update": "2026-02-26 04:45:00",
       "age_seconds": 78,
       "fresh": true,
       "signal_age_seconds": 78,
@@ -24341,7 +24351,7 @@
     },
     {
       "symbol": "NVDA",
-      "last_update": "2026-02-26 04:44:00",
+      "last_update": "2026-02-26 04:45:00",
       "age_seconds": 78,
       "fresh": true,
       "signal_age_seconds": 78,
@@ -24349,10 +24359,10 @@
     }
   ],
   "ib_auth": {
-    "5000": false
+    "5000": true
   },
-  "ib_all_ok": false,
-  "ib_auth_info": "ReadTimeout: HTTPSConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=5)",
+  "ib_all_ok": true,
+  "ib_auth_info": "OK",
   "running_bots": [],
   "trade_alignment_issues": [],
   "strategy_warnings": [],
@@ -24441,10 +24451,10 @@
   "live_account_value": 82475.8731250763,
   "live_cash": 29644.173906326294,
   "active_trade_count": 4,
-  "aggregate_unrealized_pnl_pct": -1.54,
-  "aggregate_unrealized_pnl_dollar": -813.41,
-  "total_position_value": 52879.09,
-  "system_ok": false,
+  "aggregate_unrealized_pnl_pct": -1.56,
+  "aggregate_unrealized_pnl_dollar": -825.57,
+  "total_position_value": 52923.09,
+  "system_ok": true,
   "trade_history": [
     {
       "symbol": "TSLA",
