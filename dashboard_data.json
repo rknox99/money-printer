@@ -1,6 +1,6 @@
 {
-  "generated": "2026-02-26 19:45:08",
-  "generated_ts": 1772153108.698008,
+  "generated": "2026-02-26 19:46:09",
+  "generated_ts": 1772153169.049412,
   "account_chart": {
     "one_day": {
       "series": [
@@ -5222,6 +5222,11 @@
               "x": 56671.0,
               "y": 82913.13,
               "t": "02/26 19:44"
+            },
+            {
+              "x": 56734.0,
+              "y": 82913.13,
+              "t": "02/26 19:45"
             }
           ]
         }
@@ -5232,7 +5237,7 @@
       "session_len": 57600,
       "x_max": 57600,
       "latest_value": 82913.13,
-      "latest_time": "2026-02-26 19:44"
+      "latest_time": "2026-02-26 19:45"
     },
     "five_day": {
       "series": [
@@ -32133,6 +32138,11 @@
               "x": 287071.0,
               "y": 82913.13,
               "t": "02/26 19:44"
+            },
+            {
+              "x": 287134.0,
+              "y": 82913.13,
+              "t": "02/26 19:45"
             }
           ]
         }
@@ -32147,7 +32157,7 @@
       "session_len": 57600,
       "x_max": 288000,
       "latest_value": 82913.13,
-      "latest_time": "2026-02-26 19:44"
+      "latest_time": "2026-02-26 19:45"
     },
     "all_time": [
       {
@@ -34162,30 +34172,30 @@
       "position": "long",
       "strategy": "l_avgabsret30m_gt_ret60m_lt_ret5m_lt_x_closevsvwap6_gt_4ad8da",
       "entry_price": 9.85,
-      "bars_held": 67,
+      "bars_held": 68,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 40,
-      "current_price": 9.61,
-      "unrealized_pnl": -2.54,
+      "current_price": 9.6,
+      "unrealized_pnl": -2.64,
       "shares": 1337,
-      "position_value": 12848.57,
-      "unrealized_pnl_dollar": -334.25
+      "position_value": 12835.2,
+      "unrealized_pnl_dollar": -347.62
     },
     {
       "symbol": "COIN",
       "position": "long",
       "strategy": "l_posinrange12_lt_logvolz60m_lt_x_posinrange24_gt_79b1a3",
       "entry_price": 179.58,
-      "bars_held": 98,
+      "bars_held": 99,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 105,
-      "current_price": 178.6,
+      "current_price": 178.61,
       "unrealized_pnl": -0.61,
       "shares": 73,
-      "position_value": 13037.8,
-      "unrealized_pnl_dollar": -80.3
+      "position_value": 13038.53,
+      "unrealized_pnl_dollar": -79.57
     },
     {
       "symbol": "TSLA",
@@ -34196,7 +34206,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 11,
-      "current_price": 406.41,
+      "current_price": 406.4,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -34207,22 +34217,22 @@
       "position": "long",
       "strategy": "l_posin5drange_gt_rsi14_lt_x_closevsvwap1_gt_bc6819",
       "entry_price": 132.91,
-      "bars_held": 112,
+      "bars_held": 113,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 27,
-      "current_price": 132.65,
-      "unrealized_pnl": -0.26,
+      "current_price": 132.52,
+      "unrealized_pnl": -0.36,
       "shares": 99,
-      "position_value": 13132.35,
-      "unrealized_pnl_dollar": -34.65
+      "position_value": 13119.48,
+      "unrealized_pnl_dollar": -47.52
     },
     {
       "symbol": "PLTR",
       "position": "long",
       "strategy": "l_ret30m_lt_atrratio1060_gt_ret5m_lt_x_posin20drang_gt_53c495",
       "entry_price": 133.8901,
-      "bars_held": 609,
+      "bars_held": 610,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 29,
@@ -34237,21 +34247,21 @@
       "position": "long",
       "strategy": "l_distfromhigh_gt_ret5m_lt_x_posin20drang_gt_15b6ed",
       "entry_price": 201.39,
-      "bars_held": 1141,
+      "bars_held": 1142,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 14,
-      "current_price": 184.9,
-      "unrealized_pnl": -8.2,
+      "current_price": 184.86,
+      "unrealized_pnl": -8.22,
       "shares": 64,
-      "position_value": 11833.6,
-      "unrealized_pnl_dollar": -1057.28
+      "position_value": 11831.04,
+      "unrealized_pnl_dollar": -1059.84
     }
   ],
   "data_freshness": [
     {
       "symbol": "MARA",
-      "last_update": "2026-02-26 19:44:00",
+      "last_update": "2026-02-26 19:45:00",
       "age_seconds": 70,
       "fresh": true,
       "signal_age_seconds": 70,
@@ -34259,15 +34269,15 @@
     },
     {
       "symbol": "COIN",
-      "last_update": "2026-02-26 19:43:00",
-      "age_seconds": 130,
+      "last_update": "2026-02-26 19:45:00",
+      "age_seconds": 70,
       "fresh": true,
-      "signal_age_seconds": 130,
+      "signal_age_seconds": 70,
       "signal_fresh": true
     },
     {
       "symbol": "TSLA",
-      "last_update": "2026-02-26 19:44:00",
+      "last_update": "2026-02-26 19:45:00",
       "age_seconds": 70,
       "fresh": true,
       "signal_age_seconds": 70,
@@ -34275,7 +34285,7 @@
     },
     {
       "symbol": "MSTR",
-      "last_update": "2026-02-26 19:44:00",
+      "last_update": "2026-02-26 19:45:00",
       "age_seconds": 70,
       "fresh": true,
       "signal_age_seconds": 70,
@@ -34283,7 +34293,7 @@
     },
     {
       "symbol": "PLTR",
-      "last_update": "2026-02-26 19:44:00",
+      "last_update": "2026-02-26 19:45:00",
       "age_seconds": 70,
       "fresh": true,
       "signal_age_seconds": 70,
@@ -34291,7 +34301,7 @@
     },
     {
       "symbol": "NVDA",
-      "last_update": "2026-02-26 19:44:00",
+      "last_update": "2026-02-26 19:45:00",
       "age_seconds": 70,
       "fresh": true,
       "signal_age_seconds": 70,
@@ -34391,9 +34401,9 @@
   "live_account_value": 82913.1309375763,
   "live_cash": 18811.162187576294,
   "active_trade_count": 5,
-  "aggregate_unrealized_pnl_pct": -2.06,
-  "aggregate_unrealized_pnl_dollar": -1333.82,
-  "total_position_value": 64024.92,
+  "aggregate_unrealized_pnl_pct": -2.1,
+  "aggregate_unrealized_pnl_dollar": -1361.89,
+  "total_position_value": 63996.85,
   "system_ok": true,
   "trade_history": [
     {
