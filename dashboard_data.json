@@ -1,6 +1,6 @@
 {
-  "generated": "2026-03-03 05:53:11",
-  "generated_ts": 1772535191.057271,
+  "generated": "2026-03-03 05:54:04",
+  "generated_ts": 1772535244.767497,
   "account_chart": {
     "one_day": {
       "series": [
@@ -662,6 +662,11 @@
               "x": 6759.0,
               "y": 83288.67,
               "t": "03/03 05:52"
+            },
+            {
+              "x": 6810.0,
+              "y": 83288.67,
+              "t": "03/03 05:53"
             }
           ]
         }
@@ -670,9 +675,9 @@
         "03-03"
       ],
       "session_len": 57600,
-      "x_max": 10391.741084000001,
+      "x_max": 10445.95594,
       "latest_value": 83288.67,
-      "latest_time": "2026-03-03 05:52"
+      "latest_time": "2026-03-03 05:53"
     },
     "five_day": {
       "series": [
@@ -22103,6 +22108,11 @@
               "x": 237159.0,
               "y": 83288.67,
               "t": "03/03 05:52"
+            },
+            {
+              "x": 237210.0,
+              "y": 83288.67,
+              "t": "03/03 05:53"
             }
           ]
         }
@@ -22115,9 +22125,9 @@
         "03-03"
       ],
       "session_len": 57600,
-      "x_max": 240791.990774,
+      "x_max": 240846.430187,
       "latest_value": 83288.67,
-      "latest_time": "2026-03-03 05:52"
+      "latest_time": "2026-03-03 05:53"
     },
     "all_time": [
       {
@@ -24166,7 +24176,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 18,
-      "current_price": 391.8,
+      "current_price": 391.91,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -24177,15 +24187,15 @@
       "position": "short",
       "strategy": "s_posin5drange_lt_closevssma50_gt_x_closevssma10_lt_afbe89",
       "entry_price": 131.53,
-      "bars_held": 11,
+      "bars_held": 12,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 15,
-      "current_price": 132.01,
-      "unrealized_pnl": -0.48,
+      "current_price": 131.91,
+      "unrealized_pnl": -0.4,
       "shares": 100,
-      "position_value": 13201.0,
-      "unrealized_pnl_dollar": -63.0
+      "position_value": 13191.0,
+      "unrealized_pnl_dollar": -53.0
     },
     {
       "symbol": "PLTR",
@@ -24196,7 +24206,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 42,
-      "current_price": 140.01,
+      "current_price": 140.07,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -24207,64 +24217,64 @@
       "position": "long",
       "strategy": "l_closevssma20_lt_avgabsret10m_gt_x_posin20drang_gt_a28719",
       "entry_price": 176.56,
-      "bars_held": 48,
+      "bars_held": 49,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 51,
-      "current_price": 176.89,
-      "unrealized_pnl": 0.11,
+      "current_price": 176.97,
+      "unrealized_pnl": 0.16,
       "shares": 74,
-      "position_value": 13089.86,
-      "unrealized_pnl_dollar": 14.8
+      "position_value": 13095.78,
+      "unrealized_pnl_dollar": 20.72
     }
   ],
   "data_freshness": [
     {
       "symbol": "MARA",
       "last_update": "2026-03-03 05:52:00",
-      "age_seconds": 72,
+      "age_seconds": 126,
       "fresh": true,
-      "signal_age_seconds": 72,
+      "signal_age_seconds": 126,
       "signal_fresh": true
     },
     {
       "symbol": "COIN",
       "last_update": "2026-03-03 05:52:00",
-      "age_seconds": 72,
+      "age_seconds": 126,
       "fresh": true,
-      "signal_age_seconds": 72,
+      "signal_age_seconds": 126,
       "signal_fresh": true
     },
     {
       "symbol": "TSLA",
-      "last_update": "2026-03-03 05:52:00",
-      "age_seconds": 72,
+      "last_update": "2026-03-03 05:53:00",
+      "age_seconds": 66,
       "fresh": true,
-      "signal_age_seconds": 72,
+      "signal_age_seconds": 66,
       "signal_fresh": true
     },
     {
       "symbol": "MSTR",
-      "last_update": "2026-03-03 05:52:00",
-      "age_seconds": 72,
+      "last_update": "2026-03-03 05:53:00",
+      "age_seconds": 66,
       "fresh": true,
-      "signal_age_seconds": 72,
+      "signal_age_seconds": 66,
       "signal_fresh": true
     },
     {
       "symbol": "PLTR",
-      "last_update": "2026-03-03 05:52:00",
-      "age_seconds": 72,
+      "last_update": "2026-03-03 05:53:00",
+      "age_seconds": 66,
       "fresh": true,
-      "signal_age_seconds": 72,
+      "signal_age_seconds": 66,
       "signal_fresh": true
     },
     {
       "symbol": "NVDA",
-      "last_update": "2026-03-03 05:52:00",
-      "age_seconds": 72,
+      "last_update": "2026-03-03 05:53:00",
+      "age_seconds": 66,
       "fresh": true,
-      "signal_age_seconds": 72,
+      "signal_age_seconds": 66,
       "signal_fresh": true
     }
   ],
@@ -24361,9 +24371,9 @@
   "live_account_value": 83288.6700000763,
   "live_cash": 31189.619218826294,
   "active_trade_count": 4,
-  "aggregate_unrealized_pnl_pct": -1.51,
-  "aggregate_unrealized_pnl_dollar": -805.32,
-  "total_position_value": 52057.86,
+  "aggregate_unrealized_pnl_pct": -1.48,
+  "aggregate_unrealized_pnl_dollar": -789.4,
+  "total_position_value": 52053.78,
   "system_ok": true,
   "trade_history": [
     {
