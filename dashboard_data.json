@@ -1,6 +1,6 @@
 {
-  "generated": "2026-03-11 01:11:17",
-  "generated_ts": 1773205877.64173,
+  "generated": "2026-03-11 01:12:34",
+  "generated_ts": 1773205954.326881,
   "account_chart": {
     "one_day": {
       "series": [],
@@ -17766,7 +17766,7 @@
         "03-11"
       ],
       "session_len": 57600,
-      "x_max": 223879.297789,
+      "x_max": 223956.080035,
       "latest_value": 84542.67,
       "latest_time": "2026-03-11 01:10"
     },
@@ -19788,10 +19788,10 @@
       "has_strategy_file": true,
       "num_strategies": 18,
       "current_price": 8.67,
-      "unrealized_pnl": -4.46,
-      "shares": 1455,
-      "position_value": 12614.85,
-      "unrealized_pnl_dollar": -589.27
+      "unrealized_pnl": null,
+      "shares": 0,
+      "position_value": 0.0,
+      "unrealized_pnl_dollar": 0
     },
     {
       "symbol": "COIN",
@@ -19803,10 +19803,10 @@
       "has_strategy_file": true,
       "num_strategies": 44,
       "current_price": 197.01,
-      "unrealized_pnl": 0.22,
-      "shares": 68,
-      "position_value": 13396.68,
-      "unrealized_pnl_dollar": 29.24
+      "unrealized_pnl": null,
+      "shares": 0,
+      "position_value": 0.0,
+      "unrealized_pnl_dollar": 0
     },
     {
       "symbol": "TSLA",
@@ -19817,11 +19817,11 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 38,
-      "current_price": 400.6,
-      "unrealized_pnl": 0.45,
-      "shares": 33,
-      "position_value": 13219.8,
-      "unrealized_pnl_dollar": 59.4
+      "current_price": 400.7,
+      "unrealized_pnl": null,
+      "shares": 0,
+      "position_value": 0.0,
+      "unrealized_pnl_dollar": 0
     },
     {
       "symbol": "MSTR",
@@ -19833,10 +19833,10 @@
       "has_strategy_file": true,
       "num_strategies": 31,
       "current_price": 139.49,
-      "unrealized_pnl": 0.58,
-      "shares": 96,
-      "position_value": 13391.04,
-      "unrealized_pnl_dollar": 76.8
+      "unrealized_pnl": null,
+      "shares": 0,
+      "position_value": 0.0,
+      "unrealized_pnl_dollar": 0
     },
     {
       "symbol": "PLTR",
@@ -19848,10 +19848,10 @@
       "has_strategy_file": true,
       "num_strategies": 30,
       "current_price": 151.33,
-      "unrealized_pnl": -1.68,
-      "shares": 86,
-      "position_value": 13014.38,
-      "unrealized_pnl_dollar": -221.88
+      "unrealized_pnl": null,
+      "shares": 0,
+      "position_value": 0.0,
+      "unrealized_pnl_dollar": 0
     },
     {
       "symbol": "NVDA",
@@ -19862,60 +19862,60 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 25,
-      "current_price": 185.52,
-      "unrealized_pnl": -5.22,
-      "shares": 75,
-      "position_value": 13914.0,
-      "unrealized_pnl_dollar": -690.0
+      "current_price": 185.62,
+      "unrealized_pnl": null,
+      "shares": 0,
+      "position_value": 0.0,
+      "unrealized_pnl_dollar": 0
     }
   ],
   "data_freshness": [
     {
       "symbol": "MARA",
       "last_update": "2026-03-10 19:58:00",
-      "age_seconds": 18799,
+      "age_seconds": 18876,
       "fresh": true,
-      "signal_age_seconds": 18799,
+      "signal_age_seconds": 18876,
       "signal_fresh": true
     },
     {
       "symbol": "COIN",
       "last_update": "2026-03-10 19:59:00",
-      "age_seconds": 18739,
+      "age_seconds": 18816,
       "fresh": true,
-      "signal_age_seconds": 18739,
+      "signal_age_seconds": 18816,
       "signal_fresh": true
     },
     {
       "symbol": "TSLA",
       "last_update": "2026-03-10 19:59:00",
-      "age_seconds": 18739,
+      "age_seconds": 18816,
       "fresh": true,
-      "signal_age_seconds": 18739,
+      "signal_age_seconds": 18816,
       "signal_fresh": true
     },
     {
       "symbol": "MSTR",
       "last_update": "2026-03-10 19:59:00",
-      "age_seconds": 18739,
+      "age_seconds": 18816,
       "fresh": true,
-      "signal_age_seconds": 18739,
+      "signal_age_seconds": 18816,
       "signal_fresh": true
     },
     {
       "symbol": "PLTR",
       "last_update": "2026-03-10 19:59:00",
-      "age_seconds": 18739,
+      "age_seconds": 18816,
       "fresh": true,
-      "signal_age_seconds": 18739,
+      "signal_age_seconds": 18816,
       "signal_fresh": true
     },
     {
       "symbol": "NVDA",
       "last_update": "2026-03-10 19:59:00",
-      "age_seconds": 18739,
+      "age_seconds": 18816,
       "fresh": true,
-      "signal_age_seconds": 18739,
+      "signal_age_seconds": 18816,
       "signal_fresh": true
     }
   ],
@@ -19925,7 +19925,44 @@
   "ib_all_ok": true,
   "ib_auth_info": "OK",
   "running_bots": [],
-  "trade_alignment_issues": [],
+  "trade_alignment_issues": [
+    {
+      "Strategy": "COIN 1m Trading",
+      "File Pull": "Long",
+      "Exchange Pull": "Neutral",
+      "bot_status": null
+    },
+    {
+      "Strategy": "MARA 1m Trading",
+      "File Pull": "Long",
+      "Exchange Pull": "Neutral",
+      "bot_status": null
+    },
+    {
+      "Strategy": "MSTR 1m Trading",
+      "File Pull": "Long",
+      "Exchange Pull": "Neutral",
+      "bot_status": null
+    },
+    {
+      "Strategy": "NVDA 1m Trading",
+      "File Pull": "Short",
+      "Exchange Pull": "Neutral",
+      "bot_status": null
+    },
+    {
+      "Strategy": "PLTR 1m Trading",
+      "File Pull": "Long",
+      "Exchange Pull": "Neutral",
+      "bot_status": null
+    },
+    {
+      "Strategy": "TSLA 1m Trading",
+      "File Pull": "Short",
+      "Exchange Pull": "Neutral",
+      "bot_status": null
+    }
+  ],
   "strategy_warnings": [],
   "slippage": {
     "configured": true,
@@ -19997,9 +20034,9 @@
     ]
   },
   "account_summary": {
-    "cash": 5430.851249933243,
-    "equity": 79111.8203125,
-    "net_liq": 84542.67156243324
+    "cash": 0.0,
+    "equity": 0.0,
+    "net_liq": 0.0
   },
   "symbols": [
     "MARA",
@@ -20009,13 +20046,13 @@
     "PLTR",
     "NVDA"
   ],
-  "live_account_value": 84542.67156243324,
-  "live_cash": 5430.851249933243,
+  "live_account_value": 0.0,
+  "live_cash": 0.0,
   "active_trade_count": 6,
-  "aggregate_unrealized_pnl_pct": -1.68,
-  "aggregate_unrealized_pnl_dollar": -1335.71,
-  "total_position_value": 79550.75,
-  "system_ok": true,
+  "aggregate_unrealized_pnl_pct": 0,
+  "aggregate_unrealized_pnl_dollar": 0,
+  "total_position_value": 0.0,
+  "system_ok": false,
   "trade_history": [
     {
       "symbol": "MSTR",
