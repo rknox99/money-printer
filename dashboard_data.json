@@ -1,6 +1,6 @@
 {
-  "generated": "2026-03-12 05:35:27",
-  "generated_ts": 1773308127.150865,
+  "generated": "2026-03-12 05:36:13",
+  "generated_ts": 1773308173.693036,
   "account_chart": {
     "one_day": {
       "series": [
@@ -572,6 +572,11 @@
               "x": 5698.0,
               "y": 83367.32,
               "t": "03/12 05:34"
+            },
+            {
+              "x": 5746.0,
+              "y": 83367.32,
+              "t": "03/12 05:35"
             }
           ]
         }
@@ -580,9 +585,9 @@
         "03-12"
       ],
       "session_len": 57600,
-      "x_max": 9328.028509,
+      "x_max": 9374.478481,
       "latest_value": 83367.32,
-      "latest_time": "2026-03-12 05:34"
+      "latest_time": "2026-03-12 05:35"
     },
     "five_day": {
       "series": [
@@ -17398,6 +17403,11 @@
               "x": 236098.0,
               "y": 83367.32,
               "t": "03/12 05:34"
+            },
+            {
+              "x": 236146.0,
+              "y": 83367.32,
+              "t": "03/12 05:35"
             }
           ]
         }
@@ -17410,9 +17420,9 @@
         "03-12"
       ],
       "session_len": 57600,
-      "x_max": 239728.257279,
+      "x_max": 239774.682822,
       "latest_value": 83367.32,
-      "latest_time": "2026-03-12 05:34"
+      "latest_time": "2026-03-12 05:35"
     },
     "all_time": [
       {
@@ -19431,7 +19441,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 35,
-      "current_price": 54.79,
+      "current_price": 54.72,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -19461,7 +19471,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 15,
-      "current_price": 203.25,
+      "current_price": 203.14,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -19516,58 +19526,58 @@
   "data_freshness": [
     {
       "symbol": "SOXL",
-      "last_update": "2026-03-12 05:34:00",
-      "age_seconds": 88,
+      "last_update": "2026-03-12 05:35:00",
+      "age_seconds": 75,
       "fresh": true,
-      "signal_age_seconds": 88,
+      "signal_age_seconds": 75,
       "signal_fresh": true
     },
     {
       "symbol": "MARA",
       "last_update": "2026-03-12 05:33:00",
-      "age_seconds": 148,
+      "age_seconds": 195,
       "fresh": true,
-      "signal_age_seconds": 148,
+      "signal_age_seconds": 195,
       "signal_fresh": true
     },
     {
       "symbol": "AMD",
-      "last_update": "2026-03-12 05:34:00",
-      "age_seconds": 88,
+      "last_update": "2026-03-12 05:35:00",
+      "age_seconds": 75,
       "fresh": true,
-      "signal_age_seconds": 88,
+      "signal_age_seconds": 75,
       "signal_fresh": true
     },
     {
       "symbol": "MSTR",
       "last_update": "2026-03-12 05:32:00",
-      "age_seconds": 208,
+      "age_seconds": 255,
       "fresh": true,
-      "signal_age_seconds": 208,
+      "signal_age_seconds": 255,
       "signal_fresh": true
     },
     {
       "symbol": "HOOD",
       "last_update": "2026-03-12 05:30:00",
-      "age_seconds": 328,
+      "age_seconds": 375,
       "fresh": true,
-      "signal_age_seconds": 328,
+      "signal_age_seconds": 375,
       "signal_fresh": true
     },
     {
       "symbol": "MU",
       "last_update": "2026-03-12 05:33:00",
-      "age_seconds": 148,
+      "age_seconds": 195,
       "fresh": true,
-      "signal_age_seconds": 148,
+      "signal_age_seconds": 195,
       "signal_fresh": true
     }
   ],
   "ib_auth": {
-    "5000": true
+    "5000": false
   },
-  "ib_all_ok": true,
-  "ib_auth_info": "OK",
+  "ib_all_ok": false,
+  "ib_auth_info": "ReadTimeout: HTTPSConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=5)",
   "running_bots": [],
   "trade_alignment_issues": [],
   "strategy_warnings": [],
@@ -19650,7 +19660,7 @@
   "aggregate_unrealized_pnl_pct": -0.65,
   "aggregate_unrealized_pnl_dollar": -84.85,
   "total_position_value": 12899.41,
-  "system_ok": true,
+  "system_ok": false,
   "trade_history": [
     {
       "symbol": "HOOD",
