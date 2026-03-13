@@ -1,6 +1,6 @@
 {
-  "generated": "2026-03-13 19:27:39",
-  "generated_ts": 1773444459.192905,
+  "generated": "2026-03-13 19:28:38",
+  "generated_ts": 1773444518.473921,
   "account_chart": {
     "one_day": {
       "series": [
@@ -4877,6 +4877,11 @@
               "x": 55621.0,
               "y": 81489.52,
               "t": "03/13 19:27"
+            },
+            {
+              "x": 55679.0,
+              "y": 81492.15,
+              "t": "03/13 19:27"
             }
           ]
         }
@@ -4886,7 +4891,7 @@
       ],
       "session_len": 57600,
       "x_max": 57600,
-      "latest_value": 81489.52,
+      "latest_value": 81492.15,
       "latest_time": "2026-03-13 19:27"
     },
     "five_day": {
@@ -27283,6 +27288,11 @@
               "x": 286021.0,
               "y": 81489.52,
               "t": "03/13 19:27"
+            },
+            {
+              "x": 286079.0,
+              "y": 81492.15,
+              "t": "03/13 19:27"
             }
           ]
         }
@@ -27296,7 +27306,7 @@
       ],
       "session_len": 57600,
       "x_max": 288000,
-      "latest_value": 81489.52,
+      "latest_value": 81492.15,
       "latest_time": "2026-03-13 19:27"
     },
     "all_time": [
@@ -29312,22 +29322,22 @@
       "position": "long",
       "strategy": "r_hourofday_gt_84492a+e_voldirratio3_lt_volratio10m_lt_8f16c1+e_posinrange12_gt_",
       "entry_price": 196.745,
-      "bars_held": 334,
+      "bars_held": 335,
       "stop_price": 194.27544093071256,
       "has_strategy_file": true,
       "num_strategies": 90,
-      "current_price": 194.45,
+      "current_price": 194.46,
       "unrealized_pnl": -1.06,
       "shares": 65,
-      "position_value": 12639.25,
-      "unrealized_pnl_dollar": -135.6
+      "position_value": 12639.9,
+      "unrealized_pnl_dollar": -134.95
     },
     {
       "symbol": "HOOD",
       "position": "long",
       "strategy": "r_hourofday_gt_5a8a0e+e_posinrange60_lt_c42d3a+e_ret30m_gt_closevsema26_gt_35b52",
       "entry_price": 74.9949,
-      "bars_held": 501,
+      "bars_held": 502,
       "stop_price": 74.3788734358385,
       "has_strategy_file": true,
       "num_strategies": 200,
@@ -29342,22 +29352,22 @@
       "position": "long",
       "strategy": "r_hourofday_gt_a124b1+e_posinrange60_lt_volratio10m_lt_c100f5+e_ret5m_gt_macdhis",
       "entry_price": 143.515,
-      "bars_held": 473,
+      "bars_held": 474,
       "stop_price": 141.61895441922667,
       "has_strategy_file": true,
       "num_strategies": 189,
-      "current_price": 138.78,
-      "unrealized_pnl": -3.42,
+      "current_price": 138.99,
+      "unrealized_pnl": -3.28,
       "shares": 90,
-      "position_value": 12490.2,
-      "unrealized_pnl_dollar": -442.8
+      "position_value": 12509.1,
+      "unrealized_pnl_dollar": -423.9
     },
     {
       "symbol": "MU",
       "position": "long",
       "strategy": "r_minuteofday_gt_d098aa+e_posinrange60_lt_closevsvwap6_lt_ret60m_gt_24fcf0+e_ret",
       "entry_price": 422.45,
-      "bars_held": 480,
+      "bars_held": 481,
       "stop_price": 418.13332379471615,
       "has_strategy_file": true,
       "num_strategies": 66,
@@ -29372,22 +29382,22 @@
       "position": "long",
       "strategy": "r_minuteofday_gt_13de53+e_macdhistnorm_lt_mfi60_lt_873e59+e_minuteofday_gt_voldi",
       "entry_price": 183.13,
-      "bars_held": 525,
+      "bars_held": 526,
       "stop_price": 182.49897702644836,
       "has_strategy_file": true,
       "num_strategies": 195,
-      "current_price": 180.31,
-      "unrealized_pnl": -1.56,
+      "current_price": 180.33,
+      "unrealized_pnl": -1.55,
       "shares": 71,
-      "position_value": 12802.01,
-      "unrealized_pnl_dollar": -203.06
+      "position_value": 12803.43,
+      "unrealized_pnl_dollar": -201.64
     },
     {
       "symbol": "SOXL",
       "position": "long",
       "strategy": "r_minuteofday_gt_b2e06b+e_upvolpct60_lt_ret20m_lt_d37fbc+e_hourofday_gt_voldirra",
       "entry_price": 52.71,
-      "bars_held": 528,
+      "bars_held": 529,
       "stop_price": 52.05397408772746,
       "has_strategy_file": true,
       "num_strategies": 200,
@@ -29401,50 +29411,50 @@
   "data_freshness": [
     {
       "symbol": "COIN",
-      "last_update": "2026-03-13 19:26:00",
-      "age_seconds": 101,
+      "last_update": "2026-03-13 19:27:00",
+      "age_seconds": 100,
       "fresh": true,
-      "signal_age_seconds": 101,
+      "signal_age_seconds": 100,
       "signal_fresh": true
     },
     {
       "symbol": "HOOD",
-      "last_update": "2026-03-13 19:26:00",
-      "age_seconds": 101,
+      "last_update": "2026-03-13 19:27:00",
+      "age_seconds": 100,
       "fresh": true,
-      "signal_age_seconds": 101,
+      "signal_age_seconds": 100,
       "signal_fresh": true
     },
     {
       "symbol": "MSTR",
-      "last_update": "2026-03-13 19:26:00",
-      "age_seconds": 101,
+      "last_update": "2026-03-13 19:27:00",
+      "age_seconds": 100,
       "fresh": true,
-      "signal_age_seconds": 101,
+      "signal_age_seconds": 100,
       "signal_fresh": true
     },
     {
       "symbol": "MU",
-      "last_update": "2026-03-13 19:26:00",
-      "age_seconds": 101,
+      "last_update": "2026-03-13 19:27:00",
+      "age_seconds": 100,
       "fresh": true,
-      "signal_age_seconds": 101,
+      "signal_age_seconds": 100,
       "signal_fresh": true
     },
     {
       "symbol": "NVDA",
-      "last_update": "2026-03-13 19:26:00",
-      "age_seconds": 101,
+      "last_update": "2026-03-13 19:27:00",
+      "age_seconds": 100,
       "fresh": true,
-      "signal_age_seconds": 101,
+      "signal_age_seconds": 100,
       "signal_fresh": true
     },
     {
       "symbol": "SOXL",
-      "last_update": "2026-03-13 19:26:00",
-      "age_seconds": 101,
+      "last_update": "2026-03-13 19:27:00",
+      "age_seconds": 100,
       "fresh": true,
-      "signal_age_seconds": 101,
+      "signal_age_seconds": 100,
       "signal_fresh": true
     }
   ],
@@ -29526,9 +29536,9 @@
     ]
   },
   "account_summary": {
-    "cash": 4987.023124933243,
-    "equity": 76502.5,
-    "net_liq": 81489.52312493324
+    "cash": 4987.015312433243,
+    "equity": 76505.1328125,
+    "net_liq": 81492.14812493324
   },
   "symbols": [
     "COIN",
@@ -29538,12 +29548,12 @@
     "NVDA",
     "SOXL"
   ],
-  "live_account_value": 81489.52312493324,
-  "live_cash": 4987.023124933243,
+  "live_account_value": 81492.14812493324,
+  "live_cash": 4987.015312433243,
   "active_trade_count": 6,
-  "aggregate_unrealized_pnl_pct": -1.98,
-  "aggregate_unrealized_pnl_dollar": -1550.54,
-  "total_position_value": 76488.9,
+  "aggregate_unrealized_pnl_pct": -1.96,
+  "aggregate_unrealized_pnl_dollar": -1529.57,
+  "total_position_value": 76509.87,
   "system_ok": true,
   "trade_history": [
     {
