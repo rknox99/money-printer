@@ -1,6 +1,6 @@
 {
-  "generated": "2026-03-16 06:33:10",
-  "generated_ts": 1773657190.42808,
+  "generated": "2026-03-16 06:33:57",
+  "generated_ts": 1773657237.182838,
   "account_chart": {
     "one_day": {
       "series": [
@@ -987,6 +987,11 @@
               "x": 9167.0,
               "y": 83727.64,
               "t": "03/16 06:32"
+            },
+            {
+              "x": 9215.0,
+              "y": 83727.64,
+              "t": "03/16 06:33"
             }
           ]
         }
@@ -995,9 +1000,9 @@
         "03-16"
       ],
       "session_len": 57600,
-      "x_max": 12791.347414,
+      "x_max": 12837.83121,
       "latest_value": 83727.64,
-      "latest_time": "2026-03-16 06:32"
+      "latest_time": "2026-03-16 06:33"
     },
     "five_day": {
       "series": [
@@ -20348,6 +20353,11 @@
               "x": 239567.0,
               "y": 83727.64,
               "t": "03/16 06:32"
+            },
+            {
+              "x": 239615.0,
+              "y": 83727.64,
+              "t": "03/16 06:33"
             }
           ]
         }
@@ -20360,9 +20370,9 @@
         "03-16"
       ],
       "session_len": 57600,
-      "x_max": 243191.553971,
+      "x_max": 243238.052268,
       "latest_value": 83727.64,
-      "latest_time": "2026-03-16 06:32"
+      "latest_time": "2026-03-16 06:33"
     },
     "all_time": [
       {
@@ -22411,7 +22421,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 196,
-      "current_price": 145.31,
+      "current_price": 145.33,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -22426,7 +22436,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 75,
-      "current_price": 444.3,
+      "current_price": 444.6,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -22441,7 +22451,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 198,
-      "current_price": 182.26,
+      "current_price": 182.15,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -22456,7 +22466,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 200,
-      "current_price": 52.74,
+      "current_price": 52.73,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -22467,49 +22477,49 @@
     {
       "symbol": "COIN",
       "last_update": "2026-03-16 06:21:00",
-      "age_seconds": 732,
+      "age_seconds": 778,
       "fresh": true,
-      "signal_age_seconds": 732,
+      "signal_age_seconds": 778,
       "signal_fresh": true
     },
     {
       "symbol": "HOOD",
       "last_update": "2026-03-16 06:23:00",
-      "age_seconds": 612,
+      "age_seconds": 658,
       "fresh": true,
-      "signal_age_seconds": 612,
+      "signal_age_seconds": 658,
       "signal_fresh": true
     },
     {
       "symbol": "MSTR",
       "last_update": "2026-03-16 06:32:00",
-      "age_seconds": 72,
+      "age_seconds": 118,
       "fresh": true,
-      "signal_age_seconds": 72,
+      "signal_age_seconds": 118,
       "signal_fresh": true
     },
     {
       "symbol": "MU",
       "last_update": "2026-03-16 06:24:00",
-      "age_seconds": 552,
+      "age_seconds": 598,
       "fresh": true,
-      "signal_age_seconds": 552,
+      "signal_age_seconds": 598,
       "signal_fresh": true
     },
     {
       "symbol": "NVDA",
       "last_update": "2026-03-16 06:25:00",
-      "age_seconds": 492,
+      "age_seconds": 538,
       "fresh": true,
-      "signal_age_seconds": 492,
+      "signal_age_seconds": 538,
       "signal_fresh": true
     },
     {
       "symbol": "SOXL",
       "last_update": "2026-03-16 06:22:00",
-      "age_seconds": 672,
+      "age_seconds": 718,
       "fresh": true,
-      "signal_age_seconds": 672,
+      "signal_age_seconds": 718,
       "signal_fresh": true
     }
   ],
@@ -22531,14 +22541,14 @@
   "slippage": {
     "configured": true,
     "summary": {
-      "avg_slippage_bps": 1680.91,
-      "total_commissions": 8.16,
-      "total_slippage_cost": -0.29,
-      "trade_count": 11,
+      "avg_slippage_bps": 1671.11,
+      "total_commissions": 6.14,
+      "total_slippage_cost": -31.34,
+      "trade_count": 9,
       "missed_trades": 1,
-      "match_rate": 91.7,
-      "total_fees_and_slippage": 7.87,
-      "avg_slippage_pct": 0.0068
+      "match_rate": 90.0,
+      "total_fees_and_slippage": -25.2,
+      "avg_slippage_pct": -0.028
     },
     "per_symbol": [
       {
@@ -22558,15 +22568,6 @@
         "total_slippage": 13.07,
         "total_fees_and_slippage": 15.1,
         "avg_slippage_pct": 0.0579
-      },
-      {
-        "symbol": "MSTR",
-        "trades": 2,
-        "avg_slippage_bps": 1725.0,
-        "total_commission": 2.02,
-        "total_slippage": 31.05,
-        "total_fees_and_slippage": 33.07,
-        "avg_slippage_pct": 0.1277
       },
       {
         "symbol": "MU",
