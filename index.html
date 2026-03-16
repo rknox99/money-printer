@@ -319,7 +319,7 @@ function rDash(d){
   hv.style.color=v>0?'var(--green)':'var(--red)';
   var ac=d.active_trade_count||0;
   var st=d.positions?d.positions.reduce(function(a,p){return a+(p.num_strategies||0);},0):0;
-  document.getElementById('hs').textContent=ac+' active · '+st+' strategies · '+(d.symbols?d.symbols.length:6)+' symbols';
+  document.getElementById('hs').textContent=ac+' active · '+st+' strategies · '+(d.symbols?d.symbols.length:10)+' symbols';
   var pct=d.aggregate_unrealized_pnl_pct,dol=d.aggregate_unrealized_pnl_dollar;
   var pe=document.getElementById('s-pp'),de=document.getElementById('s-pd');
   if(ac>0&&pct!=null){pe.textContent=fP(pct);pe.className='sv '+(pct>=0?'pos':'neg');
