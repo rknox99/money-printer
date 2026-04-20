@@ -1,15 +1,28 @@
 {
-  "generated": "2026-04-20 04:00:28",
-  "generated_ts": 1776672028.90416,
+  "generated": "2026-04-20 04:01:24",
+  "generated_ts": 1776672084.3927,
   "account_chart": {
     "one_day": {
-      "series": [],
+      "series": [
+        {
+          "date": "04-20",
+          "date_full": "2026-04-20",
+          "points": [
+            {
+              "x": 48.0,
+              "y": 82249.82,
+              "t": "04/20 04:00"
+            }
+          ]
+        }
+      ],
       "sessions": [
         "04-20"
       ],
       "session_len": 57600,
-      "latest_value": 81994.52,
-      "latest_time": "2026-04-20 03:59"
+      "x_max": 3685.341982,
+      "latest_value": 82249.82,
+      "latest_time": "2026-04-20 04:00"
     },
     "five_day": {
       "series": [
@@ -11065,6 +11078,17 @@
               "t": "04/17 19:59"
             }
           ]
+        },
+        {
+          "date": "04-20",
+          "date_full": "2026-04-20",
+          "points": [
+            {
+              "x": 230448.0,
+              "y": 82249.82,
+              "t": "04/20 04:00"
+            }
+          ]
         }
       ],
       "sessions": [
@@ -11075,9 +11099,9 @@
         "04-20"
       ],
       "session_len": 57600,
-      "x_max": 234029.759177,
-      "latest_value": 81994.52,
-      "latest_time": "2026-04-20 03:59"
+      "x_max": 234085.645502,
+      "latest_value": 82249.82,
+      "latest_time": "2026-04-20 04:00"
     },
     "all_time": [
       {
@@ -13090,17 +13114,17 @@
     {
       "symbol": "MSTR",
       "position": "short",
-      "strategy": "short_5",
-      "entry_price": 165.995,
-      "bars_held": 244,
+      "strategy": "",
+      "entry_price": 165.895,
+      "bars_held": 0,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 11,
-      "current_price": 160.5,
-      "unrealized_pnl": 3.25,
+      "current_price": 160.97,
+      "unrealized_pnl": 2.97,
       "shares": 46,
-      "position_value": 7383.0,
-      "unrealized_pnl_dollar": 248.17
+      "position_value": 7404.62,
+      "unrealized_pnl_dollar": 226.55
     },
     {
       "symbol": "SOXL",
@@ -13111,7 +13135,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 5,
-      "current_price": 93.18,
+      "current_price": 93.3,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -13119,14 +13143,14 @@
     },
     {
       "symbol": "HOOD",
-      "position": "neutral",
-      "strategy": "",
-      "entry_price": null,
+      "position": "long",
+      "strategy": "long_G_1",
+      "entry_price": 88.62,
       "bars_held": 0,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 6,
-      "current_price": 88.67,
+      "current_price": 88.62,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -13141,7 +13165,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 8,
-      "current_price": 450.22,
+      "current_price": 450.0,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -13149,14 +13173,14 @@
     },
     {
       "symbol": "COIN",
-      "position": "neutral",
-      "strategy": "",
-      "entry_price": null,
+      "position": "long",
+      "strategy": "long_C_1",
+      "entry_price": 200.51,
       "bars_held": 0,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 9,
-      "current_price": 200.5,
+      "current_price": 199.01,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -13164,14 +13188,14 @@
     },
     {
       "symbol": "MARA",
-      "position": "neutral",
-      "strategy": "",
-      "entry_price": null,
+      "position": "long",
+      "strategy": "long_G_5",
+      "entry_price": 11.1661,
       "bars_held": 0,
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 5,
-      "current_price": 11.21,
+      "current_price": 11.11,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -13186,7 +13210,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 4,
-      "current_price": 144.8,
+      "current_price": 144.25,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -13211,67 +13235,67 @@
   "data_freshness": [
     {
       "symbol": "MSTR",
-      "last_update": "2026-04-17 19:59:00",
-      "age_seconds": 201690,
-      "fresh": false,
-      "signal_age_seconds": 201690,
-      "signal_fresh": false
+      "last_update": "2026-04-20 04:00:00",
+      "age_seconds": 86,
+      "fresh": true,
+      "signal_age_seconds": 86,
+      "signal_fresh": true
     },
     {
       "symbol": "SOXL",
-      "last_update": "2026-04-17 19:59:00",
-      "age_seconds": 201690,
-      "fresh": false,
-      "signal_age_seconds": 201690,
-      "signal_fresh": false
+      "last_update": "2026-04-20 04:00:00",
+      "age_seconds": 86,
+      "fresh": true,
+      "signal_age_seconds": 86,
+      "signal_fresh": true
     },
     {
       "symbol": "HOOD",
-      "last_update": "2026-04-17 19:59:00",
-      "age_seconds": 201690,
-      "fresh": false,
-      "signal_age_seconds": 201690,
-      "signal_fresh": false
+      "last_update": "2026-04-20 04:00:00",
+      "age_seconds": 86,
+      "fresh": true,
+      "signal_age_seconds": 86,
+      "signal_fresh": true
     },
     {
       "symbol": "MU",
-      "last_update": "2026-04-17 19:59:00",
-      "age_seconds": 201690,
-      "fresh": false,
-      "signal_age_seconds": 201690,
-      "signal_fresh": false
+      "last_update": "2026-04-20 04:00:00",
+      "age_seconds": 86,
+      "fresh": true,
+      "signal_age_seconds": 86,
+      "signal_fresh": true
     },
     {
       "symbol": "COIN",
-      "last_update": "2026-04-17 19:59:00",
-      "age_seconds": 201690,
-      "fresh": false,
-      "signal_age_seconds": 201690,
-      "signal_fresh": false
+      "last_update": "2026-04-20 04:00:00",
+      "age_seconds": 86,
+      "fresh": true,
+      "signal_age_seconds": 86,
+      "signal_fresh": true
     },
     {
       "symbol": "MARA",
-      "last_update": "2026-04-17 19:59:00",
-      "age_seconds": 201690,
-      "fresh": false,
-      "signal_age_seconds": 201690,
-      "signal_fresh": false
+      "last_update": "2026-04-20 04:00:00",
+      "age_seconds": 86,
+      "fresh": true,
+      "signal_age_seconds": 86,
+      "signal_fresh": true
     },
     {
       "symbol": "PLTR",
-      "last_update": "2026-04-17 19:59:00",
-      "age_seconds": 201690,
-      "fresh": false,
-      "signal_age_seconds": 201690,
-      "signal_fresh": false
+      "last_update": "2026-04-20 04:00:00",
+      "age_seconds": 86,
+      "fresh": true,
+      "signal_age_seconds": 86,
+      "signal_fresh": true
     },
     {
       "symbol": "SOFI",
-      "last_update": "2026-04-17 19:59:00",
-      "age_seconds": 201690,
-      "fresh": false,
-      "signal_age_seconds": 201690,
-      "signal_fresh": false
+      "last_update": "2026-04-20 04:00:00",
+      "age_seconds": 86,
+      "fresh": true,
+      "signal_age_seconds": 86,
+      "signal_fresh": true
     }
   ],
   "ib_auth": {
@@ -13279,8 +13303,35 @@
   },
   "ib_all_ok": true,
   "ib_auth_info": "OK",
-  "running_bots": [],
-  "trade_alignment_issues": [],
+  "running_bots": [
+    "1m HOOD IB Open Long Bot.ipynb"
+  ],
+  "trade_alignment_issues": [
+    {
+      "Strategy": "COIN 1m Trading",
+      "File Pull": "Long",
+      "Exchange Pull": "Neutral",
+      "bot_status": null
+    },
+    {
+      "Strategy": "HOOD 1m Trading",
+      "File Pull": "Long",
+      "Exchange Pull": "Neutral",
+      "bot_status": "Open Long Bot Running"
+    },
+    {
+      "Strategy": "MARA 1m Trading",
+      "File Pull": "Long",
+      "Exchange Pull": "Neutral",
+      "bot_status": null
+    },
+    {
+      "Strategy": "MSTR 1m Trading",
+      "File Pull": "Neutral",
+      "Exchange Pull": "Short",
+      "bot_status": null
+    }
+  ],
   "strategy_warnings": [],
   "slippage": {
     "configured": true,
@@ -13325,9 +13376,9 @@
     ]
   },
   "account_summary": {
-    "cash": 74347.02312493324,
-    "equity": 7647.5,
-    "net_liq": 81994.52312493324
+    "cash": 74857.61980462074,
+    "equity": 7392.2001953125,
+    "net_liq": 82249.81999993324
   },
   "symbols": [
     "MSTR",
@@ -13339,12 +13390,12 @@
     "PLTR",
     "SOFI"
   ],
-  "live_account_value": 81994.52312493324,
-  "live_cash": 74347.02312493324,
-  "active_trade_count": 1,
-  "aggregate_unrealized_pnl_pct": 3.25,
-  "aggregate_unrealized_pnl_dollar": 248.17,
-  "total_position_value": 7383.0,
+  "live_account_value": 82249.81999993324,
+  "live_cash": 74857.61980462074,
+  "active_trade_count": 4,
+  "aggregate_unrealized_pnl_pct": 2.97,
+  "aggregate_unrealized_pnl_dollar": 226.55,
+  "total_position_value": 7404.62,
   "system_ok": false,
   "trade_history": [
     {
