@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-27 03:02:30",
-  "generated_ts": 1777273350.953068,
+  "generated": "2026-04-27 03:03:14",
+  "generated_ts": 1777273394.79716,
   "account_chart": {
     "one_day": {
       "series": [],
@@ -16341,7 +16341,7 @@
         "04-27"
       ],
       "session_len": 57600,
-      "x_max": 230551.81609,
+      "x_max": 230595.646203,
       "latest_value": 84207.15,
       "latest_time": "2026-04-27 03:01"
     },
@@ -18362,7 +18362,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 13,
-      "current_price": 171.62,
+      "current_price": 171.23,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -18377,7 +18377,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 6,
-      "current_price": 129.75,
+      "current_price": 129.79,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -18407,7 +18407,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 6,
-      "current_price": 503.73,
+      "current_price": 504.0,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -18452,11 +18452,11 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 2,
-      "current_price": 141.29,
-      "unrealized_pnl": -1.05,
-      "shares": 56,
-      "position_value": 7912.24,
-      "unrealized_pnl_dollar": -84.0
+      "current_price": 141.2,
+      "unrealized_pnl": null,
+      "shares": 0,
+      "position_value": 0.0,
+      "unrealized_pnl_dollar": 0
     },
     {
       "symbol": "SOFI",
@@ -18478,65 +18478,65 @@
     {
       "symbol": "MSTR",
       "last_update": "2026-04-24 19:59:00",
-      "age_seconds": 198212,
+      "age_seconds": 198256,
       "fresh": true,
-      "signal_age_seconds": 198212,
+      "signal_age_seconds": 198256,
       "signal_fresh": true
     },
     {
       "symbol": "SOXL",
       "last_update": "2026-04-24 19:59:00",
-      "age_seconds": 198212,
+      "age_seconds": 198256,
       "fresh": true,
-      "signal_age_seconds": 198212,
+      "signal_age_seconds": 198256,
       "signal_fresh": true
     },
     {
       "symbol": "HOOD",
       "last_update": "2026-04-24 19:59:00",
-      "age_seconds": 198212,
+      "age_seconds": 198256,
       "fresh": true,
-      "signal_age_seconds": 198212,
+      "signal_age_seconds": 198256,
       "signal_fresh": true
     },
     {
       "symbol": "MU",
       "last_update": "2026-04-24 19:59:00",
-      "age_seconds": 198212,
+      "age_seconds": 198256,
       "fresh": true,
-      "signal_age_seconds": 198212,
+      "signal_age_seconds": 198256,
       "signal_fresh": true
     },
     {
       "symbol": "COIN",
       "last_update": "2026-04-24 19:59:00",
-      "age_seconds": 198212,
+      "age_seconds": 198256,
       "fresh": true,
-      "signal_age_seconds": 198212,
+      "signal_age_seconds": 198256,
       "signal_fresh": true
     },
     {
       "symbol": "MARA",
       "last_update": "2026-04-24 19:59:00",
-      "age_seconds": 198212,
+      "age_seconds": 198256,
       "fresh": true,
-      "signal_age_seconds": 198212,
+      "signal_age_seconds": 198256,
       "signal_fresh": true
     },
     {
       "symbol": "PLTR",
       "last_update": "2026-04-24 19:59:00",
-      "age_seconds": 198212,
+      "age_seconds": 198256,
       "fresh": true,
-      "signal_age_seconds": 198212,
+      "signal_age_seconds": 198256,
       "signal_fresh": true
     },
     {
       "symbol": "SOFI",
       "last_update": "2026-04-24 19:59:00",
-      "age_seconds": 198212,
+      "age_seconds": 198256,
       "fresh": true,
-      "signal_age_seconds": 198212,
+      "signal_age_seconds": 198256,
       "signal_fresh": true
     }
   ],
@@ -18546,7 +18546,14 @@
   "ib_all_ok": true,
   "ib_auth_info": "OK",
   "running_bots": [],
-  "trade_alignment_issues": [],
+  "trade_alignment_issues": [
+    {
+      "Strategy": "PLTR 1m Trading",
+      "File Pull": "Long",
+      "Exchange Pull": "Neutral",
+      "bot_status": null
+    }
+  ],
   "strategy_warnings": [],
   "slippage": {
     "configured": true,
@@ -18636,9 +18643,9 @@
     ]
   },
   "account_summary": {
-    "cash": 76233.30859375,
-    "equity": 7973.83984375,
-    "net_liq": 84207.1484375
+    "cash": 0.0,
+    "equity": 0.0,
+    "net_liq": 0.0
   },
   "symbols": [
     "MSTR",
@@ -18650,13 +18657,13 @@
     "PLTR",
     "SOFI"
   ],
-  "live_account_value": 84207.1484375,
-  "live_cash": 76233.30859375,
+  "live_account_value": 0.0,
+  "live_cash": 0.0,
   "active_trade_count": 1,
-  "aggregate_unrealized_pnl_pct": -1.05,
-  "aggregate_unrealized_pnl_dollar": -84.0,
-  "total_position_value": 7912.24,
-  "system_ok": true,
+  "aggregate_unrealized_pnl_pct": 0,
+  "aggregate_unrealized_pnl_dollar": 0,
+  "total_position_value": 0.0,
+  "system_ok": false,
   "trade_history": [
     {
       "symbol": "MSTR",
