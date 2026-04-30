@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-30 03:01:18",
-  "generated_ts": 1777532478.7933,
+  "generated": "2026-04-30 03:02:49",
+  "generated_ts": 1777532569.428903,
   "account_chart": {
     "one_day": {
       "series": [],
@@ -8,8 +8,8 @@
         "04-30"
       ],
       "session_len": 57600,
-      "latest_value": 84856.31,
-      "latest_time": "2026-04-30 03:00"
+      "latest_value": 84853.49,
+      "latest_time": "2026-04-30 03:02"
     },
     "five_day": {
       "series": [
@@ -16631,9 +16631,9 @@
         "04-30"
       ],
       "session_len": 57600,
-      "x_max": 230484.875818,
-      "latest_value": 84856.31,
-      "latest_time": "2026-04-30 03:00"
+      "x_max": 230575.389295,
+      "latest_value": 84853.49,
+      "latest_time": "2026-04-30 03:02"
     },
     "all_time": [
       {
@@ -18653,10 +18653,10 @@
       "has_strategy_file": true,
       "num_strategies": 11,
       "current_price": 157.4,
-      "unrealized_pnl": 1.01,
-      "shares": 50,
-      "position_value": 7870.0,
-      "unrealized_pnl_dollar": 80.0
+      "unrealized_pnl": null,
+      "shares": 0,
+      "position_value": 0.0,
+      "unrealized_pnl_dollar": 0
     },
     {
       "symbol": "SOXL",
@@ -18667,7 +18667,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 7,
-      "current_price": 118.19,
+      "current_price": 118.08,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -18698,10 +18698,10 @@
       "has_strategy_file": true,
       "num_strategies": 8,
       "current_price": 517.09,
-      "unrealized_pnl": -1.28,
-      "shares": 15,
-      "position_value": 7756.35,
-      "unrealized_pnl_dollar": -97.65
+      "unrealized_pnl": null,
+      "shares": 0,
+      "position_value": 0.0,
+      "unrealized_pnl_dollar": 0
     },
     {
       "symbol": "COIN",
@@ -18712,7 +18712,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 12,
-      "current_price": 180.77,
+      "current_price": 181.13,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -18743,10 +18743,10 @@
       "has_strategy_file": true,
       "num_strategies": 8,
       "current_price": 136.53,
-      "unrealized_pnl": -0.05,
-      "shares": 58,
-      "position_value": 7918.74,
-      "unrealized_pnl_dollar": -4.06
+      "unrealized_pnl": null,
+      "shares": 0,
+      "position_value": 0.0,
+      "unrealized_pnl_dollar": 0
     },
     {
       "symbol": "SOFI",
@@ -18768,65 +18768,65 @@
     {
       "symbol": "MSTR",
       "last_update": "2026-04-29 19:59:00",
-      "age_seconds": 25345,
+      "age_seconds": 25435,
       "fresh": true,
-      "signal_age_seconds": 25345,
+      "signal_age_seconds": 25435,
       "signal_fresh": true
     },
     {
       "symbol": "SOXL",
       "last_update": "2026-04-29 19:59:00",
-      "age_seconds": 25345,
+      "age_seconds": 25435,
       "fresh": true,
-      "signal_age_seconds": 25345,
+      "signal_age_seconds": 25435,
       "signal_fresh": true
     },
     {
       "symbol": "HOOD",
       "last_update": "2026-04-29 19:59:00",
-      "age_seconds": 25345,
+      "age_seconds": 25435,
       "fresh": true,
-      "signal_age_seconds": 25345,
+      "signal_age_seconds": 25435,
       "signal_fresh": true
     },
     {
       "symbol": "MU",
       "last_update": "2026-04-29 19:59:00",
-      "age_seconds": 25345,
+      "age_seconds": 25435,
       "fresh": true,
-      "signal_age_seconds": 25345,
+      "signal_age_seconds": 25435,
       "signal_fresh": true
     },
     {
       "symbol": "COIN",
       "last_update": "2026-04-29 19:59:00",
-      "age_seconds": 25345,
+      "age_seconds": 25435,
       "fresh": true,
-      "signal_age_seconds": 25345,
+      "signal_age_seconds": 25435,
       "signal_fresh": true
     },
     {
       "symbol": "MARA",
       "last_update": "2026-04-29 19:59:00",
-      "age_seconds": 25345,
+      "age_seconds": 25435,
       "fresh": true,
-      "signal_age_seconds": 25345,
+      "signal_age_seconds": 25435,
       "signal_fresh": true
     },
     {
       "symbol": "PLTR",
       "last_update": "2026-04-29 19:59:00",
-      "age_seconds": 25345,
+      "age_seconds": 25435,
       "fresh": true,
-      "signal_age_seconds": 25345,
+      "signal_age_seconds": 25435,
       "signal_fresh": true
     },
     {
       "symbol": "SOFI",
       "last_update": "2026-04-29 19:59:00",
-      "age_seconds": 25345,
+      "age_seconds": 25435,
       "fresh": true,
-      "signal_age_seconds": 25345,
+      "signal_age_seconds": 25435,
       "signal_fresh": true
     }
   ],
@@ -18836,7 +18836,26 @@
   "ib_all_ok": true,
   "ib_auth_info": "OK",
   "running_bots": [],
-  "trade_alignment_issues": [],
+  "trade_alignment_issues": [
+    {
+      "Strategy": "MSTR 1m Trading",
+      "File Pull": "Short",
+      "Exchange Pull": "Neutral",
+      "bot_status": null
+    },
+    {
+      "Strategy": "MU 1m Trading",
+      "File Pull": "Short",
+      "Exchange Pull": "Neutral",
+      "bot_status": null
+    },
+    {
+      "Strategy": "PLTR 1m Trading",
+      "File Pull": "Long",
+      "Exchange Pull": "Neutral",
+      "bot_status": null
+    }
+  ],
   "strategy_warnings": [],
   "slippage": {
     "configured": true,
@@ -18926,9 +18945,9 @@
     ]
   },
   "account_summary": {
-    "cash": 60998.95281243324,
+    "cash": 60996.1328125,
     "equity": 23857.359375,
-    "net_liq": 84856.31218743324
+    "net_liq": 84853.4921875
   },
   "symbols": [
     "MSTR",
@@ -18940,13 +18959,13 @@
     "PLTR",
     "SOFI"
   ],
-  "live_account_value": 84856.31218743324,
-  "live_cash": 60998.95281243324,
+  "live_account_value": 84853.4921875,
+  "live_cash": 60996.1328125,
   "active_trade_count": 3,
-  "aggregate_unrealized_pnl_pct": -0.11,
-  "aggregate_unrealized_pnl_dollar": -21.71,
-  "total_position_value": 23545.09,
-  "system_ok": true,
+  "aggregate_unrealized_pnl_pct": 0,
+  "aggregate_unrealized_pnl_dollar": 0,
+  "total_position_value": 0.0,
+  "system_ok": false,
   "trade_history": [
     {
       "symbol": "SOXL",
