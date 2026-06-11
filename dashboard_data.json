@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-10 22:32:39",
-  "generated_ts": 1781145159.46132,
+  "generated": "2026-06-10 22:33:39",
+  "generated_ts": 1781145219.074802,
   "account_chart": {
     "one_day": {
       "series": [
@@ -4387,7 +4387,7 @@
       "session_len": 57600,
       "x_max": 57600,
       "latest_value": 77946.78,
-      "latest_time": "2026-06-10 22:32"
+      "latest_time": "2026-06-10 22:33"
     },
     "five_day": {
       "series": [
@@ -26717,7 +26717,7 @@
       "session_len": 57600,
       "x_max": 288000,
       "latest_value": 77946.78,
-      "latest_time": "2026-06-10 22:32"
+      "latest_time": "2026-06-10 22:33"
     },
     "all_time": [
       {
@@ -28751,7 +28751,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 9,
-      "current_price": 180.06,
+      "current_price": 180.41,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -28766,11 +28766,11 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 12,
-      "current_price": 86.45,
-      "unrealized_pnl": -1.49,
+      "current_price": 86.42,
+      "unrealized_pnl": -1.53,
       "shares": 85,
-      "position_value": 7348.25,
-      "unrealized_pnl_dollar": -111.35
+      "position_value": 7345.7,
+      "unrealized_pnl_dollar": -113.9
     },
     {
       "symbol": "MU",
@@ -28781,7 +28781,7 @@
       "stop_price": null,
       "has_strategy_file": true,
       "num_strategies": 12,
-      "current_price": 895.0,
+      "current_price": 896.0,
       "unrealized_pnl": null,
       "shares": 0,
       "position_value": 0.0,
@@ -28852,73 +28852,73 @@
     {
       "symbol": "MSTR",
       "last_update": "2026-06-10 19:59:00",
-      "age_seconds": 9221,
-      "fresh": true,
-      "signal_age_seconds": 9221,
-      "signal_fresh": true
-    },
-    {
-      "symbol": "SOXL",
-      "last_update": "2026-06-10 19:59:00",
-      "age_seconds": 9221,
-      "fresh": true,
-      "signal_age_seconds": 9221,
-      "signal_fresh": true
-    },
-    {
-      "symbol": "HOOD",
-      "last_update": "2026-06-10 19:59:00",
-      "age_seconds": 9221,
-      "fresh": true,
-      "signal_age_seconds": 9221,
-      "signal_fresh": true
-    },
-    {
-      "symbol": "MU",
-      "last_update": "2026-06-10 19:59:00",
-      "age_seconds": 9221,
-      "fresh": true,
-      "signal_age_seconds": 9221,
-      "signal_fresh": true
-    },
-    {
-      "symbol": "COIN",
-      "last_update": "2026-06-10 19:58:00",
       "age_seconds": 9281,
       "fresh": true,
       "signal_age_seconds": 9281,
       "signal_fresh": true
     },
     {
+      "symbol": "SOXL",
+      "last_update": "2026-06-10 19:59:00",
+      "age_seconds": 9281,
+      "fresh": true,
+      "signal_age_seconds": 9281,
+      "signal_fresh": true
+    },
+    {
+      "symbol": "HOOD",
+      "last_update": "2026-06-10 19:59:00",
+      "age_seconds": 9281,
+      "fresh": true,
+      "signal_age_seconds": 9281,
+      "signal_fresh": true
+    },
+    {
+      "symbol": "MU",
+      "last_update": "2026-06-10 19:59:00",
+      "age_seconds": 9281,
+      "fresh": true,
+      "signal_age_seconds": 9281,
+      "signal_fresh": true
+    },
+    {
+      "symbol": "COIN",
+      "last_update": "2026-06-10 19:58:00",
+      "age_seconds": 9341,
+      "fresh": true,
+      "signal_age_seconds": 9341,
+      "signal_fresh": true
+    },
+    {
       "symbol": "MARA",
       "last_update": "2026-06-10 19:59:00",
-      "age_seconds": 9221,
+      "age_seconds": 9281,
       "fresh": true,
-      "signal_age_seconds": 9221,
+      "signal_age_seconds": 9281,
       "signal_fresh": true
     },
     {
       "symbol": "PLTR",
       "last_update": "2026-06-10 19:59:00",
-      "age_seconds": 9221,
+      "age_seconds": 9281,
       "fresh": true,
-      "signal_age_seconds": 9221,
+      "signal_age_seconds": 9281,
       "signal_fresh": true
     },
     {
       "symbol": "SOFI",
       "last_update": "2026-06-10 19:59:00",
-      "age_seconds": 9221,
+      "age_seconds": 9281,
       "fresh": true,
-      "signal_age_seconds": 9221,
+      "signal_age_seconds": 9281,
       "signal_fresh": true
     }
   ],
   "ib_auth": {
-    "5000": true
+    "5000": false
   },
-  "ib_all_ok": true,
-  "ib_auth_info": "OK",
+  "ib_all_ok": false,
+  "ib_auth_info": "ReadTimeout: HTTPSConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=5)",
   "running_bots": [],
   "trade_alignment_issues": [],
   "strategy_warnings": [],
@@ -29027,10 +29027,10 @@
   "live_account_value": 77946.78093743324,
   "live_cash": 48607.72039055824,
   "active_trade_count": 4,
-  "aggregate_unrealized_pnl_pct": -0.65,
-  "aggregate_unrealized_pnl_dollar": -194.58,
-  "total_position_value": 29737.77,
-  "system_ok": true,
+  "aggregate_unrealized_pnl_pct": -0.66,
+  "aggregate_unrealized_pnl_dollar": -197.13,
+  "total_position_value": 29735.22,
+  "system_ok": false,
   "trade_history": [
     {
       "symbol": "MU",
