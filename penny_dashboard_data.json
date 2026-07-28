@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 11:26:07",
-  "generated_ts": 1785252367.730545,
+  "generated": "2026-07-28 11:26:25",
+  "generated_ts": 1785252385.879131,
   "system": "penny",
   "positions": [
     {
@@ -87,11 +87,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -3125,7 +3125,7 @@
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 12.67,
+      "price": 12.55,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -3143,7 +3143,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -1.33
+      "unreal_pct": -2.26
     },
     {
       "symbol": "TZOO",
@@ -3171,7 +3171,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 5.13,
+      "price": 5.11,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -3189,12 +3189,12 @@
           "filled": 75
         }
       ],
-      "unreal_pct": -8.55
+      "unreal_pct": -8.9
     },
     {
       "symbol": "STAK",
       "phase": "stop_chase",
-      "price": 2.08,
+      "price": 2.06,
       "trig_px": 2.4287,
       "avg": 2.2001,
       "live_shares": 454,
@@ -3212,12 +3212,12 @@
           "filled": 191
         }
       ],
-      "unreal_pct": -5.46
+      "unreal_pct": -6.37
     },
     {
       "symbol": "TNMG",
       "phase": "entering",
-      "price": 0.4138,
+      "price": 0.4055,
       "trig_px": 0.346,
       "avg": 0.0,
       "live_shares": 0,
@@ -3332,7 +3332,7 @@
     {
       "symbol": "SPWR",
       "phase": "entering",
-      "price": 0.3764,
+      "price": 0.3755,
       "trig_px": 0.3728,
       "avg": 0.0,
       "live_shares": 0,
@@ -3354,6 +3354,22 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-28 11:26:15",
+      "symbol": "YYAI",
+      "action": "Buy",
+      "sim_price": 0.8514,
+      "shares": 469,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-07-28 11:26:15",
+      "symbol": "YYAI",
+      "action": "Buy",
+      "sim_price": 0.9306,
+      "shares": 644,
+      "note": "rung0"
+    },
     {
       "ts": "2026-07-28 11:25:44",
       "symbol": "STAK",
@@ -3497,22 +3513,6 @@
       "sim_price": 0.1892,
       "shares": 2114,
       "note": "rung1"
-    },
-    {
-      "ts": "2026-07-28 10:21:55",
-      "symbol": "OMH",
-      "action": "Buy",
-      "sim_price": 0.2068,
-      "shares": 2901,
-      "note": "rung0"
-    },
-    {
-      "ts": "2026-07-28 10:09:59",
-      "symbol": "ONMD",
-      "action": "Sell",
-      "sim_price": 0.588,
-      "shares": 928,
-      "note": "stop_placed"
     }
   ],
   "live_daily": [
