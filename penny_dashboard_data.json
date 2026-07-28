@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 10:14:57",
-  "generated_ts": 1785248097.189834,
+  "generated": "2026-07-28 10:15:15",
+  "generated_ts": 1785248115.685702,
   "system": "penny",
   "positions": [
     {
@@ -44,7 +44,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -54,11 +54,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.0m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.5,
+    "newest_bar_age_min": 0.8,
     "in_rth": true,
     "ok": true
   },
@@ -2798,13 +2798,17 @@
     {
       "t": "10:14",
       "v": 77512.32
+    },
+    {
+      "t": "10:15",
+      "v": 77512.32
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 11.85,
+      "price": 12.08,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -2822,7 +2826,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -7.71
+      "unreal_pct": -5.92
     },
     {
       "symbol": "TZOO",
@@ -2850,7 +2854,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 4.84,
+      "price": 4.93,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -2868,12 +2872,12 @@
           "filled": 75
         }
       ],
-      "unreal_pct": -13.72
+      "unreal_pct": -12.11
     },
     {
       "symbol": "STAK",
       "phase": "entering",
-      "price": 2.31,
+      "price": 2.27,
       "trig_px": 2.4287,
       "avg": 2.28,
       "live_shares": 263,
@@ -2891,12 +2895,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 1.32
+      "unreal_pct": -0.44
     },
     {
       "symbol": "TNMG",
       "phase": "entering",
-      "price": 0.3763,
+      "price": 0.375,
       "trig_px": 0.346,
       "avg": 0.0,
       "live_shares": 0,
@@ -2919,7 +2923,7 @@
     {
       "symbol": "ONMD",
       "phase": "entering",
-      "price": 0.6159,
+      "price": 0.615,
       "trig_px": 0.6875,
       "avg": 0.6462,
       "live_shares": 928,
@@ -2937,7 +2941,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -4.69
+      "unreal_pct": -4.83
     }
   ],
   "intents_tail": [
