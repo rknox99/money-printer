@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 12:49:47",
-  "generated_ts": 1785257387.83795,
+  "generated": "2026-07-28 12:50:10",
+  "generated_ts": 1785257410.749301,
   "system": "penny",
   "positions": [
     {
@@ -99,7 +99,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -109,11 +109,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.5m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.8,
     "in_rth": true,
     "ok": true
   },
@@ -132,12 +132,12 @@
   "slippage": {
     "configured": true,
     "summary": {
-      "avg_slippage_bps": 11.5,
-      "total_commissions": 61.38,
+      "avg_slippage_bps": 11.4,
+      "total_commissions": 65.38,
       "total_slippage_cost": 37.1,
-      "total_fees_and_slippage": 98.48,
-      "avg_slippage_pct": 0.5916,
-      "trade_count": 68,
+      "total_fees_and_slippage": 102.48,
+      "avg_slippage_pct": 0.6012,
+      "trade_count": 69,
       "missed_trades": 0,
       "match_rate": 100.0
     }
@@ -3473,13 +3473,17 @@
     {
       "t": "12:49",
       "v": 77293.58
+    },
+    {
+      "t": "12:50",
+      "v": 77293.58
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 11.0,
+      "price": 11.05,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -3497,7 +3501,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -14.33
+      "unreal_pct": -13.94
     },
     {
       "symbol": "TZOO",
@@ -3525,7 +3529,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 5.37,
+      "price": 5.35,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -3543,12 +3547,12 @@
           "filled": 75
         }
       ],
-      "unreal_pct": -4.27
+      "unreal_pct": -4.62
     },
     {
       "symbol": "STAK",
       "phase": "flat",
-      "price": 1.88,
+      "price": 1.91,
       "trig_px": 2.4287,
       "avg": 2.2001,
       "live_shares": 0,
@@ -3566,7 +3570,7 @@
           "filled": 191
         }
       ],
-      "unreal_pct": -14.55
+      "unreal_pct": -13.18
     },
     {
       "symbol": "TNMG",
@@ -3617,7 +3621,7 @@
     {
       "symbol": "OMH",
       "phase": "flat",
-      "price": 0.15,
+      "price": 0.1499,
       "trig_px": 0.22,
       "avg": 0.1994,
       "live_shares": 0,
@@ -3635,7 +3639,7 @@
           "filled": 2114
         }
       ],
-      "unreal_pct": -24.77
+      "unreal_pct": -24.82
     },
     {
       "symbol": "ZNB",
@@ -3709,7 +3713,7 @@
     {
       "symbol": "CHAI",
       "phase": "entering",
-      "price": 0.4576,
+      "price": 0.4621,
       "trig_px": 0.5235,
       "avg": 0.4744,
       "live_shares": 2107,
@@ -3727,12 +3731,12 @@
           "filled": 888
         }
       ],
-      "unreal_pct": -3.55
+      "unreal_pct": -2.6
     },
     {
       "symbol": "PMN",
       "phase": "entering",
-      "price": 15.18,
+      "price": 15.28,
       "trig_px": 16.719,
       "avg": 15.72,
       "live_shares": 38,
@@ -3750,12 +3754,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -3.44
+      "unreal_pct": -2.8
     },
     {
       "symbol": "LHSW",
       "phase": "entering",
-      "price": 2.6,
+      "price": 2.58,
       "trig_px": 2.76,
       "avg": 2.59,
       "live_shares": 231,
@@ -3773,7 +3777,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 0.39
+      "unreal_pct": -0.39
     }
   ],
   "intents_tail": [
@@ -3993,16 +3997,6 @@
       "symbol": "OMH",
       "entry_time": "2026-07-28 10:24:40",
       "exit_time": "2026-07-28 10:29:10",
-      "shares": 64.0,
-      "entry_price": 0.2068,
-      "exit_price": 0.1872,
-      "pnl_dollar": -1.52,
-      "pnl_pct": -9.48
-    },
-    {
-      "symbol": "OMH",
-      "entry_time": "2026-07-28 10:24:40",
-      "exit_time": "2026-07-28 10:29:10",
       "shares": 475.0,
       "entry_price": 0.2068,
       "exit_price": 0.1872,
@@ -4011,12 +4005,12 @@
     },
     {
       "symbol": "OMH",
-      "entry_time": "2026-07-28 10:24:41",
+      "entry_time": "2026-07-28 10:24:40",
       "exit_time": "2026-07-28 10:29:10",
-      "shares": 187.0,
+      "shares": 64.0,
       "entry_price": 0.2068,
       "exit_price": 0.1872,
-      "pnl_dollar": -4.44,
+      "pnl_dollar": -1.52,
       "pnl_pct": -9.48
     },
     {
@@ -4027,6 +4021,16 @@
       "entry_price": 0.2068,
       "exit_price": 0.1872,
       "pnl_dollar": -51.64,
+      "pnl_pct": -9.48
+    },
+    {
+      "symbol": "OMH",
+      "entry_time": "2026-07-28 10:24:41",
+      "exit_time": "2026-07-28 10:29:10",
+      "shares": 187.0,
+      "entry_price": 0.2068,
+      "exit_price": 0.1872,
+      "pnl_dollar": -4.44,
       "pnl_pct": -9.48
     },
     {
