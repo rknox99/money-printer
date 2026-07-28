@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 09:45:57",
-  "generated_ts": 1785246357.458692,
+  "generated": "2026-07-28 09:46:14",
+  "generated_ts": 1785246374.709828,
   "system": "penny",
   "positions": [
     {
@@ -54,11 +54,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.5m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.1,
+    "newest_bar_age_min": 0.2,
     "in_rth": true,
     "ok": true
   },
@@ -88,11 +88,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 77595.9,
-    "cash": 76780.48
+    "net_liq": 77541.66,
+    "cash": 76179.53
   },
-  "live_account_value": 77595.9,
-  "live_cash": 76780.48,
+  "live_account_value": 77541.66,
+  "live_cash": 76179.53,
   "active_trade_count": 2,
   "aggregate_unrealized_pnl_dollar": -40.48,
   "total_position_value": 971.7,
@@ -2682,13 +2682,17 @@
     {
       "t": "09:45",
       "v": 77595.9
+    },
+    {
+      "t": "09:46",
+      "v": 77541.66
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "entering",
-      "price": 12.07,
+      "price": 12.04,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 32,
@@ -2706,7 +2710,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -6.0
+      "unreal_pct": -6.23
     },
     {
       "symbol": "TZOO",
@@ -2734,7 +2738,7 @@
     {
       "symbol": "BIYA",
       "phase": "entering",
-      "price": 5.02,
+      "price": 5.0,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 75,
@@ -2752,12 +2756,12 @@
           "filled": 75
         }
       ],
-      "unreal_pct": -10.51
+      "unreal_pct": -10.86
     },
     {
       "symbol": "STAK",
       "phase": "entering",
-      "price": 2.29,
+      "price": 2.21,
       "trig_px": 2.4287,
       "avg": 0.0,
       "live_shares": 0,
@@ -2780,7 +2784,7 @@
     {
       "symbol": "TNMG",
       "phase": "entering",
-      "price": 0.3419,
+      "price": 0.3363,
       "trig_px": 0.346,
       "avg": 0.0,
       "live_shares": 0,
