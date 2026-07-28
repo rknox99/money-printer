@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 10:38:23",
-  "generated_ts": 1785249503.456042,
+  "generated": "2026-07-28 10:38:41",
+  "generated_ts": 1785249521.159922,
   "system": "penny",
   "positions": [
     {
@@ -87,7 +87,7 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
@@ -121,11 +121,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 77399.75,
-    "cash": 74639.12
+    "net_liq": 77380.7,
+    "cash": 75007.46
   },
-  "live_account_value": 77399.75,
-  "live_cash": 74639.12,
+  "live_account_value": 77380.7,
+  "live_cash": 75007.46,
   "active_trade_count": 5,
   "aggregate_unrealized_pnl_dollar": -37.64,
   "total_position_value": 2788.25,
@@ -2926,14 +2926,14 @@
     },
     {
       "t": "10:38",
-      "v": 77399.75
+      "v": 77380.7
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 12.24,
+      "price": 12.09,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -2951,12 +2951,12 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -4.68
+      "unreal_pct": -5.84
     },
     {
       "symbol": "TZOO",
       "phase": "entering",
-      "price": 7.01,
+      "price": 7.0,
       "trig_px": 7.365,
       "avg": 6.92,
       "live_shares": 86,
@@ -2974,12 +2974,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 1.3
+      "unreal_pct": 1.16
     },
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 5.12,
+      "price": 5.1,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -2997,12 +2997,12 @@
           "filled": 75
         }
       ],
-      "unreal_pct": -8.72
+      "unreal_pct": -9.08
     },
     {
       "symbol": "STAK",
       "phase": "entering",
-      "price": 2.26,
+      "price": 2.25,
       "trig_px": 2.4287,
       "avg": 2.28,
       "live_shares": 263,
@@ -3020,12 +3020,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -0.88
+      "unreal_pct": -1.32
     },
     {
       "symbol": "TNMG",
       "phase": "entering",
-      "price": 0.381,
+      "price": 0.3802,
       "trig_px": 0.346,
       "avg": 0.0,
       "live_shares": 0,
@@ -3070,8 +3070,8 @@
     },
     {
       "symbol": "OMH",
-      "phase": "entering",
-      "price": 0.177,
+      "phase": "stop_chase",
+      "price": 0.1732,
       "trig_px": 0.22,
       "avg": 0.1994,
       "live_shares": 2114,
@@ -3089,7 +3089,7 @@
           "filled": 2114
         }
       ],
-      "unreal_pct": -11.23
+      "unreal_pct": -13.13
     },
     {
       "symbol": "ZNB",
@@ -3139,6 +3139,14 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-28 10:38:36",
+      "symbol": "OMH",
+      "action": "Sell",
+      "sim_price": 0.1814,
+      "shares": 2114,
+      "note": "stop_chase"
+    },
     {
       "ts": "2026-07-28 10:36:33",
       "symbol": "ANGH",
@@ -3290,14 +3298,6 @@
       "sim_price": 5.28,
       "shares": 103,
       "note": "execution"
-    },
-    {
-      "ts": "2026-07-28 09:44:48",
-      "symbol": "TNMG",
-      "action": "Buy",
-      "sim_price": 0.2976,
-      "shares": 1344,
-      "note": "rung1"
     }
   ],
   "live_daily": [
