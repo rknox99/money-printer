@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 11:05:43",
-  "generated_ts": 1785251143.837462,
+  "generated": "2026-07-28 11:06:00",
+  "generated_ts": 1785251160.999428,
   "system": "penny",
   "positions": [
     {
@@ -87,11 +87,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.5m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.1,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -3035,13 +3035,17 @@
     {
       "t": "11:05",
       "v": 77372.77
+    },
+    {
+      "t": "11:06",
+      "v": 77372.77
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 11.86,
+      "price": 11.97,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -3059,7 +3063,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -7.64
+      "unreal_pct": -6.78
     },
     {
       "symbol": "TZOO",
@@ -3087,7 +3091,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 4.99,
+      "price": 4.96,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -3105,12 +3109,12 @@
           "filled": 75
         }
       ],
-      "unreal_pct": -11.04
+      "unreal_pct": -11.58
     },
     {
       "symbol": "STAK",
       "phase": "entering",
-      "price": 2.27,
+      "price": 2.31,
       "trig_px": 2.4287,
       "avg": 2.28,
       "live_shares": 263,
@@ -3128,12 +3132,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -0.44
+      "unreal_pct": 1.32
     },
     {
       "symbol": "TNMG",
       "phase": "entering",
-      "price": 0.421,
+      "price": 0.4195,
       "trig_px": 0.346,
       "avg": 0.0,
       "live_shares": 0,
@@ -3244,9 +3248,48 @@
         }
       ],
       "unreal_pct": 5.75
+    },
+    {
+      "symbol": "SPWR",
+      "phase": "entering",
+      "price": 0.3799,
+      "trig_px": 0.3728,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 0.3504,
+          "sh": 1712,
+          "filled": 0
+        },
+        {
+          "px": 0.3206,
+          "sh": 1247,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-28 11:05:54",
+      "symbol": "SPWR",
+      "action": "Buy",
+      "sim_price": 0.3206,
+      "shares": 1247,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-07-28 11:05:53",
+      "symbol": "SPWR",
+      "action": "Buy",
+      "sim_price": 0.3504,
+      "shares": 1712,
+      "note": "rung0"
+    },
     {
       "ts": "2026-07-28 10:48:56",
       "symbol": "JEM",
@@ -3390,22 +3433,6 @@
       "sim_price": 0.6462,
       "shares": 928,
       "note": "rung0"
-    },
-    {
-      "ts": "2026-07-28 09:52:38",
-      "symbol": "FIRY",
-      "action": "SellFill",
-      "sim_price": 11.7358,
-      "shares": 32,
-      "note": "execution"
-    },
-    {
-      "ts": "2026-07-28 09:52:08",
-      "symbol": "FIRY",
-      "action": "Sell",
-      "sim_price": 11.6848,
-      "shares": 32,
-      "note": "stop_chase"
     }
   ],
   "live_daily": [
