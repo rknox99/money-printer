@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 12:40:47",
-  "generated_ts": 1785256847.088025,
+  "generated": "2026-07-28 12:41:04",
+  "generated_ts": 1785256864.401254,
   "system": "penny",
   "positions": [
     {
@@ -109,11 +109,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.9,
+    "newest_bar_age_min": 1.2,
     "in_rth": true,
     "ok": true
   },
@@ -3437,13 +3437,17 @@
     {
       "t": "12:40",
       "v": 77280.16
+    },
+    {
+      "t": "12:41",
+      "v": 77280.16
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 11.29,
+      "price": 11.28,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -3461,12 +3465,12 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -12.07
+      "unreal_pct": -12.15
     },
     {
       "symbol": "TZOO",
       "phase": "entering",
-      "price": 7.33,
+      "price": 7.36,
       "trig_px": 7.365,
       "avg": 6.92,
       "live_shares": 86,
@@ -3484,12 +3488,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 5.92
+      "unreal_pct": 6.36
     },
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 5.1,
+      "price": 5.09,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -3507,7 +3511,7 @@
           "filled": 75
         }
       ],
-      "unreal_pct": -9.08
+      "unreal_pct": -9.26
     },
     {
       "symbol": "STAK",
@@ -3535,7 +3539,7 @@
     {
       "symbol": "TNMG",
       "phase": "entering",
-      "price": 0.3999,
+      "price": 0.3967,
       "trig_px": 0.346,
       "avg": 0.0,
       "live_shares": 0,
@@ -3673,7 +3677,7 @@
     {
       "symbol": "CHAI",
       "phase": "entering",
-      "price": 0.46,
+      "price": 0.4551,
       "trig_px": 0.5235,
       "avg": 0.4921,
       "live_shares": 1219,
@@ -3691,7 +3695,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -6.52
+      "unreal_pct": -7.52
     },
     {
       "symbol": "PMN",
@@ -3722,14 +3726,14 @@
       "price": 2.58,
       "trig_px": 2.76,
       "avg": 2.59,
-      "live_shares": 218,
+      "live_shares": 231,
       "be_armed": false,
       "stop": 2.3569,
       "rungs": [
         {
           "px": 2.59,
           "sh": 231,
-          "filled": 218
+          "filled": 231
         },
         {
           "px": 2.37,
