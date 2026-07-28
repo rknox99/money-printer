@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 15:45:43",
-  "generated_ts": 1785267943.884431,
+  "generated": "2026-07-28 15:46:00",
+  "generated_ts": 1785267960.98888,
   "system": "penny",
   "positions": [
     {
@@ -98,11 +98,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.1,
     "in_rth": true,
     "ok": true
   },
@@ -4166,13 +4166,17 @@
     {
       "t": "15:45",
       "v": 77225.52
+    },
+    {
+      "t": "15:46",
+      "v": 77225.52
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 9.57,
+      "price": 9.48,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -4190,15 +4194,15 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -25.47
+      "unreal_pct": -26.17
     },
     {
       "symbol": "TZOO",
-      "phase": "flattening",
+      "phase": "flat",
       "price": 7.66,
       "trig_px": 7.365,
       "avg": 6.92,
-      "live_shares": 86,
+      "live_shares": 0,
       "be_armed": true,
       "stop": 6.92,
       "rungs": [
@@ -4218,7 +4222,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 6.17,
+      "price": 6.18,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -4236,7 +4240,7 @@
           "filled": 75
         }
       ],
-      "unreal_pct": 10.0
+      "unreal_pct": 10.17
     },
     {
       "symbol": "STAK",
@@ -4286,11 +4290,11 @@
     },
     {
       "symbol": "ONMD",
-      "phase": "flattening",
+      "phase": "flat",
       "price": 0.66,
       "trig_px": 0.6875,
       "avg": 0.6462,
-      "live_shares": 928,
+      "live_shares": 0,
       "be_armed": false,
       "stop": 0.588,
       "rungs": [
@@ -4310,7 +4314,7 @@
     {
       "symbol": "OMH",
       "phase": "flat",
-      "price": 0.1432,
+      "price": 0.1429,
       "trig_px": 0.22,
       "avg": 0.1994,
       "live_shares": 0,
@@ -4328,15 +4332,15 @@
           "filled": 2114
         }
       ],
-      "unreal_pct": -28.18
+      "unreal_pct": -28.33
     },
     {
       "symbol": "ZNB",
-      "phase": "flattening",
+      "phase": "flat",
       "price": 2.75,
       "trig_px": 3.04,
       "avg": 2.86,
-      "live_shares": 209,
+      "live_shares": 0,
       "be_armed": false,
       "stop": 2.6026,
       "rungs": [
@@ -4355,11 +4359,11 @@
     },
     {
       "symbol": "ANGH",
-      "phase": "flattening",
+      "phase": "flat",
       "price": 3.7,
       "trig_px": 3.7,
       "avg": 3.48,
-      "live_shares": 72,
+      "live_shares": 0,
       "be_armed": true,
       "stop": 3.48,
       "rungs": [
@@ -4379,7 +4383,7 @@
     {
       "symbol": "SPWR",
       "phase": "holding",
-      "price": 0.3,
+      "price": 0.299,
       "trig_px": 0.3728,
       "avg": 0.0,
       "live_shares": 0,
@@ -4402,7 +4406,7 @@
     {
       "symbol": "CHAI",
       "phase": "flat",
-      "price": 0.4414,
+      "price": 0.4413,
       "trig_px": 0.5235,
       "avg": 0.4744,
       "live_shares": 0,
@@ -4420,12 +4424,12 @@
           "filled": 888
         }
       ],
-      "unreal_pct": -6.96
+      "unreal_pct": -6.99
     },
     {
       "symbol": "PMN",
       "phase": "flat",
-      "price": 14.55,
+      "price": 14.62,
       "trig_px": 16.719,
       "avg": 15.72,
       "live_shares": 0,
@@ -4443,15 +4447,15 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -7.44
+      "unreal_pct": -7.0
     },
     {
       "symbol": "LHSW",
-      "phase": "flattening",
+      "phase": "flat",
       "price": 2.73,
       "trig_px": 2.76,
       "avg": 2.59,
-      "live_shares": 231,
+      "live_shares": 0,
       "be_armed": true,
       "stop": 2.59,
       "rungs": [
@@ -4516,6 +4520,46 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-28 15:45:45",
+      "symbol": "LHSW",
+      "action": "SellFill",
+      "sim_price": 2.73,
+      "shares": 231,
+      "note": "execution"
+    },
+    {
+      "ts": "2026-07-28 15:45:45",
+      "symbol": "ANGH",
+      "action": "SellFill",
+      "sim_price": 3.675,
+      "shares": 72,
+      "note": "execution"
+    },
+    {
+      "ts": "2026-07-28 15:45:45",
+      "symbol": "ZNB",
+      "action": "SellFill",
+      "sim_price": 2.7475,
+      "shares": 209,
+      "note": "execution"
+    },
+    {
+      "ts": "2026-07-28 15:45:45",
+      "symbol": "ONMD",
+      "action": "SellFill",
+      "sim_price": 0.6591,
+      "shares": 928,
+      "note": "execution"
+    },
+    {
+      "ts": "2026-07-28 15:45:45",
+      "symbol": "TZOO",
+      "action": "SellFill",
+      "sim_price": 7.665,
+      "shares": 86,
+      "note": "execution"
+    },
     {
       "ts": "2026-07-28 15:45:20",
       "symbol": "MWYN",
@@ -4635,46 +4679,6 @@
       "sim_price": 3.48,
       "shares": 72,
       "note": "be_lock_moved"
-    },
-    {
-      "ts": "2026-07-28 11:57:19",
-      "symbol": "LHSW",
-      "action": "Sell",
-      "sim_price": 2.36,
-      "shares": 132,
-      "note": "stop_placed"
-    },
-    {
-      "ts": "2026-07-28 11:56:46",
-      "symbol": "LHSW",
-      "action": "Buy",
-      "sim_price": 2.37,
-      "shares": 168,
-      "note": "rung1"
-    },
-    {
-      "ts": "2026-07-28 11:56:46",
-      "symbol": "LHSW",
-      "action": "Buy",
-      "sim_price": 2.59,
-      "shares": 231,
-      "note": "rung0"
-    },
-    {
-      "ts": "2026-07-28 11:52:12",
-      "symbol": "TZOO",
-      "action": "Sell",
-      "sim_price": 6.92,
-      "shares": 86,
-      "note": "be_lock_moved"
-    },
-    {
-      "ts": "2026-07-28 11:46:14",
-      "symbol": "PMN",
-      "action": "Sell",
-      "sim_price": 14.31,
-      "shares": 38,
-      "note": "stop_placed"
     }
   ],
   "live_daily": [
