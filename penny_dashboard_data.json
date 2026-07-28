@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-28 15:13:32",
-  "generated_ts": 1785266012.474019,
+  "generated": "2026-07-28 15:13:49",
+  "generated_ts": 1785266029.639213,
   "system": "penny",
   "positions": [
     {
       "symbol": "ZNB",
       "shares": 209.0,
       "avg_cost": 2.865,
-      "mkt_price": 2.8751,
-      "position_value": 600.89,
-      "unrealized_pnl_dollar": 2.1,
-      "unrealized_pnl": 0.35,
+      "mkt_price": 2.84,
+      "position_value": 593.55,
+      "unrealized_pnl_dollar": -5.24,
+      "unrealized_pnl": -0.88,
       "in_universe": true,
       "position": "long"
     },
@@ -29,10 +29,10 @@
       "symbol": "TZOO",
       "shares": 86.0,
       "avg_cost": 6.9316,
-      "mkt_price": 7.6603,
-      "position_value": 658.79,
-      "unrealized_pnl_dollar": 62.67,
-      "unrealized_pnl": 10.51,
+      "mkt_price": 7.6276,
+      "position_value": 655.97,
+      "unrealized_pnl_dollar": 59.85,
+      "unrealized_pnl": 10.04,
       "in_universe": true,
       "position": "long"
     },
@@ -40,10 +40,10 @@
       "symbol": "MWYN",
       "shares": 1915.0,
       "avg_cost": 0.5245,
-      "mkt_price": 0.514,
-      "position_value": 984.36,
-      "unrealized_pnl_dollar": -20.01,
-      "unrealized_pnl": -1.99,
+      "mkt_price": 0.5052,
+      "position_value": 967.38,
+      "unrealized_pnl_dollar": -36.99,
+      "unrealized_pnl": -3.68,
       "in_universe": true,
       "position": "long"
     },
@@ -51,10 +51,10 @@
       "symbol": "LHSW",
       "shares": 231.0,
       "avg_cost": 2.595,
-      "mkt_price": 2.7244,
-      "position_value": 629.35,
-      "unrealized_pnl_dollar": 29.9,
-      "unrealized_pnl": 4.99,
+      "mkt_price": 2.844,
+      "position_value": 656.96,
+      "unrealized_pnl_dollar": 57.52,
+      "unrealized_pnl": 9.6,
       "in_universe": true,
       "position": "long"
     },
@@ -62,10 +62,10 @@
       "symbol": "PMN",
       "shares": 38.0,
       "avg_cost": 15.7463,
-      "mkt_price": 14.7407,
-      "position_value": 560.15,
-      "unrealized_pnl_dollar": -38.21,
-      "unrealized_pnl": -6.39,
+      "mkt_price": 14.7732,
+      "position_value": 561.38,
+      "unrealized_pnl_dollar": -36.98,
+      "unrealized_pnl": -6.18,
       "in_universe": true,
       "position": "long"
     },
@@ -73,10 +73,10 @@
       "symbol": "ONMD",
       "shares": 928.0,
       "avg_cost": 0.6512,
-      "mkt_price": 0.6171,
-      "position_value": 572.68,
-      "unrealized_pnl_dollar": -31.63,
-      "unrealized_pnl": -5.23,
+      "mkt_price": 0.6477,
+      "position_value": 601.02,
+      "unrealized_pnl_dollar": -3.29,
+      "unrealized_pnl": -0.54,
       "in_universe": true,
       "position": "long"
     }
@@ -109,11 +109,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.1,
     "in_rth": true,
     "ok": true
   },
@@ -149,8 +149,8 @@
   "live_account_value": 77270.19,
   "live_cash": 72974.12,
   "active_trade_count": 7,
-  "aggregate_unrealized_pnl_dollar": 13.06,
-  "total_position_value": 4266.02,
+  "aggregate_unrealized_pnl_dollar": 43.11,
+  "total_position_value": 4296.06,
   "system_ok": true,
   "shadow": {
     "days": 10,
@@ -4101,7 +4101,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 6.42,
+      "price": 6.44,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -4119,7 +4119,7 @@
           "filled": 75
         }
       ],
-      "unreal_pct": 14.45
+      "unreal_pct": 14.81
     },
     {
       "symbol": "STAK",
@@ -4170,7 +4170,7 @@
     {
       "symbol": "ONMD",
       "phase": "holding",
-      "price": 0.6521,
+      "price": 0.65,
       "trig_px": 0.6875,
       "avg": 0.6462,
       "live_shares": 928,
@@ -4188,12 +4188,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 0.91
+      "unreal_pct": 0.59
     },
     {
       "symbol": "OMH",
       "phase": "flat",
-      "price": 0.145,
+      "price": 0.1446,
       "trig_px": 0.22,
       "avg": 0.1994,
       "live_shares": 0,
@@ -4211,7 +4211,7 @@
           "filled": 2114
         }
       ],
-      "unreal_pct": -27.27
+      "unreal_pct": -27.48
     },
     {
       "symbol": "ZNB",
@@ -4285,7 +4285,7 @@
     {
       "symbol": "CHAI",
       "phase": "flat",
-      "price": 0.4311,
+      "price": 0.4305,
       "trig_px": 0.5235,
       "avg": 0.4744,
       "live_shares": 0,
@@ -4303,7 +4303,7 @@
           "filled": 888
         }
       ],
-      "unreal_pct": -9.14
+      "unreal_pct": -9.26
     },
     {
       "symbol": "PMN",
