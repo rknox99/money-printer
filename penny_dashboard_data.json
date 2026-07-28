@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 11:25:29",
-  "generated_ts": 1785252329.502622,
+  "generated": "2026-07-28 11:25:48",
+  "generated_ts": 1785252348.098147,
   "system": "penny",
   "positions": [
     {
@@ -87,11 +87,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.1,
     "in_rth": true,
     "ok": true
   },
@@ -3121,7 +3121,7 @@
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 12.74,
+      "price": 12.63,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -3139,7 +3139,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -0.78
+      "unreal_pct": -1.64
     },
     {
       "symbol": "TZOO",
@@ -3167,7 +3167,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 5.14,
+      "price": 5.12,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -3185,17 +3185,17 @@
           "filled": 75
         }
       ],
-      "unreal_pct": -8.37
+      "unreal_pct": -8.72
     },
     {
       "symbol": "STAK",
-      "phase": "entering",
-      "price": 2.1,
+      "phase": "stop_chase",
+      "price": 2.08,
       "trig_px": 2.4287,
-      "avg": 2.28,
-      "live_shares": 263,
-      "be_armed": false,
-      "stop": 2.0748,
+      "avg": 2.2001,
+      "live_shares": 454,
+      "be_armed": true,
+      "stop": 2.2001,
       "rungs": [
         {
           "px": 2.28,
@@ -3205,15 +3205,15 @@
         {
           "px": 2.09,
           "sh": 191,
-          "filled": 0
+          "filled": 191
         }
       ],
-      "unreal_pct": -7.89
+      "unreal_pct": -5.46
     },
     {
       "symbol": "TNMG",
       "phase": "entering",
-      "price": 0.4095,
+      "price": 0.4138,
       "trig_px": 0.346,
       "avg": 0.0,
       "live_shares": 0,
@@ -3259,7 +3259,7 @@
     {
       "symbol": "OMH",
       "phase": "flat",
-      "price": 0.17,
+      "price": 0.1702,
       "trig_px": 0.22,
       "avg": 0.1994,
       "live_shares": 0,
@@ -3277,7 +3277,7 @@
           "filled": 2114
         }
       ],
-      "unreal_pct": -14.74
+      "unreal_pct": -14.64
     },
     {
       "symbol": "ZNB",
@@ -3350,6 +3350,22 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-28 11:25:44",
+      "symbol": "STAK",
+      "action": "Sell",
+      "sim_price": 2.2001,
+      "shares": 454,
+      "note": "stop_chase"
+    },
+    {
+      "ts": "2026-07-28 11:25:42",
+      "symbol": "STAK",
+      "action": "Sell",
+      "sim_price": 2.2,
+      "shares": 454,
+      "note": "be_lock_moved"
+    },
     {
       "ts": "2026-07-28 11:05:54",
       "symbol": "SPWR",
@@ -3493,22 +3509,6 @@
       "sim_price": 0.588,
       "shares": 928,
       "note": "stop_placed"
-    },
-    {
-      "ts": "2026-07-28 10:08:54",
-      "symbol": "ONMD",
-      "action": "Buy",
-      "sim_price": 0.5912,
-      "shares": 676,
-      "note": "rung1"
-    },
-    {
-      "ts": "2026-07-28 10:08:52",
-      "symbol": "ONMD",
-      "action": "Buy",
-      "sim_price": 0.6462,
-      "shares": 928,
-      "note": "rung0"
     }
   ],
   "live_daily": [
