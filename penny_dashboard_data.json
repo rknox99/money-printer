@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 09:33:59",
-  "generated_ts": 1785245639.663475,
+  "generated": "2026-07-28 09:34:25",
+  "generated_ts": 1785245665.328142,
   "system": "penny",
   "positions": [
     {
@@ -33,7 +33,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -47,7 +47,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.9,
+    "newest_bar_age_min": 0.1,
     "in_rth": true,
     "ok": true
   },
@@ -64,17 +64,8 @@
     "removals_7d": 10
   },
   "slippage": {
-    "configured": true,
-    "summary": {
-      "avg_slippage_bps": -48.3,
-      "total_commissions": 13.6,
-      "total_slippage_cost": -4.14,
-      "total_fees_and_slippage": 9.46,
-      "avg_slippage_pct": 0.1646,
-      "trade_count": 22,
-      "missed_trades": 0,
-      "match_rate": 100.0
-    }
+    "configured": false,
+    "message": "Waiting for pilot trades (7/27+)..."
   },
   "account_summary": {
     "net_liq": 77683.46,
@@ -2623,13 +2614,17 @@
     {
       "t": "09:33",
       "v": 77683.46
+    },
+    {
+      "t": "09:34",
+      "v": 77683.46
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "entering",
-      "price": 13.44,
+      "price": 13.11,
       "trig_px": 14.16,
       "avg": 13.31,
       "live_shares": 45,
@@ -2647,12 +2642,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 0.98
+      "unreal_pct": -1.5
     },
     {
       "symbol": "TZOO",
       "phase": "entering",
-      "price": 7.35,
+      "price": 7.31,
       "trig_px": 7.365,
       "avg": 0.0,
       "live_shares": 0,
@@ -2715,169 +2710,8 @@
       "note": "rung0"
     }
   ],
-  "live_daily": [
-    {
-      "date": "2026-07-27",
-      "pnl": -53.5
-    }
-  ],
-  "trade_history": [
-    {
-      "symbol": "STAK",
-      "entry_time": "2026-07-27 13:29:50",
-      "exit_time": "2026-07-27 15:45:58",
-      "shares": 64.0,
-      "entry_price": 3.03,
-      "exit_price": 2.43,
-      "pnl_dollar": -38.69,
-      "pnl_pct": -19.8
-    },
-    {
-      "symbol": "STAK",
-      "entry_time": "2026-07-27 13:29:50",
-      "exit_time": "2026-07-27 15:45:57",
-      "shares": 2.0,
-      "entry_price": 3.03,
-      "exit_price": 2.43,
-      "pnl_dollar": -1.21,
-      "pnl_pct": -19.8
-    },
-    {
-      "symbol": "STAK",
-      "entry_time": "2026-07-27 13:29:50",
-      "exit_time": "2026-07-27 15:45:56",
-      "shares": 1.0,
-      "entry_price": 3.03,
-      "exit_price": 2.43,
-      "pnl_dollar": -0.6,
-      "pnl_pct": -19.8
-    },
-    {
-      "symbol": "STAK",
-      "entry_time": "2026-07-27 13:29:50",
-      "exit_time": "2026-07-27 15:45:55",
-      "shares": 1.0,
-      "entry_price": 3.03,
-      "exit_price": 2.43,
-      "pnl_dollar": -0.6,
-      "pnl_pct": -19.8
-    },
-    {
-      "symbol": "STAK",
-      "entry_time": "2026-07-27 13:29:50",
-      "exit_time": "2026-07-27 15:45:53",
-      "shares": 2.0,
-      "entry_price": 3.03,
-      "exit_price": 2.43,
-      "pnl_dollar": -1.21,
-      "pnl_pct": -19.8
-    },
-    {
-      "symbol": "STAK",
-      "entry_time": "2026-07-27 13:29:50",
-      "exit_time": "2026-07-27 15:45:49",
-      "shares": 2.0,
-      "entry_price": 3.03,
-      "exit_price": 2.43,
-      "pnl_dollar": -1.21,
-      "pnl_pct": -19.8
-    },
-    {
-      "symbol": "STAK",
-      "entry_time": "2026-07-27 13:29:50",
-      "exit_time": "2026-07-27 15:45:42",
-      "shares": 2.0,
-      "entry_price": 3.03,
-      "exit_price": 2.43,
-      "pnl_dollar": -1.21,
-      "pnl_pct": -19.8
-    },
-    {
-      "symbol": "STAK",
-      "entry_time": "2026-07-27 13:29:50",
-      "exit_time": "2026-07-27 15:45:29",
-      "shares": 100.0,
-      "entry_price": 3.03,
-      "exit_price": 2.46,
-      "pnl_dollar": -58.18,
-      "pnl_pct": -18.81
-    },
-    {
-      "symbol": "ENTX",
-      "entry_time": "2026-07-27 10:09:41",
-      "exit_time": "2026-07-27 15:45:18",
-      "shares": 21.0,
-      "entry_price": 3.29,
-      "exit_price": 3.9,
-      "pnl_dollar": 11.75,
-      "pnl_pct": 18.54
-    },
-    {
-      "symbol": "ENTX",
-      "entry_time": "2026-07-27 10:09:41",
-      "exit_time": "2026-07-27 15:45:18",
-      "shares": 100.0,
-      "entry_price": 3.29,
-      "exit_price": 3.9036,
-      "pnl_dollar": 60.21,
-      "pnl_pct": 18.65
-    },
-    {
-      "symbol": "VTIX",
-      "entry_time": "2026-07-27 09:54:26",
-      "exit_time": "2026-07-27 15:45:17",
-      "shares": 236.0,
-      "entry_price": 1.69,
-      "exit_price": 2.135,
-      "pnl_dollar": 102.6,
-      "pnl_pct": 26.33
-    },
-    {
-      "symbol": "STAK",
-      "entry_time": "2026-07-27 10:13:19",
-      "exit_time": "2026-07-27 13:29:50",
-      "shares": 24.0,
-      "entry_price": 3.03,
-      "exit_price": 3.03,
-      "pnl_dollar": -1.46,
-      "pnl_pct": 0.0
-    },
-    {
-      "symbol": "ENTX",
-      "entry_time": "2026-07-27 10:02:40",
-      "exit_time": "2026-07-27 10:09:45",
-      "shares": 66.0,
-      "entry_price": 3.6,
-      "exit_price": 3.28,
-      "pnl_dollar": -21.54,
-      "pnl_pct": -8.89
-    },
-    {
-      "symbol": "ENTX",
-      "entry_time": "2026-07-27 10:02:40",
-      "exit_time": "2026-07-27 10:09:45",
-      "shares": 100.0,
-      "entry_price": 3.6,
-      "exit_price": 3.28,
-      "pnl_dollar": -34.03,
-      "pnl_pct": -8.89
-    },
-    {
-      "symbol": "VTIX",
-      "entry_time": "2026-07-27 09:52:42",
-      "exit_time": "2026-07-27 09:55:01",
-      "shares": 324.0,
-      "entry_price": 1.85,
-      "exit_price": 1.65,
-      "pnl_dollar": -68.12,
-      "pnl_pct": -10.81
-    }
-  ],
-  "realized_summary": {
-    "trades": 15,
-    "total": -53.5,
-    "wins": 3,
-    "win_rate": 20.0
-  },
-  "total_realized_pnl": -53.5
+  "live_daily": [],
+  "trade_history": [],
+  "realized_summary": {},
+  "total_realized_pnl": 0
 }
