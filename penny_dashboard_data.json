@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 14:59:56",
-  "generated_ts": 1785265196.654236,
+  "generated": "2026-07-28 15:00:13",
+  "generated_ts": 1785265213.842757,
   "system": "penny",
   "positions": [
     {
@@ -99,7 +99,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -109,11 +109,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.0m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.6,
     "in_rth": true,
     "ok": true
   },
@@ -3993,13 +3993,17 @@
     {
       "t": "14:59",
       "v": 77297.01
+    },
+    {
+      "t": "15:00",
+      "v": 77297.01
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 9.61,
+      "price": 9.65,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -4017,12 +4021,12 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -25.16
+      "unreal_pct": -24.85
     },
     {
       "symbol": "TZOO",
       "phase": "holding",
-      "price": 7.73,
+      "price": 7.68,
       "trig_px": 7.365,
       "avg": 6.92,
       "live_shares": 86,
@@ -4040,12 +4044,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 11.71
+      "unreal_pct": 10.98
     },
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 6.2,
+      "price": 6.24,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -4063,12 +4067,12 @@
           "filled": 75
         }
       ],
-      "unreal_pct": 10.53
+      "unreal_pct": 11.24
     },
     {
       "symbol": "STAK",
       "phase": "flat",
-      "price": 2.1,
+      "price": 2.14,
       "trig_px": 2.4287,
       "avg": 2.2001,
       "live_shares": 0,
@@ -4086,7 +4090,7 @@
           "filled": 191
         }
       ],
-      "unreal_pct": -4.55
+      "unreal_pct": -2.73
     },
     {
       "symbol": "TNMG",
@@ -4137,7 +4141,7 @@
     {
       "symbol": "OMH",
       "phase": "flat",
-      "price": 0.1423,
+      "price": 0.1424,
       "trig_px": 0.22,
       "avg": 0.1994,
       "live_shares": 0,
@@ -4155,7 +4159,7 @@
           "filled": 2114
         }
       ],
-      "unreal_pct": -28.63
+      "unreal_pct": -28.58
     },
     {
       "symbol": "ZNB",
@@ -4206,7 +4210,7 @@
     {
       "symbol": "SPWR",
       "phase": "holding",
-      "price": 0.3673,
+      "price": 0.3656,
       "trig_px": 0.3728,
       "avg": 0.0,
       "live_shares": 0,
@@ -4229,7 +4233,7 @@
     {
       "symbol": "CHAI",
       "phase": "flat",
-      "price": 0.4432,
+      "price": 0.4431,
       "trig_px": 0.5235,
       "avg": 0.4744,
       "live_shares": 0,
@@ -4247,7 +4251,7 @@
           "filled": 888
         }
       ],
-      "unreal_pct": -6.58
+      "unreal_pct": -6.61
     },
     {
       "symbol": "PMN",
