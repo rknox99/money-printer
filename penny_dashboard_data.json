@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 10:59:51",
-  "generated_ts": 1785250791.809338,
+  "generated": "2026-07-28 11:00:09",
+  "generated_ts": 1785250809.148072,
   "system": "penny",
   "positions": [
     {
@@ -77,7 +77,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -87,11 +87,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.3,
+    "newest_bar_age_min": 0.6,
     "in_rth": true,
     "ok": true
   },
@@ -3011,13 +3011,17 @@
     {
       "t": "10:59",
       "v": 77390.38
+    },
+    {
+      "t": "11:00",
+      "v": 77390.38
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 12.17,
+      "price": 12.18,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -3035,7 +3039,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -5.22
+      "unreal_pct": -5.14
     },
     {
       "symbol": "TZOO",
@@ -3063,7 +3067,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 4.89,
+      "price": 4.88,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -3081,7 +3085,7 @@
           "filled": 75
         }
       ],
-      "unreal_pct": -12.82
+      "unreal_pct": -13.0
     },
     {
       "symbol": "STAK",
@@ -3109,7 +3113,7 @@
     {
       "symbol": "TNMG",
       "phase": "entering",
-      "price": 0.4112,
+      "price": 0.4151,
       "trig_px": 0.346,
       "avg": 0.0,
       "live_shares": 0,
