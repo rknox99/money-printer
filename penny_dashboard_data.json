@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 13:54:48",
-  "generated_ts": 1785261288.224992,
+  "generated": "2026-07-28 13:55:05",
+  "generated_ts": 1785261305.493358,
   "system": "penny",
   "positions": [
     {
@@ -88,7 +88,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -98,11 +98,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.3,
+    "newest_bar_age_min": 0.6,
     "in_rth": true,
     "ok": true
   },
@@ -132,10 +132,10 @@
     }
   },
   "account_summary": {
-    "net_liq": 77260.18,
+    "net_liq": 77276.58,
     "cash": 73978.49
   },
-  "live_account_value": 77260.18,
+  "live_account_value": 77276.58,
   "live_cash": 73978.49,
   "active_trade_count": 6,
   "aggregate_unrealized_pnl_dollar": 27.52,
@@ -3722,13 +3722,17 @@
     {
       "t": "13:54",
       "v": 77260.18
+    },
+    {
+      "t": "13:55",
+      "v": 77276.58
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 10.0,
+      "price": 9.99,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -3746,7 +3750,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -22.12
+      "unreal_pct": -22.2
     },
     {
       "symbol": "TZOO",
@@ -3774,7 +3778,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 5.91,
+      "price": 5.89,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -3792,7 +3796,7 @@
           "filled": 75
         }
       ],
-      "unreal_pct": 5.36
+      "unreal_pct": 5.0
     },
     {
       "symbol": "STAK",
@@ -3935,7 +3939,7 @@
     {
       "symbol": "SPWR",
       "phase": "entering",
-      "price": 0.4033,
+      "price": 0.4053,
       "trig_px": 0.3728,
       "avg": 0.0,
       "live_shares": 0,
@@ -3958,7 +3962,7 @@
     {
       "symbol": "CHAI",
       "phase": "flat",
-      "price": 0.4363,
+      "price": 0.4307,
       "trig_px": 0.5235,
       "avg": 0.4744,
       "live_shares": 0,
@@ -3976,7 +3980,7 @@
           "filled": 888
         }
       ],
-      "unreal_pct": -8.04
+      "unreal_pct": -9.22
     },
     {
       "symbol": "PMN",
