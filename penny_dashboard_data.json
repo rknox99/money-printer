@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 12:39:32",
-  "generated_ts": 1785256772.730293,
+  "generated": "2026-07-28 12:39:55",
+  "generated_ts": 1785256795.389051,
   "system": "penny",
   "positions": [
     {
@@ -104,12 +104,12 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 3.4h old"
+      "detail": "log 3.5h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.1m"
+      "detail": "heartbeat 0.5m"
     }
   ],
   "stream_health": {
@@ -132,22 +132,22 @@
   "slippage": {
     "configured": true,
     "summary": {
-      "avg_slippage_bps": 13.0,
+      "avg_slippage_bps": 11.8,
       "total_commissions": 61.22,
       "total_slippage_cost": 37.1,
       "total_fees_and_slippage": 98.32,
-      "avg_slippage_pct": 0.5999,
-      "trade_count": 57,
+      "avg_slippage_pct": 0.5949,
+      "trade_count": 65,
       "missed_trades": 0,
       "match_rate": 100.0
     }
   },
   "account_summary": {
-    "net_liq": 77281.47,
-    "cash": 73608.72
+    "net_liq": 77280.21,
+    "cash": 73606.13
   },
-  "live_account_value": 77281.47,
-  "live_cash": 73608.72,
+  "live_account_value": 77280.21,
+  "live_cash": 73606.13,
   "active_trade_count": 7,
   "aggregate_unrealized_pnl_dollar": -65.85,
   "total_position_value": 3661.55,
@@ -3432,14 +3432,14 @@
     },
     {
       "t": "12:39",
-      "v": 77281.47
+      "v": 77280.21
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 11.2,
+      "price": 11.35,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -3457,7 +3457,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -12.78
+      "unreal_pct": -11.61
     },
     {
       "symbol": "TZOO",
@@ -3531,7 +3531,7 @@
     {
       "symbol": "TNMG",
       "phase": "entering",
-      "price": 0.383,
+      "price": 0.3859,
       "trig_px": 0.346,
       "avg": 0.0,
       "live_shares": 0,
@@ -3577,7 +3577,7 @@
     {
       "symbol": "OMH",
       "phase": "flat",
-      "price": 0.1495,
+      "price": 0.1494,
       "trig_px": 0.22,
       "avg": 0.1994,
       "live_shares": 0,
@@ -3595,7 +3595,7 @@
           "filled": 2114
         }
       ],
-      "unreal_pct": -25.02
+      "unreal_pct": -25.07
     },
     {
       "symbol": "ZNB",
@@ -3669,7 +3669,7 @@
     {
       "symbol": "CHAI",
       "phase": "entering",
-      "price": 0.4634,
+      "price": 0.4633,
       "trig_px": 0.5235,
       "avg": 0.4921,
       "live_shares": 1219,
@@ -3687,12 +3687,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -5.83
+      "unreal_pct": -5.85
     },
     {
       "symbol": "PMN",
       "phase": "entering",
-      "price": 15.1,
+      "price": 15.0,
       "trig_px": 16.719,
       "avg": 15.72,
       "live_shares": 38,
@@ -3710,7 +3710,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -3.94
+      "unreal_pct": -4.58
     },
     {
       "symbol": "LHSW",
@@ -4013,20 +4013,20 @@
       "symbol": "BIYA",
       "entry_time": "2026-07-28 09:38:23",
       "exit_time": "2026-07-28 09:44:18",
-      "shares": 1.0,
+      "shares": 19.0,
       "entry_price": 5.82,
       "exit_price": 5.28,
-      "pnl_dollar": -0.61,
+      "pnl_dollar": -11.39,
       "pnl_pct": -9.28
     },
     {
       "symbol": "BIYA",
       "entry_time": "2026-07-28 09:38:23",
       "exit_time": "2026-07-28 09:44:18",
-      "shares": 19.0,
+      "shares": 1.0,
       "entry_price": 5.82,
       "exit_price": 5.28,
-      "pnl_dollar": -11.39,
+      "pnl_dollar": -0.61,
       "pnl_pct": -9.28
     },
     {
