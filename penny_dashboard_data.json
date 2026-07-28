@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-28 09:37:59",
-  "generated_ts": 1785245879.360136,
+  "generated": "2026-07-28 09:38:16",
+  "generated_ts": 1785245896.696481,
   "system": "penny",
   "positions": [
     {
       "symbol": "FIRY",
       "shares": 45.0,
       "avg_cost": 13.3322,
-      "mkt_price": 13.45,
-      "position_value": 605.25,
-      "unrealized_pnl_dollar": 5.3,
-      "unrealized_pnl": 0.88,
+      "mkt_price": 13.006,
+      "position_value": 585.27,
+      "unrealized_pnl_dollar": -14.68,
+      "unrealized_pnl": -2.45,
       "in_universe": true,
       "position": "long"
     }
@@ -43,11 +43,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -83,8 +83,8 @@
   "live_account_value": 77672.48,
   "live_cash": 77087.21,
   "active_trade_count": 1,
-  "aggregate_unrealized_pnl_dollar": 5.3,
-  "total_position_value": 605.25,
+  "aggregate_unrealized_pnl_dollar": -14.68,
+  "total_position_value": 585.27,
   "system_ok": true,
   "shadow": {
     "days": 10,
@@ -2639,13 +2639,17 @@
     {
       "t": "09:37",
       "v": 77672.48
+    },
+    {
+      "t": "09:38",
+      "v": 77672.48
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "entering",
-      "price": 12.82,
+      "price": 12.57,
       "trig_px": 14.16,
       "avg": 13.31,
       "live_shares": 45,
@@ -2663,12 +2667,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -3.68
+      "unreal_pct": -5.56
     },
     {
       "symbol": "TZOO",
       "phase": "entering",
-      "price": 7.41,
+      "price": 7.4,
       "trig_px": 7.365,
       "avg": 0.0,
       "live_shares": 0,
@@ -2691,7 +2695,7 @@
     {
       "symbol": "BIYA",
       "phase": "entering",
-      "price": 6.04,
+      "price": 5.9,
       "trig_px": 6.19,
       "avg": 0.0,
       "live_shares": 0,
