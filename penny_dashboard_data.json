@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 14:34:52",
-  "generated_ts": 1785263692.270031,
+  "generated": "2026-07-28 14:35:09",
+  "generated_ts": 1785263709.44736,
   "system": "penny",
   "positions": [
     {
@@ -99,7 +99,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -109,11 +109,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.0m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.3,
+    "newest_bar_age_min": 0.6,
     "in_rth": true,
     "ok": true
   },
@@ -3893,13 +3893,17 @@
     {
       "t": "14:34",
       "v": 77251.67
+    },
+    {
+      "t": "14:35",
+      "v": 77251.67
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 9.78,
+      "price": 9.77,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -3917,7 +3921,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -23.83
+      "unreal_pct": -23.91
     },
     {
       "symbol": "TZOO",
@@ -3945,7 +3949,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 6.06,
+      "price": 6.09,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -3963,7 +3967,7 @@
           "filled": 75
         }
       ],
-      "unreal_pct": 8.03
+      "unreal_pct": 8.57
     },
     {
       "symbol": "STAK",
@@ -4106,7 +4110,7 @@
     {
       "symbol": "SPWR",
       "phase": "holding",
-      "price": 0.3878,
+      "price": 0.3861,
       "trig_px": 0.3728,
       "avg": 0.0,
       "live_shares": 0,
@@ -4129,7 +4133,7 @@
     {
       "symbol": "CHAI",
       "phase": "flat",
-      "price": 0.4326,
+      "price": 0.4376,
       "trig_px": 0.5235,
       "avg": 0.4744,
       "live_shares": 0,
@@ -4147,7 +4151,7 @@
           "filled": 888
         }
       ],
-      "unreal_pct": -8.82
+      "unreal_pct": -7.77
     },
     {
       "symbol": "PMN",
@@ -4198,7 +4202,7 @@
     {
       "symbol": "PSQH",
       "phase": "holding",
-      "price": 3.65,
+      "price": 3.56,
       "trig_px": 3.6799,
       "avg": 0.0,
       "live_shares": 0,
