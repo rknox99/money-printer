@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 09:34:47",
-  "generated_ts": 1785245687.811829,
+  "generated": "2026-07-28 09:35:05",
+  "generated_ts": 1785245705.146611,
   "system": "penny",
   "positions": [
     {
@@ -43,11 +43,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.5m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.2,
+    "newest_bar_age_min": 0.5,
     "in_rth": true,
     "ok": true
   },
@@ -2627,13 +2627,17 @@
     {
       "t": "09:34",
       "v": 77683.46
+    },
+    {
+      "t": "09:35",
+      "v": 77683.46
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "entering",
-      "price": 13.19,
+      "price": 13.06,
       "trig_px": 14.16,
       "avg": 13.31,
       "live_shares": 45,
@@ -2651,12 +2655,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -0.9
+      "unreal_pct": -1.88
     },
     {
       "symbol": "TZOO",
       "phase": "entering",
-      "price": 7.31,
+      "price": 7.39,
       "trig_px": 7.365,
       "avg": 0.0,
       "live_shares": 0,
@@ -2675,9 +2679,48 @@
         }
       ],
       "unreal_pct": null
+    },
+    {
+      "symbol": "BIYA",
+      "phase": "entering",
+      "price": 6.23,
+      "trig_px": 6.19,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 5.82,
+          "sh": 103,
+          "filled": 0
+        },
+        {
+          "px": 5.32,
+          "sh": 75,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-28 09:34:49",
+      "symbol": "BIYA",
+      "action": "Buy",
+      "sim_price": 5.32,
+      "shares": 75,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-07-28 09:34:49",
+      "symbol": "BIYA",
+      "action": "Buy",
+      "sim_price": 5.82,
+      "shares": 103,
+      "note": "rung0"
+    },
     {
       "ts": "2026-07-28 09:32:52",
       "symbol": "TZOO",
