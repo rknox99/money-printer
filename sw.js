@@ -1,5 +1,5 @@
 // Service Worker for Money Printer PWA
-var CACHE='mp-v2';
+var CACHE='mp-v3';
 
 self.addEventListener('install',function(e){
   e.waitUntil(self.skipWaiting());
