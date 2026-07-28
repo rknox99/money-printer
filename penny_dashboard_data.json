@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 14:27:07",
-  "generated_ts": 1785263227.929104,
+  "generated": "2026-07-28 14:27:25",
+  "generated_ts": 1785263245.027013,
   "system": "penny",
   "positions": [
     {
@@ -26,13 +26,35 @@
       "position": "long"
     },
     {
+      "symbol": "TZOO",
+      "shares": 86.0,
+      "avg_cost": 6.9316,
+      "mkt_price": 7.5585,
+      "position_value": 650.04,
+      "unrealized_pnl_dollar": 53.92,
+      "unrealized_pnl": 9.05,
+      "in_universe": true,
+      "position": "long"
+    },
+    {
+      "symbol": "MWYN",
+      "shares": 426.0,
+      "avg_cost": 0.536,
+      "mkt_price": 0.5412,
+      "position_value": 230.55,
+      "unrealized_pnl_dollar": 2.23,
+      "unrealized_pnl": 0.98,
+      "in_universe": true,
+      "position": "long"
+    },
+    {
       "symbol": "LHSW",
       "shares": 231.0,
       "avg_cost": 2.595,
-      "mkt_price": 2.6521,
-      "position_value": 612.65,
-      "unrealized_pnl_dollar": 13.2,
-      "unrealized_pnl": 2.2,
+      "mkt_price": 2.6678,
+      "position_value": 616.26,
+      "unrealized_pnl_dollar": 16.81,
+      "unrealized_pnl": 2.8,
       "in_universe": true,
       "position": "long"
     },
@@ -40,10 +62,10 @@
       "symbol": "PMN",
       "shares": 38.0,
       "avg_cost": 15.7463,
-      "mkt_price": 15.2237,
-      "position_value": 578.5,
-      "unrealized_pnl_dollar": -19.86,
-      "unrealized_pnl": -3.32,
+      "mkt_price": 15.2329,
+      "position_value": 578.85,
+      "unrealized_pnl_dollar": -19.51,
+      "unrealized_pnl": -3.26,
       "in_universe": true,
       "position": "long"
     },
@@ -51,21 +73,10 @@
       "symbol": "ONMD",
       "shares": 928.0,
       "avg_cost": 0.6512,
-      "mkt_price": 0.6176,
-      "position_value": 573.16,
-      "unrealized_pnl_dollar": -31.16,
-      "unrealized_pnl": -5.16,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "TZOO",
-      "shares": 86.0,
-      "avg_cost": 6.9316,
-      "mkt_price": 7.5704,
-      "position_value": 651.05,
-      "unrealized_pnl_dollar": 54.93,
-      "unrealized_pnl": 9.21,
+      "mkt_price": 0.6223,
+      "position_value": 577.54,
+      "unrealized_pnl_dollar": -26.78,
+      "unrealized_pnl": -4.43,
       "in_universe": true,
       "position": "long"
     }
@@ -98,11 +109,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.0m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.5,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -132,14 +143,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 77256.4,
-    "cash": 73978.49
+    "net_liq": 77263.79,
+    "cash": 73750.18
   },
-  "live_account_value": 77256.4,
-  "live_cash": 73978.49,
-  "active_trade_count": 6,
-  "aggregate_unrealized_pnl_dollar": 27.14,
-  "total_position_value": 3275.74,
+  "live_account_value": 77263.79,
+  "live_cash": 73750.18,
+  "active_trade_count": 7,
+  "aggregate_unrealized_pnl_dollar": 36.7,
+  "total_position_value": 3513.62,
   "system_ok": true,
   "shadow": {
     "days": 10,
@@ -3853,14 +3864,14 @@
     },
     {
       "t": "14:27",
-      "v": 77256.4
+      "v": 77263.79
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 9.58,
+      "price": 9.61,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -3878,7 +3889,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -25.39
+      "unreal_pct": -25.16
     },
     {
       "symbol": "TZOO",
@@ -3906,7 +3917,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 6.23,
+      "price": 6.2,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -3924,7 +3935,7 @@
           "filled": 75
         }
       ],
-      "unreal_pct": 11.07
+      "unreal_pct": 10.53
     },
     {
       "symbol": "STAK",
@@ -4067,7 +4078,7 @@
     {
       "symbol": "SPWR",
       "phase": "entering",
-      "price": 0.3987,
+      "price": 0.3988,
       "trig_px": 0.3728,
       "avg": 0.0,
       "live_shares": 0,
@@ -4113,7 +4124,7 @@
     {
       "symbol": "PMN",
       "phase": "entering",
-      "price": 15.3,
+      "price": 15.2,
       "trig_px": 16.719,
       "avg": 15.72,
       "live_shares": 38,
@@ -4131,12 +4142,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -2.67
+      "unreal_pct": -3.31
     },
     {
       "symbol": "LHSW",
       "phase": "entering",
-      "price": 2.68,
+      "price": 2.67,
       "trig_px": 2.76,
       "avg": 2.59,
       "live_shares": 231,
@@ -4154,7 +4165,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 3.47
+      "unreal_pct": 3.09
     },
     {
       "symbol": "PSQH",
@@ -4178,9 +4189,56 @@
         }
       ],
       "unreal_pct": null
+    },
+    {
+      "symbol": "MWYN",
+      "phase": "entering",
+      "price": 0.5412,
+      "trig_px": 0.5757,
+      "avg": 0.5412,
+      "live_shares": 426,
+      "be_armed": false,
+      "stop": 0.4925,
+      "rungs": [
+        {
+          "px": 0.5412,
+          "sh": 1108,
+          "filled": 426
+        },
+        {
+          "px": 0.4951,
+          "sh": 807,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": 0.0
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-28 14:27:22",
+      "symbol": "MWYN",
+      "action": "Sell",
+      "sim_price": 0.4925,
+      "shares": 426,
+      "note": "stop_placed"
+    },
+    {
+      "ts": "2026-07-28 14:27:19",
+      "symbol": "MWYN",
+      "action": "Buy",
+      "sim_price": 0.4951,
+      "shares": 807,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-07-28 14:27:17",
+      "symbol": "MWYN",
+      "action": "Buy",
+      "sim_price": 0.5412,
+      "shares": 1108,
+      "note": "rung0"
+    },
     {
       "ts": "2026-07-28 13:55:55",
       "symbol": "PSQH",
@@ -4316,30 +4374,6 @@
       "sim_price": 0.9306,
       "shares": 644,
       "note": "rung0"
-    },
-    {
-      "ts": "2026-07-28 11:25:44",
-      "symbol": "STAK",
-      "action": "Sell",
-      "sim_price": 2.2001,
-      "shares": 454,
-      "note": "stop_chase"
-    },
-    {
-      "ts": "2026-07-28 11:25:42",
-      "symbol": "STAK",
-      "action": "Sell",
-      "sim_price": 2.2,
-      "shares": 454,
-      "note": "be_lock_moved"
-    },
-    {
-      "ts": "2026-07-28 11:05:54",
-      "symbol": "SPWR",
-      "action": "Buy",
-      "sim_price": 0.3206,
-      "shares": 1247,
-      "note": "rung1"
     }
   ],
   "live_daily": [
