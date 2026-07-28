@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 15:11:15",
-  "generated_ts": 1785265875.182547,
+  "generated": "2026-07-28 15:11:32",
+  "generated_ts": 1785265892.510814,
   "system": "penny",
   "positions": [
     {
@@ -109,11 +109,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.2,
+    "newest_bar_age_min": 0.5,
     "in_rth": true,
     "ok": true
   },
@@ -4093,7 +4093,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 6.29,
+      "price": 6.28,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -4111,7 +4111,7 @@
           "filled": 75
         }
       ],
-      "unreal_pct": 12.13
+      "unreal_pct": 11.96
     },
     {
       "symbol": "STAK",
@@ -4139,7 +4139,7 @@
     {
       "symbol": "TNMG",
       "phase": "holding",
-      "price": 0.3568,
+      "price": 0.3557,
       "trig_px": 0.346,
       "avg": 0.0,
       "live_shares": 0,
@@ -4300,7 +4300,7 @@
     {
       "symbol": "PMN",
       "phase": "holding",
-      "price": 14.87,
+      "price": 14.72,
       "trig_px": 16.719,
       "avg": 15.72,
       "live_shares": 38,
@@ -4318,7 +4318,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -5.41
+      "unreal_pct": -6.36
     },
     {
       "symbol": "LHSW",
@@ -4327,8 +4327,8 @@
       "trig_px": 2.76,
       "avg": 2.59,
       "live_shares": 231,
-      "be_armed": false,
-      "stop": 2.3569,
+      "be_armed": true,
+      "stop": 2.59,
       "rungs": [
         {
           "px": 2.59,
@@ -4346,7 +4346,7 @@
     {
       "symbol": "PSQH",
       "phase": "holding",
-      "price": 3.64,
+      "price": 3.6,
       "trig_px": 3.6799,
       "avg": 0.0,
       "live_shares": 0,
@@ -4391,6 +4391,14 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-28 15:11:23",
+      "symbol": "LHSW",
+      "action": "Sell",
+      "sim_price": 2.59,
+      "shares": 231,
+      "note": "be_lock_moved"
+    },
     {
       "ts": "2026-07-28 14:27:22",
       "symbol": "MWYN",
@@ -4542,14 +4550,6 @@
       "sim_price": 0.8514,
       "shares": 469,
       "note": "rung1"
-    },
-    {
-      "ts": "2026-07-28 11:26:15",
-      "symbol": "YYAI",
-      "action": "Buy",
-      "sim_price": 0.9306,
-      "shares": 644,
-      "note": "rung0"
     }
   ],
   "live_daily": [
