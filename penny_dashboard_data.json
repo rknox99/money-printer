@@ -1,16 +1,27 @@
 {
-  "generated": "2026-07-28 09:43:16",
-  "generated_ts": 1785246196.021657,
+  "generated": "2026-07-28 09:43:33",
+  "generated_ts": 1785246213.89189,
   "system": "penny",
   "positions": [
     {
       "symbol": "FIRY",
-      "shares": 45.0,
-      "avg_cost": 13.3322,
-      "mkt_price": 13.006,
-      "position_value": 585.27,
-      "unrealized_pnl_dollar": -14.68,
-      "unrealized_pnl": -2.45,
+      "shares": 32.0,
+      "avg_cost": 12.8664,
+      "mkt_price": 12.45,
+      "position_value": 398.4,
+      "unrealized_pnl_dollar": -13.32,
+      "unrealized_pnl": -3.24,
+      "in_universe": true,
+      "position": "long"
+    },
+    {
+      "symbol": "BIYA",
+      "shares": 103.0,
+      "avg_cost": 5.8297,
+      "mkt_price": 5.566,
+      "position_value": 573.3,
+      "unrealized_pnl_dollar": -27.16,
+      "unrealized_pnl": -4.52,
       "in_universe": true,
       "position": "long"
     }
@@ -33,7 +44,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -43,11 +54,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.4m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.7,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -82,9 +93,9 @@
   },
   "live_account_value": 77609.37,
   "live_cash": 76637.67,
-  "active_trade_count": 1,
-  "aggregate_unrealized_pnl_dollar": -14.68,
-  "total_position_value": 585.27,
+  "active_trade_count": 2,
+  "aggregate_unrealized_pnl_dollar": -40.48,
+  "total_position_value": 971.7,
   "system_ok": true,
   "shadow": {
     "days": 10,
@@ -2669,7 +2680,7 @@
     {
       "symbol": "FIRY",
       "phase": "entering",
-      "price": 12.5,
+      "price": 12.55,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 32,
@@ -2687,12 +2698,12 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -2.65
+      "unreal_pct": -2.26
     },
     {
       "symbol": "TZOO",
       "phase": "entering",
-      "price": 7.46,
+      "price": 7.29,
       "trig_px": 7.365,
       "avg": 0.0,
       "live_shares": 0,
