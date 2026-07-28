@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 09:44:48",
-  "generated_ts": 1785246288.13675,
+  "generated": "2026-07-28 09:45:05",
+  "generated_ts": 1785246305.723827,
   "system": "penny",
   "positions": [
     {
@@ -44,7 +44,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -54,11 +54,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.7m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.7,
     "in_rth": true,
     "ok": true
   },
@@ -2678,13 +2678,17 @@
     {
       "t": "09:44",
       "v": 77595.9
+    },
+    {
+      "t": "09:45",
+      "v": 77595.9
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "entering",
-      "price": 12.59,
+      "price": 12.47,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 32,
@@ -2702,12 +2706,12 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -1.95
+      "unreal_pct": -2.88
     },
     {
       "symbol": "TZOO",
       "phase": "entering",
-      "price": 7.38,
+      "price": 7.43,
       "trig_px": 7.365,
       "avg": 0.0,
       "live_shares": 0,
@@ -2730,7 +2734,7 @@
     {
       "symbol": "BIYA",
       "phase": "entering",
-      "price": 5.36,
+      "price": 5.27,
       "trig_px": 6.19,
       "avg": 5.82,
       "live_shares": 103,
@@ -2748,12 +2752,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -7.9
+      "unreal_pct": -9.45
     },
     {
       "symbol": "STAK",
       "phase": "entering",
-      "price": 2.39,
+      "price": 2.34,
       "trig_px": 2.4287,
       "avg": 0.0,
       "live_shares": 0,
@@ -2768,6 +2772,29 @@
         {
           "px": 2.09,
           "sh": 191,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
+    },
+    {
+      "symbol": "TNMG",
+      "phase": "entering",
+      "price": 0.3381,
+      "trig_px": 0.346,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 0.3252,
+          "sh": 1845,
+          "filled": 0
+        },
+        {
+          "px": 0.2976,
+          "sh": 1344,
           "filled": 0
         }
       ],
