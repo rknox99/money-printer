@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 09:44:08",
-  "generated_ts": 1785246248.700388,
+  "generated": "2026-07-28 09:44:25",
+  "generated_ts": 1785246265.777597,
   "system": "penny",
   "positions": [
     {
@@ -44,7 +44,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -54,11 +54,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.5m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.6,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -88,11 +88,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 77609.37,
-    "cash": 76637.67
+    "net_liq": 77595.9,
+    "cash": 76780.48
   },
-  "live_account_value": 77609.37,
-  "live_cash": 76637.67,
+  "live_account_value": 77595.9,
+  "live_cash": 76780.48,
   "active_trade_count": 2,
   "aggregate_unrealized_pnl_dollar": -40.48,
   "total_position_value": 971.7,
@@ -2677,14 +2677,14 @@
     },
     {
       "t": "09:44",
-      "v": 77609.37
+      "v": 77595.9
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "entering",
-      "price": 12.63,
+      "price": 12.57,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 32,
@@ -2702,12 +2702,12 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -1.64
+      "unreal_pct": -2.11
     },
     {
       "symbol": "TZOO",
       "phase": "entering",
-      "price": 7.32,
+      "price": 7.37,
       "trig_px": 7.365,
       "avg": 0.0,
       "live_shares": 0,
@@ -2730,7 +2730,7 @@
     {
       "symbol": "BIYA",
       "phase": "entering",
-      "price": 5.57,
+      "price": 5.36,
       "trig_px": 6.19,
       "avg": 5.82,
       "live_shares": 103,
@@ -2748,7 +2748,30 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -4.3
+      "unreal_pct": -7.9
+    },
+    {
+      "symbol": "STAK",
+      "phase": "entering",
+      "price": 2.3,
+      "trig_px": 2.4287,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 2.28,
+          "sh": 263,
+          "filled": 0
+        },
+        {
+          "px": 2.09,
+          "sh": 191,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
     }
   ],
   "intents_tail": [
