@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 09:44:25",
-  "generated_ts": 1785246265.777597,
+  "generated": "2026-07-28 09:44:48",
+  "generated_ts": 1785246288.13675,
   "system": "penny",
   "positions": [
     {
@@ -54,11 +54,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.7m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.4,
     "in_rth": true,
     "ok": true
   },
@@ -77,12 +77,12 @@
   "slippage": {
     "configured": true,
     "summary": {
-      "avg_slippage_bps": -25.8,
-      "total_commissions": 16.62,
-      "total_slippage_cost": -1.89,
-      "total_fees_and_slippage": 14.73,
-      "avg_slippage_pct": 0.2024,
-      "trade_count": 27,
+      "avg_slippage_bps": -21.9,
+      "total_commissions": 18.65,
+      "total_slippage_cost": 0.17,
+      "total_fees_and_slippage": 18.82,
+      "avg_slippage_pct": 0.2289,
+      "trade_count": 29,
       "missed_trades": 0,
       "match_rate": 100.0
     }
@@ -2684,7 +2684,7 @@
     {
       "symbol": "FIRY",
       "phase": "entering",
-      "price": 12.57,
+      "price": 12.59,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 32,
@@ -2702,12 +2702,12 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -2.11
+      "unreal_pct": -1.95
     },
     {
       "symbol": "TZOO",
       "phase": "entering",
-      "price": 7.37,
+      "price": 7.38,
       "trig_px": 7.365,
       "avg": 0.0,
       "live_shares": 0,
@@ -2753,7 +2753,7 @@
     {
       "symbol": "STAK",
       "phase": "entering",
-      "price": 2.3,
+      "price": 2.39,
       "trig_px": 2.4287,
       "avg": 0.0,
       "live_shares": 0,
@@ -2775,6 +2775,22 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-28 09:44:48",
+      "symbol": "TNMG",
+      "action": "Buy",
+      "sim_price": 0.2976,
+      "shares": 1344,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-07-28 09:44:47",
+      "symbol": "TNMG",
+      "action": "Buy",
+      "sim_price": 0.3252,
+      "shares": 1845,
+      "note": "rung0"
+    },
     {
       "ts": "2026-07-28 09:44:08",
       "symbol": "STAK",
@@ -2871,10 +2887,40 @@
     },
     {
       "date": "2026-07-28",
-      "pnl": -58.27
+      "pnl": -115.92
     }
   ],
   "trade_history": [
+    {
+      "symbol": "BIYA",
+      "entry_time": "2026-07-28 09:38:23",
+      "exit_time": "2026-07-28 09:44:18",
+      "shares": 19.0,
+      "entry_price": 5.82,
+      "exit_price": 5.28,
+      "pnl_dollar": -11.39,
+      "pnl_pct": -9.28
+    },
+    {
+      "symbol": "BIYA",
+      "entry_time": "2026-07-28 09:38:23",
+      "exit_time": "2026-07-28 09:44:18",
+      "shares": 1.0,
+      "entry_price": 5.82,
+      "exit_price": 5.28,
+      "pnl_dollar": -0.61,
+      "pnl_pct": -9.28
+    },
+    {
+      "symbol": "BIYA",
+      "entry_time": "2026-07-28 09:38:26",
+      "exit_time": "2026-07-28 09:44:18",
+      "shares": 83.0,
+      "entry_price": 5.82,
+      "exit_price": 5.28,
+      "pnl_dollar": -45.65,
+      "pnl_pct": -9.28
+    },
     {
       "symbol": "FIRY",
       "entry_time": "2026-07-28 09:30:44",
@@ -3037,10 +3083,10 @@
     }
   ],
   "realized_summary": {
-    "trades": 16,
-    "total": -111.77,
+    "trades": 19,
+    "total": -169.42,
     "wins": 3,
-    "win_rate": 18.8
+    "win_rate": 15.8
   },
-  "total_realized_pnl": -111.77
+  "total_realized_pnl": -169.42
 }
