@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 09:52:22",
-  "generated_ts": 1785246742.895081,
+  "generated": "2026-07-28 09:52:40",
+  "generated_ts": 1785246760.080327,
   "system": "penny",
   "positions": [
     {
@@ -54,7 +54,7 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.0m"
     }
   ],
   "stream_health": {
@@ -2715,11 +2715,11 @@
   "ladders": [
     {
       "symbol": "FIRY",
-      "phase": "stop_chase",
-      "price": 11.3,
+      "phase": "flat",
+      "price": 11.38,
       "trig_px": 14.16,
       "avg": 12.8404,
-      "live_shares": 32,
+      "live_shares": 0,
       "be_armed": false,
       "stop": 11.6848,
       "rungs": [
@@ -2734,7 +2734,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -12.0
+      "unreal_pct": -11.37
     },
     {
       "symbol": "TZOO",
@@ -2762,7 +2762,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 4.63,
+      "price": 4.57,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -2780,12 +2780,12 @@
           "filled": 75
         }
       ],
-      "unreal_pct": -17.46
+      "unreal_pct": -18.53
     },
     {
       "symbol": "STAK",
       "phase": "entering",
-      "price": 2.24,
+      "price": 2.25,
       "trig_px": 2.4287,
       "avg": 2.28,
       "live_shares": 263,
@@ -2803,7 +2803,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -1.75
+      "unreal_pct": -1.32
     },
     {
       "symbol": "TNMG",
@@ -2830,6 +2830,14 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-28 09:52:38",
+      "symbol": "FIRY",
+      "action": "SellFill",
+      "sim_price": 11.7358,
+      "shares": 32,
+      "note": "execution"
+    },
     {
       "ts": "2026-07-28 09:52:08",
       "symbol": "FIRY",
