@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 13:47:07",
-  "generated_ts": 1785260827.977941,
+  "generated": "2026-07-28 13:47:30",
+  "generated_ts": 1785260850.809333,
   "system": "penny",
   "positions": [
     {
@@ -99,7 +99,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -109,11 +109,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.1m"
+      "detail": "heartbeat 0.4m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 1.3,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -143,11 +143,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 77283.88,
-    "cash": 73085.64
+    "net_liq": 77276.17,
+    "cash": 73085.65
   },
-  "live_account_value": 77283.88,
-  "live_cash": 73085.64,
+  "live_account_value": 77276.17,
+  "live_cash": 73085.65,
   "active_trade_count": 7,
   "aggregate_unrealized_pnl_dollar": -60.0,
   "total_position_value": 4198.24,
@@ -3704,14 +3704,14 @@
     },
     {
       "t": "13:47",
-      "v": 77283.88
+      "v": 77276.17
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 10.21,
+      "price": 10.16,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -3729,7 +3729,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -20.49
+      "unreal_pct": -20.87
     },
     {
       "symbol": "TZOO",
@@ -3757,7 +3757,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 5.91,
+      "price": 6.0,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -3775,7 +3775,7 @@
           "filled": 75
         }
       ],
-      "unreal_pct": 5.36
+      "unreal_pct": 6.96
     },
     {
       "symbol": "STAK",
@@ -3849,7 +3849,7 @@
     {
       "symbol": "OMH",
       "phase": "flat",
-      "price": 0.1535,
+      "price": 0.155,
       "trig_px": 0.22,
       "avg": 0.1994,
       "live_shares": 0,
@@ -3867,7 +3867,7 @@
           "filled": 2114
         }
       ],
-      "unreal_pct": -23.01
+      "unreal_pct": -22.26
     },
     {
       "symbol": "ZNB",
@@ -3941,7 +3941,7 @@
     {
       "symbol": "CHAI",
       "phase": "entering",
-      "price": 0.4359,
+      "price": 0.4378,
       "trig_px": 0.5235,
       "avg": 0.4744,
       "live_shares": 2107,
@@ -3959,7 +3959,7 @@
           "filled": 888
         }
       ],
-      "unreal_pct": -8.12
+      "unreal_pct": -7.72
     },
     {
       "symbol": "PMN",
