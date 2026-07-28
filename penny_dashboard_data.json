@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 09:39:25",
-  "generated_ts": 1785245965.810302,
+  "generated": "2026-07-28 09:39:48",
+  "generated_ts": 1785245988.343652,
   "system": "penny",
   "positions": [
     {
@@ -38,16 +38,16 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.4h old"
+      "detail": "log 0.5h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.0m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.4,
     "in_rth": true,
     "ok": true
   },
@@ -66,12 +66,12 @@
   "slippage": {
     "configured": true,
     "summary": {
-      "avg_slippage_bps": -48.3,
-      "total_commissions": 13.6,
-      "total_slippage_cost": -4.14,
-      "total_fees_and_slippage": 9.46,
-      "avg_slippage_pct": 0.1646,
-      "trade_count": 22,
+      "avg_slippage_bps": -25.8,
+      "total_commissions": 16.62,
+      "total_slippage_cost": -1.89,
+      "total_fees_and_slippage": 14.73,
+      "avg_slippage_pct": 0.2024,
+      "trade_count": 27,
       "missed_trades": 0,
       "match_rate": 100.0
     }
@@ -2653,7 +2653,7 @@
     {
       "symbol": "FIRY",
       "phase": "entering",
-      "price": 11.75,
+      "price": 11.66,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 32,
@@ -2671,12 +2671,12 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -8.49
+      "unreal_pct": -9.19
     },
     {
       "symbol": "TZOO",
       "phase": "entering",
-      "price": 7.42,
+      "price": 7.43,
       "trig_px": 7.365,
       "avg": 0.0,
       "live_shares": 0,
@@ -2798,9 +2798,23 @@
     {
       "date": "2026-07-27",
       "pnl": -53.5
+    },
+    {
+      "date": "2026-07-28",
+      "pnl": -58.27
     }
   ],
   "trade_history": [
+    {
+      "symbol": "FIRY",
+      "entry_time": "2026-07-28 09:30:44",
+      "exit_time": "2026-07-28 09:38:40",
+      "shares": 45.0,
+      "entry_price": 13.31,
+      "exit_price": 12.06,
+      "pnl_dollar": -58.27,
+      "pnl_pct": -9.39
+    },
     {
       "symbol": "STAK",
       "entry_time": "2026-07-27 13:29:50",
@@ -2953,10 +2967,10 @@
     }
   ],
   "realized_summary": {
-    "trades": 15,
-    "total": -53.5,
+    "trades": 16,
+    "total": -111.77,
     "wins": 3,
-    "win_rate": 20.0
+    "win_rate": 18.8
   },
-  "total_realized_pnl": -53.5
+  "total_realized_pnl": -111.77
 }
