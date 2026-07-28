@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 10:25:19",
-  "generated_ts": 1785248719.592116,
+  "generated": "2026-07-28 10:25:36",
+  "generated_ts": 1785248736.8033,
   "system": "penny",
   "positions": [
     {
@@ -76,7 +76,7 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.6m"
     }
   ],
   "stream_health": {
@@ -2870,7 +2870,7 @@
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 12.57,
+      "price": 12.65,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -2888,7 +2888,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -2.11
+      "unreal_pct": -1.48
     },
     {
       "symbol": "TZOO",
@@ -2916,7 +2916,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 5.05,
+      "price": 4.97,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -2934,12 +2934,12 @@
           "filled": 75
         }
       ],
-      "unreal_pct": -9.97
+      "unreal_pct": -11.4
     },
     {
       "symbol": "STAK",
       "phase": "entering",
-      "price": 2.23,
+      "price": 2.25,
       "trig_px": 2.4287,
       "avg": 2.28,
       "live_shares": 263,
@@ -2957,7 +2957,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -2.19
+      "unreal_pct": -1.32
     },
     {
       "symbol": "TNMG",
@@ -3008,7 +3008,7 @@
     {
       "symbol": "OMH",
       "phase": "entering",
-      "price": 0.196,
+      "price": 0.1902,
       "trig_px": 0.22,
       "avg": 0.2068,
       "live_shares": 2901,
@@ -3026,10 +3026,18 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -5.22
+      "unreal_pct": -8.03
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-28 10:25:34",
+      "symbol": "TZOO",
+      "action": "Sell",
+      "sim_price": 6.3,
+      "shares": 86,
+      "note": "stop_placed"
+    },
     {
       "ts": "2026-07-28 10:25:01",
       "symbol": "OMH",
@@ -3181,14 +3189,6 @@
       "sim_price": 5.32,
       "shares": 75,
       "note": "rung1"
-    },
-    {
-      "ts": "2026-07-28 09:34:49",
-      "symbol": "BIYA",
-      "action": "Buy",
-      "sim_price": 5.82,
-      "shares": 103,
-      "note": "rung0"
     }
   ],
   "live_daily": [
