@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 13:18:53",
-  "generated_ts": 1785259133.355842,
+  "generated": "2026-07-28 13:19:12",
+  "generated_ts": 1785259152.051734,
   "system": "penny",
   "positions": [
     {
@@ -99,7 +99,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -109,11 +109,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.0m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.7,
     "in_rth": true,
     "ok": true
   },
@@ -3589,13 +3589,17 @@
     {
       "t": "13:18",
       "v": 77290.01
+    },
+    {
+      "t": "13:19",
+      "v": 77290.01
     }
   ],
   "ladders": [
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 10.48,
+      "price": 10.44,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -3613,7 +3617,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -18.38
+      "unreal_pct": -18.69
     },
     {
       "symbol": "TZOO",
@@ -3641,7 +3645,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 5.88,
+      "price": 5.93,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -3659,7 +3663,7 @@
           "filled": 75
         }
       ],
-      "unreal_pct": 4.83
+      "unreal_pct": 5.72
     },
     {
       "symbol": "STAK",
@@ -3710,7 +3714,7 @@
     {
       "symbol": "ONMD",
       "phase": "entering",
-      "price": 0.6334,
+      "price": 0.6304,
       "trig_px": 0.6875,
       "avg": 0.6462,
       "live_shares": 928,
@@ -3728,12 +3732,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -1.98
+      "unreal_pct": -2.45
     },
     {
       "symbol": "OMH",
       "phase": "flat",
-      "price": 0.1539,
+      "price": 0.154,
       "trig_px": 0.22,
       "avg": 0.1994,
       "live_shares": 0,
@@ -3751,7 +3755,7 @@
           "filled": 2114
         }
       ],
-      "unreal_pct": -22.81
+      "unreal_pct": -22.76
     },
     {
       "symbol": "ZNB",
