@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28 11:27:17",
-  "generated_ts": 1785252437.942366,
+  "generated": "2026-07-28 11:27:40",
+  "generated_ts": 1785252460.682159,
   "system": "penny",
   "positions": [
     {
@@ -76,11 +76,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.5m"
+      "detail": "heartbeat 0.4m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.1,
     "in_rth": true,
     "ok": true
   },
@@ -99,12 +99,12 @@
   "slippage": {
     "configured": true,
     "summary": {
-      "avg_slippage_bps": 15.0,
-      "total_commissions": 49.08,
+      "avg_slippage_bps": 14.5,
+      "total_commissions": 52.46,
       "total_slippage_cost": 37.1,
-      "total_fees_and_slippage": 86.18,
-      "avg_slippage_pct": 0.6486,
-      "trade_count": 50,
+      "total_fees_and_slippage": 89.56,
+      "avg_slippage_pct": 0.6124,
+      "trade_count": 53,
       "missed_trades": 0,
       "match_rate": 100.0
     }
@@ -3118,7 +3118,7 @@
     {
       "symbol": "FIRY",
       "phase": "flat",
-      "price": 12.66,
+      "price": 12.64,
       "trig_px": 14.16,
       "avg": 12.8404,
       "live_shares": 0,
@@ -3136,7 +3136,7 @@
           "filled": 32
         }
       ],
-      "unreal_pct": -1.4
+      "unreal_pct": -1.56
     },
     {
       "symbol": "TZOO",
@@ -3164,7 +3164,7 @@
     {
       "symbol": "BIYA",
       "phase": "flat",
-      "price": 5.16,
+      "price": 5.13,
       "trig_px": 6.19,
       "avg": 5.6093,
       "live_shares": 0,
@@ -3182,12 +3182,12 @@
           "filled": 75
         }
       ],
-      "unreal_pct": -8.01
+      "unreal_pct": -8.55
     },
     {
       "symbol": "STAK",
       "phase": "flat",
-      "price": 2.1,
+      "price": 2.14,
       "trig_px": 2.4287,
       "avg": 2.2001,
       "live_shares": 0,
@@ -3205,7 +3205,7 @@
           "filled": 191
         }
       ],
-      "unreal_pct": -4.55
+      "unreal_pct": -2.73
     },
     {
       "symbol": "TNMG",
@@ -3256,7 +3256,7 @@
     {
       "symbol": "OMH",
       "phase": "flat",
-      "price": 0.1707,
+      "price": 0.1704,
       "trig_px": 0.22,
       "avg": 0.1994,
       "live_shares": 0,
@@ -3274,7 +3274,7 @@
           "filled": 2114
         }
       ],
-      "unreal_pct": -14.39
+      "unreal_pct": -14.54
     },
     {
       "symbol": "ZNB",
@@ -3515,10 +3515,40 @@
     },
     {
       "date": "2026-07-28",
-      "pnl": -279.52
+      "pnl": -343.49
     }
   ],
   "trade_history": [
+    {
+      "symbol": "STAK",
+      "entry_time": "2026-07-28 09:45:59",
+      "exit_time": "2026-07-28 11:26:30",
+      "shares": 220.0,
+      "entry_price": 2.28,
+      "exit_price": 2.07,
+      "pnl_dollar": -48.31,
+      "pnl_pct": -9.21
+    },
+    {
+      "symbol": "STAK",
+      "entry_time": "2026-07-28 11:25:15",
+      "exit_time": "2026-07-28 11:26:30",
+      "shares": 191.0,
+      "entry_price": 2.09,
+      "exit_price": 2.07,
+      "pnl_dollar": -5.51,
+      "pnl_pct": -0.96
+    },
+    {
+      "symbol": "STAK",
+      "entry_time": "2026-07-28 09:45:59",
+      "exit_time": "2026-07-28 11:26:28",
+      "shares": 43.0,
+      "entry_price": 2.28,
+      "exit_price": 2.07,
+      "pnl_dollar": -10.15,
+      "pnl_pct": -9.21
+    },
     {
       "symbol": "OMH",
       "entry_time": "2026-07-28 10:29:08",
@@ -3533,20 +3563,20 @@
       "symbol": "OMH",
       "entry_time": "2026-07-28 10:24:40",
       "exit_time": "2026-07-28 10:29:10",
-      "shares": 475.0,
+      "shares": 64.0,
       "entry_price": 0.2068,
       "exit_price": 0.1872,
-      "pnl_dollar": -11.28,
+      "pnl_dollar": -1.52,
       "pnl_pct": -9.48
     },
     {
       "symbol": "OMH",
       "entry_time": "2026-07-28 10:24:40",
       "exit_time": "2026-07-28 10:29:10",
-      "shares": 64.0,
+      "shares": 475.0,
       "entry_price": 0.2068,
       "exit_price": 0.1872,
-      "pnl_dollar": -1.52,
+      "pnl_dollar": -11.28,
       "pnl_pct": -9.48
     },
     {
@@ -3781,10 +3811,10 @@
     }
   ],
   "realized_summary": {
-    "trades": 26,
-    "total": -333.68,
+    "trades": 29,
+    "total": -397.65,
     "wins": 3,
-    "win_rate": 11.5
+    "win_rate": 10.3
   },
-  "total_realized_pnl": -333.68
+  "total_realized_pnl": -397.65
 }
