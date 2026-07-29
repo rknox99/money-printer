@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 09:55:12",
-  "generated_ts": 1785333312.630817,
+  "generated": "2026-07-29 09:55:31",
+  "generated_ts": 1785333331.169272,
   "system": "penny",
   "positions": [
     {
@@ -55,7 +55,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -65,11 +65,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.5m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.6,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -99,11 +99,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 77214.91,
-    "cash": 74298.02
+    "net_liq": 77242.57,
+    "cash": 74298.03
   },
-  "live_account_value": 77214.91,
-  "live_cash": 74298.02,
+  "live_account_value": 77242.57,
+  "live_cash": 74298.03,
   "active_trade_count": 3,
   "aggregate_unrealized_pnl_dollar": -8.4,
   "total_position_value": 2196.35,
@@ -2744,14 +2744,14 @@
     },
     {
       "t": "09:55",
-      "v": 77214.91
+      "v": 77242.57
     }
   ],
   "ladders": [
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 33.17,
+      "price": 33.86,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -2769,7 +2769,7 @@
           "filled": 10
         }
       ],
-      "unreal_pct": -14.85
+      "unreal_pct": -13.08
     },
     {
       "symbol": "RDGT",
@@ -2797,7 +2797,7 @@
     {
       "symbol": "LVWR",
       "phase": "entering",
-      "price": 2.18,
+      "price": 2.19,
       "trig_px": 2.29,
       "avg": 2.15,
       "live_shares": 279,
@@ -2815,7 +2815,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 1.4
+      "unreal_pct": 1.86
     },
     {
       "symbol": "MWYN",
@@ -2843,7 +2843,7 @@
     {
       "symbol": "OTLK",
       "phase": "entering",
-      "price": 0.9966,
+      "price": 1.0,
       "trig_px": 1.0204,
       "avg": 0.0,
       "live_shares": 0,
@@ -2912,7 +2912,7 @@
     {
       "symbol": "GMM",
       "phase": "entering",
-      "price": 4.13,
+      "price": 3.96,
       "trig_px": 3.815,
       "avg": 3.59,
       "live_shares": 167,
@@ -2930,7 +2930,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 15.04
+      "unreal_pct": 10.31
     }
   ],
   "intents_tail": [
