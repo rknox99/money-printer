@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 09:44:09",
-  "generated_ts": 1785332649.006986,
+  "generated": "2026-07-29 09:44:25",
+  "generated_ts": 1785332665.979446,
   "system": "penny",
   "positions": [
     {
@@ -33,7 +33,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -43,11 +43,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.8,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -2684,11 +2684,11 @@
   "ladders": [
     {
       "symbol": "DFNS",
-      "phase": "stop_chase",
-      "price": 34.5,
+      "phase": "flat",
+      "price": 33.4,
       "trig_px": 42.97,
       "avg": 38.9567,
-      "live_shares": 24,
+      "live_shares": 0,
       "be_armed": false,
       "stop": 35.4506,
       "rungs": [
@@ -2703,12 +2703,12 @@
           "filled": 10
         }
       ],
-      "unreal_pct": -11.44
+      "unreal_pct": -14.26
     },
     {
       "symbol": "RDGT",
       "phase": "entering",
-      "price": 0.98,
+      "price": 0.96,
       "trig_px": 0.9999,
       "avg": 0.0,
       "live_shares": 0,
@@ -2731,7 +2731,7 @@
     {
       "symbol": "LVWR",
       "phase": "entering",
-      "price": 2.33,
+      "price": 2.32,
       "trig_px": 2.29,
       "avg": 0.0,
       "live_shares": 0,
@@ -2756,10 +2756,10 @@
       "phase": "stop_chase",
       "price": 0.55,
       "trig_px": 0.63,
-      "avg": 0.5922,
-      "live_shares": 1013,
+      "avg": 0.571,
+      "live_shares": 1751,
       "be_armed": false,
-      "stop": 0.5389,
+      "stop": 0.5196,
       "rungs": [
         {
           "px": 0.5922,
@@ -2769,15 +2769,15 @@
         {
           "px": 0.5418,
           "sh": 0,
-          "filled": 0
+          "filled": 738
         }
       ],
-      "unreal_pct": -7.13
+      "unreal_pct": -3.67
     },
     {
       "symbol": "OTLK",
       "phase": "entering",
-      "price": 1.07,
+      "price": 1.08,
       "trig_px": 1.0204,
       "avg": 0.0,
       "live_shares": 0,
@@ -2799,6 +2799,14 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-29 09:44:14",
+      "symbol": "DFNS",
+      "action": "SellFill",
+      "sim_price": 34.725,
+      "shares": 24,
+      "note": "execution"
+    },
     {
       "ts": "2026-07-29 09:43:17",
       "symbol": "MWYN",
