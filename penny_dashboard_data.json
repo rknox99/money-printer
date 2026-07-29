@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-29 10:52:46",
-  "generated_ts": 1785336766.804099,
+  "generated": "2026-07-29 10:55:54",
+  "generated_ts": 1785336954.819832,
   "system": "penny",
   "positions": [
     {
       "symbol": "MWYN",
       "shares": 1751.0,
       "avg_cost": 0.576,
-      "mkt_price": 0.5506,
-      "position_value": 964.04,
-      "unrealized_pnl_dollar": -44.47,
-      "unrealized_pnl": -4.41,
+      "mkt_price": 0.5684,
+      "position_value": 995.27,
+      "unrealized_pnl_dollar": -13.23,
+      "unrealized_pnl": -1.31,
       "in_universe": true,
       "position": "long"
     },
@@ -18,10 +18,21 @@
       "symbol": "SLXN",
       "shares": 337.0,
       "avg_cost": 1.785,
-      "mkt_price": 1.7846,
-      "position_value": 601.42,
-      "unrealized_pnl_dollar": -0.13,
-      "unrealized_pnl": -0.02,
+      "mkt_price": 1.738,
+      "position_value": 585.71,
+      "unrealized_pnl_dollar": -15.84,
+      "unrealized_pnl": -2.63,
+      "in_universe": true,
+      "position": "long"
+    },
+    {
+      "symbol": "RDGT",
+      "shares": 638.0,
+      "avg_cost": 0.9449,
+      "mkt_price": 0.94,
+      "position_value": 599.69,
+      "unrealized_pnl_dollar": -3.15,
+      "unrealized_pnl": -0.52,
       "in_universe": true,
       "position": "long"
     },
@@ -29,10 +40,10 @@
       "symbol": "YYGH",
       "shares": 444.0,
       "avg_cost": 1.355,
-      "mkt_price": 1.444,
-      "position_value": 641.12,
-      "unrealized_pnl_dollar": 39.5,
-      "unrealized_pnl": 6.57,
+      "mkt_price": 1.46,
+      "position_value": 648.24,
+      "unrealized_pnl_dollar": 46.62,
+      "unrealized_pnl": 7.75,
       "in_universe": true,
       "position": "long"
     },
@@ -40,10 +51,10 @@
       "symbol": "GMM",
       "shares": 288.0,
       "avg_cost": 3.4667,
-      "mkt_price": 3.1274,
-      "position_value": 900.7,
-      "unrealized_pnl_dollar": -97.71,
-      "unrealized_pnl": -9.79,
+      "mkt_price": 3.1234,
+      "position_value": 899.54,
+      "unrealized_pnl_dollar": -98.87,
+      "unrealized_pnl": -9.9,
       "in_universe": true,
       "position": "long"
     },
@@ -51,10 +62,10 @@
       "symbol": "ATHR",
       "shares": 157.0,
       "avg_cost": 3.8164,
-      "mkt_price": 3.85,
-      "position_value": 604.45,
-      "unrealized_pnl_dollar": 5.28,
-      "unrealized_pnl": 0.88,
+      "mkt_price": 3.552,
+      "position_value": 557.66,
+      "unrealized_pnl_dollar": -41.51,
+      "unrealized_pnl": -6.93,
       "in_universe": true,
       "position": "long"
     },
@@ -62,10 +73,10 @@
       "symbol": "SGLY",
       "shares": 123.0,
       "avg_cost": 4.8781,
-      "mkt_price": 4.8692,
-      "position_value": 598.92,
-      "unrealized_pnl_dollar": -1.1,
-      "unrealized_pnl": -0.18,
+      "mkt_price": 4.847,
+      "position_value": 596.19,
+      "unrealized_pnl_dollar": -3.82,
+      "unrealized_pnl": -0.64,
       "in_universe": true,
       "position": "long"
     },
@@ -73,10 +84,10 @@
       "symbol": "LVWR",
       "shares": 279.0,
       "avg_cost": 2.155,
-      "mkt_price": 2.202,
-      "position_value": 614.36,
-      "unrealized_pnl_dollar": 13.12,
-      "unrealized_pnl": 2.18,
+      "mkt_price": 2.2335,
+      "position_value": 623.14,
+      "unrealized_pnl_dollar": 21.89,
+      "unrealized_pnl": 3.64,
       "in_universe": true,
       "position": "long"
     }
@@ -109,11 +120,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.8m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.1,
     "in_rth": true,
     "ok": true
   },
@@ -132,25 +143,25 @@
   "slippage": {
     "configured": true,
     "summary": {
-      "avg_slippage_bps": 17.7,
-      "total_commissions": 129.21,
+      "avg_slippage_bps": 17.6,
+      "total_commissions": 132.4,
       "total_slippage_cost": 60.18,
-      "total_fees_and_slippage": 189.39,
-      "avg_slippage_pct": 0.6081,
-      "trade_count": 118,
+      "total_fees_and_slippage": 192.58,
+      "avg_slippage_pct": 0.6067,
+      "trade_count": 120,
       "missed_trades": 0,
       "match_rate": 100.0
     }
   },
   "account_summary": {
-    "net_liq": 76991.89,
+    "net_liq": 77065.22,
     "cash": 71486.45
   },
-  "live_account_value": 76991.89,
+  "live_account_value": 77065.22,
   "live_cash": 71486.45,
-  "active_trade_count": 7,
-  "aggregate_unrealized_pnl_dollar": -85.51,
-  "total_position_value": 4925.01,
+  "active_trade_count": 8,
+  "aggregate_unrealized_pnl_dollar": -107.91,
+  "total_position_value": 5505.44,
   "system_ok": true,
   "shadow": {
     "days": 11,
@@ -3017,13 +3028,25 @@
     {
       "t": "10:52",
       "v": 76991.89
+    },
+    {
+      "t": "10:53",
+      "v": 76991.89
+    },
+    {
+      "t": "10:54",
+      "v": 77065.22
+    },
+    {
+      "t": "10:55",
+      "v": 77065.22
     }
   ],
   "ladders": [
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 34.19,
+      "price": 33.26,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -3041,7 +3064,7 @@
           "filled": 10
         }
       ],
-      "unreal_pct": -12.24
+      "unreal_pct": -14.62
     },
     {
       "symbol": "RDGT",
@@ -3069,7 +3092,7 @@
     {
       "symbol": "LVWR",
       "phase": "entering",
-      "price": 2.25,
+      "price": 2.26,
       "trig_px": 2.29,
       "avg": 2.15,
       "live_shares": 279,
@@ -3087,12 +3110,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 4.65
+      "unreal_pct": 5.12
     },
     {
       "symbol": "MWYN",
       "phase": "stop_chase",
-      "price": 0.59,
+      "price": 0.6075,
       "trig_px": 0.63,
       "avg": 0.571,
       "live_shares": 1751,
@@ -3110,12 +3133,12 @@
           "filled": 738
         }
       ],
-      "unreal_pct": 3.34
+      "unreal_pct": 6.4
     },
     {
       "symbol": "OTLK",
       "phase": "entering",
-      "price": 1.01,
+      "price": 1.04,
       "trig_px": 1.0204,
       "avg": 0.0,
       "live_shares": 0,
@@ -3138,7 +3161,7 @@
     {
       "symbol": "SPRC",
       "phase": "flat",
-      "price": 6.09,
+      "price": 6.15,
       "trig_px": 7.0201,
       "avg": 6.6,
       "live_shares": 0,
@@ -3156,7 +3179,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -7.73
+      "unreal_pct": -6.82
     },
     {
       "symbol": "FGNX",
@@ -3184,7 +3207,7 @@
     {
       "symbol": "GMM",
       "phase": "stop_chase",
-      "price": 3.16,
+      "price": 3.18,
       "trig_px": 3.815,
       "avg": 3.4598,
       "live_shares": 288,
@@ -3202,12 +3225,12 @@
           "filled": 121
         }
       ],
-      "unreal_pct": -8.66
+      "unreal_pct": -8.09
     },
     {
       "symbol": "SGLY",
       "phase": "entering",
-      "price": 4.81,
+      "price": 4.77,
       "trig_px": 5.18,
       "avg": 4.87,
       "live_shares": 123,
@@ -3225,12 +3248,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -1.23
+      "unreal_pct": -2.05
     },
     {
       "symbol": "TNMG",
       "phase": "entering",
-      "price": 0.3979,
+      "price": 0.3921,
       "trig_px": 0.3786,
       "avg": 0.0,
       "live_shares": 0,
@@ -3253,7 +3276,7 @@
     {
       "symbol": "SLXN",
       "phase": "entering",
-      "price": 1.72,
+      "price": 1.75,
       "trig_px": 1.89,
       "avg": 1.78,
       "live_shares": 337,
@@ -3271,7 +3294,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -3.37
+      "unreal_pct": -1.69
     },
     {
       "symbol": "MPLT",
@@ -3299,7 +3322,7 @@
     {
       "symbol": "YYGH",
       "phase": "entering",
-      "price": 1.46,
+      "price": 1.53,
       "trig_px": 1.44,
       "avg": 1.35,
       "live_shares": 444,
@@ -3317,12 +3340,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 8.15
+      "unreal_pct": 13.33
     },
     {
       "symbol": "ATHR",
       "phase": "entering",
-      "price": 3.64,
+      "price": 3.71,
       "trig_px": 4.05,
       "avg": 3.81,
       "live_shares": 157,
@@ -3340,7 +3363,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -4.46
+      "unreal_pct": -2.62
     }
   ],
   "intents_tail": [
@@ -3512,7 +3535,7 @@
     },
     {
       "date": "2026-07-28",
-      "pnl": -492.25
+      "pnl": -493.14
     },
     {
       "date": "2026-07-29",
@@ -3564,21 +3587,21 @@
       "symbol": "SPRC",
       "entry_time": "2026-07-29 09:47:08",
       "exit_time": "2026-07-29 10:08:26",
-      "shares": 3.0,
+      "shares": 6.0,
       "entry_price": 6.6,
-      "exit_price": 6.56,
-      "pnl_dollar": -0.26,
-      "pnl_pct": -0.61
+      "exit_price": 6.6,
+      "pnl_dollar": -0.27,
+      "pnl_pct": 0.0
     },
     {
       "symbol": "SPRC",
       "entry_time": "2026-07-29 09:47:08",
       "exit_time": "2026-07-29 10:08:26",
-      "shares": 6.0,
+      "shares": 3.0,
       "entry_price": 6.6,
-      "exit_price": 6.6,
-      "pnl_dollar": -0.32,
-      "pnl_pct": 0.0
+      "exit_price": 6.56,
+      "pnl_dollar": -0.31,
+      "pnl_pct": -0.61
     },
     {
       "symbol": "SPRC",
@@ -3624,21 +3647,21 @@
       "symbol": "MWYN",
       "entry_time": "2026-07-28 14:27:20",
       "exit_time": "2026-07-28 15:54:34",
-      "shares": 100.0,
-      "entry_price": 0.5194,
-      "exit_price": 0.5025,
-      "pnl_dollar": -2.64,
-      "pnl_pct": -3.25
-    },
-    {
-      "symbol": "MWYN",
-      "entry_time": "2026-07-28 14:27:20",
-      "exit_time": "2026-07-28 15:54:34",
       "shares": 226.0,
       "entry_price": 0.5412,
       "exit_price": 0.5025,
       "pnl_dollar": -11.05,
       "pnl_pct": -7.15
+    },
+    {
+      "symbol": "MWYN",
+      "entry_time": "2026-07-28 14:27:20",
+      "exit_time": "2026-07-28 15:54:34",
+      "shares": 100.0,
+      "entry_price": 0.5194,
+      "exit_price": 0.5025,
+      "pnl_dollar": -2.64,
+      "pnl_pct": -3.25
     },
     {
       "symbol": "MWYN",
@@ -3884,20 +3907,10 @@
       "symbol": "ZNB",
       "entry_time": "2026-07-28 10:31:20",
       "exit_time": "2026-07-28 15:45:20",
-      "shares": 9.0,
-      "entry_price": 2.86,
-      "exit_price": 2.74,
-      "pnl_dollar": -1.18,
-      "pnl_pct": -4.2
-    },
-    {
-      "symbol": "ZNB",
-      "entry_time": "2026-07-28 10:31:20",
-      "exit_time": "2026-07-28 15:45:20",
       "shares": 100.0,
       "entry_price": 2.86,
       "exit_price": 2.75,
-      "pnl_dollar": -12.55,
+      "pnl_dollar": -12.53,
       "pnl_pct": -3.85
     },
     {
@@ -3907,8 +3920,18 @@
       "shares": 100.0,
       "entry_price": 2.86,
       "exit_price": 2.7456,
-      "pnl_dollar": -12.52,
+      "pnl_dollar": -12.43,
       "pnl_pct": -4.0
+    },
+    {
+      "symbol": "ZNB",
+      "entry_time": "2026-07-28 10:31:20",
+      "exit_time": "2026-07-28 15:45:20",
+      "shares": 9.0,
+      "entry_price": 2.86,
+      "exit_price": 2.74,
+      "pnl_dollar": -2.18,
+      "pnl_pct": -4.2
     },
     {
       "symbol": "TZOO",
@@ -4023,9 +4046,9 @@
   ],
   "realized_summary": {
     "trades": 76,
-    "total": -654.79,
+    "total": -655.68,
     "wins": 26,
     "win_rate": 34.2
   },
-  "total_realized_pnl": -654.79
+  "total_realized_pnl": -655.68
 }
