@@ -91,7 +91,7 @@ table.t .right{text-align:right;}
 <body>
 <div class="hdr">
   <div class="hdr-left"><div class="hdr-title">Penny <span>Printer</span> — Live Command Center</div></div>
-  <div class="hdr-right"><span id="ib-status"><span class="dot dot-a"></span>IB</span><span id="last-update">--</span><span id="clock">--</span></div>
+  <div class="hdr-right"><span id="ib-status"><span class="dot dot-a"></span>IB</span><span id="last-update">--</span><span id="clock">--</span><span id="refresh-btn" onclick="tick()" style="cursor:pointer;padding:2px 10px;border:1px solid #334155;border-radius:6px;margin-left:6px;user-select:none">&#8635;</span></div>
 </div>
 <div class="hero">
   <div class="hero-val" id="h-value">$--</div>
@@ -129,8 +129,10 @@ var REFRESH=60000,activeChart=null,currentSpec='wide',lastData=null;
 setInterval(function(){var et=new Date().toLocaleTimeString('en-US',{timeZone:'America/New_York',hour12:false,hour:'2-digit',minute:'2-digit',second:'2-digit'});document.getElementById('clock').textContent=et+' ET';},1000);
 function fmt$(v){if(v==null)return'--';var s=v>=0?'+$':'-$';return s+Math.abs(Math.round(v)).toLocaleString();}
 function pct(v){return v==null?'--':((v>=0?'+':'')+v.toFixed(2)+'%');}
+var RAW_URL='https://raw.githubusercontent.com/rknox99/money-printer/main/penny_dashboard_data.json';
 async function loadData(){
-  try{var r=await fetch('penny_dashboard_data.json?t='+Date.now());if(r.ok)return await r.json();}catch(e){}
+  try{var r=await fetch(RAW_URL+'?t='+Date.now(),{cache:'no-store'});if(r.ok)return await r.json();}catch(e){}
+  try{var r=await fetch('penny_dashboard_data.json?t='+Date.now(),{cache:'no-store'});if(r.ok)return await r.json();}catch(e){}
   return new Promise(function(res){var old=document.getElementById('djs');if(old)old.remove();
     var s=document.createElement('script');s.id='djs';s.src='penny_dashboard_data.js?t='+Date.now();
     s.onload=function(){res(window.__DASHBOARD_DATA||null);};s.onerror=function(){res(window.__DASHBOARD_DATA||null);};
@@ -320,7 +322,10 @@ async function tick(){
   var d=await loadData();
   if(!d)return;
   lastData=d;
-  document.getElementById('last-update').textContent='updated '+d.generated;
+  var lu=document.getElementById('last-update');lu.textContent='updated '+d.generated;
+  try{var age=(Date.now()-new Date(d.generated.replace(' ','T')))/60000;
+    lu.style.color=age>10?'#ef4444':(age>4?'#f59e0b':'#64748b');
+    lu.textContent+=' ('+(age<1?'<1':Math.round(age))+'m ago)';}catch(e){}
   renderHero(d);renderChart(d);renderPositions(d);renderBoard(d);renderSlippage(d);renderTrades(d);renderHealth(d);renderLadders(d);renderIntents(d);renderAcct(d);
 }
 tick();setInterval(tick,REFRESH);
