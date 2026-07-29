@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 09:56:58",
-  "generated_ts": 1785333418.427888,
+  "generated": "2026-07-29 09:57:15",
+  "generated_ts": 1785333435.54374,
   "system": "penny",
   "positions": [
     {
@@ -66,7 +66,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -76,11 +76,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.5m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 1.1,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -2760,13 +2760,17 @@
     {
       "t": "09:56",
       "v": 77242.57
+    },
+    {
+      "t": "09:57",
+      "v": 77242.57
     }
   ],
   "ladders": [
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 34.67,
+      "price": 35.7,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -2784,7 +2788,7 @@
           "filled": 10
         }
       ],
-      "unreal_pct": -11.0
+      "unreal_pct": -8.36
     },
     {
       "symbol": "RDGT",
@@ -2812,7 +2816,7 @@
     {
       "symbol": "LVWR",
       "phase": "entering",
-      "price": 2.18,
+      "price": 2.17,
       "trig_px": 2.29,
       "avg": 2.15,
       "live_shares": 279,
@@ -2830,7 +2834,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 1.4
+      "unreal_pct": 0.93
     },
     {
       "symbol": "MWYN",
@@ -2927,7 +2931,7 @@
     {
       "symbol": "GMM",
       "phase": "entering",
-      "price": 4.05,
+      "price": 4.07,
       "trig_px": 3.815,
       "avg": 3.59,
       "live_shares": 167,
@@ -2945,10 +2949,49 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 12.81
+      "unreal_pct": 13.37
+    },
+    {
+      "symbol": "SGLY",
+      "phase": "entering",
+      "price": 5.18,
+      "trig_px": 5.18,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 4.87,
+          "sh": 123,
+          "filled": 0
+        },
+        {
+          "px": 4.45,
+          "sh": 89,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-29 09:56:59",
+      "symbol": "SGLY",
+      "action": "Buy",
+      "sim_price": 4.45,
+      "shares": 89,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-07-29 09:56:58",
+      "symbol": "SGLY",
+      "action": "Buy",
+      "sim_price": 4.87,
+      "shares": 123,
+      "note": "rung0"
+    },
     {
       "ts": "2026-07-29 09:54:04",
       "symbol": "GMM",
@@ -3091,22 +3134,6 @@
       "action": "Buy",
       "sim_price": 0.5418,
       "shares": 738,
-      "note": "rung1"
-    },
-    {
-      "ts": "2026-07-29 09:40:06",
-      "symbol": "MWYN",
-      "action": "Buy",
-      "sim_price": 0.5922,
-      "shares": 1013,
-      "note": "rung0"
-    },
-    {
-      "ts": "2026-07-29 09:39:05",
-      "symbol": "LVWR",
-      "action": "Buy",
-      "sim_price": 1.97,
-      "shares": 203,
       "note": "rung1"
     }
   ],
