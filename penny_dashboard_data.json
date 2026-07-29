@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 09:47:35",
-  "generated_ts": 1785332855.00058,
+  "generated": "2026-07-29 09:47:51",
+  "generated_ts": 1785332871.951648,
   "system": "penny",
   "positions": [
     {
@@ -43,7 +43,7 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.5m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
@@ -2697,7 +2697,7 @@
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 35.83,
+      "price": 35.55,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -2715,7 +2715,7 @@
           "filled": 10
         }
       ],
-      "unreal_pct": -8.03
+      "unreal_pct": -8.74
     },
     {
       "symbol": "RDGT",
@@ -2743,7 +2743,7 @@
     {
       "symbol": "LVWR",
       "phase": "entering",
-      "price": 2.42,
+      "price": 2.41,
       "trig_px": 2.29,
       "avg": 0.0,
       "live_shares": 0,
@@ -2766,7 +2766,7 @@
     {
       "symbol": "MWYN",
       "phase": "stop_chase",
-      "price": 0.564,
+      "price": 0.5767,
       "trig_px": 0.63,
       "avg": 0.571,
       "live_shares": 1751,
@@ -2784,12 +2784,12 @@
           "filled": 738
         }
       ],
-      "unreal_pct": -1.22
+      "unreal_pct": 1.01
     },
     {
       "symbol": "OTLK",
       "phase": "entering",
-      "price": 1.12,
+      "price": 1.11,
       "trig_px": 1.0204,
       "avg": 0.0,
       "live_shares": 0,
@@ -2812,17 +2812,17 @@
     {
       "symbol": "SPRC",
       "phase": "entering",
-      "price": 6.55,
+      "price": 6.62,
       "trig_px": 7.0201,
-      "avg": 0.0,
-      "live_shares": 0,
+      "avg": 6.6,
+      "live_shares": 90,
       "be_armed": false,
-      "stop": null,
+      "stop": 6.006,
       "rungs": [
         {
           "px": 6.6,
           "sh": 90,
-          "filled": 0
+          "filled": 90
         },
         {
           "px": 6.04,
@@ -2830,10 +2830,18 @@
           "filled": 0
         }
       ],
-      "unreal_pct": null
+      "unreal_pct": 0.3
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-29 09:47:36",
+      "symbol": "SPRC",
+      "action": "Sell",
+      "sim_price": 6.01,
+      "shares": 90,
+      "note": "stop_placed"
+    },
     {
       "ts": "2026-07-29 09:47:05",
       "symbol": "SPRC",
