@@ -1,15 +1,27 @@
 {
-  "generated": "2026-07-29 00:14:55",
-  "generated_ts": 1785298495.998799,
+  "generated": "2026-07-29 00:15:12",
+  "generated_ts": 1785298512.796424,
   "system": "penny",
   "positions": [],
   "ib_all_ok": false,
-  "ib_auth_info": {},
+  "ib_auth_info": {
+    "authenticated": false,
+    "established": false,
+    "competing": false,
+    "connected": false,
+    "message": "",
+    "MAC": "06:E5:17:B5:F2:EE",
+    "serverInfo": {
+      "serverName": "JisfN2019",
+      "serverVersion": "Build 10.46.2a, Jul 20, 2026 5:51:54 PM"
+    },
+    "fail": ""
+  },
   "component_checks": [
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 232m old"
+      "detail": "bars 233m old"
     },
     {
       "name": "Scheduler",
@@ -23,7 +35,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 232.4,
+    "newest_bar_age_min": 232.6,
     "in_rth": false,
     "ok": true
   },
@@ -378,6 +390,10 @@
     },
     {
       "t": "00:14",
+      "v": 77203.32
+    },
+    {
+      "t": "00:15",
       "v": 77203.32
     }
   ],
