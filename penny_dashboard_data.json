@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 09:58:26",
-  "generated_ts": 1785333506.237419,
+  "generated": "2026-07-29 09:58:51",
+  "generated_ts": 1785333531.907478,
   "system": "penny",
   "positions": [
     {
@@ -76,11 +76,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.3,
     "in_rth": true,
     "ok": true
   },
@@ -110,10 +110,10 @@
     }
   },
   "account_summary": {
-    "net_liq": 77242.57,
+    "net_liq": 77108.5,
     "cash": 74298.03
   },
-  "live_account_value": 77242.57,
+  "live_account_value": 77108.5,
   "live_cash": 74298.03,
   "active_trade_count": 4,
   "aggregate_unrealized_pnl_dollar": 139.25,
@@ -2767,14 +2767,14 @@
     },
     {
       "t": "09:58",
-      "v": 77242.57
+      "v": 77108.5
     }
   ],
   "ladders": [
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 36.76,
+      "price": 36.72,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -2792,7 +2792,7 @@
           "filled": 10
         }
       ],
-      "unreal_pct": -5.64
+      "unreal_pct": -5.74
     },
     {
       "symbol": "RDGT",
@@ -2866,7 +2866,7 @@
     {
       "symbol": "OTLK",
       "phase": "entering",
-      "price": 1.02,
+      "price": 1.03,
       "trig_px": 1.0204,
       "avg": 0.0,
       "live_shares": 0,
@@ -2934,8 +2934,8 @@
     },
     {
       "symbol": "GMM",
-      "phase": "entering",
-      "price": 3.64,
+      "phase": "stop_chase",
+      "price": 3.57,
       "trig_px": 3.815,
       "avg": 3.59,
       "live_shares": 167,
@@ -2953,7 +2953,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 1.39
+      "unreal_pct": -0.56
     },
     {
       "symbol": "SGLY",
@@ -2980,6 +2980,14 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-29 09:58:32",
+      "symbol": "GMM",
+      "action": "Sell",
+      "sim_price": 3.59,
+      "shares": 167,
+      "note": "stop_chase"
+    },
     {
       "ts": "2026-07-29 09:56:59",
       "symbol": "SGLY",
@@ -3131,14 +3139,6 @@
       "sim_price": 0.9592,
       "shares": 625,
       "note": "rung0"
-    },
-    {
-      "ts": "2026-07-29 09:40:07",
-      "symbol": "MWYN",
-      "action": "Buy",
-      "sim_price": 0.5418,
-      "shares": 738,
-      "note": "rung1"
     }
   ],
   "live_daily": [
