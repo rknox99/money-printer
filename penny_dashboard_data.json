@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 09:59:59",
-  "generated_ts": 1785333599.858107,
+  "generated": "2026-07-29 10:00:16",
+  "generated_ts": 1785333616.883213,
   "system": "penny",
   "positions": [
     {
@@ -66,7 +66,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -76,11 +76,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.7,
     "in_rth": true,
     "ok": true
   },
@@ -2772,13 +2772,17 @@
     {
       "t": "09:59",
       "v": 77071.42
+    },
+    {
+      "t": "10:00",
+      "v": 77071.42
     }
   ],
   "ladders": [
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 35.98,
+      "price": 35.37,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -2796,7 +2800,7 @@
           "filled": 10
         }
       ],
-      "unreal_pct": -7.64
+      "unreal_pct": -9.21
     },
     {
       "symbol": "RDGT",
@@ -2939,12 +2943,12 @@
     {
       "symbol": "GMM",
       "phase": "stop_chase",
-      "price": 3.34,
+      "price": 3.47,
       "trig_px": 3.815,
-      "avg": 3.59,
-      "live_shares": 167,
+      "avg": 3.4598,
+      "live_shares": 288,
       "be_armed": true,
-      "stop": 3.59,
+      "stop": 3.4598,
       "rungs": [
         {
           "px": 3.59,
@@ -2954,10 +2958,10 @@
         {
           "px": 3.28,
           "sh": 121,
-          "filled": 0
+          "filled": 121
         }
       ],
-      "unreal_pct": -6.96
+      "unreal_pct": 0.3
     },
     {
       "symbol": "SGLY",
