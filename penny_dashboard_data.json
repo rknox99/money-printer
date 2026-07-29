@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 09:37:51",
-  "generated_ts": 1785332271.606229,
+  "generated": "2026-07-29 09:38:14",
+  "generated_ts": 1785332294.478874,
   "system": "penny",
   "positions": [
     {
@@ -43,11 +43,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.2,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -66,12 +66,12 @@
   "slippage": {
     "configured": true,
     "summary": {
-      "avg_slippage_bps": 2.0,
-      "total_commissions": 106.09,
+      "avg_slippage_bps": 1.7,
+      "total_commissions": 107.09,
       "total_slippage_cost": 41.29,
-      "total_fees_and_slippage": 147.38,
-      "avg_slippage_pct": 0.6354,
-      "trade_count": 88,
+      "total_fees_and_slippage": 148.38,
+      "avg_slippage_pct": 0.6245,
+      "trade_count": 89,
       "missed_trades": 0,
       "match_rate": 100.0
     }
@@ -2651,6 +2651,10 @@
     {
       "t": "09:37",
       "v": 77248.89
+    },
+    {
+      "t": "09:38",
+      "v": 77248.89
     }
   ],
   "ladders": [
@@ -2707,14 +2711,24 @@
   "live_daily": [
     {
       "date": "2026-07-27",
-      "pnl": -53.5
+      "pnl": -54.16
     },
     {
       "date": "2026-07-28",
-      "pnl": -492.25
+      "pnl": -493.14
     }
   ],
   "trade_history": [
+    {
+      "symbol": "MWYN",
+      "entry_time": "2026-07-28 14:27:20",
+      "exit_time": "2026-07-28 15:54:34",
+      "shares": 100.0,
+      "entry_price": 0.5193,
+      "exit_price": 0.5025,
+      "pnl_dollar": -2.78,
+      "pnl_pct": -3.24
+    },
     {
       "symbol": "MWYN",
       "entry_time": "2026-07-28 14:27:20",
@@ -2737,13 +2751,13 @@
     },
     {
       "symbol": "MWYN",
-      "entry_time": "2026-07-28 14:27:20",
+      "entry_time": "2026-07-28 14:27:35",
       "exit_time": "2026-07-28 15:54:34",
-      "shares": 100.0,
-      "entry_price": 0.5193,
+      "shares": 200.0,
+      "entry_price": 0.5412,
       "exit_price": 0.5025,
-      "pnl_dollar": -2.78,
-      "pnl_pct": -3.24
+      "pnl_dollar": -9.78,
+      "pnl_pct": -7.15
     },
     {
       "symbol": "MWYN",
@@ -2753,16 +2767,6 @@
       "entry_price": 0.5412,
       "exit_price": 0.5025,
       "pnl_dollar": -23.57,
-      "pnl_pct": -7.15
-    },
-    {
-      "symbol": "MWYN",
-      "entry_time": "2026-07-28 14:27:35",
-      "exit_time": "2026-07-28 15:54:34",
-      "shares": 200.0,
-      "entry_price": 0.5412,
-      "exit_price": 0.5025,
-      "pnl_dollar": -9.78,
       "pnl_pct": -7.15
     },
     {
@@ -2989,20 +2993,10 @@
       "symbol": "ZNB",
       "entry_time": "2026-07-28 10:31:20",
       "exit_time": "2026-07-28 15:45:20",
-      "shares": 9.0,
-      "entry_price": 2.86,
-      "exit_price": 2.74,
-      "pnl_dollar": -1.18,
-      "pnl_pct": -4.2
-    },
-    {
-      "symbol": "ZNB",
-      "entry_time": "2026-07-28 10:31:20",
-      "exit_time": "2026-07-28 15:45:20",
       "shares": 100.0,
       "entry_price": 2.86,
       "exit_price": 2.75,
-      "pnl_dollar": -12.55,
+      "pnl_dollar": -12.53,
       "pnl_pct": -3.85
     },
     {
@@ -3012,8 +3006,18 @@
       "shares": 100.0,
       "entry_price": 2.86,
       "exit_price": 2.7456,
-      "pnl_dollar": -12.52,
+      "pnl_dollar": -12.43,
       "pnl_pct": -4.0
+    },
+    {
+      "symbol": "ZNB",
+      "entry_time": "2026-07-28 10:31:20",
+      "exit_time": "2026-07-28 15:45:20",
+      "shares": 9.0,
+      "entry_price": 2.86,
+      "exit_price": 2.74,
+      "pnl_dollar": -2.18,
+      "pnl_pct": -4.2
     },
     {
       "symbol": "TZOO",
@@ -3159,20 +3163,20 @@
       "symbol": "OMH",
       "entry_time": "2026-07-28 10:24:41",
       "exit_time": "2026-07-28 10:29:10",
-      "shares": 187.0,
+      "shares": 2175.0,
       "entry_price": 0.2068,
       "exit_price": 0.1872,
-      "pnl_dollar": -4.44,
+      "pnl_dollar": -51.64,
       "pnl_pct": -9.48
     },
     {
       "symbol": "OMH",
       "entry_time": "2026-07-28 10:24:41",
       "exit_time": "2026-07-28 10:29:10",
-      "shares": 2175.0,
+      "shares": 187.0,
       "entry_price": 0.2068,
       "exit_price": 0.1872,
-      "pnl_dollar": -51.64,
+      "pnl_dollar": -4.44,
       "pnl_pct": -9.48
     },
     {
@@ -3218,9 +3222,9 @@
   ],
   "realized_summary": {
     "trades": 67,
-    "total": -545.75,
+    "total": -547.3,
     "wins": 26,
     "win_rate": 38.8
   },
-  "total_realized_pnl": -545.75
+  "total_realized_pnl": -547.3
 }
