@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 13:20:56",
-  "generated_ts": 1785345656.198641,
+  "generated": "2026-07-29 13:24:01",
+  "generated_ts": 1785345841.787944,
   "system": "penny",
   "positions": [
     {
@@ -18,10 +18,10 @@
       "symbol": "PCSA",
       "shares": 277.0,
       "avg_cost": 2.165,
-      "mkt_price": 2.162,
-      "position_value": 598.87,
-      "unrealized_pnl_dollar": -0.83,
-      "unrealized_pnl": -0.14,
+      "mkt_price": 2.2618,
+      "position_value": 626.52,
+      "unrealized_pnl_dollar": 26.81,
+      "unrealized_pnl": 4.47,
       "in_universe": true,
       "position": "long"
     },
@@ -29,10 +29,10 @@
       "symbol": "OTLK",
       "shares": 625.0,
       "avg_cost": 0.9642,
-      "mkt_price": 0.9901,
-      "position_value": 618.82,
-      "unrealized_pnl_dollar": 16.19,
-      "unrealized_pnl": 2.69,
+      "mkt_price": 0.9806,
+      "position_value": 612.87,
+      "unrealized_pnl_dollar": 10.25,
+      "unrealized_pnl": 1.7,
       "in_universe": true,
       "position": "long"
     },
@@ -51,10 +51,10 @@
       "symbol": "MWYN",
       "shares": 1751.0,
       "avg_cost": 0.576,
-      "mkt_price": 0.5716,
-      "position_value": 1000.89,
-      "unrealized_pnl_dollar": -7.61,
-      "unrealized_pnl": -0.75,
+      "mkt_price": 0.5719,
+      "position_value": 1001.44,
+      "unrealized_pnl_dollar": -7.06,
+      "unrealized_pnl": -0.7,
       "in_universe": true,
       "position": "long"
     },
@@ -73,10 +73,10 @@
       "symbol": "GMM",
       "shares": 288.0,
       "avg_cost": 3.4667,
-      "mkt_price": 3.0603,
-      "position_value": 881.37,
-      "unrealized_pnl_dollar": -117.04,
-      "unrealized_pnl": -11.72,
+      "mkt_price": 3.053,
+      "position_value": 879.27,
+      "unrealized_pnl_dollar": -119.14,
+      "unrealized_pnl": -11.93,
       "in_universe": true,
       "position": "long"
     },
@@ -84,10 +84,10 @@
       "symbol": "LVWR",
       "shares": 279.0,
       "avg_cost": 2.155,
-      "mkt_price": 2.3966,
-      "position_value": 668.65,
-      "unrealized_pnl_dollar": 67.4,
-      "unrealized_pnl": 11.21,
+      "mkt_price": 2.43,
+      "position_value": 677.97,
+      "unrealized_pnl_dollar": 76.72,
+      "unrealized_pnl": 12.76,
       "in_universe": true,
       "position": "long"
     }
@@ -115,16 +115,16 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 4.1h old"
+      "detail": "log 4.2h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.4,
     "in_rth": true,
     "ok": true
   },
@@ -154,14 +154,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 77003.26,
-    "cash": 71422.24
+    "net_liq": 76968.39,
+    "cash": 70821.36
   },
-  "live_account_value": 77003.26,
-  "live_cash": 71422.24,
+  "live_account_value": 76968.39,
+  "live_cash": 70821.36,
   "active_trade_count": 8,
-  "aggregate_unrealized_pnl_dollar": -74.46,
-  "total_position_value": 5540.43,
+  "aggregate_unrealized_pnl_dollar": -44.99,
+  "total_position_value": 5569.9,
   "system_ok": true,
   "shadow": {
     "days": 11,
@@ -3620,13 +3620,29 @@
     {
       "t": "13:20",
       "v": 77003.26
+    },
+    {
+      "t": "13:21",
+      "v": 76992.15
+    },
+    {
+      "t": "13:22",
+      "v": 76992.15
+    },
+    {
+      "t": "13:23",
+      "v": 76968.39
+    },
+    {
+      "t": "13:24",
+      "v": 76968.39
     }
   ],
   "ladders": [
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 33.92,
+      "price": 33.95,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -3644,12 +3660,12 @@
           "filled": 10
         }
       ],
-      "unreal_pct": -12.93
+      "unreal_pct": -12.85
     },
     {
       "symbol": "RDGT",
       "phase": "entering",
-      "price": 0.9209,
+      "price": 0.9304,
       "trig_px": 0.9999,
       "avg": 0.9399,
       "live_shares": 638,
@@ -3667,12 +3683,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -2.02
+      "unreal_pct": -1.01
     },
     {
       "symbol": "LVWR",
       "phase": "entering",
-      "price": 2.43,
+      "price": 2.41,
       "trig_px": 2.29,
       "avg": 2.15,
       "live_shares": 279,
@@ -3690,12 +3706,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 13.02
+      "unreal_pct": 12.09
     },
     {
       "symbol": "MWYN",
       "phase": "stop_chase",
-      "price": 0.5761,
+      "price": 0.5938,
       "trig_px": 0.63,
       "avg": 0.571,
       "live_shares": 1751,
@@ -3713,12 +3729,12 @@
           "filled": 738
         }
       ],
-      "unreal_pct": 0.9
+      "unreal_pct": 4.0
     },
     {
       "symbol": "OTLK",
       "phase": "entering",
-      "price": 0.9836,
+      "price": 0.9761,
       "trig_px": 1.0204,
       "avg": 0.9592,
       "live_shares": 625,
@@ -3736,12 +3752,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 2.54
+      "unreal_pct": 1.76
     },
     {
       "symbol": "SPRC",
       "phase": "flat",
-      "price": 7.21,
+      "price": 7.33,
       "trig_px": 7.0201,
       "avg": 6.6,
       "live_shares": 0,
@@ -3759,7 +3775,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 9.24
+      "unreal_pct": 11.06
     },
     {
       "symbol": "FGNX",
@@ -3833,7 +3849,7 @@
     {
       "symbol": "TNMG",
       "phase": "entering",
-      "price": 0.392,
+      "price": 0.3919,
       "trig_px": 0.3786,
       "avg": 0.0,
       "live_shares": 0,
@@ -3879,7 +3895,7 @@
     {
       "symbol": "MPLT",
       "phase": "entering",
-      "price": 15.05,
+      "price": 15.03,
       "trig_px": 15.1299,
       "avg": 0.0,
       "live_shares": 0,
@@ -3902,7 +3918,7 @@
     {
       "symbol": "YYGH",
       "phase": "flat",
-      "price": 1.2,
+      "price": 1.19,
       "trig_px": 1.44,
       "avg": 1.35,
       "live_shares": 0,
@@ -3920,7 +3936,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -11.11
+      "unreal_pct": -11.85
     },
     {
       "symbol": "ATHR",
@@ -3948,7 +3964,7 @@
     {
       "symbol": "PCSA",
       "phase": "entering",
-      "price": 2.26,
+      "price": 2.23,
       "trig_px": 2.3,
       "avg": 2.16,
       "live_shares": 277,
@@ -3966,22 +3982,22 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 4.63
+      "unreal_pct": 3.24
     },
     {
       "symbol": "STAK",
       "phase": "entering",
-      "price": 2.52,
+      "price": 2.32,
       "trig_px": 2.52,
-      "avg": 0.0,
-      "live_shares": 0,
+      "avg": 2.37,
+      "live_shares": 253,
       "be_armed": false,
-      "stop": null,
+      "stop": 2.1567,
       "rungs": [
         {
           "px": 2.37,
           "sh": 253,
-          "filled": 0
+          "filled": 253
         },
         {
           "px": 2.17,
@@ -3989,7 +4005,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": null
+      "unreal_pct": -2.11
     },
     {
       "symbol": "GWAV",
@@ -4016,6 +4032,14 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-29 13:23:47",
+      "symbol": "STAK",
+      "action": "Sell",
+      "sim_price": 2.16,
+      "shares": 253,
+      "note": "stop_placed"
+    },
     {
       "ts": "2026-07-29 13:15:47",
       "symbol": "GWAV",
@@ -4167,14 +4191,6 @@
       "sim_price": 0.8553,
       "shares": 500,
       "note": "stop_placed"
-    },
-    {
-      "ts": "2026-07-29 10:48:41",
-      "symbol": "YYGH",
-      "action": "Sell",
-      "sim_price": 1.35,
-      "shares": 444,
-      "note": "be_lock_moved"
     }
   ],
   "live_daily": [
