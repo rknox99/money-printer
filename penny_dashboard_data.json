@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 09:52:48",
-  "generated_ts": 1785333168.461577,
+  "generated": "2026-07-29 09:53:05",
+  "generated_ts": 1785333185.637095,
   "system": "penny",
   "positions": [
     {
@@ -55,7 +55,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -65,11 +65,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.5m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.3,
+    "newest_bar_age_min": 0.6,
     "in_rth": true,
     "ok": true
   },
@@ -2733,13 +2733,17 @@
     {
       "t": "09:52",
       "v": 77214.91
+    },
+    {
+      "t": "09:53",
+      "v": 77214.91
     }
   ],
   "ladders": [
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 31.86,
+      "price": 31.17,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -2757,7 +2761,7 @@
           "filled": 10
         }
       ],
-      "unreal_pct": -18.22
+      "unreal_pct": -19.99
     },
     {
       "symbol": "RDGT",
@@ -2831,7 +2835,7 @@
     {
       "symbol": "OTLK",
       "phase": "entering",
-      "price": 1.02,
+      "price": 1.01,
       "trig_px": 1.0204,
       "avg": 0.0,
       "live_shares": 0,
@@ -2854,7 +2858,7 @@
     {
       "symbol": "SPRC",
       "phase": "entering",
-      "price": 7.75,
+      "price": 7.77,
       "trig_px": 7.0201,
       "avg": 6.6,
       "live_shares": 90,
@@ -2872,7 +2876,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 17.42
+      "unreal_pct": 17.73
     },
     {
       "symbol": "FGNX",
@@ -2900,7 +2904,7 @@
     {
       "symbol": "GMM",
       "phase": "entering",
-      "price": 3.63,
+      "price": 3.62,
       "trig_px": 3.815,
       "avg": 3.59,
       "live_shares": 167,
@@ -2918,7 +2922,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 1.11
+      "unreal_pct": 0.84
     }
   ],
   "intents_tail": [
