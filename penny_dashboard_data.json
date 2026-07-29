@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 10:12:48",
-  "generated_ts": 1785334368.81119,
+  "generated": "2026-07-29 10:13:05",
+  "generated_ts": 1785334385.935434,
   "system": "penny",
   "positions": [
     {
@@ -76,11 +76,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.1m"
+      "detail": "heartbeat 0.4m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.1,
+    "newest_bar_age_min": 0.4,
     "in_rth": true,
     "ok": true
   },
@@ -110,11 +110,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 77101.22,
-    "cash": 73891.63
+    "net_liq": 77088.48,
+    "cash": 73891.64
   },
-  "live_account_value": 77101.22,
-  "live_cash": 73891.63,
+  "live_account_value": 77088.48,
+  "live_cash": 73891.64,
   "active_trade_count": 4,
   "aggregate_unrealized_pnl_dollar": 1.41,
   "total_position_value": 3209.59,
@@ -2824,13 +2824,17 @@
     {
       "t": "10:12",
       "v": 77101.22
+    },
+    {
+      "t": "10:13",
+      "v": 77088.48
     }
   ],
   "ladders": [
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 34.48,
+      "price": 34.45,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -2848,7 +2852,7 @@
           "filled": 10
         }
       ],
-      "unreal_pct": -11.49
+      "unreal_pct": -11.57
     },
     {
       "symbol": "RDGT",
@@ -2922,7 +2926,7 @@
     {
       "symbol": "OTLK",
       "phase": "entering",
-      "price": 1.06,
+      "price": 1.07,
       "trig_px": 1.0204,
       "avg": 0.0,
       "live_shares": 0,
@@ -2991,7 +2995,7 @@
     {
       "symbol": "GMM",
       "phase": "stop_chase",
-      "price": 3.37,
+      "price": 3.35,
       "trig_px": 3.815,
       "avg": 3.4598,
       "live_shares": 288,
@@ -3009,7 +3013,7 @@
           "filled": 121
         }
       ],
-      "unreal_pct": -2.59
+      "unreal_pct": -3.17
     },
     {
       "symbol": "SGLY",
