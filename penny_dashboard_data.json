@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 09:58:51",
-  "generated_ts": 1785333531.907478,
+  "generated": "2026-07-29 09:59:08",
+  "generated_ts": 1785333548.885191,
   "system": "penny",
   "positions": [
     {
@@ -66,7 +66,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -76,11 +76,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.3,
+    "newest_bar_age_min": 0.6,
     "in_rth": true,
     "ok": true
   },
@@ -2768,13 +2768,17 @@
     {
       "t": "09:58",
       "v": 77108.5
+    },
+    {
+      "t": "09:59",
+      "v": 77108.5
     }
   ],
   "ladders": [
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 36.72,
+      "price": 36.69,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -2792,7 +2796,7 @@
           "filled": 10
         }
       ],
-      "unreal_pct": -5.74
+      "unreal_pct": -5.82
     },
     {
       "symbol": "RDGT",
@@ -2820,7 +2824,7 @@
     {
       "symbol": "LVWR",
       "phase": "entering",
-      "price": 2.24,
+      "price": 2.19,
       "trig_px": 2.29,
       "avg": 2.15,
       "live_shares": 279,
@@ -2838,7 +2842,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 4.19
+      "unreal_pct": 1.86
     },
     {
       "symbol": "MWYN",
@@ -2935,7 +2939,7 @@
     {
       "symbol": "GMM",
       "phase": "stop_chase",
-      "price": 3.57,
+      "price": 3.55,
       "trig_px": 3.815,
       "avg": 3.59,
       "live_shares": 167,
@@ -2953,7 +2957,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -0.56
+      "unreal_pct": -1.11
     },
     {
       "symbol": "SGLY",
