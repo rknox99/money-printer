@@ -1,8 +1,20 @@
 {
-  "generated": "2026-07-29 09:35:32",
-  "generated_ts": 1785332132.48615,
+  "generated": "2026-07-29 09:35:49",
+  "generated_ts": 1785332149.940658,
   "system": "penny",
-  "positions": [],
+  "positions": [
+    {
+      "symbol": "DFNS",
+      "shares": 14.0,
+      "avg_cost": 40.4614,
+      "mkt_price": 43.39,
+      "position_value": 607.46,
+      "unrealized_pnl_dollar": 41.0,
+      "unrealized_pnl": 7.24,
+      "in_universe": true,
+      "position": "long"
+    }
+  ],
   "ib_all_ok": true,
   "ib_auth_info": {
     "authenticated": true,
@@ -31,7 +43,7 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
@@ -65,14 +77,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 77207.89,
-    "cash": 77207.89
+    "net_liq": 77248.89,
+    "cash": 76641.43
   },
-  "live_account_value": 77207.89,
-  "live_cash": 77207.89,
-  "active_trade_count": 0,
-  "aggregate_unrealized_pnl_dollar": 0,
-  "total_position_value": 0,
+  "live_account_value": 77248.89,
+  "live_cash": 76641.43,
+  "active_trade_count": 1,
+  "aggregate_unrealized_pnl_dollar": 41.0,
+  "total_position_value": 607.46,
   "system_ok": true,
   "shadow": {
     "days": 11,
@@ -2630,14 +2642,14 @@
     },
     {
       "t": "09:35",
-      "v": 77207.89
+      "v": 77248.89
     }
   ],
   "ladders": [
     {
       "symbol": "DFNS",
       "phase": "entering",
-      "price": 42.97,
+      "price": 39.66,
       "trig_px": 42.97,
       "avg": 0.0,
       "live_shares": 0,
