@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 09:39:57",
-  "generated_ts": 1785332397.760261,
+  "generated": "2026-07-29 09:40:14",
+  "generated_ts": 1785332414.795184,
   "system": "penny",
   "positions": [
     {
@@ -33,7 +33,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -43,11 +43,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.7,
     "in_rth": true,
     "ok": true
   },
@@ -2659,6 +2659,10 @@
     {
       "t": "09:39",
       "v": 77182.2
+    },
+    {
+      "t": "09:40",
+      "v": 77182.2
     }
   ],
   "ladders": [
@@ -2688,7 +2692,7 @@
     {
       "symbol": "RDGT",
       "phase": "entering",
-      "price": 0.9802,
+      "price": 1.0,
       "trig_px": 0.9999,
       "avg": 0.0,
       "live_shares": 0,
@@ -2711,7 +2715,7 @@
     {
       "symbol": "LVWR",
       "phase": "entering",
-      "price": 2.37,
+      "price": 2.32,
       "trig_px": 2.29,
       "avg": 0.0,
       "live_shares": 0,
@@ -2730,9 +2734,48 @@
         }
       ],
       "unreal_pct": null
+    },
+    {
+      "symbol": "MWYN",
+      "phase": "entering",
+      "price": 0.5922,
+      "trig_px": 0.63,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 0.5922,
+          "sh": 1013,
+          "filled": 0
+        },
+        {
+          "px": 0.5418,
+          "sh": 738,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-29 09:40:07",
+      "symbol": "MWYN",
+      "action": "Buy",
+      "sim_price": 0.5418,
+      "shares": 738,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-07-29 09:40:06",
+      "symbol": "MWYN",
+      "action": "Buy",
+      "sim_price": 0.5922,
+      "shares": 1013,
+      "note": "rung0"
+    },
     {
       "ts": "2026-07-29 09:39:05",
       "symbol": "LVWR",
