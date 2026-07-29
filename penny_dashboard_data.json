@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 10:03:26",
-  "generated_ts": 1785333806.898101,
+  "generated": "2026-07-29 10:03:49",
+  "generated_ts": 1785333829.344905,
   "system": "penny",
   "positions": [
     {
@@ -66,7 +66,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -76,11 +76,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.8,
     "in_rth": true,
     "ok": true
   },
@@ -99,12 +99,12 @@
   "slippage": {
     "configured": true,
     "summary": {
-      "avg_slippage_bps": 18.4,
-      "total_commissions": 121.28,
+      "avg_slippage_bps": 18.1,
+      "total_commissions": 122.28,
       "total_slippage_cost": 58.71,
-      "total_fees_and_slippage": 179.99,
-      "avg_slippage_pct": 0.6484,
-      "trade_count": 100,
+      "total_fees_and_slippage": 180.99,
+      "avg_slippage_pct": 0.6428,
+      "trade_count": 102,
       "missed_trades": 0,
       "match_rate": 100.0
     }
@@ -2794,7 +2794,7 @@
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 36.29,
+      "price": 35.88,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -2812,12 +2812,12 @@
           "filled": 10
         }
       ],
-      "unreal_pct": -6.85
+      "unreal_pct": -7.9
     },
     {
       "symbol": "RDGT",
       "phase": "entering",
-      "price": 0.9836,
+      "price": 0.9837,
       "trig_px": 0.9999,
       "avg": 0.0,
       "live_shares": 0,
@@ -2840,7 +2840,7 @@
     {
       "symbol": "LVWR",
       "phase": "entering",
-      "price": 2.23,
+      "price": 2.22,
       "trig_px": 2.29,
       "avg": 2.15,
       "live_shares": 279,
@@ -2858,12 +2858,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 3.72
+      "unreal_pct": 3.26
     },
     {
       "symbol": "MWYN",
       "phase": "stop_chase",
-      "price": 0.5486,
+      "price": 0.5474,
       "trig_px": 0.63,
       "avg": 0.571,
       "live_shares": 1751,
@@ -2881,12 +2881,12 @@
           "filled": 738
         }
       ],
-      "unreal_pct": -3.92
+      "unreal_pct": -4.13
     },
     {
       "symbol": "OTLK",
       "phase": "entering",
-      "price": 1.04,
+      "price": 1.05,
       "trig_px": 1.0204,
       "avg": 0.0,
       "live_shares": 0,
@@ -2955,7 +2955,7 @@
     {
       "symbol": "GMM",
       "phase": "stop_chase",
-      "price": 3.27,
+      "price": 3.3,
       "trig_px": 3.815,
       "avg": 3.4598,
       "live_shares": 288,
@@ -2973,7 +2973,7 @@
           "filled": 121
         }
       ],
-      "unreal_pct": -5.48
+      "unreal_pct": -4.62
     },
     {
       "symbol": "SGLY",
@@ -3223,6 +3223,16 @@
       "symbol": "MWYN",
       "entry_time": "2026-07-28 14:27:20",
       "exit_time": "2026-07-28 15:54:34",
+      "shares": 226.0,
+      "entry_price": 0.5412,
+      "exit_price": 0.5025,
+      "pnl_dollar": -11.05,
+      "pnl_pct": -7.15
+    },
+    {
+      "symbol": "MWYN",
+      "entry_time": "2026-07-28 14:27:20",
+      "exit_time": "2026-07-28 15:54:34",
       "shares": 100.0,
       "entry_price": 0.5193,
       "exit_price": 0.5025,
@@ -3238,16 +3248,6 @@
       "exit_price": 0.5025,
       "pnl_dollar": -2.64,
       "pnl_pct": -3.25
-    },
-    {
-      "symbol": "MWYN",
-      "entry_time": "2026-07-28 14:27:20",
-      "exit_time": "2026-07-28 15:54:34",
-      "shares": 226.0,
-      "entry_price": 0.5412,
-      "exit_price": 0.5025,
-      "pnl_dollar": -11.05,
-      "pnl_pct": -7.15
     },
     {
       "symbol": "MWYN",
