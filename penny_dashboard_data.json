@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 17:06:41",
-  "generated_ts": 1785359201.421874,
+  "generated": "2026-07-29 17:09:42",
+  "generated_ts": 1785359382.310187,
   "system": "penny",
   "positions": [
     {
@@ -18,10 +18,10 @@
       "symbol": "MWYN",
       "shares": 1751.0,
       "avg_cost": 0.576,
-      "mkt_price": 0.6396,
-      "position_value": 1119.94,
-      "unrealized_pnl_dollar": 111.43,
-      "unrealized_pnl": 11.05,
+      "mkt_price": 0.645,
+      "position_value": 1129.39,
+      "unrealized_pnl_dollar": 120.89,
+      "unrealized_pnl": 11.99,
       "in_universe": true,
       "position": "long"
     },
@@ -29,10 +29,10 @@
       "symbol": "GMM",
       "shares": 288.0,
       "avg_cost": 3.4667,
-      "mkt_price": 2.91,
-      "position_value": 838.08,
-      "unrealized_pnl_dollar": -160.33,
-      "unrealized_pnl": -16.06,
+      "mkt_price": 2.93,
+      "position_value": 843.84,
+      "unrealized_pnl_dollar": -154.57,
+      "unrealized_pnl": -15.48,
       "in_universe": true,
       "position": "long"
     }
@@ -60,7 +60,7 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 1.0h old"
+      "detail": "log 1.1h old"
     },
     {
       "name": "Engine",
@@ -105,8 +105,8 @@
   "live_account_value": 76764.23,
   "live_cash": 73924.48,
   "active_trade_count": 3,
-  "aggregate_unrealized_pnl_dollar": -187.41,
-  "total_position_value": 2824.54,
+  "aggregate_unrealized_pnl_dollar": -172.19,
+  "total_position_value": 2839.75,
   "system_ok": true,
   "shadow": {
     "days": 11,
@@ -4469,13 +4469,25 @@
     {
       "t": "17:06",
       "v": 76764.23
+    },
+    {
+      "t": "17:07",
+      "v": 76764.23
+    },
+    {
+      "t": "17:08",
+      "v": 76764.23
+    },
+    {
+      "t": "17:09",
+      "v": 76764.23
     }
   ],
   "ladders": [
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 92.97,
+      "price": 88.0,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -4493,12 +4505,12 @@
           "filled": 10
         }
       ],
-      "unreal_pct": 138.65
+      "unreal_pct": 125.89
     },
     {
       "symbol": "RDGT",
       "phase": "flattening",
-      "price": 0.8197,
+      "price": 0.8198,
       "trig_px": 0.9999,
       "avg": 0.9062,
       "live_shares": 1103,
@@ -4516,12 +4528,12 @@
           "filled": 465
         }
       ],
-      "unreal_pct": -9.54
+      "unreal_pct": -9.53
     },
     {
       "symbol": "LVWR",
       "phase": "flat",
-      "price": 2.47,
+      "price": 2.45,
       "trig_px": 2.29,
       "avg": 2.15,
       "live_shares": 0,
@@ -4539,12 +4551,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 14.88
+      "unreal_pct": 13.95
     },
     {
       "symbol": "MWYN",
       "phase": "flattening",
-      "price": 0.62,
+      "price": 0.6451,
       "trig_px": 0.63,
       "avg": 0.571,
       "live_shares": 1751,
@@ -4562,7 +4574,7 @@
           "filled": 738
         }
       ],
-      "unreal_pct": 8.59
+      "unreal_pct": 12.99
     },
     {
       "symbol": "OTLK",
@@ -4590,7 +4602,7 @@
     {
       "symbol": "SPRC",
       "phase": "flat",
-      "price": 7.45,
+      "price": 7.43,
       "trig_px": 7.0201,
       "avg": 6.6,
       "live_shares": 0,
@@ -4608,7 +4620,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 12.88
+      "unreal_pct": 12.58
     },
     {
       "symbol": "FGNX",
@@ -4751,7 +4763,7 @@
     {
       "symbol": "YYGH",
       "phase": "flat",
-      "price": 1.22,
+      "price": 1.21,
       "trig_px": 1.44,
       "avg": 1.35,
       "live_shares": 0,
@@ -4769,7 +4781,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -9.63
+      "unreal_pct": -10.37
     },
     {
       "symbol": "ATHR",
@@ -4843,7 +4855,7 @@
     {
       "symbol": "GWAV",
       "phase": "flat",
-      "price": 3.05,
+      "price": 2.96,
       "trig_px": 3.34,
       "avg": 3.0263,
       "live_shares": 0,
@@ -4861,7 +4873,7 @@
           "filled": 139
         }
       ],
-      "unreal_pct": 0.78
+      "unreal_pct": -2.19
     }
   ],
   "intents_tail": [
