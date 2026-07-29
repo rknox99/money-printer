@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 09:56:24",
-  "generated_ts": 1785333384.108714,
+  "generated": "2026-07-29 09:56:41",
+  "generated_ts": 1785333401.248105,
   "system": "penny",
   "positions": [
     {
@@ -55,7 +55,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -65,11 +65,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.5,
+    "newest_bar_age_min": 0.8,
     "in_rth": true,
     "ok": true
   },
@@ -2755,7 +2755,7 @@
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 34.3,
+      "price": 34.91,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -2773,7 +2773,7 @@
           "filled": 10
         }
       ],
-      "unreal_pct": -11.95
+      "unreal_pct": -10.39
     },
     {
       "symbol": "RDGT",
@@ -2801,7 +2801,7 @@
     {
       "symbol": "LVWR",
       "phase": "entering",
-      "price": 2.17,
+      "price": 2.2,
       "trig_px": 2.29,
       "avg": 2.15,
       "live_shares": 279,
@@ -2819,12 +2819,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 0.93
+      "unreal_pct": 2.33
     },
     {
       "symbol": "MWYN",
       "phase": "stop_chase",
-      "price": 0.5503,
+      "price": 0.5501,
       "trig_px": 0.63,
       "avg": 0.571,
       "live_shares": 1751,
@@ -2842,12 +2842,12 @@
           "filled": 738
         }
       ],
-      "unreal_pct": -3.62
+      "unreal_pct": -3.65
     },
     {
       "symbol": "OTLK",
       "phase": "entering",
-      "price": 1.01,
+      "price": 1.02,
       "trig_px": 1.0204,
       "avg": 0.0,
       "live_shares": 0,
@@ -2916,7 +2916,7 @@
     {
       "symbol": "GMM",
       "phase": "entering",
-      "price": 3.9,
+      "price": 3.95,
       "trig_px": 3.815,
       "avg": 3.59,
       "live_shares": 167,
@@ -2934,7 +2934,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 8.64
+      "unreal_pct": 10.03
     }
   ],
   "intents_tail": [
