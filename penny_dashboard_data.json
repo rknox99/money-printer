@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 20:23:51",
-  "generated_ts": 1785371031.229868,
+  "generated": "2026-07-29 20:27:03",
+  "generated_ts": 1785371223.354394,
   "system": "penny",
   "positions": [
     {
@@ -33,12 +33,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 4m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.0h old"
+      "detail": "log 0.1h old"
     },
     {
       "name": "Engine",
@@ -47,7 +47,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 1.2,
+    "newest_bar_age_min": 4.4,
     "in_rth": false,
     "ok": true
   },
@@ -5235,6 +5235,22 @@
     {
       "t": "20:23",
       "v": 76761.06
+    },
+    {
+      "t": "20:24",
+      "v": 76761.06
+    },
+    {
+      "t": "20:25",
+      "v": 76761.06
+    },
+    {
+      "t": "20:26",
+      "v": 76761.06
+    },
+    {
+      "t": "20:27",
+      "v": 76761.06
     }
   ],
   "ladders": [
@@ -5402,7 +5418,7 @@
     {
       "symbol": "GMM",
       "phase": "flattening",
-      "price": 2.94,
+      "price": 2.97,
       "trig_px": 3.815,
       "avg": 3.4598,
       "live_shares": 288,
@@ -5420,7 +5436,7 @@
           "filled": 121
         }
       ],
-      "unreal_pct": -15.02
+      "unreal_pct": -14.16
     },
     {
       "symbol": "SGLY",
