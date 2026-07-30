@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-30 15:59:56",
-  "generated_ts": 1785441596.710924,
+  "generated": "2026-07-30 16:03:06",
+  "generated_ts": 1785441786.553834,
   "system": "penny",
   "positions": [
     {
@@ -130,13 +130,13 @@
     },
     {
       "name": "Engine",
-      "ok": false,
-      "detail": "heartbeat 15.3m"
+      "ok": true,
+      "detail": "off-hours"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.3,
-    "in_rth": true,
+    "newest_bar_age_min": 0.4,
+    "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
@@ -165,15 +165,15 @@
     }
   },
   "account_summary": {
-    "net_liq": 76343.37,
-    "cash": 68709.92
+    "net_liq": 76316.98,
+    "cash": 68709.91
   },
-  "live_account_value": 76343.37,
-  "live_cash": 68709.92,
+  "live_account_value": 76316.98,
+  "live_cash": 68709.91,
   "active_trade_count": 9,
   "aggregate_unrealized_pnl_dollar": 30.69,
   "total_position_value": 7633.45,
-  "system_ok": false,
+  "system_ok": true,
   "shadow": {
     "days": 12,
     "signals_wide": 213,
@@ -4283,13 +4283,29 @@
     {
       "t": "15:59",
       "v": 76343.37
+    },
+    {
+      "t": "16:00",
+      "v": 76347.98
+    },
+    {
+      "t": "16:01",
+      "v": 76347.98
+    },
+    {
+      "t": "16:02",
+      "v": 76347.98
+    },
+    {
+      "t": "16:03",
+      "v": 76316.98
     }
   ],
   "ladders": [
     {
       "symbol": "MWYN",
       "phase": "holding",
-      "price": 0.7267,
+      "price": 0.6861,
       "trig_px": 0.78,
       "avg": 0.7332,
       "live_shares": 818,
@@ -4307,12 +4323,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -0.89
+      "unreal_pct": -6.42
     },
     {
       "symbol": "SPRC",
       "phase": "flat",
-      "price": 8.62,
+      "price": 8.7,
       "trig_px": 10.9676,
       "avg": 9.9404,
       "live_shares": 0,
@@ -4330,12 +4346,12 @@
           "filled": 42
         }
       ],
-      "unreal_pct": -13.28
+      "unreal_pct": -12.48
     },
     {
       "symbol": "FFAI",
       "phase": "flat",
-      "price": 5.32,
+      "price": 5.25,
       "trig_px": 5.905,
       "avg": 5.55,
       "live_shares": 0,
@@ -4353,7 +4369,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -4.14
+      "unreal_pct": -5.41
     },
     {
       "symbol": "MX",
@@ -4381,7 +4397,7 @@
     {
       "symbol": "LUNG",
       "phase": "holding",
-      "price": 1.62,
+      "price": 1.61,
       "trig_px": 1.54,
       "avg": 0.0,
       "live_shares": 0,
@@ -4427,7 +4443,7 @@
     {
       "symbol": "PN",
       "phase": "flat",
-      "price": 23.64,
+      "price": 22.1,
       "trig_px": 19.98,
       "avg": 18.0985,
       "live_shares": 0,
@@ -4445,7 +4461,7 @@
           "filled": 23
         }
       ],
-      "unreal_pct": 30.62
+      "unreal_pct": 22.11
     },
     {
       "symbol": "USDE",
@@ -4473,7 +4489,7 @@
     {
       "symbol": "CODX",
       "phase": "flat",
-      "price": 1.55,
+      "price": 1.56,
       "trig_px": 1.75,
       "avg": 1.5866,
       "live_shares": 0,
@@ -4491,12 +4507,12 @@
           "filled": 266
         }
       ],
-      "unreal_pct": -2.3
+      "unreal_pct": -1.67
     },
     {
       "symbol": "DGNX",
       "phase": "holding",
-      "price": 1.8,
+      "price": 1.81,
       "trig_px": 1.959,
       "avg": 1.84,
       "live_shares": 326,
@@ -4514,12 +4530,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -2.17
+      "unreal_pct": -1.63
     },
     {
       "symbol": "KSCP",
       "phase": "holding",
-      "price": 1.99,
+      "price": 2.0,
       "trig_px": 1.68,
       "avg": 1.58,
       "live_shares": 295,
@@ -4537,12 +4553,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 25.95
+      "unreal_pct": 26.58
     },
     {
       "symbol": "DBGI",
       "phase": "holding",
-      "price": 14.58,
+      "price": 14.0,
       "trig_px": 14.9999,
       "avg": 14.1,
       "live_shares": 42,
@@ -4560,12 +4576,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 3.4
+      "unreal_pct": -0.71
     },
     {
       "symbol": "TAOP",
       "phase": "stop_chase",
-      "price": 0.64,
+      "price": 0.6397,
       "trig_px": 0.8584,
       "avg": 0.778,
       "live_shares": 1284,
@@ -4583,12 +4599,12 @@
           "filled": 541
         }
       ],
-      "unreal_pct": -17.73
+      "unreal_pct": -17.77
     },
     {
       "symbol": "LESL",
       "phase": "flat",
-      "price": 0.8736,
+      "price": 0.9,
       "trig_px": 1.0591,
       "avg": 0.9956,
       "live_shares": 0,
@@ -4606,12 +4622,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -12.25
+      "unreal_pct": -9.6
     },
     {
       "symbol": "DFNS",
       "phase": "holding",
-      "price": 84.96,
+      "price": 86.0,
       "trig_px": 73.57,
       "avg": 0.0,
       "live_shares": 0,
@@ -4657,7 +4673,7 @@
     {
       "symbol": "GVH",
       "phase": "flat",
-      "price": 1.01,
+      "price": 0.995,
       "trig_px": 1.22,
       "avg": 1.15,
       "live_shares": 0,
@@ -4675,7 +4691,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -12.17
+      "unreal_pct": -13.48
     },
     {
       "symbol": "HUHU",
@@ -4703,7 +4719,7 @@
     {
       "symbol": "TOP",
       "phase": "holding",
-      "price": 2.09,
+      "price": 2.08,
       "trig_px": 2.01,
       "avg": 0.0,
       "live_shares": 0,
@@ -4726,7 +4742,7 @@
     {
       "symbol": "SLXN",
       "phase": "holding",
-      "price": 1.87,
+      "price": 1.81,
       "trig_px": 1.855,
       "avg": 1.6811,
       "live_shares": 594,
@@ -4744,12 +4760,12 @@
           "filled": 250
         }
       ],
-      "unreal_pct": 11.24
+      "unreal_pct": 7.67
     },
     {
       "symbol": "ARAY",
       "phase": "holding",
-      "price": 0.2863,
+      "price": 0.2851,
       "trig_px": 0.2949,
       "avg": 0.0,
       "live_shares": 0,
@@ -4794,6 +4810,14 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-30 16:00:29",
+      "symbol": "DBGI",
+      "action": "Sell",
+      "sim_price": 12.831,
+      "shares": 42,
+      "note": "stop_chase"
+    },
     {
       "ts": "2026-07-30 15:36:15",
       "symbol": "SLXN",
@@ -4945,14 +4969,6 @@
       "sim_price": 0.8069,
       "shares": 743,
       "note": "stop_chase"
-    },
-    {
-      "ts": "2026-07-30 11:13:17",
-      "symbol": "TOP",
-      "action": "Buy",
-      "sim_price": 1.73,
-      "shares": 231,
-      "note": "rung1"
     }
   ],
   "live_daily": [
