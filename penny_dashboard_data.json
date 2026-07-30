@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 23:00:17",
-  "generated_ts": 1785380417.952292,
+  "generated": "2026-07-29 23:03:27",
+  "generated_ts": 1785380607.150932,
   "system": "penny",
   "positions": [
     {
@@ -33,12 +33,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 158m old"
+      "detail": "bars 161m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.4h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
@@ -47,17 +47,17 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 157.7,
+    "newest_bar_age_min": 160.8,
     "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-07-29 22:28:48] penny scheduler started",
-    "[2026-07-29 22:28:49] launching execution engine",
     "[2026-07-29 22:28:49] running Penny Stock Daily Stock Pull.ipynb ...",
     "[2026-07-29 22:35:41] penny scheduler started",
     "[2026-07-29 22:35:41] launching execution engine",
-    "[2026-07-29 22:35:41] running Penny Stock Daily Stock Pull.ipynb ..."
+    "[2026-07-29 22:35:41] running Penny Stock Daily Stock Pull.ipynb ...",
+    "[2026-07-29 23:03:14] Penny Stock Daily Stock Pull.ipynb: OK",
+    "[2026-07-29 23:03:14] running Penny Stock Shadow Scorer.ipynb ..."
   ],
   "universe": {
     "symbols": 2220,
@@ -5879,6 +5879,18 @@
     {
       "t": "23:00",
       "v": 76761.06
+    },
+    {
+      "t": "23:01",
+      "v": 76761.06
+    },
+    {
+      "t": "23:02",
+      "v": 76761.06
+    },
+    {
+      "t": "23:03",
+      "v": 76761.06
     }
   ],
   "ladders": [
@@ -5977,7 +5989,7 @@
     {
       "symbol": "OTLK",
       "phase": "flat",
-      "price": 0.9931,
+      "price": 0.9901,
       "trig_px": 1.0204,
       "avg": 0.9592,
       "live_shares": 0,
@@ -5995,7 +6007,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 3.53
+      "unreal_pct": 3.22
     },
     {
       "symbol": "SPRC",
