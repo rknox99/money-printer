@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-30 18:20:02",
-  "generated_ts": 1785450002.951235,
+  "generated": "2026-07-30 18:23:15",
+  "generated_ts": 1785450195.651437,
   "system": "penny",
   "positions": [
     {
@@ -40,10 +40,10 @@
       "symbol": "ZNB",
       "shares": 240.0,
       "avg_cost": 2.495,
-      "mkt_price": 2.63,
-      "position_value": 631.2,
-      "unrealized_pnl_dollar": 32.4,
-      "unrealized_pnl": 5.41,
+      "mkt_price": 2.65,
+      "position_value": 636.0,
+      "unrealized_pnl_dollar": 37.2,
+      "unrealized_pnl": 6.21,
       "in_universe": true,
       "position": "long"
     },
@@ -62,10 +62,10 @@
       "symbol": "KSCP",
       "shares": 295.0,
       "avg_cost": 1.585,
-      "mkt_price": 1.98,
-      "position_value": 584.1,
-      "unrealized_pnl_dollar": 116.52,
-      "unrealized_pnl": 24.92,
+      "mkt_price": 1.96,
+      "position_value": 578.2,
+      "unrealized_pnl_dollar": 110.62,
+      "unrealized_pnl": 23.66,
       "in_universe": true,
       "position": "long"
     },
@@ -84,10 +84,10 @@
       "symbol": "PSQH",
       "shares": 220.0,
       "avg_cost": 4.54,
-      "mkt_price": 4.16,
-      "position_value": 915.2,
-      "unrealized_pnl_dollar": -83.6,
-      "unrealized_pnl": -8.37,
+      "mkt_price": 4.31,
+      "position_value": 948.2,
+      "unrealized_pnl_dollar": -50.6,
+      "unrealized_pnl": -5.07,
       "in_universe": true,
       "position": "long"
     },
@@ -95,10 +95,10 @@
       "symbol": "DGNX",
       "shares": 652.0,
       "avg_cost": 1.779,
-      "mkt_price": 1.89,
-      "position_value": 1232.28,
-      "unrealized_pnl_dollar": 72.37,
-      "unrealized_pnl": 6.24,
+      "mkt_price": 1.85,
+      "position_value": 1206.2,
+      "unrealized_pnl_dollar": 46.29,
+      "unrealized_pnl": 3.99,
       "in_universe": true,
       "position": "long"
     }
@@ -121,12 +121,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 2.2h old"
+      "detail": "log 2.3h old"
     },
     {
       "name": "Engine",
@@ -135,7 +135,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.9,
+    "newest_bar_age_min": 0.1,
     "in_rth": false,
     "ok": true
   },
@@ -165,14 +165,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 76193.64,
+    "net_liq": 76187.12,
     "cash": 68709.92
   },
-  "live_account_value": 76193.64,
+  "live_account_value": 76187.12,
   "live_cash": 68709.92,
   "active_trade_count": 9,
-  "aggregate_unrealized_pnl_dollar": -124.86,
-  "total_position_value": 7477.9,
+  "aggregate_unrealized_pnl_dollar": -119.04,
+  "total_position_value": 7483.72,
   "system_ok": true,
   "shadow": {
     "days": 12,
@@ -4847,6 +4847,18 @@
     {
       "t": "18:20",
       "v": 76193.64
+    },
+    {
+      "t": "18:21",
+      "v": 76193.64
+    },
+    {
+      "t": "18:22",
+      "v": 76193.64
+    },
+    {
+      "t": "18:23",
+      "v": 76187.12
     }
   ],
   "ladders": [
@@ -4922,7 +4934,7 @@
     {
       "symbol": "MX",
       "phase": "holding",
-      "price": 3.2,
+      "price": 3.21,
       "trig_px": 3.005,
       "avg": 0.0,
       "live_shares": 0,
@@ -4991,7 +5003,7 @@
     {
       "symbol": "PN",
       "phase": "flat",
-      "price": 20.0,
+      "price": 18.9,
       "trig_px": 19.98,
       "avg": 18.0985,
       "live_shares": 0,
@@ -5009,7 +5021,7 @@
           "filled": 23
         }
       ],
-      "unreal_pct": 10.51
+      "unreal_pct": 4.43
     },
     {
       "symbol": "USDE",
@@ -5060,7 +5072,7 @@
     {
       "symbol": "DGNX",
       "phase": "holding",
-      "price": 1.85,
+      "price": 1.84,
       "trig_px": 1.959,
       "avg": 1.84,
       "live_shares": 326,
@@ -5078,12 +5090,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 0.54
+      "unreal_pct": 0.0
     },
     {
       "symbol": "KSCP",
       "phase": "holding",
-      "price": 1.99,
+      "price": 1.95,
       "trig_px": 1.68,
       "avg": 1.58,
       "live_shares": 295,
@@ -5101,7 +5113,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 25.95
+      "unreal_pct": 23.42
     },
     {
       "symbol": "DBGI",
@@ -5152,7 +5164,7 @@
     {
       "symbol": "LESL",
       "phase": "flat",
-      "price": 0.8893,
+      "price": 0.9065,
       "trig_px": 1.0591,
       "avg": 0.9956,
       "live_shares": 0,
@@ -5170,12 +5182,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -10.68
+      "unreal_pct": -8.95
     },
     {
       "symbol": "DFNS",
       "phase": "holding",
-      "price": 70.77,
+      "price": 69.5,
       "trig_px": 73.57,
       "avg": 0.0,
       "live_shares": 0,
@@ -5198,7 +5210,7 @@
     {
       "symbol": "PSQH",
       "phase": "holding",
-      "price": 4.24,
+      "price": 4.35,
       "trig_px": 5.005,
       "avg": 4.5309,
       "live_shares": 220,
@@ -5216,7 +5228,7 @@
           "filled": 93
         }
       ],
-      "unreal_pct": -6.42
+      "unreal_pct": -3.99
     },
     {
       "symbol": "GVH",
@@ -5336,7 +5348,7 @@
     {
       "symbol": "ZNB",
       "phase": "holding",
-      "price": 2.63,
+      "price": 2.7,
       "trig_px": 2.645,
       "avg": 2.49,
       "live_shares": 240,
@@ -5354,7 +5366,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 5.62
+      "unreal_pct": 8.43
     }
   ],
   "intents_tail": [
