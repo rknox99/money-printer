@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-30 09:23:34",
-  "generated_ts": 1785417814.127211,
+  "generated": "2026-07-30 09:26:46",
+  "generated_ts": 1785418006.168307,
   "system": "penny",
   "positions": [
     {
@@ -33,7 +33,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -47,7 +47,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.6,
     "in_rth": false,
     "ok": true
   },
@@ -2611,20 +2611,32 @@
     {
       "t": "09:23",
       "v": 76766.85
+    },
+    {
+      "t": "09:24",
+      "v": 76766.85
+    },
+    {
+      "t": "09:25",
+      "v": 76766.85
+    },
+    {
+      "t": "09:26",
+      "v": 76766.85
     }
   ],
   "ladders": [
     {
       "symbol": "MWYN",
       "phase": "flattening",
-      "price": 0.6763,
+      "price": 0.65,
       "trig_px": 0.5466684,
       "avg": 0.5467,
       "live_shares": 38,
       "be_armed": false,
       "stop": 0.4975,
       "rungs": [],
-      "unreal_pct": 23.71
+      "unreal_pct": 18.9
     }
   ],
   "intents_tail": [],
