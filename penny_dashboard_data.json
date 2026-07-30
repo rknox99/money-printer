@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-30 17:45:06",
-  "generated_ts": 1785447906.754364,
+  "generated": "2026-07-30 17:48:19",
+  "generated_ts": 1785448099.870579,
   "system": "penny",
   "positions": [
     {
@@ -40,10 +40,10 @@
       "symbol": "ZNB",
       "shares": 240.0,
       "avg_cost": 2.495,
-      "mkt_price": 2.58,
-      "position_value": 619.2,
-      "unrealized_pnl_dollar": 20.4,
-      "unrealized_pnl": 3.41,
+      "mkt_price": 2.61,
+      "position_value": 626.4,
+      "unrealized_pnl_dollar": 27.6,
+      "unrealized_pnl": 4.61,
       "in_universe": true,
       "position": "long"
     },
@@ -95,10 +95,10 @@
       "symbol": "DGNX",
       "shares": 652.0,
       "avg_cost": 1.779,
-      "mkt_price": 1.86,
-      "position_value": 1212.72,
-      "unrealized_pnl_dollar": 52.81,
-      "unrealized_pnl": 4.55,
+      "mkt_price": 1.88,
+      "position_value": 1225.76,
+      "unrealized_pnl_dollar": 65.85,
+      "unrealized_pnl": 5.68,
       "in_universe": true,
       "position": "long"
     }
@@ -121,7 +121,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -135,7 +135,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.9,
+    "newest_bar_age_min": 0.1,
     "in_rth": false,
     "ok": true
   },
@@ -165,14 +165,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 76107.45,
+    "net_liq": 76123.15,
     "cash": 68709.92
   },
-  "live_account_value": 76107.45,
+  "live_account_value": 76123.15,
   "live_cash": 68709.92,
   "active_trade_count": 9,
-  "aggregate_unrealized_pnl_dollar": -225.47,
-  "total_position_value": 7377.29,
+  "aggregate_unrealized_pnl_dollar": -205.23,
+  "total_position_value": 7397.53,
   "system_ok": true,
   "shadow": {
     "days": 12,
@@ -4707,6 +4707,18 @@
     {
       "t": "17:45",
       "v": 76107.45
+    },
+    {
+      "t": "17:46",
+      "v": 76107.45
+    },
+    {
+      "t": "17:47",
+      "v": 76107.45
+    },
+    {
+      "t": "17:48",
+      "v": 76123.15
     }
   ],
   "ladders": [
@@ -4759,7 +4771,7 @@
     {
       "symbol": "FFAI",
       "phase": "flat",
-      "price": 5.14,
+      "price": 5.22,
       "trig_px": 5.905,
       "avg": 5.55,
       "live_shares": 0,
@@ -4777,7 +4789,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -7.39
+      "unreal_pct": -5.95
     },
     {
       "symbol": "MX",
@@ -4828,7 +4840,7 @@
     {
       "symbol": "YAAS",
       "phase": "flat",
-      "price": 2.29,
+      "price": 2.25,
       "trig_px": 4.98,
       "avg": 4.5117,
       "live_shares": 0,
@@ -4846,7 +4858,7 @@
           "filled": 93
         }
       ],
-      "unreal_pct": -49.24
+      "unreal_pct": -50.13
     },
     {
       "symbol": "PN",
@@ -4897,7 +4909,7 @@
     {
       "symbol": "CODX",
       "phase": "flat",
-      "price": 1.54,
+      "price": 1.58,
       "trig_px": 1.75,
       "avg": 1.5866,
       "live_shares": 0,
@@ -4915,7 +4927,7 @@
           "filled": 266
         }
       ],
-      "unreal_pct": -2.94
+      "unreal_pct": -0.41
     },
     {
       "symbol": "DGNX",
@@ -5035,7 +5047,7 @@
     {
       "symbol": "DFNS",
       "phase": "holding",
-      "price": 67.17,
+      "price": 65.53,
       "trig_px": 73.57,
       "avg": 0.0,
       "live_shares": 0,
@@ -5173,7 +5185,7 @@
     {
       "symbol": "ARAY",
       "phase": "holding",
-      "price": 0.298,
+      "price": 0.306,
       "trig_px": 0.2949,
       "avg": 0.0,
       "live_shares": 0,
