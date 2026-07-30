@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-30 09:29:48",
-  "generated_ts": 1785418188.720019,
+  "generated": "2026-07-30 09:32:59",
+  "generated_ts": 1785418379.418701,
   "system": "penny",
   "positions": [
     {
@@ -43,12 +43,12 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "off-hours"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
     "newest_bar_age_min": 0.7,
-    "in_rth": false,
+    "in_rth": true,
     "ok": true
   },
   "scheduler_tail": [
@@ -77,10 +77,10 @@
     }
   },
   "account_summary": {
-    "net_liq": 76766.85,
+    "net_liq": 76767.46,
     "cash": 76741.39
   },
-  "live_account_value": 76766.85,
+  "live_account_value": 76767.46,
   "live_cash": 76741.39,
   "active_trade_count": 1,
   "aggregate_unrealized_pnl_dollar": 4.69,
@@ -2635,20 +2635,32 @@
     {
       "t": "09:29",
       "v": 76766.85
+    },
+    {
+      "t": "09:30",
+      "v": 76766.85
+    },
+    {
+      "t": "09:31",
+      "v": 76766.85
+    },
+    {
+      "t": "09:32",
+      "v": 76767.46
     }
   ],
   "ladders": [
     {
       "symbol": "MWYN",
       "phase": "flattening",
-      "price": 0.65,
+      "price": 0.7,
       "trig_px": 0.5466684,
       "avg": 0.5467,
       "live_shares": 38,
       "be_armed": false,
       "stop": 0.4975,
       "rungs": [],
-      "unreal_pct": 18.9
+      "unreal_pct": 28.05
     }
   ],
   "intents_tail": [],
