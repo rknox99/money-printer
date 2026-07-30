@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-30 19:04:35",
-  "generated_ts": 1785452675.73355,
+  "generated": "2026-07-30 19:07:49",
+  "generated_ts": 1785452869.085965,
   "system": "penny",
   "positions": [
     {
@@ -29,10 +29,10 @@
       "symbol": "GVH",
       "shares": 521.0,
       "avg_cost": 1.1375,
-      "mkt_price": 0.99,
-      "position_value": 515.79,
-      "unrealized_pnl_dollar": -76.85,
-      "unrealized_pnl": -12.97,
+      "mkt_price": 0.9922,
+      "position_value": 516.94,
+      "unrealized_pnl_dollar": -75.7,
+      "unrealized_pnl": -12.77,
       "in_universe": true,
       "position": "long"
     },
@@ -62,10 +62,10 @@
       "symbol": "KSCP",
       "shares": 295.0,
       "avg_cost": 1.585,
-      "mkt_price": 1.98,
-      "position_value": 584.1,
-      "unrealized_pnl_dollar": 116.52,
-      "unrealized_pnl": 24.92,
+      "mkt_price": 1.95,
+      "position_value": 575.25,
+      "unrealized_pnl_dollar": 107.67,
+      "unrealized_pnl": 23.03,
       "in_universe": true,
       "position": "long"
     },
@@ -84,10 +84,10 @@
       "symbol": "PSQH",
       "shares": 220.0,
       "avg_cost": 4.54,
-      "mkt_price": 4.31,
-      "position_value": 948.2,
-      "unrealized_pnl_dollar": -50.6,
-      "unrealized_pnl": -5.07,
+      "mkt_price": 4.1,
+      "position_value": 902.0,
+      "unrealized_pnl_dollar": -96.8,
+      "unrealized_pnl": -9.69,
       "in_universe": true,
       "position": "long"
     },
@@ -121,7 +121,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -135,7 +135,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.6,
     "in_rth": false,
     "ok": true
   },
@@ -165,14 +165,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 76205.23,
+    "net_liq": 76151.33,
     "cash": 68709.91
   },
-  "live_account_value": 76205.23,
+  "live_account_value": 76151.33,
   "live_cash": 68709.91,
   "active_trade_count": 9,
-  "aggregate_unrealized_pnl_dollar": -107.44,
-  "total_position_value": 7495.32,
+  "aggregate_unrealized_pnl_dollar": -161.34,
+  "total_position_value": 7441.42,
   "system_ok": true,
   "shadow": {
     "days": 12,
@@ -5023,6 +5023,18 @@
     {
       "t": "19:04",
       "v": 76205.23
+    },
+    {
+      "t": "19:05",
+      "v": 76205.23
+    },
+    {
+      "t": "19:06",
+      "v": 76151.33
+    },
+    {
+      "t": "19:07",
+      "v": 76151.33
     }
   ],
   "ladders": [
@@ -5075,7 +5087,7 @@
     {
       "symbol": "FFAI",
       "phase": "flat",
-      "price": 5.17,
+      "price": 5.1,
       "trig_px": 5.905,
       "avg": 5.55,
       "live_shares": 0,
@@ -5093,12 +5105,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -6.85
+      "unreal_pct": -8.11
     },
     {
       "symbol": "MX",
       "phase": "holding",
-      "price": 3.2,
+      "price": 3.24,
       "trig_px": 3.005,
       "avg": 0.0,
       "live_shares": 0,
@@ -5351,7 +5363,7 @@
     {
       "symbol": "DFNS",
       "phase": "holding",
-      "price": 72.12,
+      "price": 72.08,
       "trig_px": 73.57,
       "avg": 0.0,
       "live_shares": 0,
@@ -5374,7 +5386,7 @@
     {
       "symbol": "PSQH",
       "phase": "holding",
-      "price": 4.35,
+      "price": 4.0,
       "trig_px": 5.005,
       "avg": 4.5309,
       "live_shares": 220,
@@ -5392,12 +5404,12 @@
           "filled": 93
         }
       ],
-      "unreal_pct": -3.99
+      "unreal_pct": -11.72
     },
     {
       "symbol": "GVH",
       "phase": "flat",
-      "price": 0.9915,
+      "price": 0.9999,
       "trig_px": 1.22,
       "avg": 1.15,
       "live_shares": 0,
@@ -5415,7 +5427,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -13.78
+      "unreal_pct": -13.05
     },
     {
       "symbol": "HUHU",
@@ -5489,7 +5501,7 @@
     {
       "symbol": "ARAY",
       "phase": "holding",
-      "price": 0.3035,
+      "price": 0.3069,
       "trig_px": 0.2949,
       "avg": 0.0,
       "live_shares": 0,
@@ -5512,7 +5524,7 @@
     {
       "symbol": "ZNB",
       "phase": "holding",
-      "price": 2.68,
+      "price": 2.7,
       "trig_px": 2.645,
       "avg": 2.49,
       "live_shares": 240,
@@ -5530,7 +5542,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 7.63
+      "unreal_pct": 8.43
     }
   ],
   "intents_tail": [
