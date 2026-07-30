@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-30 09:51:41",
-  "generated_ts": 1785419501.446216,
+  "generated": "2026-07-30 09:54:43",
+  "generated_ts": 1785419683.134286,
   "system": "penny",
   "positions": [
     {
       "symbol": "FFAI",
       "shares": 108.0,
       "avg_cost": 5.5593,
-      "mkt_price": 6.1777,
-      "position_value": 667.19,
-      "unrealized_pnl_dollar": 66.79,
-      "unrealized_pnl": 11.12,
+      "mkt_price": 6.0441,
+      "position_value": 652.76,
+      "unrealized_pnl_dollar": 52.36,
+      "unrealized_pnl": 8.72,
       "in_universe": true,
       "position": "long"
     },
@@ -18,10 +18,10 @@
       "symbol": "SPRC",
       "shares": 58.0,
       "avg_cost": 10.3272,
-      "mkt_price": 10.507,
-      "position_value": 609.4,
-      "unrealized_pnl_dollar": 10.42,
-      "unrealized_pnl": 1.74,
+      "mkt_price": 10.376,
+      "position_value": 601.81,
+      "unrealized_pnl_dollar": 2.83,
+      "unrealized_pnl": 0.47,
       "in_universe": true,
       "position": "long"
     },
@@ -29,10 +29,10 @@
       "symbol": "MWYN",
       "shares": 818.0,
       "avg_cost": 0.7274,
-      "mkt_price": 0.7156,
-      "position_value": 585.38,
-      "unrealized_pnl_dollar": -9.64,
-      "unrealized_pnl": -1.62,
+      "mkt_price": 0.706,
+      "position_value": 577.49,
+      "unrealized_pnl_dollar": -17.53,
+      "unrealized_pnl": -2.95,
       "in_universe": true,
       "position": "long"
     }
@@ -55,21 +55,21 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.6h old"
+      "detail": "log 0.7h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.5m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.7,
+    "newest_bar_age_min": 0.3,
     "in_rth": true,
     "ok": true
   },
@@ -99,14 +99,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 76690.2,
-    "cash": 74847.99
+    "net_liq": 76688.84,
+    "cash": 74264.82
   },
-  "live_account_value": 76690.2,
-  "live_cash": 74847.99,
+  "live_account_value": 76688.84,
+  "live_cash": 74264.82,
   "active_trade_count": 3,
-  "aggregate_unrealized_pnl_dollar": 67.57,
-  "total_position_value": 1861.97,
+  "aggregate_unrealized_pnl_dollar": 37.66,
+  "total_position_value": 1832.06,
   "system_ok": true,
   "shadow": {
     "days": 12,
@@ -2745,13 +2745,25 @@
     {
       "t": "09:51",
       "v": 76690.2
+    },
+    {
+      "t": "09:52",
+      "v": 76680.06
+    },
+    {
+      "t": "09:53",
+      "v": 76680.06
+    },
+    {
+      "t": "09:54",
+      "v": 76688.84
     }
   ],
   "ladders": [
     {
       "symbol": "MWYN",
       "phase": "entering",
-      "price": 0.7306,
+      "price": 0.7386,
       "trig_px": 0.78,
       "avg": 0.7332,
       "live_shares": 818,
@@ -2769,12 +2781,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -0.35
+      "unreal_pct": 0.74
     },
     {
       "symbol": "SPRC",
       "phase": "entering",
-      "price": 10.26,
+      "price": 10.5,
       "trig_px": 10.9676,
       "avg": 10.31,
       "live_shares": 58,
@@ -2792,12 +2804,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -0.48
+      "unreal_pct": 1.84
     },
     {
       "symbol": "FFAI",
       "phase": "entering",
-      "price": 6.03,
+      "price": 6.0,
       "trig_px": 5.905,
       "avg": 5.55,
       "live_shares": 108,
@@ -2815,7 +2827,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 8.65
+      "unreal_pct": 8.11
     },
     {
       "symbol": "MX",
@@ -2843,7 +2855,7 @@
     {
       "symbol": "LUNG",
       "phase": "entering",
-      "price": 1.69,
+      "price": 1.71,
       "trig_px": 1.54,
       "avg": 0.0,
       "live_shares": 0,
@@ -2866,7 +2878,7 @@
     {
       "symbol": "YAAS",
       "phase": "flat",
-      "price": 3.55,
+      "price": 3.35,
       "trig_px": 4.98,
       "avg": 4.5117,
       "live_shares": 0,
@@ -2884,12 +2896,12 @@
           "filled": 93
         }
       ],
-      "unreal_pct": -21.32
+      "unreal_pct": -25.75
     },
     {
       "symbol": "PN",
       "phase": "entering",
-      "price": 19.31,
+      "price": 18.11,
       "trig_px": 19.98,
       "avg": 0.0,
       "live_shares": 0,
@@ -2912,7 +2924,7 @@
     {
       "symbol": "USDE",
       "phase": "entering",
-      "price": 1.77,
+      "price": 1.75,
       "trig_px": 1.6804,
       "avg": 0.0,
       "live_shares": 0,
