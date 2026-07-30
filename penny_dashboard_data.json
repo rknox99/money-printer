@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-30 11:49:40",
-  "generated_ts": 1785426580.253679,
+  "generated": "2026-07-30 11:52:41",
+  "generated_ts": 1785426761.770575,
   "system": "penny",
   "positions": [
     {
       "symbol": "TAOP",
       "shares": 743.0,
       "avg_cost": 0.8119,
-      "mkt_price": 0.8157,
-      "position_value": 606.08,
-      "unrealized_pnl_dollar": 2.84,
-      "unrealized_pnl": 0.47,
+      "mkt_price": 0.8082,
+      "position_value": 600.48,
+      "unrealized_pnl_dollar": -2.76,
+      "unrealized_pnl": -0.46,
       "in_universe": true,
       "position": "long"
     },
@@ -29,10 +29,10 @@
       "symbol": "DBGI",
       "shares": 42.0,
       "avg_cost": 14.1238,
-      "mkt_price": 15.1344,
-      "position_value": 635.65,
-      "unrealized_pnl_dollar": 42.45,
-      "unrealized_pnl": 7.16,
+      "mkt_price": 15.3402,
+      "position_value": 644.29,
+      "unrealized_pnl_dollar": 51.09,
+      "unrealized_pnl": 8.61,
       "in_universe": true,
       "position": "long"
     },
@@ -40,10 +40,10 @@
       "symbol": "GVH",
       "shares": 1042.0,
       "avg_cost": 1.1375,
-      "mkt_price": 1.2068,
-      "position_value": 1257.53,
-      "unrealized_pnl_dollar": 72.25,
-      "unrealized_pnl": 6.1,
+      "mkt_price": 1.214,
+      "position_value": 1264.99,
+      "unrealized_pnl_dollar": 79.71,
+      "unrealized_pnl": 6.72,
       "in_universe": true,
       "position": "long"
     },
@@ -51,10 +51,10 @@
       "symbol": "CODX",
       "shares": 363.0,
       "avg_cost": 1.655,
-      "mkt_price": 1.686,
-      "position_value": 612.02,
-      "unrealized_pnl_dollar": 11.25,
-      "unrealized_pnl": 1.87,
+      "mkt_price": 1.7236,
+      "position_value": 625.66,
+      "unrealized_pnl_dollar": 24.89,
+      "unrealized_pnl": 4.14,
       "in_universe": true,
       "position": "long"
     },
@@ -84,10 +84,10 @@
       "symbol": "PSQH",
       "shares": 127.0,
       "avg_cost": 4.7079,
-      "mkt_price": 4.8909,
-      "position_value": 621.14,
-      "unrealized_pnl_dollar": 23.24,
-      "unrealized_pnl": 3.89,
+      "mkt_price": 4.8748,
+      "position_value": 619.1,
+      "unrealized_pnl_dollar": 21.2,
+      "unrealized_pnl": 3.55,
       "in_universe": true,
       "position": "long"
     },
@@ -95,10 +95,10 @@
       "symbol": "DGNX",
       "shares": 652.0,
       "avg_cost": 1.779,
-      "mkt_price": 1.746,
-      "position_value": 1138.39,
-      "unrealized_pnl_dollar": -21.52,
-      "unrealized_pnl": -1.86,
+      "mkt_price": 1.764,
+      "position_value": 1150.13,
+      "unrealized_pnl_dollar": -9.78,
+      "unrealized_pnl": -0.84,
       "in_universe": true,
       "position": "long"
     }
@@ -126,16 +126,16 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 2.6h old"
+      "detail": "log 2.7h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.1m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.1,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -165,14 +165,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 76654.17,
+    "net_liq": 76688.01,
     "cash": 70031.19
   },
-  "live_account_value": 76654.17,
+  "live_account_value": 76688.01,
   "live_cash": 70031.19,
   "active_trade_count": 9,
-  "aggregate_unrealized_pnl_dollar": 217.72,
-  "total_position_value": 6622.98,
+  "aggregate_unrealized_pnl_dollar": 251.56,
+  "total_position_value": 6656.82,
   "system_ok": true,
   "shadow": {
     "days": 12,
@@ -3282,14 +3282,26 @@
     },
     {
       "t": "11:49",
-      "v": 76654.17
+      "v": 76688.01
+    },
+    {
+      "t": "11:50",
+      "v": 76688.01
+    },
+    {
+      "t": "11:51",
+      "v": 76688.01
+    },
+    {
+      "t": "11:52",
+      "v": 76688.01
     }
   ],
   "ladders": [
     {
       "symbol": "MWYN",
       "phase": "entering",
-      "price": 0.7609,
+      "price": 0.75,
       "trig_px": 0.78,
       "avg": 0.7332,
       "live_shares": 818,
@@ -3307,7 +3319,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 3.78
+      "unreal_pct": 2.29
     },
     {
       "symbol": "SPRC",
@@ -3335,7 +3347,7 @@
     {
       "symbol": "FFAI",
       "phase": "flat",
-      "price": 4.94,
+      "price": 5.0,
       "trig_px": 5.905,
       "avg": 5.55,
       "live_shares": 0,
@@ -3353,12 +3365,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -10.99
+      "unreal_pct": -9.91
     },
     {
       "symbol": "MX",
       "phase": "entering",
-      "price": 3.1,
+      "price": 3.12,
       "trig_px": 3.005,
       "avg": 0.0,
       "live_shares": 0,
@@ -3381,7 +3393,7 @@
     {
       "symbol": "LUNG",
       "phase": "entering",
-      "price": 1.67,
+      "price": 1.66,
       "trig_px": 1.54,
       "avg": 0.0,
       "live_shares": 0,
@@ -3404,7 +3416,7 @@
     {
       "symbol": "YAAS",
       "phase": "flat",
-      "price": 2.14,
+      "price": 2.22,
       "trig_px": 4.98,
       "avg": 4.5117,
       "live_shares": 0,
@@ -3422,12 +3434,12 @@
           "filled": 93
         }
       ],
-      "unreal_pct": -52.57
+      "unreal_pct": -50.79
     },
     {
       "symbol": "PN",
       "phase": "flat",
-      "price": 16.57,
+      "price": 16.5,
       "trig_px": 19.98,
       "avg": 18.0985,
       "live_shares": 0,
@@ -3445,7 +3457,7 @@
           "filled": 23
         }
       ],
-      "unreal_pct": -8.45
+      "unreal_pct": -8.83
     },
     {
       "symbol": "USDE",
@@ -3473,7 +3485,7 @@
     {
       "symbol": "CODX",
       "phase": "entering",
-      "price": 1.73,
+      "price": 1.72,
       "trig_px": 1.75,
       "avg": 1.65,
       "live_shares": 363,
@@ -3491,12 +3503,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 4.85
+      "unreal_pct": 4.24
     },
     {
       "symbol": "DGNX",
       "phase": "entering",
-      "price": 1.77,
+      "price": 1.78,
       "trig_px": 1.959,
       "avg": 1.84,
       "live_shares": 326,
@@ -3514,7 +3526,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -3.8
+      "unreal_pct": -3.26
     },
     {
       "symbol": "KSCP",
@@ -3565,7 +3577,7 @@
     {
       "symbol": "TAOP",
       "phase": "stop_chase",
-      "price": 0.8011,
+      "price": 0.8148,
       "trig_px": 0.8584,
       "avg": 0.8069,
       "live_shares": 743,
@@ -3583,7 +3595,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -0.72
+      "unreal_pct": 0.98
     },
     {
       "symbol": "LESL",
@@ -3611,7 +3623,7 @@
     {
       "symbol": "DFNS",
       "phase": "entering",
-      "price": 77.12,
+      "price": 78.5,
       "trig_px": 73.57,
       "avg": 0.0,
       "live_shares": 0,
@@ -3634,7 +3646,7 @@
     {
       "symbol": "PSQH",
       "phase": "entering",
-      "price": 4.76,
+      "price": 4.74,
       "trig_px": 5.005,
       "avg": 4.7,
       "live_shares": 127,
@@ -3652,7 +3664,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 1.28
+      "unreal_pct": 0.85
     },
     {
       "symbol": "GVH",
