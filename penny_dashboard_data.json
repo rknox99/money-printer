@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 22:28:29",
-  "generated_ts": 1785378509.143839,
+  "generated": "2026-07-29 22:31:30",
+  "generated_ts": 1785378690.058785,
   "system": "penny",
   "positions": [
     {
@@ -33,12 +33,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 126m old"
+      "detail": "bars 129m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 1.2h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
@@ -47,17 +47,17 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 125.9,
+    "newest_bar_age_min": 128.9,
     "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-07-29 09:13:17] launching execution engine",
-    "[2026-07-29 16:05:27] engine finished (rc=0)",
-    "[2026-07-29 20:21:30] running Penny Stock Daily Stock Pull.ipynb ...",
     "[2026-07-29 20:49:46] Penny Stock Daily Stock Pull.ipynb: OK",
     "[2026-07-29 21:15:46] running Penny Stock Shadow Scorer.ipynb ...",
-    "[2026-07-29 21:17:40] Penny Stock Shadow Scorer.ipynb: OK"
+    "[2026-07-29 21:17:40] Penny Stock Shadow Scorer.ipynb: OK",
+    "[2026-07-29 22:28:48] penny scheduler started",
+    "[2026-07-29 22:28:49] launching execution engine",
+    "[2026-07-29 22:28:49] running Penny Stock Daily Stock Pull.ipynb ..."
   ],
   "universe": {
     "symbols": 2220,
@@ -5750,6 +5750,18 @@
     },
     {
       "t": "22:28",
+      "v": 76761.06
+    },
+    {
+      "t": "22:29",
+      "v": 76761.06
+    },
+    {
+      "t": "22:30",
+      "v": 76761.06
+    },
+    {
+      "t": "22:31",
       "v": 76761.06
     }
   ],
