@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-29 20:08:02",
-  "generated_ts": 1785370082.2204,
+  "generated": "2026-07-29 20:11:03",
+  "generated_ts": 1785370263.146125,
   "system": "penny",
   "positions": [
     {
@@ -33,12 +33,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 8m old"
+      "detail": "bars 11m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 4.0h old"
+      "detail": "log 4.1h old"
     },
     {
       "name": "Engine",
@@ -47,7 +47,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 7.7,
+    "newest_bar_age_min": 10.8,
     "in_rth": false,
     "ok": true
   },
@@ -5175,13 +5175,25 @@
     {
       "t": "20:08",
       "v": 76761.06
+    },
+    {
+      "t": "20:09",
+      "v": 76761.06
+    },
+    {
+      "t": "20:10",
+      "v": 76761.06
+    },
+    {
+      "t": "20:11",
+      "v": 76761.06
     }
   ],
   "ladders": [
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 79.36,
+      "price": 79.28,
       "trig_px": 42.97,
       "avg": 38.9567,
       "live_shares": 0,
@@ -5199,12 +5211,12 @@
           "filled": 10
         }
       ],
-      "unreal_pct": 103.71
+      "unreal_pct": 103.51
     },
     {
       "symbol": "RDGT",
       "phase": "flattening",
-      "price": 0.7857,
+      "price": 0.7937,
       "trig_px": 0.9999,
       "avg": 0.9062,
       "live_shares": 1103,
@@ -5222,12 +5234,12 @@
           "filled": 465
         }
       ],
-      "unreal_pct": -13.29
+      "unreal_pct": -12.41
     },
     {
       "symbol": "LVWR",
       "phase": "flat",
-      "price": 2.71,
+      "price": 2.88,
       "trig_px": 2.29,
       "avg": 2.15,
       "live_shares": 0,
@@ -5245,7 +5257,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 26.05
+      "unreal_pct": 33.95
     },
     {
       "symbol": "MWYN",
