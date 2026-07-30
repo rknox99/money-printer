@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-30 17:57:57",
-  "generated_ts": 1785448677.665355,
+  "generated": "2026-07-30 18:01:09",
+  "generated_ts": 1785448869.945387,
   "system": "penny",
   "positions": [
     {
@@ -29,10 +29,10 @@
       "symbol": "GVH",
       "shares": 521.0,
       "avg_cost": 1.1375,
-      "mkt_price": 0.996,
-      "position_value": 518.92,
-      "unrealized_pnl_dollar": -73.72,
-      "unrealized_pnl": -12.44,
+      "mkt_price": 0.9899,
+      "position_value": 515.74,
+      "unrealized_pnl_dollar": -76.9,
+      "unrealized_pnl": -12.98,
       "in_universe": true,
       "position": "long"
     },
@@ -95,10 +95,10 @@
       "symbol": "DGNX",
       "shares": 652.0,
       "avg_cost": 1.779,
-      "mkt_price": 1.9,
-      "position_value": 1238.8,
-      "unrealized_pnl_dollar": 78.89,
-      "unrealized_pnl": 6.8,
+      "mkt_price": 1.89,
+      "position_value": 1232.28,
+      "unrealized_pnl_dollar": 72.37,
+      "unrealized_pnl": 6.24,
       "in_universe": true,
       "position": "long"
     }
@@ -121,7 +121,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -135,7 +135,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.8,
+    "newest_bar_age_min": 0.0,
     "in_rth": false,
     "ok": true
   },
@@ -171,8 +171,8 @@
   "live_account_value": 76158.06,
   "live_cash": 68709.91,
   "active_trade_count": 9,
-  "aggregate_unrealized_pnl_dollar": -144.91,
-  "total_position_value": 7457.85,
+  "aggregate_unrealized_pnl_dollar": -154.61,
+  "total_position_value": 7448.15,
   "system_ok": true,
   "shadow": {
     "days": 12,
@@ -4755,13 +4755,29 @@
     {
       "t": "17:57",
       "v": 76158.06
+    },
+    {
+      "t": "17:58",
+      "v": 76158.06
+    },
+    {
+      "t": "17:59",
+      "v": 76158.06
+    },
+    {
+      "t": "18:00",
+      "v": 76158.06
+    },
+    {
+      "t": "18:01",
+      "v": 76158.06
     }
   ],
   "ladders": [
     {
       "symbol": "MWYN",
       "phase": "holding",
-      "price": 0.7036,
+      "price": 0.69,
       "trig_px": 0.78,
       "avg": 0.7332,
       "live_shares": 818,
@@ -4779,7 +4795,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -4.04
+      "unreal_pct": -5.89
     },
     {
       "symbol": "SPRC",
@@ -4899,7 +4915,7 @@
     {
       "symbol": "PN",
       "phase": "flat",
-      "price": 20.98,
+      "price": 20.3,
       "trig_px": 19.98,
       "avg": 18.0985,
       "live_shares": 0,
@@ -4917,7 +4933,7 @@
           "filled": 23
         }
       ],
-      "unreal_pct": 15.92
+      "unreal_pct": 12.16
     },
     {
       "symbol": "USDE",
@@ -4991,7 +5007,7 @@
     {
       "symbol": "KSCP",
       "phase": "holding",
-      "price": 1.89,
+      "price": 1.9,
       "trig_px": 1.68,
       "avg": 1.58,
       "live_shares": 295,
@@ -5009,12 +5025,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 19.62
+      "unreal_pct": 20.25
     },
     {
       "symbol": "DBGI",
       "phase": "holding",
-      "price": 14.0,
+      "price": 15.0,
       "trig_px": 14.9999,
       "avg": 14.1,
       "live_shares": 42,
@@ -5032,7 +5048,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -0.71
+      "unreal_pct": 6.38
     },
     {
       "symbol": "TAOP",
@@ -5083,7 +5099,7 @@
     {
       "symbol": "DFNS",
       "phase": "holding",
-      "price": 65.29,
+      "price": 65.25,
       "trig_px": 73.57,
       "avg": 0.0,
       "live_shares": 0,
@@ -5129,7 +5145,7 @@
     {
       "symbol": "GVH",
       "phase": "flat",
-      "price": 0.9989,
+      "price": 0.98,
       "trig_px": 1.22,
       "avg": 1.15,
       "live_shares": 0,
@@ -5147,7 +5163,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -13.14
+      "unreal_pct": -14.78
     },
     {
       "symbol": "HUHU",
@@ -5221,7 +5237,7 @@
     {
       "symbol": "ARAY",
       "phase": "holding",
-      "price": 0.3075,
+      "price": 0.32,
       "trig_px": 0.2949,
       "avg": 0.0,
       "live_shares": 0,
