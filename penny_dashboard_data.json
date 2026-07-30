@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-30 09:32:59",
-  "generated_ts": 1785418379.418701,
+  "generated": "2026-07-30 09:36:00",
+  "generated_ts": 1785418560.082839,
   "system": "penny",
   "positions": [
     {
       "symbol": "MWYN",
       "shares": 38.0,
       "avg_cost": 0.5467,
-      "mkt_price": 0.67,
-      "position_value": 25.46,
-      "unrealized_pnl_dollar": 4.69,
-      "unrealized_pnl": 22.58,
+      "mkt_price": 0.686,
+      "position_value": 26.07,
+      "unrealized_pnl_dollar": 5.29,
+      "unrealized_pnl": 25.46,
       "in_universe": true,
       "position": "long"
     }
@@ -33,12 +33,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.3h old"
+      "detail": "log 0.4h old"
     },
     {
       "name": "Engine",
@@ -47,7 +47,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.7,
+    "newest_bar_age_min": 0.1,
     "in_rth": true,
     "ok": true
   },
@@ -77,14 +77,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 76767.46,
-    "cash": 76741.39
+    "net_liq": 76729.15,
+    "cash": 76165.83
   },
-  "live_account_value": 76767.46,
-  "live_cash": 76741.39,
+  "live_account_value": 76729.15,
+  "live_cash": 76165.83,
   "active_trade_count": 1,
-  "aggregate_unrealized_pnl_dollar": 4.69,
-  "total_position_value": 25.46,
+  "aggregate_unrealized_pnl_dollar": 5.29,
+  "total_position_value": 26.07,
   "system_ok": true,
   "shadow": {
     "days": 12,
@@ -2647,23 +2647,75 @@
     {
       "t": "09:32",
       "v": 76767.46
+    },
+    {
+      "t": "09:33",
+      "v": 76767.46
+    },
+    {
+      "t": "09:34",
+      "v": 76767.46
+    },
+    {
+      "t": "09:35",
+      "v": 76767.46
+    },
+    {
+      "t": "09:36",
+      "v": 76729.15
     }
   ],
   "ladders": [
     {
       "symbol": "MWYN",
-      "phase": "flattening",
-      "price": 0.7,
-      "trig_px": 0.5466684,
-      "avg": 0.5467,
-      "live_shares": 38,
+      "phase": "entering",
+      "price": 0.7384,
+      "trig_px": 0.78,
+      "avg": 0.7332,
+      "live_shares": 818,
       "be_armed": false,
-      "stop": 0.4975,
-      "rungs": [],
-      "unreal_pct": 28.05
+      "stop": 0.6672,
+      "rungs": [
+        {
+          "px": 0.7332,
+          "sh": 818,
+          "filled": 818
+        },
+        {
+          "px": 0.6708,
+          "sh": 596,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": 0.71
     }
   ],
-  "intents_tail": [],
+  "intents_tail": [
+    {
+      "ts": "2026-07-30 09:35:51",
+      "symbol": "MWYN",
+      "action": "Sell",
+      "sim_price": 0.6672,
+      "shares": 818,
+      "note": "stop_placed"
+    },
+    {
+      "ts": "2026-07-30 09:35:47",
+      "symbol": "MWYN",
+      "action": "Buy",
+      "sim_price": 0.6708,
+      "shares": 596,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-07-30 09:35:45",
+      "symbol": "MWYN",
+      "action": "Buy",
+      "sim_price": 0.7332,
+      "shares": 818,
+      "note": "rung0"
+    }
+  ],
   "live_daily": [
     {
       "date": "2026-07-27",
