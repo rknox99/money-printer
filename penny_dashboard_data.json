@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-31 10:00:30",
-  "generated_ts": 1785506430.944459,
+  "generated": "2026-07-31 10:03:42",
+  "generated_ts": 1785506622.114408,
   "system": "penny",
   "positions": [
     {
@@ -76,11 +76,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.1m"
+      "detail": "heartbeat 0.5m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.2,
     "in_rth": true,
     "ok": true
   },
@@ -110,11 +110,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 76341.97,
-    "cash": 74464.02
+    "net_liq": 76339.42,
+    "cash": 74464.01
   },
-  "live_account_value": 76341.97,
-  "live_cash": 74464.02,
+  "live_account_value": 76339.42,
+  "live_cash": 74464.01,
   "active_trade_count": 4,
   "aggregate_unrealized_pnl_dollar": 291.29,
   "total_position_value": 1877.95,
@@ -2807,21 +2807,33 @@
     },
     {
       "t": "10:00",
-      "v": 76341.97
+      "v": 76343.51
+    },
+    {
+      "t": "10:01",
+      "v": 76343.51
+    },
+    {
+      "t": "10:02",
+      "v": 76343.51
+    },
+    {
+      "t": "10:03",
+      "v": 76339.42
     }
   ],
   "ladders": [
     {
       "symbol": "TAOP",
       "phase": "flat",
-      "price": 0.62,
+      "price": 0.61,
       "trig_px": 0.782957,
       "avg": 0.783,
       "live_shares": 0,
       "be_armed": false,
       "stop": 0.7125,
       "rungs": [],
-      "unreal_pct": -20.81
+      "unreal_pct": -22.09
     },
     {
       "symbol": "ZNB",
@@ -2850,26 +2862,26 @@
     {
       "symbol": "KSCP",
       "phase": "flat",
-      "price": 1.83,
+      "price": 1.8,
       "trig_px": 1.58500305,
       "avg": 1.585,
       "live_shares": 0,
       "be_armed": false,
       "stop": 1.4424,
       "rungs": [],
-      "unreal_pct": 15.46
+      "unreal_pct": 13.56
     },
     {
       "symbol": "SLXN",
       "phase": "flat",
-      "price": 1.84,
+      "price": 1.83,
       "trig_px": 1.6966874,
       "avg": 1.6967,
       "live_shares": 0,
       "be_armed": false,
       "stop": 1.544,
       "rungs": [],
-      "unreal_pct": 8.45
+      "unreal_pct": 7.86
     },
     {
       "symbol": "PSQH",
@@ -2910,19 +2922,19 @@
     {
       "symbol": "GVH",
       "phase": "flat",
-      "price": 0.96,
+      "price": 0.9603,
       "trig_px": 1.15022725,
       "avg": 1.1502,
       "live_shares": 0,
       "be_armed": false,
       "stop": 1.0467,
       "rungs": [],
-      "unreal_pct": -16.54
+      "unreal_pct": -16.51
     },
     {
       "symbol": "FCUV",
       "phase": "entering",
-      "price": 15.42,
+      "price": 14.96,
       "trig_px": 9.84,
       "avg": 8.9196,
       "live_shares": 55,
@@ -2940,12 +2952,12 @@
           "filled": 23
         }
       ],
-      "unreal_pct": 72.88
+      "unreal_pct": 67.72
     },
     {
       "symbol": "KPTI",
       "phase": "entering",
-      "price": 2.26,
+      "price": 2.24,
       "trig_px": 2.34,
       "avg": 2.2,
       "live_shares": 136,
@@ -2963,12 +2975,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 2.73
+      "unreal_pct": 1.82
     },
     {
       "symbol": "TOP",
       "phase": "entering",
-      "price": 2.09,
+      "price": 2.08,
       "trig_px": 2.14,
       "avg": 0.0,
       "live_shares": 0,
@@ -2991,7 +3003,7 @@
     {
       "symbol": "BTOG",
       "phase": "stop_chase",
-      "price": 0.672,
+      "price": 0.7199,
       "trig_px": 0.8699,
       "avg": 0.7883,
       "live_shares": 633,
@@ -3009,7 +3021,7 @@
           "filled": 267
         }
       ],
-      "unreal_pct": -14.76
+      "unreal_pct": -8.68
     },
     {
       "symbol": "CAPR",
@@ -3037,7 +3049,7 @@
     {
       "symbol": "MBRX",
       "phase": "entering",
-      "price": 0.9725,
+      "price": 0.99,
       "trig_px": 0.975,
       "avg": 0.0,
       "live_shares": 0,
@@ -3060,7 +3072,7 @@
     {
       "symbol": "TCX",
       "phase": "entering",
-      "price": 13.56,
+      "price": 13.53,
       "trig_px": 12.88,
       "avg": 0.0,
       "live_shares": 0,
@@ -3083,7 +3095,7 @@
     {
       "symbol": "USDE",
       "phase": "entering",
-      "price": 1.73,
+      "price": 1.74,
       "trig_px": 1.78,
       "avg": 0.0,
       "live_shares": 0,
