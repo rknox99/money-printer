@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-31 04:40:05",
-  "generated_ts": 1785487205.741043,
+  "generated": "2026-07-31 04:43:14",
+  "generated_ts": 1785487394.00635,
   "system": "penny",
   "positions": [
     {
@@ -121,7 +121,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -135,7 +135,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 1.0,
+    "newest_bar_age_min": 0.1,
     "in_rth": false,
     "ok": true
   },
@@ -165,10 +165,10 @@
     }
   },
   "account_summary": {
-    "net_liq": 76243.38,
+    "net_liq": 76230.78,
     "cash": 68709.91
   },
-  "live_account_value": 76243.38,
+  "live_account_value": 76230.78,
   "live_cash": 68709.91,
   "active_trade_count": 9,
   "aggregate_unrealized_pnl_dollar": -69.3,
@@ -1582,7 +1582,19 @@
     },
     {
       "t": "04:40",
-      "v": 76243.38
+      "v": 76230.78
+    },
+    {
+      "t": "04:41",
+      "v": 76230.78
+    },
+    {
+      "t": "04:42",
+      "v": 76230.78
+    },
+    {
+      "t": "04:43",
+      "v": 76230.78
     }
   ],
   "ladders": [],
