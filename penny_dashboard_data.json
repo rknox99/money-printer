@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-31 16:30:32",
-  "generated_ts": 1785529832.147256,
+  "generated": "2026-07-31 16:33:41",
+  "generated_ts": 1785530021.931076,
   "system": "penny",
   "positions": [
     {
@@ -18,10 +18,10 @@
       "symbol": "FCUV",
       "shares": 55.0,
       "avg_cost": 8.8065,
-      "mkt_price": 14.27,
-      "position_value": 784.85,
-      "unrealized_pnl_dollar": 300.49,
-      "unrealized_pnl": 62.04,
+      "mkt_price": 15.52,
+      "position_value": 853.6,
+      "unrealized_pnl_dollar": 369.24,
+      "unrealized_pnl": 76.23,
       "in_universe": true,
       "position": "long"
     },
@@ -80,7 +80,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.3,
     "in_rth": false,
     "ok": true
   },
@@ -110,14 +110,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 75891.95,
-    "cash": 74496.72
+    "net_liq": 75862.31,
+    "cash": 75609.64
   },
-  "live_account_value": 75891.95,
-  "live_cash": 74496.72,
+  "live_account_value": 75862.31,
+  "live_cash": 75609.64,
   "active_trade_count": 4,
-  "aggregate_unrealized_pnl_dollar": 292.99,
-  "total_position_value": 821.14,
+  "aggregate_unrealized_pnl_dollar": 361.74,
+  "total_position_value": 889.89,
   "system_ok": true,
   "shadow": {
     "days": 13,
@@ -4368,6 +4368,18 @@
     {
       "t": "16:30",
       "v": 75891.95
+    },
+    {
+      "t": "16:31",
+      "v": 75879.85
+    },
+    {
+      "t": "16:32",
+      "v": 75862.31
+    },
+    {
+      "t": "16:33",
+      "v": 75862.31
     }
   ],
   "ladders": [
@@ -4386,14 +4398,14 @@
     {
       "symbol": "ZNB",
       "phase": "flat",
-      "price": 2.22,
+      "price": 2.38,
       "trig_px": 2.4950029,
       "avg": 2.495,
       "live_shares": 0,
       "be_armed": false,
       "stop": 2.2705,
       "rungs": [],
-      "unreal_pct": -11.02
+      "unreal_pct": -4.61
     },
     {
       "symbol": "MWYN",
@@ -4470,22 +4482,22 @@
     {
       "symbol": "GVH",
       "phase": "flat",
-      "price": 1.02,
+      "price": 0.9619,
       "trig_px": 1.15022725,
       "avg": 1.1502,
       "live_shares": 0,
       "be_armed": false,
       "stop": 1.0467,
       "rungs": [],
-      "unreal_pct": -11.32
+      "unreal_pct": -16.37
     },
     {
       "symbol": "FCUV",
-      "phase": "holding",
-      "price": 14.97,
+      "phase": "flat",
+      "price": 15.3,
       "trig_px": 9.84,
       "avg": 8.9196,
-      "live_shares": 55,
+      "live_shares": 0,
       "be_armed": true,
       "stop": 8.9196,
       "rungs": [
@@ -4500,12 +4512,12 @@
           "filled": 23
         }
       ],
-      "unreal_pct": 67.83
+      "unreal_pct": 71.53
     },
     {
       "symbol": "KPTI",
       "phase": "flat",
-      "price": 1.93,
+      "price": 1.92,
       "trig_px": 2.34,
       "avg": 2.0874,
       "live_shares": 0,
@@ -4523,7 +4535,7 @@
           "filled": 198
         }
       ],
-      "unreal_pct": -7.54
+      "unreal_pct": -8.02
     },
     {
       "symbol": "TOP",
@@ -4597,7 +4609,7 @@
     {
       "symbol": "MBRX",
       "phase": "flat",
-      "price": 0.3865,
+      "price": 0.3818,
       "trig_px": 0.975,
       "avg": 0.8836,
       "live_shares": 0,
@@ -4615,7 +4627,7 @@
           "filled": 238
         }
       ],
-      "unreal_pct": -56.26
+      "unreal_pct": -56.79
     },
     {
       "symbol": "TCX",
@@ -4712,7 +4724,7 @@
     {
       "symbol": "DFNS",
       "phase": "holding",
-      "price": 27.61,
+      "price": 27.67,
       "trig_px": 26.6342,
       "avg": 0.0,
       "live_shares": 0,
@@ -4734,11 +4746,11 @@
     },
     {
       "symbol": "GDC",
-      "phase": "holding",
-      "price": 1.7,
+      "phase": "flat",
+      "price": 1.67,
       "trig_px": 1.85,
       "avg": 1.74,
-      "live_shares": 172,
+      "live_shares": 0,
       "be_armed": false,
       "stop": 1.5834,
       "rungs": [
@@ -4753,12 +4765,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -2.3
+      "unreal_pct": -4.02
     },
     {
       "symbol": "FFAI",
       "phase": "holding",
-      "price": 6.33,
+      "price": 6.31,
       "trig_px": 5.9085,
       "avg": 0.0,
       "live_shares": 0,
@@ -4781,7 +4793,7 @@
     {
       "symbol": "MKZR",
       "phase": "flat",
-      "price": 1.01,
+      "price": 1.02,
       "trig_px": 1.41,
       "avg": 1.33,
       "live_shares": -24,
@@ -4799,7 +4811,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -24.06
+      "unreal_pct": -23.31
     },
     {
       "symbol": "ATHR",
@@ -4827,7 +4839,7 @@
     {
       "symbol": "MRNO",
       "phase": "flat",
-      "price": 0.2053,
+      "price": 0.2052,
       "trig_px": 0.2268,
       "avg": 0.2132,
       "live_shares": -1107,
@@ -4845,12 +4857,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -3.71
+      "unreal_pct": -3.75
     },
     {
       "symbol": "STAK",
       "phase": "flat",
-      "price": 1.93,
+      "price": 1.97,
       "trig_px": 2.24,
       "avg": 2.0343,
       "live_shares": 0,
@@ -4868,12 +4880,12 @@
           "filled": 103
         }
       ],
-      "unreal_pct": -5.13
+      "unreal_pct": -3.16
     },
     {
       "symbol": "ZEO",
       "phase": "flat",
-      "price": 0.384,
+      "price": 0.42,
       "trig_px": 0.709,
       "avg": 0.6426,
       "live_shares": 0,
@@ -4891,10 +4903,26 @@
           "filled": 328
         }
       ],
-      "unreal_pct": -40.24
+      "unreal_pct": -34.64
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-07-31 16:32:14",
+      "symbol": "GDC",
+      "action": "SellFill",
+      "sim_price": 1.67,
+      "shares": 172,
+      "note": "execution"
+    },
+    {
+      "ts": "2026-07-31 16:32:14",
+      "symbol": "FCUV",
+      "action": "SellFill",
+      "sim_price": 15.05,
+      "shares": 55,
+      "note": "execution"
+    },
     {
       "ts": "2026-07-31 16:10:38",
       "symbol": "MRNO",
@@ -5038,22 +5066,6 @@
       "sim_price": 1.87,
       "shares": 245,
       "note": "execution"
-    },
-    {
-      "ts": "2026-07-31 13:27:50",
-      "symbol": "STAK",
-      "action": "Sell",
-      "sim_price": 1.92,
-      "shares": 142,
-      "note": "stop_placed"
-    },
-    {
-      "ts": "2026-07-31 13:27:16",
-      "symbol": "STAK",
-      "action": "Buy",
-      "sim_price": 1.93,
-      "shares": 103,
-      "note": "rung1"
     }
   ],
   "live_daily": [
