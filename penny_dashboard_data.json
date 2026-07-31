@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-31 09:13:19",
-  "generated_ts": 1785503599.982448,
+  "generated": "2026-07-31 09:16:29",
+  "generated_ts": 1785503789.700518,
   "system": "penny",
   "positions": [
     {
@@ -62,10 +62,10 @@
       "symbol": "PSQH",
       "shares": 220.0,
       "avg_cost": 4.54,
-      "mkt_price": 4.1,
-      "position_value": 902.0,
-      "unrealized_pnl_dollar": -96.8,
-      "unrealized_pnl": -9.69,
+      "mkt_price": 4.11,
+      "position_value": 904.2,
+      "unrealized_pnl_dollar": -94.6,
+      "unrealized_pnl": -9.47,
       "in_universe": true,
       "position": "long"
     },
@@ -84,10 +84,10 @@
       "symbol": "DGNX",
       "shares": 652.0,
       "avg_cost": 1.779,
-      "mkt_price": 1.76,
-      "position_value": 1147.52,
-      "unrealized_pnl_dollar": -12.39,
-      "unrealized_pnl": -1.07,
+      "mkt_price": 1.74,
+      "position_value": 1134.48,
+      "unrealized_pnl_dollar": -25.43,
+      "unrealized_pnl": -2.19,
       "in_universe": true,
       "position": "long"
     },
@@ -126,7 +126,7 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.0h old"
+      "detail": "log 0.1h old"
     },
     {
       "name": "Engine",
@@ -135,7 +135,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.2,
+    "newest_bar_age_min": 0.3,
     "in_rth": false,
     "ok": true
   },
@@ -165,14 +165,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 76158.91,
+    "net_liq": 76145.87,
     "cash": 68714.38
   },
-  "live_account_value": 76158.91,
+  "live_account_value": 76145.87,
   "live_cash": 68714.38,
   "active_trade_count": 9,
-  "aggregate_unrealized_pnl_dollar": -160.89,
-  "total_position_value": 7455.37,
+  "aggregate_unrealized_pnl_dollar": -171.73,
+  "total_position_value": 7444.53,
   "system_ok": true,
   "shadow": {
     "days": 13,
@@ -2675,9 +2675,130 @@
     {
       "t": "09:13",
       "v": 76158.91
+    },
+    {
+      "t": "09:14",
+      "v": 76158.91
+    },
+    {
+      "t": "09:15",
+      "v": 76145.87
+    },
+    {
+      "t": "09:16",
+      "v": 76145.87
     }
   ],
-  "ladders": [],
+  "ladders": [
+    {
+      "symbol": "TAOP",
+      "phase": "flattening",
+      "price": 0.64,
+      "trig_px": 0.782957,
+      "avg": 0.783,
+      "live_shares": 1284,
+      "be_armed": false,
+      "stop": 0.7125,
+      "rungs": [],
+      "unreal_pct": -18.26
+    },
+    {
+      "symbol": "ZNB",
+      "phase": "flattening",
+      "price": 2.59,
+      "trig_px": 2.4950029,
+      "avg": 2.495,
+      "live_shares": 240,
+      "be_armed": false,
+      "stop": 2.2705,
+      "rungs": [],
+      "unreal_pct": 3.81
+    },
+    {
+      "symbol": "MWYN",
+      "phase": "flattening",
+      "price": 0.7832,
+      "trig_px": 0.73580695,
+      "avg": 0.7358,
+      "live_shares": 818,
+      "be_armed": false,
+      "stop": 0.6696,
+      "rungs": [],
+      "unreal_pct": 6.44
+    },
+    {
+      "symbol": "KSCP",
+      "phase": "flattening",
+      "price": 1.97,
+      "trig_px": 1.58500305,
+      "avg": 1.585,
+      "live_shares": 295,
+      "be_armed": false,
+      "stop": 1.4424,
+      "rungs": [],
+      "unreal_pct": 24.29
+    },
+    {
+      "symbol": "SLXN",
+      "phase": "flattening",
+      "price": 1.78,
+      "trig_px": 1.6966874,
+      "avg": 1.6967,
+      "live_shares": 938,
+      "be_armed": false,
+      "stop": 1.544,
+      "rungs": [],
+      "unreal_pct": 4.91
+    },
+    {
+      "symbol": "PSQH",
+      "phase": "flattening",
+      "price": 4.26,
+      "trig_px": 4.5400032,
+      "avg": 4.54,
+      "live_shares": 220,
+      "be_armed": false,
+      "stop": 4.1314,
+      "rungs": [],
+      "unreal_pct": -6.17
+    },
+    {
+      "symbol": "DBGI",
+      "phase": "flattening",
+      "price": 15.0,
+      "trig_px": 14.1238119,
+      "avg": 14.1238,
+      "live_shares": 42,
+      "be_armed": false,
+      "stop": 12.8527,
+      "rungs": [],
+      "unreal_pct": 6.2
+    },
+    {
+      "symbol": "DGNX",
+      "phase": "flattening",
+      "price": 1.71,
+      "trig_px": 1.77900305,
+      "avg": 1.779,
+      "live_shares": 652,
+      "be_armed": false,
+      "stop": 1.6189,
+      "rungs": [],
+      "unreal_pct": -3.88
+    },
+    {
+      "symbol": "GVH",
+      "phase": "flattening",
+      "price": 1.0,
+      "trig_px": 1.15022725,
+      "avg": 1.1502,
+      "live_shares": 521,
+      "be_armed": false,
+      "stop": 1.0467,
+      "rungs": [],
+      "unreal_pct": -13.06
+    }
+  ],
   "intents_tail": [],
   "live_daily": [
     {
