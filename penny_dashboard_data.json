@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-31 07:00:04",
-  "generated_ts": 1785495604.33041,
+  "generated": "2026-07-31 07:03:17",
+  "generated_ts": 1785495797.882638,
   "system": "penny",
   "positions": [
     {
@@ -18,10 +18,10 @@
       "symbol": "ZNB",
       "shares": 240.0,
       "avg_cost": 2.495,
-      "mkt_price": 2.6,
-      "position_value": 624.0,
-      "unrealized_pnl_dollar": 25.2,
-      "unrealized_pnl": 4.21,
+      "mkt_price": 2.72,
+      "position_value": 652.8,
+      "unrealized_pnl_dollar": 54.0,
+      "unrealized_pnl": 9.02,
       "in_universe": true,
       "position": "long"
     },
@@ -40,10 +40,10 @@
       "symbol": "KSCP",
       "shares": 295.0,
       "avg_cost": 1.585,
-      "mkt_price": 2.02,
-      "position_value": 595.9,
-      "unrealized_pnl_dollar": 128.32,
-      "unrealized_pnl": 27.44,
+      "mkt_price": 2.01,
+      "position_value": 592.95,
+      "unrealized_pnl_dollar": 125.37,
+      "unrealized_pnl": 26.81,
       "in_universe": true,
       "position": "long"
     },
@@ -84,10 +84,10 @@
       "symbol": "DGNX",
       "shares": 652.0,
       "avg_cost": 1.779,
-      "mkt_price": 1.85,
-      "position_value": 1206.2,
-      "unrealized_pnl_dollar": 46.29,
-      "unrealized_pnl": 3.99,
+      "mkt_price": 1.82,
+      "position_value": 1186.64,
+      "unrealized_pnl_dollar": 26.73,
+      "unrealized_pnl": 2.3,
       "in_universe": true,
       "position": "long"
     },
@@ -121,12 +121,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 8.0h old"
+      "detail": "log 8.1h old"
     },
     {
       "name": "Engine",
@@ -135,7 +135,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 1.0,
+    "newest_bar_age_min": 0.1,
     "in_rth": false,
     "ok": true
   },
@@ -165,14 +165,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 76230.31,
+    "net_liq": 76208.22,
     "cash": 68714.38
   },
-  "live_account_value": 76230.31,
+  "live_account_value": 76208.22,
   "live_cash": 68714.38,
   "active_trade_count": 9,
-  "aggregate_unrealized_pnl_dollar": -107.11,
-  "total_position_value": 7509.15,
+  "aggregate_unrealized_pnl_dollar": -100.82,
+  "total_position_value": 7515.44,
   "system_ok": true,
   "shadow": {
     "days": 13,
@@ -2142,7 +2142,19 @@
     },
     {
       "t": "07:00",
-      "v": 76230.31
+      "v": 76229.82
+    },
+    {
+      "t": "07:01",
+      "v": 76229.82
+    },
+    {
+      "t": "07:02",
+      "v": 76229.82
+    },
+    {
+      "t": "07:03",
+      "v": 76208.22
     }
   ],
   "ladders": [],
