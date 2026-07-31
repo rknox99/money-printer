@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-30 22:52:01",
-  "generated_ts": 1785466321.250918,
+  "generated": "2026-07-30 22:55:11",
+  "generated_ts": 1785466511.68273,
   "system": "penny",
   "positions": [
     {
@@ -121,12 +121,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 17m old"
+      "detail": "bars 20m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.4h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
@@ -135,17 +135,17 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 17.1,
+    "newest_bar_age_min": 20.3,
     "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-07-30 20:49:45] Penny Stock Daily Stock Pull.ipynb: OK",
-    "[2026-07-30 21:15:45] running Penny Stock Shadow Scorer.ipynb ...",
     "[2026-07-30 21:17:44] Penny Stock Shadow Scorer.ipynb: OK",
     "[2026-07-30 22:27:28] penny scheduler started",
     "[2026-07-30 22:27:28] launching execution engine",
-    "[2026-07-30 22:27:28] running Penny Stock Daily Stock Pull.ipynb ..."
+    "[2026-07-30 22:27:28] running Penny Stock Daily Stock Pull.ipynb ...",
+    "[2026-07-30 22:55:02] Penny Stock Daily Stock Pull.ipynb: OK",
+    "[2026-07-30 22:55:02] running Penny Stock Shadow Scorer.ipynb ..."
   ],
   "universe": {
     "symbols": 2222,
@@ -5951,6 +5951,18 @@
     {
       "t": "22:52",
       "v": 76076.91
+    },
+    {
+      "t": "22:53",
+      "v": 76076.91
+    },
+    {
+      "t": "22:54",
+      "v": 76076.91
+    },
+    {
+      "t": "22:55",
+      "v": 76076.91
     }
   ],
   "ladders": [
@@ -6279,7 +6291,7 @@
     {
       "symbol": "DFNS",
       "phase": "holding",
-      "price": 68.48,
+      "price": 65.96,
       "trig_px": 73.57,
       "avg": 0.0,
       "live_shares": 0,
