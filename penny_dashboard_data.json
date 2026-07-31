@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-31 00:11:32",
-  "generated_ts": 1785471092.905065,
+  "generated": "2026-07-31 00:14:44",
+  "generated_ts": 1785471284.06947,
   "system": "penny",
   "positions": [
     {
@@ -103,12 +103,12 @@
       "position": "long"
     }
   ],
-  "ib_all_ok": true,
+  "ib_all_ok": false,
   "ib_auth_info": {
-    "authenticated": true,
-    "established": true,
+    "authenticated": false,
+    "established": false,
     "competing": false,
-    "connected": true,
+    "connected": false,
     "message": "",
     "MAC": "06:E5:17:B5:F2:EE",
     "serverInfo": {
@@ -121,12 +121,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 97m old"
+      "detail": "bars 100m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 1.2h old"
+      "detail": "log 1.3h old"
     },
     {
       "name": "Engine",
@@ -135,7 +135,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 96.6,
+    "newest_bar_age_min": 99.8,
     "in_rth": false,
     "ok": true
   },
@@ -173,7 +173,7 @@
   "active_trade_count": 9,
   "aggregate_unrealized_pnl_dollar": -235.76,
   "total_position_value": 7367.0,
-  "system_ok": true,
+  "system_ok": false,
   "shadow": {
     "days": 13,
     "signals_wide": 244,
@@ -510,6 +510,18 @@
     },
     {
       "t": "00:11",
+      "v": 76076.91
+    },
+    {
+      "t": "00:12",
+      "v": 76076.91
+    },
+    {
+      "t": "00:13",
+      "v": 76076.91
+    },
+    {
+      "t": "00:14",
       "v": 76076.91
     }
   ],
