@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-31 16:18:02",
-  "generated_ts": 1785529082.002618,
+  "generated": "2026-07-31 16:21:02",
+  "generated_ts": 1785529262.881502,
   "system": "penny",
   "positions": [
     {
       "symbol": "MKZR",
       "shares": -24.0,
       "avg_cost": 1.2868,
-      "mkt_price": 1.06,
-      "position_value": -25.44,
-      "unrealized_pnl_dollar": 5.44,
-      "unrealized_pnl": 17.62,
+      "mkt_price": 1.05,
+      "position_value": -25.2,
+      "unrealized_pnl_dollar": 5.68,
+      "unrealized_pnl": 18.39,
       "in_universe": true,
       "position": "short"
     },
@@ -18,10 +18,10 @@
       "symbol": "FCUV",
       "shares": 55.0,
       "avg_cost": 8.8065,
-      "mkt_price": 16.03,
-      "position_value": 881.65,
-      "unrealized_pnl_dollar": 397.29,
-      "unrealized_pnl": 82.02,
+      "mkt_price": 15.57,
+      "position_value": 856.35,
+      "unrealized_pnl_dollar": 371.99,
+      "unrealized_pnl": 76.8,
       "in_universe": true,
       "position": "long"
     },
@@ -40,10 +40,10 @@
       "symbol": "GDC",
       "shares": 172.0,
       "avg_cost": 1.7458,
-      "mkt_price": 1.6709,
-      "position_value": 287.4,
-      "unrealized_pnl_dollar": -12.88,
-      "unrealized_pnl": -4.29,
+      "mkt_price": 1.68,
+      "position_value": 288.96,
+      "unrealized_pnl_dollar": -11.32,
+      "unrealized_pnl": -3.77,
       "in_universe": true,
       "position": "long"
     }
@@ -66,7 +66,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -80,7 +80,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.6,
+    "newest_bar_age_min": 0.4,
     "in_rth": false,
     "ok": true
   },
@@ -110,14 +110,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 75892.33,
-    "cash": 74495.28
+    "net_liq": 75894.46,
+    "cash": 74496.24
   },
-  "live_account_value": 75892.33,
-  "live_cash": 74495.28,
+  "live_account_value": 75894.46,
+  "live_cash": 74496.24,
   "active_trade_count": 4,
-  "aggregate_unrealized_pnl_dollar": 387.75,
-  "total_position_value": 915.9,
+  "aggregate_unrealized_pnl_dollar": 364.25,
+  "total_position_value": 892.4,
   "system_ok": true,
   "shadow": {
     "days": 13,
@@ -4320,6 +4320,18 @@
     {
       "t": "16:18",
       "v": 75892.33
+    },
+    {
+      "t": "16:19",
+      "v": 75894.46
+    },
+    {
+      "t": "16:20",
+      "v": 75894.46
+    },
+    {
+      "t": "16:21",
+      "v": 75894.46
     }
   ],
   "ladders": [
@@ -4410,31 +4422,31 @@
     {
       "symbol": "DGNX",
       "phase": "flat",
-      "price": 1.5,
+      "price": 1.51,
       "trig_px": 1.77900305,
       "avg": 1.779,
       "live_shares": 0,
       "be_armed": false,
       "stop": 1.6189,
       "rungs": [],
-      "unreal_pct": -15.68
+      "unreal_pct": -15.12
     },
     {
       "symbol": "GVH",
       "phase": "flat",
-      "price": 0.9514,
+      "price": 0.96,
       "trig_px": 1.15022725,
       "avg": 1.1502,
       "live_shares": 0,
       "be_armed": false,
       "stop": 1.0467,
       "rungs": [],
-      "unreal_pct": -17.29
+      "unreal_pct": -16.54
     },
     {
       "symbol": "FCUV",
       "phase": "holding",
-      "price": 15.64,
+      "price": 15.44,
       "trig_px": 9.84,
       "avg": 8.9196,
       "live_shares": 55,
@@ -4452,7 +4464,7 @@
           "filled": 23
         }
       ],
-      "unreal_pct": 75.34
+      "unreal_pct": 73.1
     },
     {
       "symbol": "KPTI",
@@ -4549,7 +4561,7 @@
     {
       "symbol": "MBRX",
       "phase": "flat",
-      "price": 0.3999,
+      "price": 0.3977,
       "trig_px": 0.975,
       "avg": 0.8836,
       "live_shares": 0,
@@ -4567,12 +4579,12 @@
           "filled": 238
         }
       ],
-      "unreal_pct": -54.74
+      "unreal_pct": -54.99
     },
     {
       "symbol": "TCX",
       "phase": "holding",
-      "price": 15.38,
+      "price": 15.55,
       "trig_px": 12.88,
       "avg": 0.0,
       "live_shares": 0,
@@ -4618,7 +4630,7 @@
     {
       "symbol": "RCON",
       "phase": "flat",
-      "price": 0.4131,
+      "price": 0.414,
       "trig_px": 0.3823,
       "avg": 0.3288,
       "live_shares": 0,
@@ -4636,7 +4648,7 @@
           "filled": 608
         }
       ],
-      "unreal_pct": 25.64
+      "unreal_pct": 25.91
     },
     {
       "symbol": "ARAI",
@@ -4664,7 +4676,7 @@
     {
       "symbol": "DFNS",
       "phase": "holding",
-      "price": 28.0,
+      "price": 27.38,
       "trig_px": 26.6342,
       "avg": 0.0,
       "live_shares": 0,
@@ -4710,7 +4722,7 @@
     {
       "symbol": "FFAI",
       "phase": "holding",
-      "price": 6.47,
+      "price": 6.36,
       "trig_px": 5.9085,
       "avg": 0.0,
       "live_shares": 0,
@@ -4733,7 +4745,7 @@
     {
       "symbol": "MKZR",
       "phase": "flat",
-      "price": 1.06,
+      "price": 1.02,
       "trig_px": 1.41,
       "avg": 1.33,
       "live_shares": -24,
@@ -4751,7 +4763,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -20.3
+      "unreal_pct": -23.31
     },
     {
       "symbol": "ATHR",
@@ -4825,7 +4837,7 @@
     {
       "symbol": "ZEO",
       "phase": "flat",
-      "price": 0.3555,
+      "price": 0.3774,
       "trig_px": 0.709,
       "avg": 0.6426,
       "live_shares": 0,
@@ -4843,7 +4855,7 @@
           "filled": 328
         }
       ],
-      "unreal_pct": -44.67
+      "unreal_pct": -41.27
     }
   ],
   "intents_tail": [
