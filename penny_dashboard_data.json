@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-31 18:06:40",
-  "generated_ts": 1785535600.941497,
+  "generated": "2026-07-31 18:09:51",
+  "generated_ts": 1785535791.330981,
   "system": "penny",
   "positions": [
     {
@@ -33,12 +33,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 1.5h old"
+      "detail": "log 1.6h old"
     },
     {
       "name": "Engine",
@@ -47,7 +47,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.5,
+    "newest_bar_age_min": 0.7,
     "in_rth": false,
     "ok": true
   },
@@ -4719,6 +4719,18 @@
     {
       "t": "18:06",
       "v": 75860.15
+    },
+    {
+      "t": "18:07",
+      "v": 75860.15
+    },
+    {
+      "t": "18:08",
+      "v": 75860.15
+    },
+    {
+      "t": "18:09",
+      "v": 75860.15
     }
   ],
   "ladders": [
@@ -4809,14 +4821,14 @@
     {
       "symbol": "DGNX",
       "phase": "flat",
-      "price": 1.45,
+      "price": 1.44,
       "trig_px": 1.77900305,
       "avg": 1.779,
       "live_shares": 0,
       "be_armed": false,
       "stop": 1.6189,
       "rungs": [],
-      "unreal_pct": -18.49
+      "unreal_pct": -19.06
     },
     {
       "symbol": "GVH",
@@ -4833,7 +4845,7 @@
     {
       "symbol": "FCUV",
       "phase": "flat",
-      "price": 14.5,
+      "price": 14.55,
       "trig_px": 9.84,
       "avg": 8.9196,
       "live_shares": 0,
@@ -4851,12 +4863,12 @@
           "filled": 23
         }
       ],
-      "unreal_pct": 62.56
+      "unreal_pct": 63.12
     },
     {
       "symbol": "KPTI",
       "phase": "flat",
-      "price": 1.94,
+      "price": 1.93,
       "trig_px": 2.34,
       "avg": 2.0874,
       "live_shares": 0,
@@ -4874,7 +4886,7 @@
           "filled": 198
         }
       ],
-      "unreal_pct": -7.06
+      "unreal_pct": -7.54
     },
     {
       "symbol": "TOP",
@@ -4902,7 +4914,7 @@
     {
       "symbol": "BTOG",
       "phase": "flat",
-      "price": 0.745,
+      "price": 0.7101,
       "trig_px": 0.8699,
       "avg": 0.7883,
       "live_shares": 0,
@@ -4920,7 +4932,7 @@
           "filled": 267
         }
       ],
-      "unreal_pct": -5.5
+      "unreal_pct": -9.92
     },
     {
       "symbol": "CAPR",
@@ -4948,7 +4960,7 @@
     {
       "symbol": "MBRX",
       "phase": "flat",
-      "price": 0.4128,
+      "price": 0.4046,
       "trig_px": 0.975,
       "avg": 0.8836,
       "live_shares": 0,
@@ -4966,7 +4978,7 @@
           "filled": 238
         }
       ],
-      "unreal_pct": -53.28
+      "unreal_pct": -54.21
     },
     {
       "symbol": "TCX",
@@ -4994,7 +5006,7 @@
     {
       "symbol": "USDE",
       "phase": "flat",
-      "price": 1.66,
+      "price": 1.62,
       "trig_px": 1.78,
       "avg": 1.67,
       "live_shares": 0,
@@ -5012,7 +5024,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -0.6
+      "unreal_pct": -2.99
     },
     {
       "symbol": "RCON",
@@ -5063,7 +5075,7 @@
     {
       "symbol": "DFNS",
       "phase": "holding",
-      "price": 26.6,
+      "price": 26.96,
       "trig_px": 26.6342,
       "avg": 0.0,
       "live_shares": 0,
@@ -5224,7 +5236,7 @@
     {
       "symbol": "ZEO",
       "phase": "flat",
-      "price": 0.471,
+      "price": 0.4725,
       "trig_px": 0.709,
       "avg": 0.6426,
       "live_shares": 0,
@@ -5242,7 +5254,7 @@
           "filled": 328
         }
       ],
-      "unreal_pct": -26.7
+      "unreal_pct": -26.47
     }
   ],
   "intents_tail": [
