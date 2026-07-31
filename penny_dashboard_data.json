@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-31 19:49:09",
-  "generated_ts": 1785541749.797976,
+  "generated": "2026-07-31 19:52:20",
+  "generated_ts": 1785541940.764664,
   "system": "penny",
   "positions": [
     {
@@ -49,7 +49,7 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 3.2h old"
+      "detail": "log 3.3h old"
     },
     {
       "name": "Engine",
@@ -58,7 +58,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.2,
     "in_rth": false,
     "ok": true
   },
@@ -88,11 +88,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 75859.45,
-    "cash": 75813.58
+    "net_liq": 75859.36,
+    "cash": 75813.4
   },
-  "live_account_value": 75859.45,
-  "live_cash": 75813.58,
+  "live_account_value": 75859.36,
+  "live_cash": 75813.4,
   "active_trade_count": 2,
   "aggregate_unrealized_pnl_dollar": 5.23,
   "total_position_value": -45.87,
@@ -5142,6 +5142,18 @@
     {
       "t": "19:49",
       "v": 75859.45
+    },
+    {
+      "t": "19:50",
+      "v": 75859.36
+    },
+    {
+      "t": "19:51",
+      "v": 75859.36
+    },
+    {
+      "t": "19:52",
+      "v": 75859.36
     }
   ],
   "ladders": [
@@ -5232,14 +5244,14 @@
     {
       "symbol": "DGNX",
       "phase": "flat",
-      "price": 1.48,
+      "price": 1.42,
       "trig_px": 1.77900305,
       "avg": 1.779,
       "live_shares": 0,
       "be_armed": false,
       "stop": 1.6189,
       "rungs": [],
-      "unreal_pct": -16.81
+      "unreal_pct": -20.18
     },
     {
       "symbol": "GVH",
@@ -5256,7 +5268,7 @@
     {
       "symbol": "FCUV",
       "phase": "flat",
-      "price": 16.34,
+      "price": 16.0,
       "trig_px": 9.84,
       "avg": 8.9196,
       "live_shares": 0,
@@ -5274,7 +5286,7 @@
           "filled": 23
         }
       ],
-      "unreal_pct": 83.19
+      "unreal_pct": 79.38
     },
     {
       "symbol": "KPTI",
@@ -5371,7 +5383,7 @@
     {
       "symbol": "MBRX",
       "phase": "flat",
-      "price": 0.385,
+      "price": 0.39,
       "trig_px": 0.975,
       "avg": 0.8836,
       "live_shares": 0,
@@ -5389,7 +5401,7 @@
           "filled": 238
         }
       ],
-      "unreal_pct": -56.43
+      "unreal_pct": -55.86
     },
     {
       "symbol": "TCX",
@@ -5486,7 +5498,7 @@
     {
       "symbol": "DFNS",
       "phase": "holding",
-      "price": 26.38,
+      "price": 25.88,
       "trig_px": 26.6342,
       "avg": 0.0,
       "live_shares": 0,
@@ -5624,7 +5636,7 @@
     {
       "symbol": "STAK",
       "phase": "flat",
-      "price": 1.94,
+      "price": 1.92,
       "trig_px": 2.24,
       "avg": 2.0343,
       "live_shares": 0,
@@ -5642,7 +5654,7 @@
           "filled": 103
         }
       ],
-      "unreal_pct": -4.64
+      "unreal_pct": -5.62
     },
     {
       "symbol": "ZEO",
