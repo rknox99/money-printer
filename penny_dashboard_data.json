@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-31 18:00:13",
-  "generated_ts": 1785535213.923053,
+  "generated": "2026-07-31 18:03:27",
+  "generated_ts": 1785535407.523525,
   "system": "penny",
   "positions": [
     {
       "symbol": "MKZR",
       "shares": -24.0,
       "avg_cost": 1.2868,
-      "mkt_price": 1.0,
-      "position_value": -24.0,
-      "unrealized_pnl_dollar": 6.88,
-      "unrealized_pnl": 22.28,
+      "mkt_price": 1.04,
+      "position_value": -24.96,
+      "unrealized_pnl_dollar": 5.92,
+      "unrealized_pnl": 19.17,
       "in_universe": true,
       "position": "short"
     }
@@ -38,7 +38,7 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 1.4h old"
+      "detail": "log 1.5h old"
     },
     {
       "name": "Engine",
@@ -47,7 +47,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.2,
     "in_rth": false,
     "ok": true
   },
@@ -77,14 +77,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 75861.11,
-    "cash": 75837.11
+    "net_liq": 75860.15,
+    "cash": 75835.19
   },
-  "live_account_value": 75861.11,
-  "live_cash": 75837.11,
+  "live_account_value": 75860.15,
+  "live_cash": 75835.19,
   "active_trade_count": 1,
-  "aggregate_unrealized_pnl_dollar": 6.88,
-  "total_position_value": -24.0,
+  "aggregate_unrealized_pnl_dollar": 5.92,
+  "total_position_value": -24.96,
   "system_ok": true,
   "shadow": {
     "days": 13,
@@ -4695,6 +4695,18 @@
     {
       "t": "18:00",
       "v": 75861.11
+    },
+    {
+      "t": "18:01",
+      "v": 75861.11
+    },
+    {
+      "t": "18:02",
+      "v": 75860.15
+    },
+    {
+      "t": "18:03",
+      "v": 75860.15
     }
   ],
   "ladders": [
@@ -4809,7 +4821,7 @@
     {
       "symbol": "FCUV",
       "phase": "flat",
-      "price": 15.08,
+      "price": 14.66,
       "trig_px": 9.84,
       "avg": 8.9196,
       "live_shares": 0,
@@ -4827,12 +4839,12 @@
           "filled": 23
         }
       ],
-      "unreal_pct": 69.07
+      "unreal_pct": 64.36
     },
     {
       "symbol": "KPTI",
       "phase": "flat",
-      "price": 1.92,
+      "price": 1.93,
       "trig_px": 2.34,
       "avg": 2.0874,
       "live_shares": 0,
@@ -4850,7 +4862,7 @@
           "filled": 198
         }
       ],
-      "unreal_pct": -8.02
+      "unreal_pct": -7.54
     },
     {
       "symbol": "TOP",
@@ -4924,7 +4936,7 @@
     {
       "symbol": "MBRX",
       "phase": "flat",
-      "price": 0.4234,
+      "price": 0.4129,
       "trig_px": 0.975,
       "avg": 0.8836,
       "live_shares": 0,
@@ -4942,7 +4954,7 @@
           "filled": 238
         }
       ],
-      "unreal_pct": -52.08
+      "unreal_pct": -53.27
     },
     {
       "symbol": "TCX",
@@ -4993,7 +5005,7 @@
     {
       "symbol": "RCON",
       "phase": "flat",
-      "price": 0.37,
+      "price": 0.38,
       "trig_px": 0.3823,
       "avg": 0.3288,
       "live_shares": 0,
@@ -5011,12 +5023,12 @@
           "filled": 608
         }
       ],
-      "unreal_pct": 12.53
+      "unreal_pct": 15.57
     },
     {
       "symbol": "ARAI",
       "phase": "flat",
-      "price": 0.25,
+      "price": 0.24,
       "trig_px": 0.27,
       "avg": 0.2447,
       "live_shares": 0,
@@ -5034,12 +5046,12 @@
           "filled": 861
         }
       ],
-      "unreal_pct": 2.17
+      "unreal_pct": -1.92
     },
     {
       "symbol": "DFNS",
       "phase": "holding",
-      "price": 26.56,
+      "price": 26.55,
       "trig_px": 26.6342,
       "avg": 0.0,
       "live_shares": 0,
@@ -5085,7 +5097,7 @@
     {
       "symbol": "FFAI",
       "phase": "holding",
-      "price": 6.38,
+      "price": 6.25,
       "trig_px": 5.9085,
       "avg": 0.0,
       "live_shares": 0,
@@ -5200,7 +5212,7 @@
     {
       "symbol": "ZEO",
       "phase": "flat",
-      "price": 0.48,
+      "price": 0.4711,
       "trig_px": 0.709,
       "avg": 0.6426,
       "live_shares": 0,
@@ -5218,7 +5230,7 @@
           "filled": 328
         }
       ],
-      "unreal_pct": -25.3
+      "unreal_pct": -26.68
     }
   ],
   "intents_tail": [
