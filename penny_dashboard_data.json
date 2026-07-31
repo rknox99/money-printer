@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-31 09:07:00",
-  "generated_ts": 1785503220.391606,
+  "generated": "2026-07-31 09:10:08",
+  "generated_ts": 1785503408.644585,
   "system": "penny",
   "positions": [
     {
@@ -18,10 +18,10 @@
       "symbol": "ZNB",
       "shares": 240.0,
       "avg_cost": 2.495,
-      "mkt_price": 2.57,
-      "position_value": 616.8,
-      "unrealized_pnl_dollar": 18.0,
-      "unrealized_pnl": 3.01,
+      "mkt_price": 2.55,
+      "position_value": 612.0,
+      "unrealized_pnl_dollar": 13.2,
+      "unrealized_pnl": 2.2,
       "in_universe": true,
       "position": "long"
     },
@@ -95,10 +95,10 @@
       "symbol": "GVH",
       "shares": 521.0,
       "avg_cost": 1.1502,
-      "mkt_price": 0.995,
-      "position_value": 518.4,
-      "unrealized_pnl_dollar": -80.87,
-      "unrealized_pnl": -13.49,
+      "mkt_price": 1.0,
+      "position_value": 521.0,
+      "unrealized_pnl_dollar": -78.27,
+      "unrealized_pnl": -13.06,
       "in_universe": true,
       "position": "long"
     }
@@ -121,12 +121,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 10.1h old"
+      "detail": "log 10.2h old"
     },
     {
       "name": "Engine",
@@ -135,7 +135,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.8,
+    "newest_bar_age_min": 0.0,
     "in_rth": false,
     "ok": true
   },
@@ -165,14 +165,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 76174.55,
+    "net_liq": 76169.75,
     "cash": 68714.38
   },
-  "live_account_value": 76174.55,
+  "live_account_value": 76169.75,
   "live_cash": 68714.38,
   "active_trade_count": 9,
-  "aggregate_unrealized_pnl_dollar": -158.69,
-  "total_position_value": 7457.57,
+  "aggregate_unrealized_pnl_dollar": -160.89,
+  "total_position_value": 7455.37,
   "system_ok": true,
   "shadow": {
     "days": 13,
@@ -2651,6 +2651,18 @@
     {
       "t": "09:07",
       "v": 76174.55
+    },
+    {
+      "t": "09:08",
+      "v": 76169.75
+    },
+    {
+      "t": "09:09",
+      "v": 76169.75
+    },
+    {
+      "t": "09:10",
+      "v": 76169.75
     }
   ],
   "ladders": [],
