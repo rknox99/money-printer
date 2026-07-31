@@ -1,132 +1,20 @@
 {
-  "generated": "2026-07-31 01:43:36",
-  "generated_ts": 1785476616.021385,
+  "generated": "2026-07-31 01:46:45",
+  "generated_ts": 1785476805.664201,
   "system": "penny",
-  "positions": [
-    {
-      "symbol": "TAOP",
-      "shares": 1284.0,
-      "avg_cost": 0.783,
-      "mkt_price": 0.64,
-      "position_value": 821.76,
-      "unrealized_pnl_dollar": -183.56,
-      "unrealized_pnl": -18.26,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "ZNB",
-      "shares": 240.0,
-      "avg_cost": 2.495,
-      "mkt_price": 2.5,
-      "position_value": 600.0,
-      "unrealized_pnl_dollar": 1.2,
-      "unrealized_pnl": 0.2,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "MWYN",
-      "shares": 818.0,
-      "avg_cost": 0.7274,
-      "mkt_price": 0.7,
-      "position_value": 572.6,
-      "unrealized_pnl_dollar": -22.42,
-      "unrealized_pnl": -3.77,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "KSCP",
-      "shares": 295.0,
-      "avg_cost": 1.585,
-      "mkt_price": 1.99,
-      "position_value": 587.05,
-      "unrealized_pnl_dollar": 119.47,
-      "unrealized_pnl": 25.55,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "SLXN",
-      "shares": 938.0,
-      "avg_cost": 1.6967,
-      "mkt_price": 1.65,
-      "position_value": 1547.7,
-      "unrealized_pnl_dollar": -43.79,
-      "unrealized_pnl": -2.75,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "PSQH",
-      "shares": 220.0,
-      "avg_cost": 4.54,
-      "mkt_price": 4.1,
-      "position_value": 902.0,
-      "unrealized_pnl_dollar": -96.8,
-      "unrealized_pnl": -9.69,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "DBGI",
-      "shares": 42.0,
-      "avg_cost": 14.1238,
-      "mkt_price": 15.3,
-      "position_value": 642.6,
-      "unrealized_pnl_dollar": 49.4,
-      "unrealized_pnl": 8.33,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "DGNX",
-      "shares": 652.0,
-      "avg_cost": 1.779,
-      "mkt_price": 1.79,
-      "position_value": 1167.08,
-      "unrealized_pnl_dollar": 7.17,
-      "unrealized_pnl": 0.62,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "GVH",
-      "shares": 521.0,
-      "avg_cost": 1.1375,
-      "mkt_price": 1.01,
-      "position_value": 526.21,
-      "unrealized_pnl_dollar": -66.43,
-      "unrealized_pnl": -11.21,
-      "in_universe": true,
-      "position": "long"
-    }
-  ],
-  "ib_all_ok": true,
-  "ib_auth_info": {
-    "authenticated": true,
-    "established": true,
-    "competing": false,
-    "connected": true,
-    "message": "",
-    "MAC": "06:E5:17:B5:F2:EE",
-    "serverInfo": {
-      "serverName": "JifN10108",
-      "serverVersion": "Build 10.46.2b, Jul 27, 2026 10:58:29 AM"
-    },
-    "fail": ""
-  },
+  "positions": [],
+  "ib_all_ok": false,
+  "ib_auth_info": {},
   "component_checks": [
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 189m old"
+      "detail": "bars 192m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 2.7h old"
+      "detail": "log 2.8h old"
     },
     {
       "name": "Engine",
@@ -135,7 +23,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 188.7,
+    "newest_bar_age_min": 191.9,
     "in_rth": false,
     "ok": true
   },
@@ -170,10 +58,10 @@
   },
   "live_account_value": 76076.91,
   "live_cash": 68709.91,
-  "active_trade_count": 9,
-  "aggregate_unrealized_pnl_dollar": -235.76,
-  "total_position_value": 7367.0,
-  "system_ok": true,
+  "active_trade_count": 0,
+  "aggregate_unrealized_pnl_dollar": 0,
+  "total_position_value": 0,
+  "system_ok": false,
   "shadow": {
     "days": 13,
     "signals_wide": 244,
@@ -874,6 +762,18 @@
     },
     {
       "t": "01:43",
+      "v": 76076.91
+    },
+    {
+      "t": "01:44",
+      "v": 76076.91
+    },
+    {
+      "t": "01:45",
+      "v": 76076.91
+    },
+    {
+      "t": "01:46",
       "v": 76076.91
     }
   ],
