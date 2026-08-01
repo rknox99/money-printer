@@ -1,20 +1,55 @@
 {
-  "generated": "2026-08-01 12:14:24",
-  "generated_ts": 1785600864.532826,
+  "generated": "2026-08-01 12:17:31",
+  "generated_ts": 1785601051.876278,
   "system": "penny",
-  "positions": [],
-  "ib_all_ok": false,
-  "ib_auth_info": {},
+  "positions": [
+    {
+      "symbol": "MKZR",
+      "shares": -24.0,
+      "avg_cost": 1.2868,
+      "mkt_price": 1.04,
+      "position_value": -24.96,
+      "unrealized_pnl_dollar": 5.92,
+      "unrealized_pnl": 19.17,
+      "in_universe": true,
+      "position": "short"
+    },
+    {
+      "symbol": "MRNO",
+      "shares": -100.0,
+      "avg_cost": 0.2022,
+      "mkt_price": 0.21,
+      "position_value": -21.0,
+      "unrealized_pnl_dollar": -0.78,
+      "unrealized_pnl": -3.86,
+      "in_universe": true,
+      "position": "short"
+    }
+  ],
+  "ib_all_ok": true,
+  "ib_auth_info": {
+    "authenticated": true,
+    "established": true,
+    "competing": false,
+    "connected": true,
+    "message": "",
+    "MAC": "06:E5:17:B5:F2:EE",
+    "serverInfo": {
+      "serverName": "JifN19097",
+      "serverVersion": "Build 10.46.2b, Jul 27, 2026 10:58:29 AM"
+    },
+    "fail": ""
+  },
   "component_checks": [
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 952m old"
+      "detail": "bars 955m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 14.9h old"
+      "detail": "log 15.0h old"
     },
     {
       "name": "Engine",
@@ -23,7 +58,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 951.9,
+    "newest_bar_age_min": 955.0,
     "in_rth": false,
     "ok": true
   },
@@ -58,10 +93,10 @@
   },
   "live_account_value": 75863.78,
   "live_cash": 75817.82,
-  "active_trade_count": 0,
-  "aggregate_unrealized_pnl_dollar": 0,
-  "total_position_value": 0,
-  "system_ok": false,
+  "active_trade_count": 2,
+  "aggregate_unrealized_pnl_dollar": 5.14,
+  "total_position_value": -45.96,
+  "system_ok": true,
   "shadow": {
     "days": 14,
     "signals_wide": 267,
@@ -3298,6 +3333,18 @@
     },
     {
       "t": "12:13",
+      "v": 75863.78
+    },
+    {
+      "t": "12:15",
+      "v": 75863.78
+    },
+    {
+      "t": "12:16",
+      "v": 75863.78
+    },
+    {
+      "t": "12:17",
       "v": 75863.78
     }
   ],
