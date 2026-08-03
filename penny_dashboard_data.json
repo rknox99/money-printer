@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 11:07:08",
-  "generated_ts": 1785769628.230554,
+  "generated": "2026-08-03 11:10:22",
+  "generated_ts": 1785769822.646578,
   "system": "penny",
   "positions": [
     {
@@ -88,7 +88,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -98,11 +98,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 1.0,
+    "newest_bar_age_min": 0.1,
     "in_rth": true,
     "ok": true
   },
@@ -132,10 +132,10 @@
     }
   },
   "account_summary": {
-    "net_liq": 75853.17,
+    "net_liq": 75806.78,
     "cash": 73785.0
   },
-  "live_account_value": 75853.17,
+  "live_account_value": 75806.78,
   "live_cash": 73785.0,
   "active_trade_count": 6,
   "aggregate_unrealized_pnl_dollar": 11.83,
@@ -3114,25 +3114,37 @@
     {
       "t": "11:07",
       "v": 75853.17
+    },
+    {
+      "t": "11:08",
+      "v": 75806.78
+    },
+    {
+      "t": "11:09",
+      "v": 75806.78
+    },
+    {
+      "t": "11:10",
+      "v": 75806.78
     }
   ],
   "ladders": [
     {
       "symbol": "MRNO",
       "phase": "flat",
-      "price": 0.2149,
+      "price": 0.215,
       "trig_px": 0.22920565,
       "avg": 0.2292,
       "live_shares": 0,
       "be_armed": false,
       "stop": 0.2086,
       "rungs": [],
-      "unreal_pct": -6.24
+      "unreal_pct": -6.2
     },
     {
       "symbol": "NRSN",
       "phase": "entering",
-      "price": 0.4402,
+      "price": 0.49,
       "trig_px": 0.4678,
       "avg": 0.0,
       "live_shares": 0,
@@ -3201,7 +3213,7 @@
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 41.0,
+      "price": 41.05,
       "trig_px": 46.82,
       "avg": 44.01,
       "live_shares": 0,
@@ -3219,12 +3231,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -6.84
+      "unreal_pct": -6.73
     },
     {
       "symbol": "CSAI",
       "phase": "flat",
-      "price": 3.73,
+      "price": 3.75,
       "trig_px": 5.56,
       "avg": 4.78,
       "live_shares": 0,
@@ -3242,12 +3254,12 @@
           "filled": 41
         }
       ],
-      "unreal_pct": -21.97
+      "unreal_pct": -21.55
     },
     {
       "symbol": "ZEO",
       "phase": "entering",
-      "price": 0.49,
+      "price": 0.4847,
       "trig_px": 0.4,
       "avg": 0.0,
       "live_shares": 0,
@@ -3270,7 +3282,7 @@
     {
       "symbol": "CNCK",
       "phase": "entering",
-      "price": 2.37,
+      "price": 2.33,
       "trig_px": 2.1266,
       "avg": 0.0,
       "live_shares": 0,
@@ -3293,7 +3305,7 @@
     {
       "symbol": "SDST",
       "phase": "entering",
-      "price": 0.6824,
+      "price": 0.7773,
       "trig_px": 0.6404,
       "avg": 0.0,
       "live_shares": 0,
@@ -3316,7 +3328,7 @@
     {
       "symbol": "SGLY",
       "phase": "flat",
-      "price": 5.42,
+      "price": 5.27,
       "trig_px": 5.75,
       "avg": 5.4,
       "live_shares": 0,
@@ -3334,7 +3346,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 0.37
+      "unreal_pct": -2.41
     },
     {
       "symbol": "PN",
@@ -3362,7 +3374,7 @@
     {
       "symbol": "MWYN",
       "phase": "flat",
-      "price": 0.7699,
+      "price": 0.68,
       "trig_px": 0.7699,
       "avg": 0.6977,
       "live_shares": 690,
@@ -3380,12 +3392,12 @@
           "filled": 302
         }
       ],
-      "unreal_pct": 10.35
+      "unreal_pct": -2.54
     },
     {
       "symbol": "FUSE",
       "phase": "flat",
-      "price": 1.35,
+      "price": 1.31,
       "trig_px": 1.3,
       "avg": 1.1779,
       "live_shares": 0,
@@ -3403,7 +3415,7 @@
           "filled": 178
         }
       ],
-      "unreal_pct": 14.61
+      "unreal_pct": 11.21
     }
   ],
   "intents_tail": [
