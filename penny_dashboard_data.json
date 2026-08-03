@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 10:19:58",
-  "generated_ts": 1785766798.573119,
+  "generated": "2026-08-03 10:22:59",
+  "generated_ts": 1785766979.798432,
   "system": "penny",
   "positions": [
     {
@@ -18,10 +18,10 @@
       "symbol": "CSAI",
       "shares": 41.0,
       "avg_cost": 4.8044,
-      "mkt_price": 4.2439,
-      "position_value": 174.0,
-      "unrealized_pnl_dollar": -22.98,
-      "unrealized_pnl": -11.67,
+      "mkt_price": 4.195,
+      "position_value": 172.0,
+      "unrealized_pnl_dollar": -24.98,
+      "unrealized_pnl": -12.68,
       "in_universe": true,
       "position": "long"
     },
@@ -29,10 +29,10 @@
       "symbol": "LESL",
       "shares": 301.0,
       "avg_cost": 1.0014,
-      "mkt_price": 0.9896,
-      "position_value": 297.87,
-      "unrealized_pnl_dollar": -3.55,
-      "unrealized_pnl": -1.18,
+      "mkt_price": 0.989,
+      "position_value": 297.68,
+      "unrealized_pnl_dollar": -3.74,
+      "unrealized_pnl": -1.24,
       "in_universe": true,
       "position": "long"
     },
@@ -40,10 +40,10 @@
       "symbol": "DFNS",
       "shares": 6.0,
       "avg_cost": 42.7167,
-      "mkt_price": 45.7479,
-      "position_value": 274.49,
-      "unrealized_pnl_dollar": 18.19,
-      "unrealized_pnl": 7.1,
+      "mkt_price": 46.1792,
+      "position_value": 277.08,
+      "unrealized_pnl_dollar": 20.78,
+      "unrealized_pnl": 8.11,
       "in_universe": true,
       "position": "long"
     }
@@ -71,12 +71,12 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.9h old"
+      "detail": "log 1.0h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.4m"
     }
   ],
   "stream_health": {
@@ -110,14 +110,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 75835.12,
+    "net_liq": 75835.18,
     "cash": 75063.35
   },
-  "live_account_value": 75835.12,
+  "live_account_value": 75835.18,
   "live_cash": 75063.35,
   "active_trade_count": 4,
-  "aggregate_unrealized_pnl_dollar": -2.47,
-  "total_position_value": 721.35,
+  "aggregate_unrealized_pnl_dollar": -2.07,
+  "total_position_value": 721.75,
   "system_ok": true,
   "shadow": {
     "days": 14,
@@ -2900,6 +2900,18 @@
     {
       "t": "10:19",
       "v": 75835.12
+    },
+    {
+      "t": "10:20",
+      "v": 75835.12
+    },
+    {
+      "t": "10:21",
+      "v": 75835.12
+    },
+    {
+      "t": "10:22",
+      "v": 75835.18
     }
   ],
   "ladders": [
@@ -2918,7 +2930,7 @@
     {
       "symbol": "NRSN",
       "phase": "entering",
-      "price": 0.4498,
+      "price": 0.457,
       "trig_px": 0.4678,
       "avg": 0.0,
       "live_shares": 0,
@@ -2941,7 +2953,7 @@
     {
       "symbol": "LESL",
       "phase": "flat",
-      "price": 0.9802,
+      "price": 1.01,
       "trig_px": 1.06,
       "avg": 0.9964,
       "live_shares": 0,
@@ -2959,12 +2971,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -1.63
+      "unreal_pct": 1.36
     },
     {
       "symbol": "MBRX",
       "phase": "entering",
-      "price": 0.325,
+      "price": 0.3405,
       "trig_px": 0.2527,
       "avg": 0.0,
       "live_shares": 0,
@@ -2987,7 +2999,7 @@
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 44.98,
+      "price": 45.53,
       "trig_px": 46.82,
       "avg": 44.01,
       "live_shares": 0,
@@ -3005,12 +3017,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 2.2
+      "unreal_pct": 3.45
     },
     {
       "symbol": "CSAI",
       "phase": "flat",
-      "price": 4.12,
+      "price": 4.15,
       "trig_px": 5.56,
       "avg": 4.78,
       "live_shares": 0,
@@ -3028,12 +3040,12 @@
           "filled": 41
         }
       ],
-      "unreal_pct": -13.81
+      "unreal_pct": -13.18
     },
     {
       "symbol": "ZEO",
       "phase": "entering",
-      "price": 0.4,
+      "price": 0.4238,
       "trig_px": 0.4,
       "avg": 0.0,
       "live_shares": 0,
@@ -3056,7 +3068,7 @@
     {
       "symbol": "CNCK",
       "phase": "entering",
-      "price": 2.28,
+      "price": 2.26,
       "trig_px": 2.1266,
       "avg": 0.0,
       "live_shares": 0,
@@ -3079,7 +3091,7 @@
     {
       "symbol": "SDST",
       "phase": "entering",
-      "price": 0.6246,
+      "price": 0.6264,
       "trig_px": 0.6404,
       "avg": 0.0,
       "live_shares": 0,
@@ -3102,7 +3114,7 @@
     {
       "symbol": "SGLY",
       "phase": "entering",
-      "price": 5.66,
+      "price": 5.64,
       "trig_px": 5.75,
       "avg": 0.0,
       "live_shares": 0,
