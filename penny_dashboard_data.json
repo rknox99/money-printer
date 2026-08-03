@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 10:04:10",
-  "generated_ts": 1785765850.570444,
+  "generated": "2026-08-03 10:07:13",
+  "generated_ts": 1785766033.845877,
   "system": "penny",
   "positions": [
     {
@@ -18,10 +18,21 @@
       "symbol": "CSAI",
       "shares": 41.0,
       "avg_cost": 4.8044,
-      "mkt_price": 4.2844,
-      "position_value": 175.66,
-      "unrealized_pnl_dollar": -21.32,
-      "unrealized_pnl": -10.82,
+      "mkt_price": 4.1944,
+      "position_value": 171.97,
+      "unrealized_pnl_dollar": -25.01,
+      "unrealized_pnl": -12.7,
+      "in_universe": true,
+      "position": "long"
+    },
+    {
+      "symbol": "LESL",
+      "shares": 301.0,
+      "avg_cost": 1.0014,
+      "mkt_price": 0.9896,
+      "position_value": 297.87,
+      "unrealized_pnl_dollar": -3.55,
+      "unrealized_pnl": -1.18,
       "in_universe": true,
       "position": "long"
     }
@@ -44,21 +55,21 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.6h old"
+      "detail": "log 0.7h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.1m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.2,
+    "newest_bar_age_min": 1.0,
     "in_rth": true,
     "ok": true
   },
@@ -88,14 +99,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 75814.51,
+    "net_liq": 75810.85,
     "cash": 75319.65
   },
-  "live_account_value": 75814.51,
+  "live_account_value": 75810.85,
   "live_cash": 75319.65,
-  "active_trade_count": 2,
-  "aggregate_unrealized_pnl_dollar": -15.45,
-  "total_position_value": 150.65,
+  "active_trade_count": 3,
+  "aggregate_unrealized_pnl_dollar": -22.69,
+  "total_position_value": 444.83,
   "system_ok": true,
   "shadow": {
     "days": 14,
@@ -2818,6 +2829,18 @@
     {
       "t": "10:04",
       "v": 75814.51
+    },
+    {
+      "t": "10:05",
+      "v": 75814.51
+    },
+    {
+      "t": "10:06",
+      "v": 75810.85
+    },
+    {
+      "t": "10:07",
+      "v": 75810.85
     }
   ],
   "ladders": [
@@ -2882,7 +2905,7 @@
     {
       "symbol": "MBRX",
       "phase": "entering",
-      "price": 0.3,
+      "price": 0.2895,
       "trig_px": 0.2527,
       "avg": 0.0,
       "live_shares": 0,
@@ -2928,7 +2951,7 @@
     {
       "symbol": "CSAI",
       "phase": "flat",
-      "price": 4.11,
+      "price": 4.1,
       "trig_px": 5.56,
       "avg": 4.78,
       "live_shares": 0,
@@ -2946,12 +2969,12 @@
           "filled": 41
         }
       ],
-      "unreal_pct": -14.02
+      "unreal_pct": -14.23
     },
     {
       "symbol": "ZEO",
       "phase": "entering",
-      "price": 0.4,
+      "price": 0.4156,
       "trig_px": 0.4,
       "avg": 0.0,
       "live_shares": 0,
@@ -2974,7 +2997,7 @@
     {
       "symbol": "CNCK",
       "phase": "entering",
-      "price": 2.26,
+      "price": 2.27,
       "trig_px": 2.1266,
       "avg": 0.0,
       "live_shares": 0,
@@ -2997,7 +3020,7 @@
     {
       "symbol": "SDST",
       "phase": "entering",
-      "price": 0.6403,
+      "price": 0.6739,
       "trig_px": 0.6404,
       "avg": 0.0,
       "live_shares": 0,
@@ -3019,6 +3042,22 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-08-03 10:04:33",
+      "symbol": "SILC",
+      "action": "Buy",
+      "sim_price": 39.3281,
+      "shares": 0,
+      "note": "missed_late_lag13"
+    },
+    {
+      "ts": "2026-08-03 10:04:33",
+      "symbol": "OEC",
+      "action": "Buy",
+      "sim_price": 6.77,
+      "shares": 0,
+      "note": "missed_late_lag20"
+    },
     {
       "ts": "2026-08-03 10:03:07",
       "symbol": "XAIR",
@@ -3162,22 +3201,6 @@
       "sim_price": 0.4023,
       "shares": 497,
       "note": "rung1"
-    },
-    {
-      "ts": "2026-08-03 09:36:02",
-      "symbol": "NRSN",
-      "action": "Buy",
-      "sim_price": 0.4397,
-      "shares": 682,
-      "note": "rung0"
-    },
-    {
-      "ts": "2026-08-03 09:30:41",
-      "symbol": "MRNO",
-      "action": "SellFill",
-      "sim_price": 0.2109,
-      "shares": 253,
-      "note": "execution"
     }
   ],
   "live_daily": [
