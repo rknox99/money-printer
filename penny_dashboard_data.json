@@ -1,16 +1,16 @@
 {
-  "generated": "2026-08-03 11:10:22",
-  "generated_ts": 1785769822.646578,
+  "generated": "2026-08-03 11:13:38",
+  "generated_ts": 1785770018.894803,
   "system": "penny",
   "positions": [
     {
       "symbol": "MWYN",
       "shares": 716.0,
       "avg_cost": 0.7027,
-      "mkt_price": 0.6784,
-      "position_value": 485.76,
-      "unrealized_pnl_dollar": -17.39,
-      "unrealized_pnl": -3.46,
+      "mkt_price": 0.6745,
+      "position_value": 482.93,
+      "unrealized_pnl_dollar": -20.22,
+      "unrealized_pnl": -4.02,
       "in_universe": true,
       "position": "long"
     },
@@ -18,10 +18,10 @@
       "symbol": "CSAI",
       "shares": 41.0,
       "avg_cost": 4.8044,
-      "mkt_price": 3.6061,
-      "position_value": 147.85,
-      "unrealized_pnl_dollar": -49.13,
-      "unrealized_pnl": -24.94,
+      "mkt_price": 3.77,
+      "position_value": 154.57,
+      "unrealized_pnl_dollar": -42.41,
+      "unrealized_pnl": -21.53,
       "in_universe": true,
       "position": "long"
     },
@@ -29,10 +29,10 @@
       "symbol": "FUSE",
       "shares": 423.0,
       "avg_cost": 1.1832,
-      "mkt_price": 1.336,
-      "position_value": 565.13,
-      "unrealized_pnl_dollar": 64.64,
-      "unrealized_pnl": 12.92,
+      "mkt_price": 1.306,
+      "position_value": 552.44,
+      "unrealized_pnl_dollar": 51.95,
+      "unrealized_pnl": 10.38,
       "in_universe": true,
       "position": "long"
     },
@@ -40,10 +40,10 @@
       "symbol": "LESL",
       "shares": 301.0,
       "avg_cost": 1.0014,
-      "mkt_price": 1.0354,
-      "position_value": 311.65,
-      "unrealized_pnl_dollar": 10.23,
-      "unrealized_pnl": 3.39,
+      "mkt_price": 1.064,
+      "position_value": 320.26,
+      "unrealized_pnl_dollar": 18.84,
+      "unrealized_pnl": 6.25,
       "in_universe": true,
       "position": "long"
     },
@@ -51,10 +51,10 @@
       "symbol": "SGLY",
       "shares": 55.0,
       "avg_cost": 5.4182,
-      "mkt_price": 5.4487,
-      "position_value": 299.68,
-      "unrealized_pnl_dollar": 1.68,
-      "unrealized_pnl": 0.56,
+      "mkt_price": 5.3798,
+      "position_value": 295.89,
+      "unrealized_pnl_dollar": -2.11,
+      "unrealized_pnl": -0.71,
       "in_universe": true,
       "position": "long"
     },
@@ -62,10 +62,10 @@
       "symbol": "DFNS",
       "shares": 6.0,
       "avg_cost": 42.7167,
-      "mkt_price": 43.016,
-      "position_value": 258.1,
-      "unrealized_pnl_dollar": 1.8,
-      "unrealized_pnl": 0.7,
+      "mkt_price": 40.506,
+      "position_value": 243.04,
+      "unrealized_pnl_dollar": -13.26,
+      "unrealized_pnl": -5.17,
       "in_universe": true,
       "position": "long"
     }
@@ -93,12 +93,12 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 1.7h old"
+      "detail": "log 1.8h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
@@ -132,14 +132,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 75806.78,
-    "cash": 73785.0
+    "net_liq": 75834.13,
+    "cash": 73785.01
   },
-  "live_account_value": 75806.78,
-  "live_cash": 73785.0,
+  "live_account_value": 75834.13,
+  "live_cash": 73785.01,
   "active_trade_count": 6,
-  "aggregate_unrealized_pnl_dollar": 11.83,
-  "total_position_value": 2068.17,
+  "aggregate_unrealized_pnl_dollar": -7.21,
+  "total_position_value": 2049.13,
   "system_ok": true,
   "shadow": {
     "days": 14,
@@ -3126,6 +3126,18 @@
     {
       "t": "11:10",
       "v": 75806.78
+    },
+    {
+      "t": "11:11",
+      "v": 75834.13
+    },
+    {
+      "t": "11:12",
+      "v": 75834.13
+    },
+    {
+      "t": "11:13",
+      "v": 75834.13
     }
   ],
   "ladders": [
@@ -3167,7 +3179,7 @@
     {
       "symbol": "LESL",
       "phase": "flat",
-      "price": 1.06,
+      "price": 1.05,
       "trig_px": 1.06,
       "avg": 0.9964,
       "live_shares": 0,
@@ -3185,12 +3197,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 6.38
+      "unreal_pct": 5.38
     },
     {
       "symbol": "MBRX",
       "phase": "entering",
-      "price": 0.3303,
+      "price": 0.3265,
       "trig_px": 0.2527,
       "avg": 0.0,
       "live_shares": 0,
@@ -3213,7 +3225,7 @@
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 41.05,
+      "price": 41.83,
       "trig_px": 46.82,
       "avg": 44.01,
       "live_shares": 0,
@@ -3231,12 +3243,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -6.73
+      "unreal_pct": -4.95
     },
     {
       "symbol": "CSAI",
       "phase": "flat",
-      "price": 3.75,
+      "price": 3.8,
       "trig_px": 5.56,
       "avg": 4.78,
       "live_shares": 0,
@@ -3254,12 +3266,12 @@
           "filled": 41
         }
       ],
-      "unreal_pct": -21.55
+      "unreal_pct": -20.5
     },
     {
       "symbol": "ZEO",
       "phase": "entering",
-      "price": 0.4847,
+      "price": 0.4778,
       "trig_px": 0.4,
       "avg": 0.0,
       "live_shares": 0,
@@ -3305,7 +3317,7 @@
     {
       "symbol": "SDST",
       "phase": "entering",
-      "price": 0.7773,
+      "price": 0.8119,
       "trig_px": 0.6404,
       "avg": 0.0,
       "live_shares": 0,
@@ -3328,7 +3340,7 @@
     {
       "symbol": "SGLY",
       "phase": "flat",
-      "price": 5.27,
+      "price": 5.37,
       "trig_px": 5.75,
       "avg": 5.4,
       "live_shares": 0,
@@ -3346,12 +3358,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -2.41
+      "unreal_pct": -0.56
     },
     {
       "symbol": "PN",
       "phase": "entering",
-      "price": 8.25,
+      "price": 8.4,
       "trig_px": 8.475,
       "avg": 0.0,
       "live_shares": 0,
@@ -3397,7 +3409,7 @@
     {
       "symbol": "FUSE",
       "phase": "flat",
-      "price": 1.31,
+      "price": 1.34,
       "trig_px": 1.3,
       "avg": 1.1779,
       "live_shares": 0,
@@ -3415,7 +3427,7 @@
           "filled": 178
         }
       ],
-      "unreal_pct": 11.21
+      "unreal_pct": 13.76
     }
   ],
   "intents_tail": [
