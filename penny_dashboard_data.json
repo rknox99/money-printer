@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 09:51:56",
-  "generated_ts": 1785765116.586328,
+  "generated": "2026-08-03 09:54:58",
+  "generated_ts": 1785765298.811764,
   "system": "penny",
   "positions": [
     {
@@ -18,10 +18,10 @@
       "symbol": "CSAI",
       "shares": 41.0,
       "avg_cost": 4.8044,
-      "mkt_price": 4.8606,
-      "position_value": 199.29,
-      "unrealized_pnl_dollar": 2.31,
-      "unrealized_pnl": 1.17,
+      "mkt_price": 4.4386,
+      "position_value": 181.98,
+      "unrealized_pnl_dollar": -15.0,
+      "unrealized_pnl": -7.61,
       "in_universe": true,
       "position": "long"
     }
@@ -44,21 +44,21 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.4h old"
+      "detail": "log 0.5h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.0m"
+      "detail": "heartbeat 0.4m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 1.0,
+    "newest_bar_age_min": 0.4,
     "in_rth": true,
     "ok": true
   },
@@ -88,14 +88,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 75844.25,
-    "cash": 75621.39
+    "net_liq": 75828.22,
+    "cash": 75621.38
   },
-  "live_account_value": 75844.25,
-  "live_cash": 75621.39,
+  "live_account_value": 75828.22,
+  "live_cash": 75621.38,
   "active_trade_count": 2,
-  "aggregate_unrealized_pnl_dollar": 8.34,
-  "total_position_value": 174.44,
+  "aggregate_unrealized_pnl_dollar": -8.97,
+  "total_position_value": 157.13,
   "system_ok": true,
   "shadow": {
     "days": 14,
@@ -2766,6 +2766,18 @@
     {
       "t": "09:51",
       "v": 75844.25
+    },
+    {
+      "t": "09:52",
+      "v": 75844.25
+    },
+    {
+      "t": "09:53",
+      "v": 75844.25
+    },
+    {
+      "t": "09:54",
+      "v": 75828.22
     }
   ],
   "ladders": [
@@ -2784,7 +2796,7 @@
     {
       "symbol": "NRSN",
       "phase": "entering",
-      "price": 0.4373,
+      "price": 0.449,
       "trig_px": 0.4678,
       "avg": 0.0,
       "live_shares": 0,
@@ -2807,7 +2819,7 @@
     {
       "symbol": "LESL",
       "phase": "entering",
-      "price": 1.04,
+      "price": 1.01,
       "trig_px": 1.06,
       "avg": 0.0,
       "live_shares": 0,
@@ -2830,7 +2842,7 @@
     {
       "symbol": "MBRX",
       "phase": "entering",
-      "price": 0.291,
+      "price": 0.2852,
       "trig_px": 0.2527,
       "avg": 0.0,
       "live_shares": 0,
@@ -2853,7 +2865,7 @@
     {
       "symbol": "DFNS",
       "phase": "entering",
-      "price": 47.53,
+      "price": 49.14,
       "trig_px": 46.82,
       "avg": 0.0,
       "live_shares": 0,
@@ -2876,7 +2888,7 @@
     {
       "symbol": "CSAI",
       "phase": "flat",
-      "price": 4.59,
+      "price": 4.28,
       "trig_px": 5.56,
       "avg": 4.78,
       "live_shares": 0,
@@ -2894,7 +2906,7 @@
           "filled": 41
         }
       ],
-      "unreal_pct": -3.97
+      "unreal_pct": -10.46
     },
     {
       "symbol": "ZEO",
@@ -2918,9 +2930,48 @@
         }
       ],
       "unreal_pct": null
+    },
+    {
+      "symbol": "CNCK",
+      "phase": "entering",
+      "price": 2.13,
+      "trig_px": 2.1266,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 2.0,
+          "sh": 150,
+          "filled": 0
+        },
+        {
+          "px": 1.83,
+          "sh": 109,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-08-03 09:53:57",
+      "symbol": "CNCK",
+      "action": "Buy",
+      "sim_price": 1.83,
+      "shares": 109,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-08-03 09:53:57",
+      "symbol": "CNCK",
+      "action": "Buy",
+      "sim_price": 2.0,
+      "shares": 150,
+      "note": "rung0"
+    },
     {
       "ts": "2026-08-03 09:48:35",
       "symbol": "CSAI",
