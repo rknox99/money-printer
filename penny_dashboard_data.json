@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 09:39:41",
-  "generated_ts": 1785764381.619749,
+  "generated": "2026-08-03 09:42:42",
+  "generated_ts": 1785764562.122249,
   "system": "penny",
   "positions": [
     {
@@ -38,12 +38,12 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.2h old"
+      "detail": "log 0.3h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.0m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
@@ -2707,6 +2707,18 @@
     {
       "t": "09:39",
       "v": 75843.22
+    },
+    {
+      "t": "09:40",
+      "v": 75843.22
+    },
+    {
+      "t": "09:41",
+      "v": 75843.22
+    },
+    {
+      "t": "09:42",
+      "v": 75843.22
     }
   ],
   "ladders": [
@@ -2725,7 +2737,7 @@
     {
       "symbol": "NRSN",
       "phase": "entering",
-      "price": 0.43,
+      "price": 0.4374,
       "trig_px": 0.4678,
       "avg": 0.0,
       "live_shares": 0,
@@ -2748,7 +2760,7 @@
     {
       "symbol": "LESL",
       "phase": "entering",
-      "price": 1.02,
+      "price": 1.05,
       "trig_px": 1.06,
       "avg": 0.0,
       "live_shares": 0,
@@ -2771,7 +2783,7 @@
     {
       "symbol": "MBRX",
       "phase": "entering",
-      "price": 0.2989,
+      "price": 0.314,
       "trig_px": 0.2527,
       "avg": 0.0,
       "live_shares": 0,
@@ -2790,9 +2802,48 @@
         }
       ],
       "unreal_pct": null
+    },
+    {
+      "symbol": "DFNS",
+      "phase": "entering",
+      "price": 52.1,
+      "trig_px": 46.82,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 44.01,
+          "sh": 6,
+          "filled": 0
+        },
+        {
+          "px": 40.27,
+          "sh": 4,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-08-03 09:41:07",
+      "symbol": "DFNS",
+      "action": "Buy",
+      "sim_price": 40.27,
+      "shares": 4,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-08-03 09:41:07",
+      "symbol": "DFNS",
+      "action": "Buy",
+      "sim_price": 44.01,
+      "shares": 6,
+      "note": "rung0"
+    },
     {
       "ts": "2026-08-03 09:37:38",
       "symbol": "MBRX",
