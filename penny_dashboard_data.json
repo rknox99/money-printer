@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 09:23:49",
-  "generated_ts": 1785763429.963442,
+  "generated": "2026-08-03 09:27:04",
+  "generated_ts": 1785763624.525868,
   "system": "penny",
   "positions": [
     {
@@ -49,7 +49,7 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.2h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
@@ -58,17 +58,17 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.7,
+    "newest_bar_age_min": 0.9,
     "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-07-31 20:50:18] Penny Stock Daily Stock Pull.ipynb: OK",
-    "[2026-07-31 21:16:18] running Penny Stock Shadow Scorer.ipynb ...",
     "[2026-07-31 21:18:17] Penny Stock Shadow Scorer.ipynb: OK",
     "[2026-08-03 08:40:07] penny scheduler started",
     "[2026-08-03 08:42:49] penny scheduler started",
-    "[2026-08-03 09:12:49] launching execution engine"
+    "[2026-08-03 09:12:49] launching execution engine",
+    "[2026-08-03 09:25:32] penny scheduler started",
+    "[2026-08-03 09:25:33] launching execution engine"
   ],
   "universe": {
     "symbols": 2224,
@@ -88,10 +88,10 @@
     }
   },
   "account_summary": {
-    "net_liq": 75847.99,
+    "net_liq": 75850.42,
     "cash": 75632.05
   },
-  "live_account_value": 75847.99,
+  "live_account_value": 75850.42,
   "live_cash": 75632.05,
   "active_trade_count": 2,
   "aggregate_unrealized_pnl_dollar": -7.95,
@@ -2654,6 +2654,22 @@
     {
       "t": "09:23",
       "v": 75847.99
+    },
+    {
+      "t": "09:24",
+      "v": 75850.42
+    },
+    {
+      "t": "09:25",
+      "v": 75850.42
+    },
+    {
+      "t": "09:26",
+      "v": 75850.42
+    },
+    {
+      "t": "09:27",
+      "v": 75850.42
     }
   ],
   "ladders": [],
