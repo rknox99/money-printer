@@ -1,16 +1,16 @@
 {
-  "generated": "2026-08-03 15:17:49",
-  "generated_ts": 1785784669.557966,
+  "generated": "2026-08-03 15:20:54",
+  "generated_ts": 1785784854.495702,
   "system": "penny",
   "positions": [
     {
       "symbol": "TAOP",
       "shares": 556.0,
       "avg_cost": 0.8382,
-      "mkt_price": 0.7401,
-      "position_value": 411.47,
-      "unrealized_pnl_dollar": -54.56,
-      "unrealized_pnl": -11.71,
+      "mkt_price": 0.7402,
+      "position_value": 411.53,
+      "unrealized_pnl_dollar": -54.51,
+      "unrealized_pnl": -11.7,
       "in_universe": true,
       "position": "long"
     },
@@ -40,10 +40,10 @@
       "symbol": "FUSE",
       "shares": 423.0,
       "avg_cost": 1.1832,
-      "mkt_price": 1.386,
-      "position_value": 586.28,
-      "unrealized_pnl_dollar": 85.79,
-      "unrealized_pnl": 17.14,
+      "mkt_price": 1.4,
+      "position_value": 592.2,
+      "unrealized_pnl_dollar": 91.71,
+      "unrealized_pnl": 18.32,
       "in_universe": true,
       "position": "long"
     },
@@ -51,10 +51,10 @@
       "symbol": "PFAI",
       "shares": 126.0,
       "avg_cost": 3.8871,
-      "mkt_price": 2.284,
-      "position_value": 287.78,
-      "unrealized_pnl_dollar": -202.0,
-      "unrealized_pnl": -41.24,
+      "mkt_price": 2.4236,
+      "position_value": 305.37,
+      "unrealized_pnl_dollar": -184.41,
+      "unrealized_pnl": -37.65,
       "in_universe": true,
       "position": "long"
     },
@@ -62,10 +62,10 @@
       "symbol": "FNGR",
       "shares": 2368.0,
       "avg_cost": 0.2132,
-      "mkt_price": 0.2222,
-      "position_value": 526.23,
-      "unrealized_pnl_dollar": 21.43,
-      "unrealized_pnl": 4.25,
+      "mkt_price": 0.2268,
+      "position_value": 536.97,
+      "unrealized_pnl_dollar": 32.17,
+      "unrealized_pnl": 6.37,
       "in_universe": true,
       "position": "long"
     },
@@ -73,10 +73,10 @@
       "symbol": "SGLY",
       "shares": 55.0,
       "avg_cost": 5.4182,
-      "mkt_price": 5.7489,
-      "position_value": 316.19,
-      "unrealized_pnl_dollar": 18.19,
-      "unrealized_pnl": 6.1,
+      "mkt_price": 5.743,
+      "position_value": 315.87,
+      "unrealized_pnl_dollar": 17.87,
+      "unrealized_pnl": 6.0,
       "in_universe": true,
       "position": "long"
     },
@@ -84,10 +84,10 @@
       "symbol": "DFNS",
       "shares": 6.0,
       "avg_cost": 42.7167,
-      "mkt_price": 65.6986,
-      "position_value": 394.19,
-      "unrealized_pnl_dollar": 137.89,
-      "unrealized_pnl": 53.8,
+      "mkt_price": 65.8941,
+      "position_value": 395.36,
+      "unrealized_pnl_dollar": 139.06,
+      "unrealized_pnl": 54.26,
       "in_universe": true,
       "position": "long"
     },
@@ -128,10 +128,10 @@
       "symbol": "SDST",
       "shares": 861.0,
       "avg_cost": 0.5854,
-      "mkt_price": 0.7037,
-      "position_value": 605.86,
-      "unrealized_pnl_dollar": 101.85,
-      "unrealized_pnl": 20.21,
+      "mkt_price": 0.6854,
+      "position_value": 590.16,
+      "unrealized_pnl_dollar": 86.15,
+      "unrealized_pnl": 17.09,
       "in_universe": true,
       "position": "long"
     }
@@ -154,7 +154,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -164,11 +164,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.1m"
+      "detail": "heartbeat 0.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.6,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -198,14 +198,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 75908.02,
+    "net_liq": 75890.8,
     "cash": 70323.16
   },
-  "live_account_value": 75908.02,
+  "live_account_value": 75890.8,
   "live_cash": 70323.16,
   "active_trade_count": 12,
-  "aggregate_unrealized_pnl_dollar": 47.22,
-  "total_position_value": 5565.4,
+  "aggregate_unrealized_pnl_dollar": 66.67,
+  "total_position_value": 5584.86,
   "system_ok": true,
   "shadow": {
     "days": 14,
@@ -4180,6 +4180,18 @@
     {
       "t": "15:17",
       "v": 75908.02
+    },
+    {
+      "t": "15:18",
+      "v": 75908.02
+    },
+    {
+      "t": "15:19",
+      "v": 75890.8
+    },
+    {
+      "t": "15:20",
+      "v": 75890.8
     }
   ],
   "ladders": [
@@ -4198,7 +4210,7 @@
     {
       "symbol": "NRSN",
       "phase": "holding",
-      "price": 0.496,
+      "price": 0.4815,
       "trig_px": 0.4678,
       "avg": 0.0,
       "live_shares": 0,
@@ -4244,7 +4256,7 @@
     {
       "symbol": "MBRX",
       "phase": "holding",
-      "price": 0.3885,
+      "price": 0.3878,
       "trig_px": 0.2527,
       "avg": 0.0,
       "live_shares": 0,
@@ -4267,7 +4279,7 @@
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 66.04,
+      "price": 66.07,
       "trig_px": 46.82,
       "avg": 44.01,
       "live_shares": 0,
@@ -4285,12 +4297,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 50.06
+      "unreal_pct": 50.12
     },
     {
       "symbol": "CSAI",
       "phase": "flat",
-      "price": 3.75,
+      "price": 3.87,
       "trig_px": 5.56,
       "avg": 4.78,
       "live_shares": 0,
@@ -4308,12 +4320,12 @@
           "filled": 41
         }
       ],
-      "unreal_pct": -21.55
+      "unreal_pct": -19.04
     },
     {
       "symbol": "ZEO",
       "phase": "holding",
-      "price": 0.4497,
+      "price": 0.4496,
       "trig_px": 0.4,
       "avg": 0.0,
       "live_shares": 0,
@@ -4336,7 +4348,7 @@
     {
       "symbol": "CNCK",
       "phase": "holding",
-      "price": 2.48,
+      "price": 2.47,
       "trig_px": 2.1266,
       "avg": 0.0,
       "live_shares": 0,
@@ -4359,7 +4371,7 @@
     {
       "symbol": "SDST",
       "phase": "flat",
-      "price": 0.69,
+      "price": 0.68,
       "trig_px": 0.6404,
       "avg": 0.5804,
       "live_shares": 363,
@@ -4377,12 +4389,12 @@
           "filled": 363
         }
       ],
-      "unreal_pct": 18.89
+      "unreal_pct": 17.17
     },
     {
       "symbol": "SGLY",
       "phase": "flat",
-      "price": 5.7,
+      "price": 5.77,
       "trig_px": 5.75,
       "avg": 5.4,
       "live_shares": 0,
@@ -4400,7 +4412,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 5.56
+      "unreal_pct": 6.85
     },
     {
       "symbol": "PN",
@@ -4451,7 +4463,7 @@
     {
       "symbol": "FUSE",
       "phase": "flat",
-      "price": 1.46,
+      "price": 1.43,
       "trig_px": 1.3,
       "avg": 1.1779,
       "live_shares": 0,
@@ -4469,12 +4481,12 @@
           "filled": 178
         }
       ],
-      "unreal_pct": 23.95
+      "unreal_pct": 21.4
     },
     {
       "symbol": "FNGR",
       "phase": "flat",
-      "price": 0.2259,
+      "price": 0.2235,
       "trig_px": 0.2329,
       "avg": 0.2111,
       "live_shares": 2268,
@@ -4492,12 +4504,12 @@
           "filled": 998
         }
       ],
-      "unreal_pct": 7.03
+      "unreal_pct": 5.89
     },
     {
       "symbol": "TAOP",
       "phase": "flat",
-      "price": 0.74,
+      "price": 0.7464,
       "trig_px": 0.9901,
       "avg": 0.8974,
       "live_shares": 0,
@@ -4515,12 +4527,12 @@
           "filled": 234
         }
       ],
-      "unreal_pct": -17.54
+      "unreal_pct": -16.82
     },
     {
       "symbol": "PFAI",
       "phase": "flat",
-      "price": 2.39,
+      "price": 2.41,
       "trig_px": 4.35,
       "avg": 3.9428,
       "live_shares": 53,
@@ -4538,12 +4550,12 @@
           "filled": 53
         }
       ],
-      "unreal_pct": -39.38
+      "unreal_pct": -38.88
     },
     {
       "symbol": "MKZR",
       "phase": "flat",
-      "price": 1.2,
+      "price": 1.22,
       "trig_px": 1.26,
       "avg": 1.18,
       "live_shares": 0,
@@ -4561,7 +4573,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 1.69
+      "unreal_pct": 3.39
     },
     {
       "symbol": "REFR",
