@@ -1,16 +1,16 @@
 {
-  "generated": "2026-08-03 09:27:04",
-  "generated_ts": 1785763624.525868,
+  "generated": "2026-08-03 09:30:14",
+  "generated_ts": 1785763814.988037,
   "system": "penny",
   "positions": [
     {
       "symbol": "MKZR",
       "shares": -24.0,
       "avg_cost": 1.2868,
-      "mkt_price": 1.01,
-      "position_value": -24.24,
-      "unrealized_pnl_dollar": 6.64,
-      "unrealized_pnl": 21.5,
+      "mkt_price": 1.0,
+      "position_value": -24.0,
+      "unrealized_pnl_dollar": 6.88,
+      "unrealized_pnl": 22.28,
       "in_universe": true,
       "position": "short"
     },
@@ -18,10 +18,10 @@
       "symbol": "MRNO",
       "shares": 900.0,
       "avg_cost": 0.2292,
-      "mkt_price": 0.213,
-      "position_value": 191.7,
-      "unrealized_pnl_dollar": -14.59,
-      "unrealized_pnl": -7.07,
+      "mkt_price": 0.215,
+      "position_value": 193.5,
+      "unrealized_pnl_dollar": -12.79,
+      "unrealized_pnl": -6.2,
       "in_universe": true,
       "position": "long"
     }
@@ -49,7 +49,7 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.0h old"
+      "detail": "log 0.1h old"
     },
     {
       "name": "Engine",
@@ -58,8 +58,8 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.9,
-    "in_rth": false,
+    "newest_bar_age_min": 1.1,
+    "in_rth": true,
     "ok": true
   },
   "scheduler_tail": [
@@ -88,14 +88,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 75850.42,
-    "cash": 75632.05
+    "net_liq": 75845.52,
+    "cash": 75767.12
   },
-  "live_account_value": 75850.42,
-  "live_cash": 75632.05,
+  "live_account_value": 75845.52,
+  "live_cash": 75767.12,
   "active_trade_count": 2,
-  "aggregate_unrealized_pnl_dollar": -7.95,
-  "total_position_value": 167.46,
+  "aggregate_unrealized_pnl_dollar": -5.91,
+  "total_position_value": 169.5,
   "system_ok": true,
   "shadow": {
     "days": 14,
@@ -2669,11 +2669,45 @@
     },
     {
       "t": "09:27",
-      "v": 75850.42
+      "v": 75850.03
+    },
+    {
+      "t": "09:28",
+      "v": 75850.03
+    },
+    {
+      "t": "09:29",
+      "v": 75850.03
+    },
+    {
+      "t": "09:30",
+      "v": 75845.52
     }
   ],
-  "ladders": [],
-  "intents_tail": [],
+  "ladders": [
+    {
+      "symbol": "MRNO",
+      "phase": "flattening",
+      "price": 0.2084,
+      "trig_px": 0.22920565,
+      "avg": 0.2292,
+      "live_shares": 900,
+      "be_armed": false,
+      "stop": 0.2086,
+      "rungs": [],
+      "unreal_pct": -9.08
+    }
+  ],
+  "intents_tail": [
+    {
+      "ts": "2026-08-03 09:30:14",
+      "symbol": "MRNO",
+      "action": "SellFill",
+      "sim_price": 0.2106,
+      "shares": 647,
+      "note": "execution"
+    }
+  ],
   "live_daily": [
     {
       "date": "2026-07-27",
