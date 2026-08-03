@@ -1,29 +1,18 @@
 {
-  "generated": "2026-08-03 09:33:18",
-  "generated_ts": 1785763998.317392,
+  "generated": "2026-08-03 09:36:33",
+  "generated_ts": 1785764193.278617,
   "system": "penny",
   "positions": [
     {
       "symbol": "MKZR",
       "shares": -24.0,
       "avg_cost": 1.2868,
-      "mkt_price": 1.0,
-      "position_value": -24.0,
-      "unrealized_pnl_dollar": 6.88,
-      "unrealized_pnl": 22.28,
+      "mkt_price": 1.03,
+      "position_value": -24.72,
+      "unrealized_pnl_dollar": 6.16,
+      "unrealized_pnl": 19.95,
       "in_universe": true,
       "position": "short"
-    },
-    {
-      "symbol": "MRNO",
-      "shares": 900.0,
-      "avg_cost": 0.2292,
-      "mkt_price": 0.215,
-      "position_value": 193.5,
-      "unrealized_pnl_dollar": -12.79,
-      "unrealized_pnl": -6.2,
-      "in_universe": true,
-      "position": "long"
     }
   ],
   "ib_all_ok": true,
@@ -44,21 +33,21 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.1h old"
+      "detail": "log 0.2h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.0m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.1,
+    "newest_bar_age_min": 0.6,
     "in_rth": true,
     "ok": true
   },
@@ -93,9 +82,9 @@
   },
   "live_account_value": 75843.36,
   "live_cash": 75818.64,
-  "active_trade_count": 2,
-  "aggregate_unrealized_pnl_dollar": -5.91,
-  "total_position_value": 169.5,
+  "active_trade_count": 1,
+  "aggregate_unrealized_pnl_dollar": 6.16,
+  "total_position_value": -24.72,
   "system_ok": true,
   "shadow": {
     "days": 14,
@@ -2694,23 +2683,74 @@
     {
       "t": "09:33",
       "v": 75843.36
+    },
+    {
+      "t": "09:34",
+      "v": 75843.36
+    },
+    {
+      "t": "09:35",
+      "v": 75843.36
+    },
+    {
+      "t": "09:36",
+      "v": 75843.36
     }
   ],
   "ladders": [
     {
       "symbol": "MRNO",
       "phase": "flat",
-      "price": 0.2166,
+      "price": 0.2172,
       "trig_px": 0.22920565,
       "avg": 0.2292,
       "live_shares": 0,
       "be_armed": false,
       "stop": 0.2086,
       "rungs": [],
-      "unreal_pct": -5.5
+      "unreal_pct": -5.24
+    },
+    {
+      "symbol": "NRSN",
+      "phase": "entering",
+      "price": 0.42,
+      "trig_px": 0.4678,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 0.4397,
+          "sh": 682,
+          "filled": 0
+        },
+        {
+          "px": 0.4023,
+          "sh": 497,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-08-03 09:36:02",
+      "symbol": "NRSN",
+      "action": "Buy",
+      "sim_price": 0.4023,
+      "shares": 497,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-08-03 09:36:02",
+      "symbol": "NRSN",
+      "action": "Buy",
+      "sim_price": 0.4397,
+      "shares": 682,
+      "note": "rung0"
+    },
     {
       "ts": "2026-08-03 09:30:41",
       "symbol": "MRNO",
