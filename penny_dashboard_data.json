@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 10:26:07",
-  "generated_ts": 1785767167.836126,
+  "generated": "2026-08-03 10:29:10",
+  "generated_ts": 1785767350.848263,
   "system": "penny",
   "positions": [
     {
@@ -66,21 +66,21 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 1.0h old"
+      "detail": "log 1.1h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.1m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.3,
+    "newest_bar_age_min": 0.6,
     "in_rth": true,
     "ok": true
   },
@@ -99,22 +99,22 @@
   "slippage": {
     "configured": true,
     "summary": {
-      "avg_slippage_bps": -40.2,
-      "total_commissions": 292.16,
-      "total_slippage_cost": 163.62,
-      "total_fees_and_slippage": 455.78,
-      "avg_slippage_pct": 0.6264,
+      "avg_slippage_bps": -41.7,
+      "total_commissions": 292.65,
+      "total_slippage_cost": 148.66,
+      "total_fees_and_slippage": 441.31,
+      "avg_slippage_pct": 0.6046,
       "trade_count": 296,
-      "missed_trades": 57,
-      "match_rate": 83.9
+      "missed_trades": 61,
+      "match_rate": 82.9
     }
   },
   "account_summary": {
-    "net_liq": 75831.04,
-    "cash": 75061.09
+    "net_liq": 75835.45,
+    "cash": 74461.42
   },
-  "live_account_value": 75831.04,
-  "live_cash": 75061.09,
+  "live_account_value": 75835.45,
+  "live_cash": 74461.42,
   "active_trade_count": 4,
   "aggregate_unrealized_pnl_dollar": -2.02,
   "total_position_value": 721.8,
@@ -2927,7 +2927,19 @@
     },
     {
       "t": "10:26",
-      "v": 75831.04
+      "v": 75827.03
+    },
+    {
+      "t": "10:27",
+      "v": 75835.45
+    },
+    {
+      "t": "10:28",
+      "v": 75835.45
+    },
+    {
+      "t": "10:29",
+      "v": 75835.45
     }
   ],
   "ladders": [
@@ -2946,7 +2958,7 @@
     {
       "symbol": "NRSN",
       "phase": "entering",
-      "price": 0.457,
+      "price": 0.45,
       "trig_px": 0.4678,
       "avg": 0.0,
       "live_shares": 0,
@@ -2992,7 +3004,7 @@
     {
       "symbol": "MBRX",
       "phase": "entering",
-      "price": 0.3395,
+      "price": 0.3276,
       "trig_px": 0.2527,
       "avg": 0.0,
       "live_shares": 0,
@@ -3015,7 +3027,7 @@
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 45.29,
+      "price": 45.26,
       "trig_px": 46.82,
       "avg": 44.01,
       "live_shares": 0,
@@ -3033,12 +3045,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 2.91
+      "unreal_pct": 2.84
     },
     {
       "symbol": "CSAI",
       "phase": "flat",
-      "price": 4.05,
+      "price": 3.93,
       "trig_px": 5.56,
       "avg": 4.78,
       "live_shares": 0,
@@ -3056,12 +3068,12 @@
           "filled": 41
         }
       ],
-      "unreal_pct": -15.27
+      "unreal_pct": -17.78
     },
     {
       "symbol": "ZEO",
       "phase": "entering",
-      "price": 0.4473,
+      "price": 0.4448,
       "trig_px": 0.4,
       "avg": 0.0,
       "live_shares": 0,
@@ -3084,7 +3096,7 @@
     {
       "symbol": "CNCK",
       "phase": "entering",
-      "price": 2.35,
+      "price": 2.29,
       "trig_px": 2.1266,
       "avg": 0.0,
       "live_shares": 0,
@@ -3107,7 +3119,7 @@
     {
       "symbol": "SDST",
       "phase": "entering",
-      "price": 0.6427,
+      "price": 0.6599,
       "trig_px": 0.6404,
       "avg": 0.0,
       "live_shares": 0,
@@ -3129,18 +3141,18 @@
     },
     {
       "symbol": "SGLY",
-      "phase": "entering",
-      "price": 5.55,
+      "phase": "flat",
+      "price": 5.7,
       "trig_px": 5.75,
-      "avg": 0.0,
+      "avg": 5.4,
       "live_shares": 0,
       "be_armed": false,
-      "stop": null,
+      "stop": 4.914,
       "rungs": [
         {
           "px": 5.4,
           "sh": 55,
-          "filled": 0
+          "filled": 55
         },
         {
           "px": 4.95,
@@ -3148,7 +3160,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": null
+      "unreal_pct": 5.56
     },
     {
       "symbol": "PN",
@@ -3172,9 +3184,64 @@
         }
       ],
       "unreal_pct": null
+    },
+    {
+      "symbol": "MWYN",
+      "phase": "flat",
+      "price": 0.7237,
+      "trig_px": 0.7699,
+      "avg": 0.7237,
+      "live_shares": 388,
+      "be_armed": false,
+      "stop": 0.6586,
+      "rungs": [
+        {
+          "px": 0.7237,
+          "sh": 414,
+          "filled": 414
+        },
+        {
+          "px": 0.6621,
+          "sh": 302,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": 0.0
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-08-03 10:26:56",
+      "symbol": "MWYN",
+      "action": "Sell",
+      "sim_price": 0.6586,
+      "shares": 26,
+      "note": "stop_placed"
+    },
+    {
+      "ts": "2026-08-03 10:26:55",
+      "symbol": "SGLY",
+      "action": "Sell",
+      "sim_price": 4.91,
+      "shares": 55,
+      "note": "stop_placed"
+    },
+    {
+      "ts": "2026-08-03 10:26:55",
+      "symbol": "MWYN",
+      "action": "Buy",
+      "sim_price": 0.6621,
+      "shares": 302,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-08-03 10:26:54",
+      "symbol": "MWYN",
+      "action": "Buy",
+      "sim_price": 0.7237,
+      "shares": 414,
+      "note": "rung0"
+    },
     {
       "ts": "2026-08-03 10:23:32",
       "symbol": "PN",
@@ -3302,64 +3369,32 @@
       "sim_price": 2.0,
       "shares": 150,
       "note": "rung0"
-    },
-    {
-      "ts": "2026-08-03 09:48:35",
-      "symbol": "CSAI",
-      "action": "Sell",
-      "sim_price": 4.35,
-      "shares": 41,
-      "note": "stop_placed"
-    },
-    {
-      "ts": "2026-08-03 09:47:33",
-      "symbol": "ZEO",
-      "action": "Buy",
-      "sim_price": 0.344,
-      "shares": 581,
-      "note": "rung1"
-    },
-    {
-      "ts": "2026-08-03 09:47:31",
-      "symbol": "ZEO",
-      "action": "Buy",
-      "sim_price": 0.376,
-      "shares": 797,
-      "note": "rung0"
-    },
-    {
-      "ts": "2026-08-03 09:47:25",
-      "symbol": "CSAI",
-      "action": "Buy",
-      "sim_price": 4.78,
-      "shares": 41,
-      "note": "rung1"
     }
   ],
   "live_daily": [
     {
       "date": "2026-07-27",
-      "pnl": -53.5
+      "pnl": -54.16
     },
     {
       "date": "2026-07-28",
-      "pnl": -492.25
+      "pnl": -493.14
     },
     {
       "date": "2026-07-29",
-      "pnl": -457.23
+      "pnl": -454.67
     },
     {
       "date": "2026-07-30",
-      "pnl": -458.82
+      "pnl": -458.71
     },
     {
       "date": "2026-07-31",
-      "pnl": -474.37
+      "pnl": -473.65
     },
     {
       "date": "2026-08-03",
-      "pnl": -1.1
+      "pnl": -0.98
     }
   ],
   "trade_history": [
@@ -3377,6 +3412,36 @@
       "symbol": "MRNO",
       "entry_time": "2026-07-31 17:32:06",
       "exit_time": "2026-08-03 09:30:02",
+      "shares": 100.0,
+      "entry_price": 0.2056,
+      "exit_price": 0.215,
+      "pnl_dollar": 0.59,
+      "pnl_pct": 4.57
+    },
+    {
+      "symbol": "MRNO",
+      "entry_time": "2026-07-31 17:32:06",
+      "exit_time": "2026-08-03 09:30:02",
+      "shares": 99.0,
+      "entry_price": 0.2056,
+      "exit_price": 0.213,
+      "pnl_dollar": 0.19,
+      "pnl_pct": 3.6
+    },
+    {
+      "symbol": "MRNO",
+      "entry_time": "2026-07-31 17:32:06",
+      "exit_time": "2026-08-03 09:30:02",
+      "shares": 100.0,
+      "entry_price": 0.2056,
+      "exit_price": 0.21,
+      "pnl_dollar": -0.13,
+      "pnl_pct": 2.14
+    },
+    {
+      "symbol": "MRNO",
+      "entry_time": "2026-07-31 17:32:06",
+      "exit_time": "2026-08-03 09:30:02",
       "shares": 2.0,
       "entry_price": 0.2056,
       "exit_price": 0.21,
@@ -3387,41 +3452,11 @@
       "symbol": "MRNO",
       "entry_time": "2026-07-31 17:32:06",
       "exit_time": "2026-08-03 09:30:02",
-      "shares": 100.0,
-      "entry_price": 0.2056,
-      "exit_price": 0.21,
-      "pnl_dollar": -0.08,
-      "pnl_pct": 2.14
-    },
-    {
-      "symbol": "MRNO",
-      "entry_time": "2026-07-31 17:32:06",
-      "exit_time": "2026-08-03 09:30:02",
       "shares": 346.0,
       "entry_price": 0.2056,
       "exit_price": 0.2089,
-      "pnl_dollar": -0.7,
+      "pnl_dollar": -0.95,
       "pnl_pct": 1.61
-    },
-    {
-      "symbol": "MRNO",
-      "entry_time": "2026-07-31 17:32:06",
-      "exit_time": "2026-08-03 09:30:02",
-      "shares": 99.0,
-      "entry_price": 0.2056,
-      "exit_price": 0.213,
-      "pnl_dollar": 0.04,
-      "pnl_pct": 3.6
-    },
-    {
-      "symbol": "MRNO",
-      "entry_time": "2026-07-31 17:32:06",
-      "exit_time": "2026-08-03 09:30:02",
-      "shares": 100.0,
-      "entry_price": 0.2056,
-      "exit_price": 0.215,
-      "pnl_dollar": 0.32,
-      "pnl_pct": 4.57
     },
     {
       "symbol": "MRNO",
@@ -3469,9 +3504,9 @@
       "exit_time": "2026-07-31 16:10:41",
       "shares": 100.0,
       "entry_price": 0.2132,
-      "exit_price": 0.2065,
-      "pnl_dollar": -3.95,
-      "pnl_pct": -3.14
+      "exit_price": 0.2067,
+      "pnl_dollar": -3.94,
+      "pnl_pct": -3.05
     },
     {
       "symbol": "MRNO",
@@ -3717,30 +3752,10 @@
       "symbol": "MKZR",
       "entry_time": "2026-07-31 12:25:04",
       "exit_time": "2026-07-31 15:45:35",
-      "shares": 21.0,
+      "shares": 100.0,
       "entry_price": 1.33,
       "exit_price": 1.35,
-      "pnl_dollar": 0.21,
-      "pnl_pct": 1.5
-    },
-    {
-      "symbol": "MKZR",
-      "entry_time": "2026-07-31 12:25:04",
-      "exit_time": "2026-07-31 15:45:35",
-      "shares": 79.0,
-      "entry_price": 1.33,
-      "exit_price": 1.35,
-      "pnl_dollar": 0.69,
-      "pnl_pct": 1.5
-    },
-    {
-      "symbol": "MKZR",
-      "entry_time": "2026-07-31 12:25:04",
-      "exit_time": "2026-07-31 15:45:35",
-      "shares": 21.0,
-      "entry_price": 1.33,
-      "exit_price": 1.35,
-      "pnl_dollar": 0.28,
+      "pnl_dollar": -0.02,
       "pnl_pct": 1.5
     },
     {
@@ -3757,10 +3772,20 @@
       "symbol": "MKZR",
       "entry_time": "2026-07-31 12:25:04",
       "exit_time": "2026-07-31 15:45:35",
+      "shares": 21.0,
+      "entry_price": 1.33,
+      "exit_price": 1.35,
+      "pnl_dollar": 0.39,
+      "pnl_pct": 1.5
+    },
+    {
+      "symbol": "MKZR",
+      "entry_time": "2026-07-31 12:25:04",
+      "exit_time": "2026-07-31 15:45:35",
       "shares": 100.0,
       "entry_price": 1.33,
       "exit_price": 1.35,
-      "pnl_dollar": 0.88,
+      "pnl_dollar": 1.77,
       "pnl_pct": 1.5
     },
     {
@@ -3771,16 +3796,6 @@
       "entry_price": 0.2322,
       "exit_price": 0.235,
       "pnl_dollar": -0.01,
-      "pnl_pct": 1.21
-    },
-    {
-      "symbol": "ARAI",
-      "entry_time": "2026-07-31 10:27:12",
-      "exit_time": "2026-07-31 15:45:33",
-      "shares": 759.0,
-      "entry_price": 0.2322,
-      "exit_price": 0.235,
-      "pnl_dollar": -1.57,
       "pnl_pct": 1.21
     },
     {
@@ -3801,6 +3816,16 @@
       "entry_price": 0.2322,
       "exit_price": 0.235,
       "pnl_dollar": -0.07,
+      "pnl_pct": 1.21
+    },
+    {
+      "symbol": "ARAI",
+      "entry_time": "2026-07-31 10:27:12",
+      "exit_time": "2026-07-31 15:45:33",
+      "shares": 759.0,
+      "entry_price": 0.2322,
+      "exit_price": 0.235,
+      "pnl_dollar": -1.57,
       "pnl_pct": 1.21
     },
     {
@@ -3862,13 +3887,23 @@
       "exit_price": 1.64,
       "pnl_dollar": -7.2,
       "pnl_pct": -1.8
+    },
+    {
+      "symbol": "MBRX",
+      "entry_time": "2026-07-31 10:12:02",
+      "exit_time": "2026-07-31 15:45:26",
+      "shares": 327.0,
+      "entry_price": 0.9165,
+      "exit_price": 0.4173,
+      "pnl_dollar": -166.32,
+      "pnl_pct": -54.47
     }
   ],
   "realized_summary": {
-    "trades": 260,
-    "total": -1937.27,
-    "wins": 56,
-    "win_rate": 21.5
+    "trades": 259,
+    "total": -1935.31,
+    "wins": 53,
+    "win_rate": 20.5
   },
-  "total_realized_pnl": -1937.27
+  "total_realized_pnl": -1935.31
 }
