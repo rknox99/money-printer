@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 14:34:08",
-  "generated_ts": 1785782048.430771,
+  "generated": "2026-08-03 14:37:19",
+  "generated_ts": 1785782239.086188,
   "system": "penny",
   "positions": [
     {
@@ -154,21 +154,21 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 5.1h old"
+      "detail": "log 5.2h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 1.4,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -198,10 +198,10 @@
     }
   },
   "account_summary": {
-    "net_liq": 75780.02,
+    "net_liq": 75749.45,
     "cash": 70323.16
   },
-  "live_account_value": 75780.02,
+  "live_account_value": 75749.45,
   "live_cash": 70323.16,
   "active_trade_count": 12,
   "aggregate_unrealized_pnl_dollar": -82.46,
@@ -4008,6 +4008,18 @@
     {
       "t": "14:34",
       "v": 75780.02
+    },
+    {
+      "t": "14:35",
+      "v": 75780.02
+    },
+    {
+      "t": "14:36",
+      "v": 75780.02
+    },
+    {
+      "t": "14:37",
+      "v": 75749.45
     }
   ],
   "ladders": [
@@ -4026,7 +4038,7 @@
     {
       "symbol": "NRSN",
       "phase": "holding",
-      "price": 0.4988,
+      "price": 0.4987,
       "trig_px": 0.4678,
       "avg": 0.0,
       "live_shares": 0,
@@ -4072,7 +4084,7 @@
     {
       "symbol": "MBRX",
       "phase": "holding",
-      "price": 0.3693,
+      "price": 0.368,
       "trig_px": 0.2527,
       "avg": 0.0,
       "live_shares": 0,
@@ -4095,7 +4107,7 @@
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 63.52,
+      "price": 60.0,
       "trig_px": 46.82,
       "avg": 44.01,
       "live_shares": 0,
@@ -4113,7 +4125,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 44.33
+      "unreal_pct": 36.33
     },
     {
       "symbol": "CSAI",
@@ -4141,7 +4153,7 @@
     {
       "symbol": "ZEO",
       "phase": "holding",
-      "price": 0.4499,
+      "price": 0.45,
       "trig_px": 0.4,
       "avg": 0.0,
       "live_shares": 0,
@@ -4164,7 +4176,7 @@
     {
       "symbol": "CNCK",
       "phase": "holding",
-      "price": 2.4,
+      "price": 2.45,
       "trig_px": 2.1266,
       "avg": 0.0,
       "live_shares": 0,
@@ -4187,7 +4199,7 @@
     {
       "symbol": "SDST",
       "phase": "flat",
-      "price": 0.67,
+      "price": 0.6783,
       "trig_px": 0.6404,
       "avg": 0.5804,
       "live_shares": 363,
@@ -4205,12 +4217,12 @@
           "filled": 363
         }
       ],
-      "unreal_pct": 15.44
+      "unreal_pct": 16.87
     },
     {
       "symbol": "SGLY",
       "phase": "flat",
-      "price": 5.78,
+      "price": 5.72,
       "trig_px": 5.75,
       "avg": 5.4,
       "live_shares": 0,
@@ -4228,7 +4240,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 7.04
+      "unreal_pct": 5.93
     },
     {
       "symbol": "PN",
@@ -4256,7 +4268,7 @@
     {
       "symbol": "MWYN",
       "phase": "flat",
-      "price": 0.7101,
+      "price": 0.6805,
       "trig_px": 0.7699,
       "avg": 0.6977,
       "live_shares": 690,
@@ -4274,7 +4286,7 @@
           "filled": 302
         }
       ],
-      "unreal_pct": 1.77
+      "unreal_pct": -2.47
     },
     {
       "symbol": "FUSE",
@@ -4302,7 +4314,7 @@
     {
       "symbol": "FNGR",
       "phase": "flat",
-      "price": 0.2194,
+      "price": 0.2158,
       "trig_px": 0.2329,
       "avg": 0.2111,
       "live_shares": 2268,
@@ -4320,12 +4332,12 @@
           "filled": 998
         }
       ],
-      "unreal_pct": 3.95
+      "unreal_pct": 2.25
     },
     {
       "symbol": "TAOP",
       "phase": "flat",
-      "price": 0.745,
+      "price": 0.73,
       "trig_px": 0.9901,
       "avg": 0.8974,
       "live_shares": 0,
@@ -4343,7 +4355,7 @@
           "filled": 234
         }
       ],
-      "unreal_pct": -16.98
+      "unreal_pct": -18.65
     },
     {
       "symbol": "PFAI",
