@@ -1,16 +1,16 @@
 {
-  "generated": "2026-08-03 09:57:59",
-  "generated_ts": 1785765479.525459,
+  "generated": "2026-08-03 10:01:09",
+  "generated_ts": 1785765669.29021,
   "system": "penny",
   "positions": [
     {
       "symbol": "MKZR",
       "shares": -24.0,
       "avg_cost": 1.2868,
-      "mkt_price": 1.0356,
-      "position_value": -24.85,
-      "unrealized_pnl_dollar": 6.03,
-      "unrealized_pnl": 19.53,
+      "mkt_price": 1.0422,
+      "position_value": -25.01,
+      "unrealized_pnl_dollar": 5.87,
+      "unrealized_pnl": 19.01,
       "in_universe": true,
       "position": "short"
     },
@@ -18,10 +18,10 @@
       "symbol": "CSAI",
       "shares": 41.0,
       "avg_cost": 4.8044,
-      "mkt_price": 4.4386,
-      "position_value": 181.98,
-      "unrealized_pnl_dollar": -15.0,
-      "unrealized_pnl": -7.61,
+      "mkt_price": 4.2844,
+      "position_value": 175.66,
+      "unrealized_pnl_dollar": -21.32,
+      "unrealized_pnl": -10.82,
       "in_universe": true,
       "position": "long"
     }
@@ -49,12 +49,12 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.5h old"
+      "detail": "log 0.6h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.1m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
@@ -88,14 +88,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 75821.74,
-    "cash": 75621.07
+    "net_liq": 75814.63,
+    "cash": 75319.65
   },
-  "live_account_value": 75821.74,
-  "live_cash": 75621.07,
+  "live_account_value": 75814.63,
+  "live_cash": 75319.65,
   "active_trade_count": 2,
-  "aggregate_unrealized_pnl_dollar": -8.97,
-  "total_position_value": 157.13,
+  "aggregate_unrealized_pnl_dollar": -15.45,
+  "total_position_value": 150.65,
   "system_ok": true,
   "shadow": {
     "days": 14,
@@ -2790,6 +2790,22 @@
     {
       "t": "09:57",
       "v": 75821.74
+    },
+    {
+      "t": "09:58",
+      "v": 75821.74
+    },
+    {
+      "t": "09:59",
+      "v": 75821.74
+    },
+    {
+      "t": "10:00",
+      "v": 75814.63
+    },
+    {
+      "t": "10:01",
+      "v": 75814.63
     }
   ],
   "ladders": [
@@ -2808,7 +2824,7 @@
     {
       "symbol": "NRSN",
       "phase": "entering",
-      "price": 0.449,
+      "price": 0.4339,
       "trig_px": 0.4678,
       "avg": 0.0,
       "live_shares": 0,
@@ -2830,18 +2846,18 @@
     },
     {
       "symbol": "LESL",
-      "phase": "entering",
-      "price": 1.01,
+      "phase": "flat",
+      "price": 0.9964,
       "trig_px": 1.06,
-      "avg": 0.0,
+      "avg": 0.9964,
       "live_shares": 0,
       "be_armed": false,
-      "stop": null,
+      "stop": 0.9067,
       "rungs": [
         {
           "px": 0.9964,
           "sh": 301,
-          "filled": 0
+          "filled": 301
         },
         {
           "px": 0.9116,
@@ -2849,12 +2865,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": null
+      "unreal_pct": -0.0
     },
     {
       "symbol": "MBRX",
       "phase": "entering",
-      "price": 0.3017,
+      "price": 0.3041,
       "trig_px": 0.2527,
       "avg": 0.0,
       "live_shares": 0,
@@ -2900,7 +2916,7 @@
     {
       "symbol": "CSAI",
       "phase": "flat",
-      "price": 4.28,
+      "price": 4.18,
       "trig_px": 5.56,
       "avg": 4.78,
       "live_shares": 0,
@@ -2918,12 +2934,12 @@
           "filled": 41
         }
       ],
-      "unreal_pct": -10.46
+      "unreal_pct": -12.55
     },
     {
       "symbol": "ZEO",
       "phase": "entering",
-      "price": 0.43,
+      "price": 0.39,
       "trig_px": 0.4,
       "avg": 0.0,
       "live_shares": 0,
@@ -2968,6 +2984,14 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-08-03 10:00:19",
+      "symbol": "LESL",
+      "action": "Sell",
+      "sim_price": 0.9067,
+      "shares": 301,
+      "note": "stop_placed"
+    },
     {
       "ts": "2026-08-03 09:53:57",
       "symbol": "CNCK",
