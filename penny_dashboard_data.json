@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 09:45:52",
-  "generated_ts": 1785764752.490185,
+  "generated": "2026-08-03 09:48:55",
+  "generated_ts": 1785764935.690194,
   "system": "penny",
   "positions": [
     {
@@ -38,7 +38,7 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.3h old"
+      "detail": "log 0.4h old"
     },
     {
       "name": "Engine",
@@ -47,7 +47,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.2,
     "in_rth": true,
     "ok": true
   },
@@ -77,11 +77,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 75843.22,
-    "cash": 75818.37
+    "net_liq": 75845.53,
+    "cash": 75621.39
   },
-  "live_account_value": 75843.22,
-  "live_cash": 75818.37,
+  "live_account_value": 75845.53,
+  "live_cash": 75621.39,
   "active_trade_count": 1,
   "aggregate_unrealized_pnl_dollar": 6.03,
   "total_position_value": -24.85,
@@ -2731,6 +2731,18 @@
     {
       "t": "09:45",
       "v": 75843.22
+    },
+    {
+      "t": "09:46",
+      "v": 75843.22
+    },
+    {
+      "t": "09:47",
+      "v": 75843.22
+    },
+    {
+      "t": "09:48",
+      "v": 75845.53
     }
   ],
   "ladders": [
@@ -2772,7 +2784,7 @@
     {
       "symbol": "LESL",
       "phase": "entering",
-      "price": 1.01,
+      "price": 1.04,
       "trig_px": 1.06,
       "avg": 0.0,
       "live_shares": 0,
@@ -2795,7 +2807,7 @@
     {
       "symbol": "MBRX",
       "phase": "entering",
-      "price": 0.3059,
+      "price": 0.3041,
       "trig_px": 0.2527,
       "avg": 0.0,
       "live_shares": 0,
@@ -2818,7 +2830,7 @@
     {
       "symbol": "DFNS",
       "phase": "entering",
-      "price": 52.1,
+      "price": 50.09,
       "trig_px": 46.82,
       "avg": 0.0,
       "live_shares": 0,
@@ -2837,9 +2849,95 @@
         }
       ],
       "unreal_pct": null
+    },
+    {
+      "symbol": "CSAI",
+      "phase": "flat",
+      "price": 4.7,
+      "trig_px": 5.56,
+      "avg": 4.78,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": 4.3498,
+      "rungs": [
+        {
+          "px": 5.23,
+          "sh": 57,
+          "filled": 0
+        },
+        {
+          "px": 4.78,
+          "sh": 41,
+          "filled": 41
+        }
+      ],
+      "unreal_pct": -1.67
+    },
+    {
+      "symbol": "ZEO",
+      "phase": "entering",
+      "price": 0.4203,
+      "trig_px": 0.4,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 0.376,
+          "sh": 797,
+          "filled": 0
+        },
+        {
+          "px": 0.344,
+          "sh": 581,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-08-03 09:48:35",
+      "symbol": "CSAI",
+      "action": "Sell",
+      "sim_price": 4.35,
+      "shares": 41,
+      "note": "stop_placed"
+    },
+    {
+      "ts": "2026-08-03 09:47:33",
+      "symbol": "ZEO",
+      "action": "Buy",
+      "sim_price": 0.344,
+      "shares": 581,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-08-03 09:47:31",
+      "symbol": "ZEO",
+      "action": "Buy",
+      "sim_price": 0.376,
+      "shares": 797,
+      "note": "rung0"
+    },
+    {
+      "ts": "2026-08-03 09:47:25",
+      "symbol": "CSAI",
+      "action": "Buy",
+      "sim_price": 4.78,
+      "shares": 41,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-08-03 09:47:24",
+      "symbol": "CSAI",
+      "action": "Buy",
+      "sim_price": 5.23,
+      "shares": 57,
+      "note": "rung0"
+    },
     {
       "ts": "2026-08-03 09:41:07",
       "symbol": "DFNS",
