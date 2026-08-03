@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 16:04:18",
-  "generated_ts": 1785787458.808186,
+  "generated": "2026-08-03 16:07:21",
+  "generated_ts": 1785787641.189784,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -26,7 +26,7 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 6.6h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
@@ -40,12 +40,12 @@
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-07-31 21:18:17] Penny Stock Shadow Scorer.ipynb: OK",
     "[2026-08-03 08:40:07] penny scheduler started",
     "[2026-08-03 08:42:49] penny scheduler started",
     "[2026-08-03 09:12:49] launching execution engine",
     "[2026-08-03 09:25:32] penny scheduler started",
-    "[2026-08-03 09:25:33] launching execution engine"
+    "[2026-08-03 09:25:33] launching execution engine",
+    "[2026-08-03 16:05:42] engine finished (rc=0)"
   ],
   "universe": {
     "symbols": 2224,
@@ -4235,20 +4235,32 @@
     {
       "t": "16:04",
       "v": 75762.65
+    },
+    {
+      "t": "16:05",
+      "v": 75762.65
+    },
+    {
+      "t": "16:06",
+      "v": 75762.65
+    },
+    {
+      "t": "16:07",
+      "v": 75762.65
     }
   ],
   "ladders": [
     {
       "symbol": "MRNO",
       "phase": "flat",
-      "price": 0.221,
+      "price": 0.227,
       "trig_px": 0.22920565,
       "avg": 0.2292,
       "live_shares": 0,
       "be_armed": false,
       "stop": 0.2086,
       "rungs": [],
-      "unreal_pct": -3.58
+      "unreal_pct": -0.96
     },
     {
       "symbol": "NRSN",
@@ -4322,7 +4334,7 @@
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 56.48,
+      "price": 57.0,
       "trig_px": 46.82,
       "avg": 44.01,
       "live_shares": 0,
@@ -4340,12 +4352,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 28.33
+      "unreal_pct": 29.52
     },
     {
       "symbol": "CSAI",
       "phase": "flat",
-      "price": 3.69,
+      "price": 3.76,
       "trig_px": 5.56,
       "avg": 4.78,
       "live_shares": 0,
@@ -4363,7 +4375,7 @@
           "filled": 41
         }
       ],
-      "unreal_pct": -22.8
+      "unreal_pct": -21.34
     },
     {
       "symbol": "ZEO",
@@ -4414,7 +4426,7 @@
     {
       "symbol": "SDST",
       "phase": "flat",
-      "price": 0.6821,
+      "price": 0.683,
       "trig_px": 0.6404,
       "avg": 0.5804,
       "live_shares": 363,
@@ -4432,12 +4444,12 @@
           "filled": 363
         }
       ],
-      "unreal_pct": 17.53
+      "unreal_pct": 17.68
     },
     {
       "symbol": "SGLY",
       "phase": "flat",
-      "price": 5.3,
+      "price": 5.18,
       "trig_px": 5.75,
       "avg": 5.4,
       "live_shares": 0,
@@ -4455,7 +4467,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -1.85
+      "unreal_pct": -4.07
     },
     {
       "symbol": "PN",
@@ -4506,7 +4518,7 @@
     {
       "symbol": "FUSE",
       "phase": "flat",
-      "price": 1.27,
+      "price": 1.22,
       "trig_px": 1.3,
       "avg": 1.1779,
       "live_shares": 0,
@@ -4524,7 +4536,7 @@
           "filled": 178
         }
       ],
-      "unreal_pct": 7.82
+      "unreal_pct": 3.57
     },
     {
       "symbol": "FNGR",
