@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 09:48:55",
-  "generated_ts": 1785764935.690194,
+  "generated": "2026-08-03 09:51:56",
+  "generated_ts": 1785765116.586328,
   "system": "penny",
   "positions": [
     {
@@ -13,6 +13,17 @@
       "unrealized_pnl": 19.53,
       "in_universe": true,
       "position": "short"
+    },
+    {
+      "symbol": "CSAI",
+      "shares": 41.0,
+      "avg_cost": 4.8044,
+      "mkt_price": 4.8606,
+      "position_value": 199.29,
+      "unrealized_pnl_dollar": 2.31,
+      "unrealized_pnl": 1.17,
+      "in_universe": true,
+      "position": "long"
     }
   ],
   "ib_all_ok": true,
@@ -33,7 +44,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -43,11 +54,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 0.0m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.2,
+    "newest_bar_age_min": 1.0,
     "in_rth": true,
     "ok": true
   },
@@ -66,25 +77,25 @@
   "slippage": {
     "configured": true,
     "summary": {
-      "avg_slippage_bps": -29.2,
-      "total_commissions": 288.09,
+      "avg_slippage_bps": -29.0,
+      "total_commissions": 289.09,
       "total_slippage_cost": 164.6,
-      "total_fees_and_slippage": 452.69,
-      "avg_slippage_pct": 0.6279,
-      "trade_count": 290,
+      "total_fees_and_slippage": 453.69,
+      "avg_slippage_pct": 0.6275,
+      "trade_count": 292,
       "missed_trades": 59,
-      "match_rate": 83.1
+      "match_rate": 83.2
     }
   },
   "account_summary": {
-    "net_liq": 75845.53,
+    "net_liq": 75844.25,
     "cash": 75621.39
   },
-  "live_account_value": 75845.53,
+  "live_account_value": 75844.25,
   "live_cash": 75621.39,
-  "active_trade_count": 1,
-  "aggregate_unrealized_pnl_dollar": 6.03,
-  "total_position_value": -24.85,
+  "active_trade_count": 2,
+  "aggregate_unrealized_pnl_dollar": 8.34,
+  "total_position_value": 174.44,
   "system_ok": true,
   "shadow": {
     "days": 14,
@@ -2743,6 +2754,18 @@
     {
       "t": "09:48",
       "v": 75845.53
+    },
+    {
+      "t": "09:49",
+      "v": 75845.53
+    },
+    {
+      "t": "09:50",
+      "v": 75845.53
+    },
+    {
+      "t": "09:51",
+      "v": 75844.25
     }
   ],
   "ladders": [
@@ -2807,7 +2830,7 @@
     {
       "symbol": "MBRX",
       "phase": "entering",
-      "price": 0.3041,
+      "price": 0.291,
       "trig_px": 0.2527,
       "avg": 0.0,
       "live_shares": 0,
@@ -2830,7 +2853,7 @@
     {
       "symbol": "DFNS",
       "phase": "entering",
-      "price": 50.09,
+      "price": 47.53,
       "trig_px": 46.82,
       "avg": 0.0,
       "live_shares": 0,
@@ -2853,7 +2876,7 @@
     {
       "symbol": "CSAI",
       "phase": "flat",
-      "price": 4.7,
+      "price": 4.59,
       "trig_px": 5.56,
       "avg": 4.78,
       "live_shares": 0,
@@ -2871,12 +2894,12 @@
           "filled": 41
         }
       ],
-      "unreal_pct": -1.67
+      "unreal_pct": -3.97
     },
     {
       "symbol": "ZEO",
       "phase": "entering",
-      "price": 0.4203,
+      "price": 0.425,
       "trig_px": 0.4,
       "avg": 0.0,
       "live_shares": 0,
@@ -3030,15 +3053,15 @@
     },
     {
       "date": "2026-07-29",
-      "pnl": -456.42
+      "pnl": -456.33
     },
     {
       "date": "2026-07-30",
-      "pnl": -457.35
+      "pnl": -458.82
     },
     {
       "date": "2026-07-31",
-      "pnl": -473.59
+      "pnl": -473.05
     },
     {
       "date": "2026-08-03",
@@ -3413,7 +3436,7 @@
       "shares": 100.0,
       "entry_price": 1.33,
       "exit_price": 1.35,
-      "pnl_dollar": 0.88,
+      "pnl_dollar": -0.02,
       "pnl_pct": 1.5
     },
     {
@@ -3443,7 +3466,7 @@
       "shares": 100.0,
       "entry_price": 1.33,
       "exit_price": 1.35,
-      "pnl_dollar": 0.87,
+      "pnl_dollar": 1.77,
       "pnl_pct": 1.5
     },
     {
@@ -3549,9 +3572,9 @@
   ],
   "realized_summary": {
     "trades": 261,
-    "total": -1935.38,
+    "total": -1936.22,
     "wins": 54,
     "win_rate": 20.7
   },
-  "total_realized_pnl": -1935.38
+  "total_realized_pnl": -1936.22
 }
