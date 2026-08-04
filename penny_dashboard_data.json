@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 21:16:35",
-  "generated_ts": 1785806195.583928,
+  "generated": "2026-08-03 21:19:49",
+  "generated_ts": 1785806389.682868,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -21,7 +21,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 54m old"
+      "detail": "bars 57m old"
     },
     {
       "name": "Scheduler",
@@ -35,17 +35,17 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 53.5,
+    "newest_bar_age_min": 56.7,
     "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-08-03 09:25:32] penny scheduler started",
     "[2026-08-03 09:25:33] launching execution engine",
     "[2026-08-03 16:05:42] engine finished (rc=0)",
     "[2026-08-03 20:21:47] running Penny Stock Daily Stock Pull.ipynb ...",
     "[2026-08-03 20:52:23] Penny Stock Daily Stock Pull.ipynb: OK",
-    "[2026-08-03 21:16:23] running Penny Stock Shadow Scorer.ipynb ..."
+    "[2026-08-03 21:16:23] running Penny Stock Shadow Scorer.ipynb ...",
+    "[2026-08-03 21:18:33] Penny Stock Shadow Scorer.ipynb: OK"
   ],
   "universe": {
     "symbols": 2223,
@@ -75,34 +75,34 @@
   "total_position_value": 0,
   "system_ok": true,
   "shadow": {
-    "days": 14,
-    "signals_wide": 267,
-    "signals_frozen": 54,
+    "days": 15,
+    "signals_wide": 290,
+    "signals_frozen": 57,
     "scoreboard_wide": [
       {
         "policy": "RIDE",
-        "n": 267,
-        "fill_pct": 63.3,
-        "mean_net": 0.0085,
-        "win_filled": 20.1,
+        "n": 290,
+        "fill_pct": 63.1,
+        "mean_net": 0.0082,
+        "win_filled": 19.7,
         "band_mean": 0.0088,
         "band_win": 27.0
       },
       {
         "policy": "SCALP",
-        "n": 267,
-        "fill_pct": 59.6,
-        "mean_net": 0.0059,
-        "win_filled": 62.9,
+        "n": 290,
+        "fill_pct": 59.7,
+        "mean_net": 0.0067,
+        "win_filled": 63.6,
         "band_mean": 0.0062,
         "band_win": 66.0
       },
       {
         "policy": "TP8",
-        "n": 267,
-        "fill_pct": 49.4,
-        "mean_net": 0.0025,
-        "win_filled": 59.8,
+        "n": 290,
+        "fill_pct": 49.7,
+        "mean_net": 0.0029,
+        "win_filled": 60.4,
         "band_mean": 0.0058,
         "band_win": 63.0
       }
@@ -110,28 +110,28 @@
     "scoreboard_frozen": [
       {
         "policy": "RIDE",
-        "n": 54,
-        "fill_pct": 53.7,
-        "mean_net": 0.0037,
-        "win_filled": 24.1,
+        "n": 57,
+        "fill_pct": 52.6,
+        "mean_net": 0.0035,
+        "win_filled": 23.3,
         "band_mean": 0.0076,
         "band_win": 35.0
       },
       {
         "policy": "SCALP",
-        "n": 54,
-        "fill_pct": 51.9,
-        "mean_net": 0.0038,
-        "win_filled": 64.3,
+        "n": 57,
+        "fill_pct": 50.9,
+        "mean_net": 0.0019,
+        "win_filled": 62.1,
         "band_mean": 0.0081,
         "band_win": 73.0
       },
       {
         "policy": "TP8",
-        "n": 54,
-        "fill_pct": 40.7,
-        "mean_net": 0.002,
-        "win_filled": 59.1,
+        "n": 57,
+        "fill_pct": 40.4,
+        "mean_net": 0.0005,
+        "win_filled": 56.5,
         "band_mean": 0.0078,
         "band_win": 67.0
       }
@@ -249,12 +249,20 @@
           "RIDE": 2421.0,
           "SCALP": 1111.0,
           "TP8": 453.0
+        },
+        {
+          "date": "2026-08-03",
+          "trades": 23,
+          "per_trade": 3043.0,
+          "RIDE": 362.0,
+          "SCALP": 1136.0,
+          "TP8": 537.0
         }
       ],
       "totals": {
-        "RIDE": 8590.0,
-        "SCALP": 5621.0,
-        "TP8": 2392.0
+        "RIDE": 8952.0,
+        "SCALP": 6757.0,
+        "TP8": 2929.0
       }
     },
     "dollars_frozen": {
@@ -370,12 +378,20 @@
           "RIDE": -18.0,
           "SCALP": 342.0,
           "TP8": 770.0
+        },
+        {
+          "date": "2026-08-03",
+          "trades": 3,
+          "per_trade": 10000,
+          "RIDE": -30.0,
+          "SCALP": -961.0,
+          "TP8": -762.0
         }
       ],
       "totals": {
-        "RIDE": 2024.0,
-        "SCALP": 2061.0,
-        "TP8": 1062.0
+        "RIDE": 1994.0,
+        "SCALP": 1100.0,
+        "TP8": 300.0
       }
     }
   },
@@ -5483,6 +5499,18 @@
     {
       "t": "21:16",
       "v": 75762.65
+    },
+    {
+      "t": "21:17",
+      "v": 75762.65
+    },
+    {
+      "t": "21:18",
+      "v": 75762.65
+    },
+    {
+      "t": "21:19",
+      "v": 75762.65
     }
   ],
   "ladders": [
@@ -5547,7 +5575,7 @@
     {
       "symbol": "MBRX",
       "phase": "holding",
-      "price": 0.4094,
+      "price": 0.42,
       "trig_px": 0.2527,
       "avg": 0.0,
       "live_shares": 0,
@@ -5662,7 +5690,7 @@
     {
       "symbol": "SDST",
       "phase": "flat",
-      "price": 0.6715,
+      "price": 0.6701,
       "trig_px": 0.6404,
       "avg": 0.5804,
       "live_shares": 363,
@@ -5680,7 +5708,7 @@
           "filled": 363
         }
       ],
-      "unreal_pct": 15.7
+      "unreal_pct": 15.46
     },
     {
       "symbol": "SGLY",
