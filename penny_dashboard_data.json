@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 20:19:21",
-  "generated_ts": 1785802761.38005,
+  "generated": "2026-08-03 20:22:34",
+  "generated_ts": 1785802954.360186,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -21,12 +21,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 4.2h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
@@ -35,21 +35,21 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.9,
+    "newest_bar_age_min": 0.2,
     "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-08-03 08:40:07] penny scheduler started",
     "[2026-08-03 08:42:49] penny scheduler started",
     "[2026-08-03 09:12:49] launching execution engine",
     "[2026-08-03 09:25:32] penny scheduler started",
     "[2026-08-03 09:25:33] launching execution engine",
-    "[2026-08-03 16:05:42] engine finished (rc=0)"
+    "[2026-08-03 16:05:42] engine finished (rc=0)",
+    "[2026-08-03 20:21:47] running Penny Stock Daily Stock Pull.ipynb ..."
   ],
   "universe": {
-    "symbols": 2224,
-    "removals_7d": 3
+    "symbols": 2223,
+    "removals_7d": 7
   },
   "slippage": {
     "configured": true,
@@ -5255,6 +5255,18 @@
     {
       "t": "20:19",
       "v": 75762.65
+    },
+    {
+      "t": "20:20",
+      "v": 75762.65
+    },
+    {
+      "t": "20:21",
+      "v": 75762.65
+    },
+    {
+      "t": "20:22",
+      "v": 75762.65
     }
   ],
   "ladders": [
@@ -5342,7 +5354,7 @@
     {
       "symbol": "DFNS",
       "phase": "flat",
-      "price": 54.61,
+      "price": 55.88,
       "trig_px": 46.82,
       "avg": 44.01,
       "live_shares": 0,
@@ -5360,7 +5372,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 24.09
+      "unreal_pct": 26.97
     },
     {
       "symbol": "CSAI",
@@ -5526,7 +5538,7 @@
     {
       "symbol": "FUSE",
       "phase": "flat",
-      "price": 1.27,
+      "price": 1.33,
       "trig_px": 1.3,
       "avg": 1.1779,
       "live_shares": 0,
@@ -5544,12 +5556,12 @@
           "filled": 178
         }
       ],
-      "unreal_pct": 7.82
+      "unreal_pct": 12.91
     },
     {
       "symbol": "FNGR",
       "phase": "flat",
-      "price": 0.205,
+      "price": 0.202,
       "trig_px": 0.2329,
       "avg": 0.2111,
       "live_shares": 2268,
@@ -5567,7 +5579,7 @@
           "filled": 998
         }
       ],
-      "unreal_pct": -2.87
+      "unreal_pct": -4.29
     },
     {
       "symbol": "TAOP",
