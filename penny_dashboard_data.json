@@ -1,8 +1,20 @@
 {
-  "generated": "2026-08-04 09:37:22",
-  "generated_ts": 1785850642.136267,
+  "generated": "2026-08-04 09:40:33",
+  "generated_ts": 1785850833.965662,
   "system": "penny",
-  "positions": [],
+  "positions": [
+    {
+      "symbol": "XGN",
+      "shares": 8.0,
+      "avg_cost": 6.1307,
+      "mkt_price": 6.097,
+      "position_value": 48.78,
+      "unrealized_pnl_dollar": -0.27,
+      "unrealized_pnl": -0.55,
+      "in_universe": true,
+      "position": "long"
+    }
+  ],
   "ib_all_ok": true,
   "ib_auth_info": {
     "authenticated": true,
@@ -26,16 +38,16 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.4h old"
+      "detail": "log 0.5h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.1m"
+      "detail": "heartbeat 0.4m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.1,
+    "newest_bar_age_min": 0.2,
     "in_rth": true,
     "ok": true
   },
@@ -65,14 +77,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 75774.23,
-    "cash": 75774.23
+    "net_liq": 75773.91,
+    "cash": 75475.8
   },
-  "live_account_value": 75774.23,
-  "live_cash": 75774.23,
-  "active_trade_count": 0,
-  "aggregate_unrealized_pnl_dollar": 0,
-  "total_position_value": 0,
+  "live_account_value": 75773.91,
+  "live_cash": 75475.8,
+  "active_trade_count": 1,
+  "aggregate_unrealized_pnl_dollar": -0.27,
+  "total_position_value": 48.78,
   "system_ok": true,
   "shadow": {
     "days": 15,
@@ -2707,23 +2719,35 @@
     {
       "t": "09:37",
       "v": 75774.23
+    },
+    {
+      "t": "09:38",
+      "v": 75774.23
+    },
+    {
+      "t": "09:39",
+      "v": 75774.23
+    },
+    {
+      "t": "09:40",
+      "v": 75773.91
     }
   ],
   "ladders": [
     {
       "symbol": "XGN",
       "phase": "entering",
-      "price": 6.32,
+      "price": 5.97,
       "trig_px": 6.4627,
-      "avg": 0.0,
-      "live_shares": 0,
+      "avg": 6.07,
+      "live_shares": 49,
       "be_armed": false,
-      "stop": null,
+      "stop": 5.5237,
       "rungs": [
         {
           "px": 6.07,
           "sh": 49,
-          "filled": 0
+          "filled": 49
         },
         {
           "px": 5.56,
@@ -2731,12 +2755,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": null
+      "unreal_pct": -1.65
     },
     {
       "symbol": "SLXN",
       "phase": "entering",
-      "price": 1.72,
+      "price": 1.75,
       "trig_px": 1.7,
       "avg": 0.0,
       "live_shares": 0,
@@ -2759,7 +2783,7 @@
     {
       "symbol": "BAER",
       "phase": "entering",
-      "price": 1.86,
+      "price": 1.84,
       "trig_px": 1.8801,
       "avg": 0.0,
       "live_shares": 0,
@@ -2782,7 +2806,7 @@
     {
       "symbol": "BLZE",
       "phase": "entering",
-      "price": 23.18,
+      "price": 22.66,
       "trig_px": 22.23,
       "avg": 0.0,
       "live_shares": 0,
@@ -2805,7 +2829,7 @@
     {
       "symbol": "IBTA",
       "phase": "entering",
-      "price": 36.43,
+      "price": 36.01,
       "trig_px": 34.545,
       "avg": 0.0,
       "live_shares": 0,
@@ -2828,7 +2852,7 @@
     {
       "symbol": "SUGP",
       "phase": "entering",
-      "price": 0.3704,
+      "price": 0.3552,
       "trig_px": 0.289,
       "avg": 0.0,
       "live_shares": 0,
@@ -2850,6 +2874,14 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-08-04 09:40:09",
+      "symbol": "XGN",
+      "action": "Sell",
+      "sim_price": 5.52,
+      "shares": 49,
+      "note": "stop_placed"
+    },
     {
       "ts": "2026-08-04 09:36:19",
       "symbol": "TNMG",
