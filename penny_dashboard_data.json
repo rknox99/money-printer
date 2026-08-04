@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-04 12:39:05",
-  "generated_ts": 1785861545.52262,
+  "generated": "2026-08-04 12:42:06",
+  "generated_ts": 1785861726.371121,
   "system": "penny",
   "positions": [
     {
@@ -51,10 +51,10 @@
       "symbol": "SDOT",
       "shares": 21.0,
       "avg_cost": 14.0076,
-      "mkt_price": 13.433,
-      "position_value": 282.09,
-      "unrealized_pnl_dollar": -12.07,
-      "unrealized_pnl": -4.1,
+      "mkt_price": 13.3861,
+      "position_value": 281.11,
+      "unrealized_pnl_dollar": -13.05,
+      "unrealized_pnl": -4.44,
       "in_universe": true,
       "position": "long"
     },
@@ -62,10 +62,10 @@
       "symbol": "YYGH",
       "shares": 236.0,
       "avg_cost": 1.275,
-      "mkt_price": 1.216,
-      "position_value": 286.98,
-      "unrealized_pnl_dollar": -13.92,
-      "unrealized_pnl": -4.63,
+      "mkt_price": 1.2161,
+      "position_value": 287.01,
+      "unrealized_pnl_dollar": -13.89,
+      "unrealized_pnl": -4.62,
       "in_universe": true,
       "position": "long"
     },
@@ -84,10 +84,10 @@
       "symbol": "XGN",
       "shares": 49.0,
       "avg_cost": 6.0904,
-      "mkt_price": 6.096,
-      "position_value": 298.7,
-      "unrealized_pnl_dollar": 0.27,
-      "unrealized_pnl": 0.09,
+      "mkt_price": 6.0565,
+      "position_value": 296.77,
+      "unrealized_pnl_dollar": -1.66,
+      "unrealized_pnl": -0.56,
       "in_universe": true,
       "position": "long"
     },
@@ -126,16 +126,16 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 3.4h old"
+      "detail": "log 3.5h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.1,
+    "newest_bar_age_min": 0.5,
     "in_rth": true,
     "ok": true
   },
@@ -165,14 +165,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 75630.56,
+    "net_liq": 75626.95,
     "cash": 72972.39
   },
-  "live_account_value": 75630.56,
+  "live_account_value": 75626.95,
   "live_cash": 72972.39,
   "active_trade_count": 9,
-  "aggregate_unrealized_pnl_dollar": -22.28,
-  "total_position_value": 2657.44,
+  "aggregate_unrealized_pnl_dollar": -25.16,
+  "total_position_value": 2654.56,
   "system_ok": true,
   "shadow": {
     "days": 15,
@@ -3535,13 +3535,25 @@
     {
       "t": "12:39",
       "v": 75630.56
+    },
+    {
+      "t": "12:40",
+      "v": 75626.95
+    },
+    {
+      "t": "12:41",
+      "v": 75626.95
+    },
+    {
+      "t": "12:42",
+      "v": 75626.95
     }
   ],
   "ladders": [
     {
       "symbol": "XGN",
       "phase": "entering",
-      "price": 6.09,
+      "price": 6.08,
       "trig_px": 6.4627,
       "avg": 6.07,
       "live_shares": 49,
@@ -3559,12 +3571,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 0.33
+      "unreal_pct": 0.16
     },
     {
       "symbol": "SLXN",
       "phase": "entering",
-      "price": 1.69,
+      "price": 1.74,
       "trig_px": 1.7,
       "avg": 0.0,
       "live_shares": 0,
@@ -3610,7 +3622,7 @@
     {
       "symbol": "BLZE",
       "phase": "entering",
-      "price": 21.76,
+      "price": 21.77,
       "trig_px": 22.23,
       "avg": 0.0,
       "live_shares": 0,
@@ -3633,7 +3645,7 @@
     {
       "symbol": "IBTA",
       "phase": "entering",
-      "price": 36.43,
+      "price": 36.32,
       "trig_px": 34.545,
       "avg": 0.0,
       "live_shares": 0,
@@ -3656,7 +3668,7 @@
     {
       "symbol": "SUGP",
       "phase": "entering",
-      "price": 0.3797,
+      "price": 0.3792,
       "trig_px": 0.289,
       "avg": 0.0,
       "live_shares": 0,
@@ -3679,7 +3691,7 @@
     {
       "symbol": "FCUV",
       "phase": "flat",
-      "price": 10.37,
+      "price": 10.29,
       "trig_px": 13.71,
       "avg": 12.6061,
       "live_shares": 0,
@@ -3697,7 +3709,7 @@
           "filled": 16
         }
       ],
-      "unreal_pct": -17.74
+      "unreal_pct": -18.37
     },
     {
       "symbol": "NVCT",
@@ -3725,7 +3737,7 @@
     {
       "symbol": "PSIX",
       "phase": "entering",
-      "price": 34.25,
+      "price": 34.26,
       "trig_px": 33.195,
       "avg": 0.0,
       "live_shares": 0,
@@ -3748,7 +3760,7 @@
     {
       "symbol": "SCYX",
       "phase": "entering",
-      "price": 5.28,
+      "price": 5.38,
       "trig_px": 5.3,
       "avg": 0.0,
       "live_shares": 0,
@@ -3771,7 +3783,7 @@
     {
       "symbol": "SDOT",
       "phase": "entering",
-      "price": 13.6,
+      "price": 13.44,
       "trig_px": 14.85,
       "avg": 13.96,
       "live_shares": 21,
@@ -3789,12 +3801,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -2.58
+      "unreal_pct": -3.72
     },
     {
       "symbol": "USDE",
       "phase": "entering",
-      "price": 1.94,
+      "price": 1.96,
       "trig_px": 2.025,
       "avg": 0.0,
       "live_shares": 0,
@@ -3817,7 +3829,7 @@
     {
       "symbol": "ZEO",
       "phase": "entering",
-      "price": 0.5702,
+      "price": 0.5866,
       "trig_px": 0.529,
       "avg": 0.0,
       "live_shares": 0,
@@ -3863,7 +3875,7 @@
     {
       "symbol": "NXTT",
       "phase": "flat",
-      "price": 0.1529,
+      "price": 0.1491,
       "trig_px": 0.2281,
       "avg": 0.2067,
       "live_shares": 0,
@@ -3881,12 +3893,12 @@
           "filled": 1019
         }
       ],
-      "unreal_pct": -26.04
+      "unreal_pct": -27.88
     },
     {
       "symbol": "MWYN",
       "phase": "entering",
-      "price": 0.7311,
+      "price": 0.7348,
       "trig_px": 0.8057,
       "avg": 0.7574,
       "live_shares": 396,
@@ -3904,7 +3916,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -3.47
+      "unreal_pct": -2.98
     },
     {
       "symbol": "YYGH",
@@ -3932,7 +3944,7 @@
     {
       "symbol": "VGAS",
       "phase": "entering",
-      "price": 1.24,
+      "price": 1.23,
       "trig_px": 1.305,
       "avg": 1.23,
       "live_shares": 243,
@@ -3950,7 +3962,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 0.81
+      "unreal_pct": 0.0
     },
     {
       "symbol": "MKZR",
