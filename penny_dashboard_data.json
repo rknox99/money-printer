@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-04 11:39:30",
-  "generated_ts": 1785857970.682152,
+  "generated": "2026-08-04 11:42:33",
+  "generated_ts": 1785858153.969727,
   "system": "penny",
   "positions": [
     {
@@ -62,10 +62,10 @@
       "symbol": "NVCT",
       "shares": 15.0,
       "avg_cost": 19.3867,
-      "mkt_price": 20.1511,
-      "position_value": 302.27,
-      "unrealized_pnl_dollar": 11.47,
-      "unrealized_pnl": 3.94,
+      "mkt_price": 19.994,
+      "position_value": 299.91,
+      "unrealized_pnl_dollar": 9.11,
+      "unrealized_pnl": 3.13,
       "in_universe": true,
       "position": "long"
     },
@@ -73,10 +73,10 @@
       "symbol": "XGN",
       "shares": 49.0,
       "avg_cost": 6.0904,
-      "mkt_price": 6.2252,
-      "position_value": 305.03,
-      "unrealized_pnl_dollar": 6.6,
-      "unrealized_pnl": 2.21,
+      "mkt_price": 6.2037,
+      "position_value": 303.98,
+      "unrealized_pnl_dollar": 5.55,
+      "unrealized_pnl": 1.86,
       "in_universe": true,
       "position": "long"
     },
@@ -115,16 +115,16 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 2.4h old"
+      "detail": "log 2.5h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.1,
     "in_rth": true,
     "ok": true
   },
@@ -154,14 +154,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 75645.25,
-    "cash": 73272.5
+    "net_liq": 75640.92,
+    "cash": 73272.49
   },
-  "live_account_value": 75645.25,
-  "live_cash": 73272.5,
+  "live_account_value": 75640.92,
+  "live_cash": 73272.49,
   "active_trade_count": 8,
-  "aggregate_unrealized_pnl_dollar": -3.45,
-  "total_position_value": 2376.16,
+  "aggregate_unrealized_pnl_dollar": -6.86,
+  "total_position_value": 2372.75,
   "system_ok": true,
   "shadow": {
     "days": 15,
@@ -3284,13 +3284,25 @@
     {
       "t": "11:39",
       "v": 75645.25
+    },
+    {
+      "t": "11:40",
+      "v": 75645.25
+    },
+    {
+      "t": "11:41",
+      "v": 75645.25
+    },
+    {
+      "t": "11:42",
+      "v": 75640.92
     }
   ],
   "ladders": [
     {
       "symbol": "XGN",
       "phase": "entering",
-      "price": 6.22,
+      "price": 6.12,
       "trig_px": 6.4627,
       "avg": 6.07,
       "live_shares": 49,
@@ -3308,7 +3320,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 2.47
+      "unreal_pct": 0.82
     },
     {
       "symbol": "SLXN",
@@ -3336,7 +3348,7 @@
     {
       "symbol": "BAER",
       "phase": "entering",
-      "price": 1.79,
+      "price": 1.8,
       "trig_px": 1.8801,
       "avg": 1.77,
       "live_shares": 169,
@@ -3354,12 +3366,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 1.13
+      "unreal_pct": 1.69
     },
     {
       "symbol": "BLZE",
       "phase": "entering",
-      "price": 21.37,
+      "price": 21.48,
       "trig_px": 22.23,
       "avg": 0.0,
       "live_shares": 0,
@@ -3382,7 +3394,7 @@
     {
       "symbol": "IBTA",
       "phase": "entering",
-      "price": 35.41,
+      "price": 35.66,
       "trig_px": 34.545,
       "avg": 0.0,
       "live_shares": 0,
@@ -3428,7 +3440,7 @@
     {
       "symbol": "FCUV",
       "phase": "flat",
-      "price": 10.61,
+      "price": 10.47,
       "trig_px": 13.71,
       "avg": 12.6061,
       "live_shares": 0,
@@ -3446,12 +3458,12 @@
           "filled": 16
         }
       ],
-      "unreal_pct": -15.83
+      "unreal_pct": -16.95
     },
     {
       "symbol": "NVCT",
       "phase": "entering",
-      "price": 20.0,
+      "price": 20.09,
       "trig_px": 20.55,
       "avg": 19.32,
       "live_shares": 15,
@@ -3469,12 +3481,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 3.52
+      "unreal_pct": 3.99
     },
     {
       "symbol": "PSIX",
       "phase": "entering",
-      "price": 33.92,
+      "price": 33.99,
       "trig_px": 33.195,
       "avg": 0.0,
       "live_shares": 0,
@@ -3520,7 +3532,7 @@
     {
       "symbol": "SDOT",
       "phase": "entering",
-      "price": 13.96,
+      "price": 13.88,
       "trig_px": 14.85,
       "avg": 13.96,
       "live_shares": 21,
@@ -3538,12 +3550,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 0.0
+      "unreal_pct": -0.57
     },
     {
       "symbol": "USDE",
       "phase": "entering",
-      "price": 1.98,
+      "price": 1.97,
       "trig_px": 2.025,
       "avg": 0.0,
       "live_shares": 0,
@@ -3566,7 +3578,7 @@
     {
       "symbol": "ZEO",
       "phase": "entering",
-      "price": 0.5543,
+      "price": 0.558,
       "trig_px": 0.529,
       "avg": 0.0,
       "live_shares": 0,
@@ -3612,7 +3624,7 @@
     {
       "symbol": "NXTT",
       "phase": "flat",
-      "price": 0.1695,
+      "price": 0.1679,
       "trig_px": 0.2281,
       "avg": 0.2067,
       "live_shares": 0,
@@ -3630,12 +3642,12 @@
           "filled": 1019
         }
       ],
-      "unreal_pct": -18.01
+      "unreal_pct": -18.78
     },
     {
       "symbol": "MWYN",
       "phase": "entering",
-      "price": 0.72,
+      "price": 0.7225,
       "trig_px": 0.8057,
       "avg": 0.7574,
       "live_shares": 396,
@@ -3653,7 +3665,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -4.94
+      "unreal_pct": -4.61
     },
     {
       "symbol": "YYGH",
