@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-04 09:31:07",
-  "generated_ts": 1785850267.96857,
+  "generated": "2026-08-04 09:34:21",
+  "generated_ts": 1785850461.709393,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -26,16 +26,16 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.3h old"
+      "detail": "log 0.4h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "off-hours"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.2,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -2683,10 +2683,102 @@
     {
       "t": "09:31",
       "v": 75774.23
+    },
+    {
+      "t": "09:32",
+      "v": 75774.23
+    },
+    {
+      "t": "09:33",
+      "v": 75774.23
+    },
+    {
+      "t": "09:34",
+      "v": 75774.23
     }
   ],
-  "ladders": [],
-  "intents_tail": [],
+  "ladders": [
+    {
+      "symbol": "XGN",
+      "phase": "entering",
+      "price": 6.77,
+      "trig_px": 6.4627,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 6.07,
+          "sh": 49,
+          "filled": 0
+        },
+        {
+          "px": 5.56,
+          "sh": 35,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
+    },
+    {
+      "symbol": "SLXN",
+      "phase": "entering",
+      "price": 1.69,
+      "trig_px": 1.7,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 1.6,
+          "sh": 187,
+          "filled": 0
+        },
+        {
+          "px": 1.46,
+          "sh": 136,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
+    }
+  ],
+  "intents_tail": [
+    {
+      "ts": "2026-08-04 09:33:44",
+      "symbol": "SLXN",
+      "action": "Buy",
+      "sim_price": 1.46,
+      "shares": 136,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-08-04 09:33:44",
+      "symbol": "SLXN",
+      "action": "Buy",
+      "sim_price": 1.6,
+      "shares": 187,
+      "note": "rung0"
+    },
+    {
+      "ts": "2026-08-04 09:32:14",
+      "symbol": "XGN",
+      "action": "Buy",
+      "sim_price": 5.56,
+      "shares": 35,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-08-04 09:32:14",
+      "symbol": "XGN",
+      "action": "Buy",
+      "sim_price": 6.07,
+      "shares": 49,
+      "note": "rung0"
+    }
+  ],
   "live_daily": [
     {
       "date": "2026-07-27",
