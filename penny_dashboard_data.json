@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-04 19:02:01",
-  "generated_ts": 1785884521.744393,
+  "generated": "2026-08-04 19:05:14",
+  "generated_ts": 1785884714.026976,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -21,12 +21,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 1.5h old"
+      "detail": "log 1.6h old"
     },
     {
       "name": "Engine",
@@ -35,7 +35,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.8,
+    "newest_bar_age_min": 0.0,
     "in_rth": false,
     "ok": true
   },
@@ -4967,13 +4967,25 @@
     {
       "t": "19:02",
       "v": 75602.52
+    },
+    {
+      "t": "19:03",
+      "v": 75602.52
+    },
+    {
+      "t": "19:04",
+      "v": 75602.52
+    },
+    {
+      "t": "19:05",
+      "v": 75602.52
     }
   ],
   "ladders": [
     {
       "symbol": "XGN",
       "phase": "flat",
-      "price": 6.83,
+      "price": 6.65,
       "trig_px": 6.4627,
       "avg": 6.07,
       "live_shares": 0,
@@ -4991,7 +5003,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 12.52
+      "unreal_pct": 9.56
     },
     {
       "symbol": "SLXN",
@@ -5042,7 +5054,7 @@
     {
       "symbol": "BLZE",
       "phase": "flat",
-      "price": 20.05,
+      "price": 20.04,
       "trig_px": 22.23,
       "avg": 20.9,
       "live_shares": 0,
@@ -5060,7 +5072,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -4.07
+      "unreal_pct": -4.11
     },
     {
       "symbol": "IBTA",
@@ -5088,7 +5100,7 @@
     {
       "symbol": "SUGP",
       "phase": "holding",
-      "price": 0.393,
+      "price": 0.39,
       "trig_px": 0.289,
       "avg": 0.0,
       "live_shares": 0,
@@ -5180,7 +5192,7 @@
     {
       "symbol": "SCYX",
       "phase": "holding",
-      "price": 5.4,
+      "price": 5.5,
       "trig_px": 5.3,
       "avg": 0.0,
       "live_shares": 0,
@@ -5272,7 +5284,7 @@
     {
       "symbol": "ATPC",
       "phase": "flat",
-      "price": 2.43,
+      "price": 2.47,
       "trig_px": 2.64,
       "avg": 2.48,
       "live_shares": 0,
@@ -5290,12 +5302,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -2.02
+      "unreal_pct": -0.4
     },
     {
       "symbol": "NXTT",
       "phase": "flat",
-      "price": 0.1183,
+      "price": 0.1176,
       "trig_px": 0.2281,
       "avg": 0.2067,
       "live_shares": 0,
@@ -5313,7 +5325,7 @@
           "filled": 1019
         }
       ],
-      "unreal_pct": -42.78
+      "unreal_pct": -43.11
     },
     {
       "symbol": "MWYN",
