@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-04 09:53:10",
-  "generated_ts": 1785851590.819166,
+  "generated": "2026-08-04 09:56:22",
+  "generated_ts": 1785851782.838943,
   "system": "penny",
   "positions": [
     {
@@ -66,7 +66,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -80,7 +80,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.7,
+    "newest_bar_age_min": 0.2,
     "in_rth": true,
     "ok": true
   },
@@ -110,10 +110,10 @@
     }
   },
   "account_summary": {
-    "net_liq": 75752.28,
+    "net_liq": 75778.11,
     "cash": 74103.91
   },
-  "live_account_value": 75752.28,
+  "live_account_value": 75778.11,
   "live_cash": 74103.91,
   "active_trade_count": 4,
   "aggregate_unrealized_pnl_dollar": -21.94,
@@ -2816,13 +2816,25 @@
     {
       "t": "09:53",
       "v": 75752.28
+    },
+    {
+      "t": "09:54",
+      "v": 75752.28
+    },
+    {
+      "t": "09:55",
+      "v": 75778.11
+    },
+    {
+      "t": "09:56",
+      "v": 75778.11
     }
   ],
   "ladders": [
     {
       "symbol": "XGN",
       "phase": "entering",
-      "price": 6.32,
+      "price": 6.31,
       "trig_px": 6.4627,
       "avg": 6.07,
       "live_shares": 49,
@@ -2840,12 +2852,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 4.12
+      "unreal_pct": 3.95
     },
     {
       "symbol": "SLXN",
       "phase": "entering",
-      "price": 1.79,
+      "price": 1.74,
       "trig_px": 1.7,
       "avg": 0.0,
       "live_shares": 0,
@@ -2891,7 +2903,7 @@
     {
       "symbol": "BLZE",
       "phase": "entering",
-      "price": 23.24,
+      "price": 23.3,
       "trig_px": 22.23,
       "avg": 0.0,
       "live_shares": 0,
@@ -2914,7 +2926,7 @@
     {
       "symbol": "IBTA",
       "phase": "entering",
-      "price": 36.4,
+      "price": 35.27,
       "trig_px": 34.545,
       "avg": 0.0,
       "live_shares": 0,
@@ -2937,7 +2949,7 @@
     {
       "symbol": "SUGP",
       "phase": "entering",
-      "price": 0.3389,
+      "price": 0.3414,
       "trig_px": 0.289,
       "avg": 0.0,
       "live_shares": 0,
@@ -2983,7 +2995,7 @@
     {
       "symbol": "NVCT",
       "phase": "entering",
-      "price": 19.8,
+      "price": 20.46,
       "trig_px": 20.55,
       "avg": 19.32,
       "live_shares": 15,
@@ -3001,12 +3013,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 2.48
+      "unreal_pct": 5.9
     },
     {
       "symbol": "PSIX",
       "phase": "entering",
-      "price": 33.68,
+      "price": 33.67,
       "trig_px": 33.195,
       "avg": 0.0,
       "live_shares": 0,
@@ -3029,7 +3041,7 @@
     {
       "symbol": "SCYX",
       "phase": "entering",
-      "price": 5.5,
+      "price": 5.48,
       "trig_px": 5.3,
       "avg": 0.0,
       "live_shares": 0,
@@ -3071,9 +3083,87 @@
         }
       ],
       "unreal_pct": null
+    },
+    {
+      "symbol": "USDE",
+      "phase": "entering",
+      "price": 1.97,
+      "trig_px": 2.025,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 1.9,
+          "sh": 157,
+          "filled": 0
+        },
+        {
+          "px": 1.74,
+          "sh": 114,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
+    },
+    {
+      "symbol": "ZEO",
+      "phase": "entering",
+      "price": 0.5225,
+      "trig_px": 0.529,
+      "avg": 0.0,
+      "live_shares": 0,
+      "be_armed": false,
+      "stop": null,
+      "rungs": [
+        {
+          "px": 0.4973,
+          "sh": 603,
+          "filled": 0
+        },
+        {
+          "px": 0.4549,
+          "sh": 439,
+          "filled": 0
+        }
+      ],
+      "unreal_pct": null
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-08-04 09:55:06",
+      "symbol": "ZEO",
+      "action": "Buy",
+      "sim_price": 0.4549,
+      "shares": 439,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-08-04 09:55:06",
+      "symbol": "ZEO",
+      "action": "Buy",
+      "sim_price": 0.4973,
+      "shares": 603,
+      "note": "rung0"
+    },
+    {
+      "ts": "2026-08-04 09:54:01",
+      "symbol": "USDE",
+      "action": "Buy",
+      "sim_price": 1.74,
+      "shares": 114,
+      "note": "rung1"
+    },
+    {
+      "ts": "2026-08-04 09:54:01",
+      "symbol": "USDE",
+      "action": "Buy",
+      "sim_price": 1.9,
+      "shares": 157,
+      "note": "rung0"
+    },
     {
       "ts": "2026-08-04 09:49:20",
       "symbol": "SDOT",
@@ -3200,38 +3290,6 @@
       "action": "Buy",
       "sim_price": 0.2485,
       "shares": 804,
-      "note": "rung1"
-    },
-    {
-      "ts": "2026-08-04 09:36:17",
-      "symbol": "SUGP",
-      "action": "Buy",
-      "sim_price": 0.2717,
-      "shares": 1104,
-      "note": "rung0"
-    },
-    {
-      "ts": "2026-08-04 09:36:14",
-      "symbol": "IBTA",
-      "action": "Buy",
-      "sim_price": 29.71,
-      "shares": 6,
-      "note": "rung1"
-    },
-    {
-      "ts": "2026-08-04 09:36:14",
-      "symbol": "IBTA",
-      "action": "Buy",
-      "sim_price": 32.47,
-      "shares": 9,
-      "note": "rung0"
-    },
-    {
-      "ts": "2026-08-04 09:35:44",
-      "symbol": "BLZE",
-      "action": "Buy",
-      "sim_price": 19.12,
-      "shares": 10,
       "note": "rung1"
     }
   ],
