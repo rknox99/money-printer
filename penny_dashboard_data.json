@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-04 09:56:22",
-  "generated_ts": 1785851782.838943,
+  "generated": "2026-08-04 09:59:23",
+  "generated_ts": 1785851963.937238,
   "system": "penny",
   "positions": [
     {
@@ -18,10 +18,10 @@
       "symbol": "XGN",
       "shares": 49.0,
       "avg_cost": 6.0904,
-      "mkt_price": 6.3236,
-      "position_value": 309.86,
-      "unrealized_pnl_dollar": 11.43,
-      "unrealized_pnl": 3.83,
+      "mkt_price": 6.314,
+      "position_value": 309.39,
+      "unrealized_pnl_dollar": 10.96,
+      "unrealized_pnl": 3.67,
       "in_universe": true,
       "position": "long"
     },
@@ -29,10 +29,10 @@
       "symbol": "FCUV",
       "shares": 62.0,
       "avg_cost": 12.5961,
-      "mkt_price": 11.89,
-      "position_value": 737.18,
-      "unrealized_pnl_dollar": -43.78,
-      "unrealized_pnl": -5.61,
+      "mkt_price": 12.336,
+      "position_value": 764.83,
+      "unrealized_pnl_dollar": -16.13,
+      "unrealized_pnl": -2.07,
       "in_universe": true,
       "position": "long"
     },
@@ -40,10 +40,10 @@
       "symbol": "BAER",
       "shares": 169.0,
       "avg_cost": 1.7759,
-      "mkt_price": 1.784,
-      "position_value": 301.5,
-      "unrealized_pnl_dollar": 1.37,
-      "unrealized_pnl": 0.46,
+      "mkt_price": 1.776,
+      "position_value": 300.14,
+      "unrealized_pnl_dollar": 0.01,
+      "unrealized_pnl": 0.0,
       "in_universe": true,
       "position": "long"
     }
@@ -71,16 +71,16 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.7h old"
+      "detail": "log 0.8h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.2,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -105,19 +105,19 @@
       "total_fees_and_slippage": 175.08,
       "avg_slippage_pct": 0.209,
       "trade_count": 364,
-      "missed_trades": 71,
-      "match_rate": 83.7
+      "missed_trades": 72,
+      "match_rate": 83.5
     }
   },
   "account_summary": {
-    "net_liq": 75778.11,
+    "net_liq": 75763.82,
     "cash": 74103.91
   },
-  "live_account_value": 75778.11,
+  "live_account_value": 75763.82,
   "live_cash": 74103.91,
   "active_trade_count": 4,
-  "aggregate_unrealized_pnl_dollar": -21.94,
-  "total_position_value": 1648.38,
+  "aggregate_unrealized_pnl_dollar": 3.88,
+  "total_position_value": 1674.2,
   "system_ok": true,
   "shadow": {
     "days": 15,
@@ -2828,13 +2828,25 @@
     {
       "t": "09:56",
       "v": 75778.11
+    },
+    {
+      "t": "09:57",
+      "v": 75778.11
+    },
+    {
+      "t": "09:58",
+      "v": 75763.82
+    },
+    {
+      "t": "09:59",
+      "v": 75763.82
     }
   ],
   "ladders": [
     {
       "symbol": "XGN",
       "phase": "entering",
-      "price": 6.31,
+      "price": 6.35,
       "trig_px": 6.4627,
       "avg": 6.07,
       "live_shares": 49,
@@ -2852,12 +2864,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 3.95
+      "unreal_pct": 4.61
     },
     {
       "symbol": "SLXN",
       "phase": "entering",
-      "price": 1.74,
+      "price": 1.75,
       "trig_px": 1.7,
       "avg": 0.0,
       "live_shares": 0,
@@ -2903,7 +2915,7 @@
     {
       "symbol": "BLZE",
       "phase": "entering",
-      "price": 23.3,
+      "price": 23.36,
       "trig_px": 22.23,
       "avg": 0.0,
       "live_shares": 0,
@@ -2926,7 +2938,7 @@
     {
       "symbol": "IBTA",
       "phase": "entering",
-      "price": 35.27,
+      "price": 35.55,
       "trig_px": 34.545,
       "avg": 0.0,
       "live_shares": 0,
@@ -2949,7 +2961,7 @@
     {
       "symbol": "SUGP",
       "phase": "entering",
-      "price": 0.3414,
+      "price": 0.3401,
       "trig_px": 0.289,
       "avg": 0.0,
       "live_shares": 0,
@@ -2972,7 +2984,7 @@
     {
       "symbol": "FCUV",
       "phase": "entering",
-      "price": 11.84,
+      "price": 12.1,
       "trig_px": 13.71,
       "avg": 12.6061,
       "live_shares": 62,
@@ -2990,7 +3002,7 @@
           "filled": 16
         }
       ],
-      "unreal_pct": -6.08
+      "unreal_pct": -4.01
     },
     {
       "symbol": "NVCT",
@@ -3018,7 +3030,7 @@
     {
       "symbol": "PSIX",
       "phase": "entering",
-      "price": 33.67,
+      "price": 33.99,
       "trig_px": 33.195,
       "avg": 0.0,
       "live_shares": 0,
@@ -3041,7 +3053,7 @@
     {
       "symbol": "SCYX",
       "phase": "entering",
-      "price": 5.48,
+      "price": 5.49,
       "trig_px": 5.3,
       "avg": 0.0,
       "live_shares": 0,
@@ -3064,7 +3076,7 @@
     {
       "symbol": "SDOT",
       "phase": "entering",
-      "price": 14.77,
+      "price": 14.74,
       "trig_px": 14.85,
       "avg": 0.0,
       "live_shares": 0,
@@ -3087,7 +3099,7 @@
     {
       "symbol": "USDE",
       "phase": "entering",
-      "price": 1.97,
+      "price": 2.05,
       "trig_px": 2.025,
       "avg": 0.0,
       "live_shares": 0,
@@ -3110,7 +3122,7 @@
     {
       "symbol": "ZEO",
       "phase": "entering",
-      "price": 0.5225,
+      "price": 0.53,
       "trig_px": 0.529,
       "avg": 0.0,
       "live_shares": 0,
@@ -3132,6 +3144,14 @@
     }
   ],
   "intents_tail": [
+    {
+      "ts": "2026-08-04 09:57:04",
+      "symbol": "WETO",
+      "action": "Buy",
+      "sim_price": 5.3,
+      "shares": 0,
+      "note": "missed_late_lag4"
+    },
     {
       "ts": "2026-08-04 09:55:06",
       "symbol": "ZEO",
@@ -3283,14 +3303,6 @@
       "sim_price": 0.8673,
       "shares": 0,
       "note": "missed_late_lag4"
-    },
-    {
-      "ts": "2026-08-04 09:36:19",
-      "symbol": "SUGP",
-      "action": "Buy",
-      "sim_price": 0.2485,
-      "shares": 804,
-      "note": "rung1"
     }
   ],
   "live_daily": [
