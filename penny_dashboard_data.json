@@ -1,108 +1,8 @@
 {
-  "generated": "2026-08-04 15:46:39",
-  "generated_ts": 1785872799.538658,
+  "generated": "2026-08-04 15:49:45",
+  "generated_ts": 1785872985.250271,
   "system": "penny",
-  "positions": [
-    {
-      "symbol": "ATPC",
-      "shares": 120.0,
-      "avg_cost": 2.4883,
-      "mkt_price": 2.4731,
-      "position_value": 296.77,
-      "unrealized_pnl_dollar": -1.83,
-      "unrealized_pnl": -0.61,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "MKZR",
-      "shares": 212.0,
-      "avg_cost": 1.39,
-      "mkt_price": 1.3695,
-      "position_value": 290.33,
-      "unrealized_pnl_dollar": -4.35,
-      "unrealized_pnl": -1.48,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "VGAS",
-      "shares": 243.0,
-      "avg_cost": 1.235,
-      "mkt_price": 1.294,
-      "position_value": 314.44,
-      "unrealized_pnl_dollar": 14.34,
-      "unrealized_pnl": 4.78,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "YYGH",
-      "shares": 236.0,
-      "avg_cost": 1.275,
-      "mkt_price": 1.214,
-      "position_value": 286.5,
-      "unrealized_pnl_dollar": -14.4,
-      "unrealized_pnl": -4.79,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "BAER",
-      "shares": 169.0,
-      "avg_cost": 1.7759,
-      "mkt_price": 1.776,
-      "position_value": 300.14,
-      "unrealized_pnl_dollar": 0.01,
-      "unrealized_pnl": 0.0,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "SDOT",
-      "shares": 21.0,
-      "avg_cost": 14.0076,
-      "mkt_price": 13.4955,
-      "position_value": 283.41,
-      "unrealized_pnl_dollar": -10.75,
-      "unrealized_pnl": -3.65,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "NVCT",
-      "shares": 15.0,
-      "avg_cost": 19.3867,
-      "mkt_price": 20.7256,
-      "position_value": 310.88,
-      "unrealized_pnl_dollar": 20.08,
-      "unrealized_pnl": 6.91,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "XGN",
-      "shares": 49.0,
-      "avg_cost": 6.0904,
-      "mkt_price": 6.4337,
-      "position_value": 315.25,
-      "unrealized_pnl_dollar": 16.82,
-      "unrealized_pnl": 5.64,
-      "in_universe": true,
-      "position": "long"
-    },
-    {
-      "symbol": "BLZE",
-      "shares": 14.0,
-      "avg_cost": 20.9714,
-      "mkt_price": 20.5086,
-      "position_value": 287.12,
-      "unrealized_pnl_dollar": -6.48,
-      "unrealized_pnl": -2.21,
-      "in_universe": true,
-      "position": "long"
-    }
-  ],
+  "positions": [],
   "ib_all_ok": true,
   "ib_auth_info": {
     "authenticated": true,
@@ -131,11 +31,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.1,
     "in_rth": true,
     "ok": true
   },
@@ -154,14 +54,14 @@
   "slippage": {
     "configured": true,
     "summary": {
-      "avg_slippage_bps": -325.9,
-      "total_commissions": 383.74,
-      "total_slippage_cost": -148.99,
-      "total_fees_and_slippage": 234.75,
-      "avg_slippage_pct": 0.2667,
-      "trade_count": 398,
+      "avg_slippage_bps": -348.8,
+      "total_commissions": 388.43,
+      "total_slippage_cost": -335.88,
+      "total_fees_and_slippage": 52.55,
+      "avg_slippage_pct": 0.0583,
+      "trade_count": 411,
       "missed_trades": 71,
-      "match_rate": 84.9
+      "match_rate": 85.3
     }
   },
   "account_summary": {
@@ -170,9 +70,9 @@
   },
   "live_account_value": 75602.52,
   "live_cash": 75602.52,
-  "active_trade_count": 9,
-  "aggregate_unrealized_pnl_dollar": 13.44,
-  "total_position_value": 2684.84,
+  "active_trade_count": 0,
+  "aggregate_unrealized_pnl_dollar": 0,
+  "total_position_value": 0,
   "system_ok": true,
   "shadow": {
     "days": 15,
@@ -4283,13 +4183,25 @@
     {
       "t": "15:46",
       "v": 75602.52
+    },
+    {
+      "t": "15:47",
+      "v": 75602.52
+    },
+    {
+      "t": "15:48",
+      "v": 75602.52
+    },
+    {
+      "t": "15:49",
+      "v": 75602.52
     }
   ],
   "ladders": [
     {
       "symbol": "XGN",
       "phase": "flat",
-      "price": 6.45,
+      "price": 6.49,
       "trig_px": 6.4627,
       "avg": 6.07,
       "live_shares": 0,
@@ -4307,12 +4219,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 6.26
+      "unreal_pct": 6.92
     },
     {
       "symbol": "SLXN",
       "phase": "holding",
-      "price": 1.9,
+      "price": 1.93,
       "trig_px": 1.7,
       "avg": 0.0,
       "live_shares": 0,
@@ -4358,7 +4270,7 @@
     {
       "symbol": "BLZE",
       "phase": "flat",
-      "price": 20.44,
+      "price": 20.28,
       "trig_px": 22.23,
       "avg": 20.9,
       "live_shares": 0,
@@ -4376,12 +4288,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -2.2
+      "unreal_pct": -2.97
     },
     {
       "symbol": "IBTA",
       "phase": "holding",
-      "price": 35.99,
+      "price": 36.17,
       "trig_px": 34.545,
       "avg": 0.0,
       "live_shares": 0,
@@ -4404,7 +4316,7 @@
     {
       "symbol": "SUGP",
       "phase": "holding",
-      "price": 0.3818,
+      "price": 0.3811,
       "trig_px": 0.289,
       "avg": 0.0,
       "live_shares": 0,
@@ -4427,7 +4339,7 @@
     {
       "symbol": "FCUV",
       "phase": "flat",
-      "price": 10.45,
+      "price": 10.61,
       "trig_px": 13.71,
       "avg": 12.6061,
       "live_shares": 0,
@@ -4445,12 +4357,12 @@
           "filled": 16
         }
       ],
-      "unreal_pct": -17.1
+      "unreal_pct": -15.83
     },
     {
       "symbol": "NVCT",
       "phase": "flat",
-      "price": 20.64,
+      "price": 20.57,
       "trig_px": 20.55,
       "avg": 19.32,
       "live_shares": 0,
@@ -4468,12 +4380,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 6.83
+      "unreal_pct": 6.47
     },
     {
       "symbol": "PSIX",
       "phase": "holding",
-      "price": 34.7,
+      "price": 34.61,
       "trig_px": 33.195,
       "avg": 0.0,
       "live_shares": 0,
@@ -4519,7 +4431,7 @@
     {
       "symbol": "SDOT",
       "phase": "flat",
-      "price": 13.64,
+      "price": 13.6,
       "trig_px": 14.85,
       "avg": 13.96,
       "live_shares": 0,
@@ -4537,7 +4449,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -2.29
+      "unreal_pct": -2.58
     },
     {
       "symbol": "USDE",
@@ -4588,7 +4500,7 @@
     {
       "symbol": "ATPC",
       "phase": "flat",
-      "price": 2.49,
+      "price": 2.52,
       "trig_px": 2.64,
       "avg": 2.48,
       "live_shares": 0,
@@ -4606,12 +4518,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 0.4
+      "unreal_pct": 1.61
     },
     {
       "symbol": "NXTT",
       "phase": "flat",
-      "price": 0.1093,
+      "price": 0.1105,
       "trig_px": 0.2281,
       "avg": 0.2067,
       "live_shares": 0,
@@ -4629,12 +4541,12 @@
           "filled": 1019
         }
       ],
-      "unreal_pct": -47.13
+      "unreal_pct": -46.55
     },
     {
       "symbol": "MWYN",
       "phase": "flat",
-      "price": 0.6834,
+      "price": 0.675,
       "trig_px": 0.8057,
       "avg": 0.7302,
       "live_shares": 0,
@@ -4652,12 +4564,12 @@
           "filled": 288
         }
       ],
-      "unreal_pct": -6.41
+      "unreal_pct": -7.56
     },
     {
       "symbol": "YYGH",
       "phase": "flat",
-      "price": 1.21,
+      "price": 1.2,
       "trig_px": 1.35,
       "avg": 1.27,
       "live_shares": 0,
@@ -4675,7 +4587,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -4.72
+      "unreal_pct": -5.51
     },
     {
       "symbol": "VGAS",
@@ -4935,73 +4847,493 @@
   "live_daily": [
     {
       "date": "2026-07-27",
-      "pnl": -54.16
+      "pnl": -53.5
     },
     {
       "date": "2026-07-28",
-      "pnl": -493.14
+      "pnl": -492.25
     },
     {
       "date": "2026-07-29",
-      "pnl": -455.89
+      "pnl": -455.27
     },
     {
       "date": "2026-07-30",
-      "pnl": -459.31
+      "pnl": -459.92
     },
     {
       "date": "2026-07-31",
-      "pnl": -474.43
+      "pnl": -473.02
     },
     {
       "date": "2026-08-03",
-      "pnl": -89.59
+      "pnl": -88.03
     },
     {
       "date": "2026-08-04",
-      "pnl": -173.03
+      "pnl": -171.86
     }
   ],
   "trade_history": [
+    {
+      "symbol": "MKZR",
+      "entry_time": "2026-08-03 13:52:54",
+      "exit_time": "2026-08-04 15:45:37",
+      "shares": 24.0,
+      "entry_price": 1.13,
+      "exit_price": 1.4,
+      "pnl_dollar": 5.19,
+      "pnl_pct": 23.89
+    },
+    {
+      "symbol": "MKZR",
+      "entry_time": "2026-08-04 11:21:05",
+      "exit_time": "2026-08-04 15:45:37",
+      "shares": 106.0,
+      "entry_price": 1.385,
+      "exit_price": 1.4,
+      "pnl_dollar": 0.99,
+      "pnl_pct": 1.08
+    },
+    {
+      "symbol": "MKZR",
+      "entry_time": "2026-08-04 11:21:05",
+      "exit_time": "2026-08-04 15:45:37",
+      "shares": 82.0,
+      "entry_price": 1.385,
+      "exit_price": 1.36,
+      "pnl_dollar": -3.89,
+      "pnl_pct": -1.81
+    },
+    {
+      "symbol": "VGAS",
+      "entry_time": "2026-08-04 12:10:39",
+      "exit_time": "2026-08-04 15:45:36",
+      "shares": 87.0,
+      "entry_price": 1.23,
+      "exit_price": 1.29,
+      "pnl_dollar": 4.12,
+      "pnl_pct": 4.88
+    },
+    {
+      "symbol": "VGAS",
+      "entry_time": "2026-08-04 12:10:39",
+      "exit_time": "2026-08-04 15:45:36",
+      "shares": 13.0,
+      "entry_price": 1.23,
+      "exit_price": 1.29,
+      "pnl_dollar": -0.24,
+      "pnl_pct": 4.88
+    },
+    {
+      "symbol": "VGAS",
+      "entry_time": "2026-08-04 12:10:39",
+      "exit_time": "2026-08-04 15:45:36",
+      "shares": 87.0,
+      "entry_price": 1.23,
+      "exit_price": 1.29,
+      "pnl_dollar": 4.97,
+      "pnl_pct": 4.88
+    },
+    {
+      "symbol": "VGAS",
+      "entry_time": "2026-08-04 12:10:39",
+      "exit_time": "2026-08-04 15:45:36",
+      "shares": 56.0,
+      "entry_price": 1.23,
+      "exit_price": 1.29,
+      "pnl_dollar": 2.24,
+      "pnl_pct": 4.88
+    },
+    {
+      "symbol": "YYGH",
+      "entry_time": "2026-08-04 10:50:06",
+      "exit_time": "2026-08-04 15:45:35",
+      "shares": 2.0,
+      "entry_price": 1.27,
+      "exit_price": 1.205,
+      "pnl_dollar": -0.17,
+      "pnl_pct": -5.12
+    },
+    {
+      "symbol": "YYGH",
+      "entry_time": "2026-08-04 10:50:13",
+      "exit_time": "2026-08-04 15:45:35",
+      "shares": 1.0,
+      "entry_price": 1.27,
+      "exit_price": 1.205,
+      "pnl_dollar": -0.08,
+      "pnl_pct": -5.12
+    },
+    {
+      "symbol": "YYGH",
+      "entry_time": "2026-08-04 10:50:17",
+      "exit_time": "2026-08-04 15:45:35",
+      "shares": 156.0,
+      "entry_price": 1.27,
+      "exit_price": 1.205,
+      "pnl_dollar": -11.91,
+      "pnl_pct": -5.12
+    },
+    {
+      "symbol": "YYGH",
+      "entry_time": "2026-08-04 10:50:19",
+      "exit_time": "2026-08-04 15:45:35",
+      "shares": 1.0,
+      "entry_price": 1.27,
+      "exit_price": 1.205,
+      "pnl_dollar": -0.07,
+      "pnl_pct": -5.12
+    },
+    {
+      "symbol": "YYGH",
+      "entry_time": "2026-08-04 10:50:21",
+      "exit_time": "2026-08-04 15:45:35",
+      "shares": 1.0,
+      "entry_price": 1.27,
+      "exit_price": 1.205,
+      "pnl_dollar": -0.07,
+      "pnl_pct": -5.12
+    },
+    {
+      "symbol": "YYGH",
+      "entry_time": "2026-08-04 10:50:22",
+      "exit_time": "2026-08-04 15:45:35",
+      "shares": 1.0,
+      "entry_price": 1.27,
+      "exit_price": 1.205,
+      "pnl_dollar": -0.07,
+      "pnl_pct": -5.12
+    },
+    {
+      "symbol": "YYGH",
+      "entry_time": "2026-08-04 10:50:24",
+      "exit_time": "2026-08-04 15:45:35",
+      "shares": 1.0,
+      "entry_price": 1.27,
+      "exit_price": 1.205,
+      "pnl_dollar": -0.07,
+      "pnl_pct": -5.12
+    },
+    {
+      "symbol": "YYGH",
+      "entry_time": "2026-08-04 10:50:26",
+      "exit_time": "2026-08-04 15:45:35",
+      "shares": 1.0,
+      "entry_price": 1.27,
+      "exit_price": 1.205,
+      "pnl_dollar": -0.07,
+      "pnl_pct": -5.12
+    },
+    {
+      "symbol": "YYGH",
+      "entry_time": "2026-08-04 10:50:28",
+      "exit_time": "2026-08-04 15:45:35",
+      "shares": 1.0,
+      "entry_price": 1.27,
+      "exit_price": 1.205,
+      "pnl_dollar": -0.07,
+      "pnl_pct": -5.12
+    },
+    {
+      "symbol": "YYGH",
+      "entry_time": "2026-08-04 10:50:29",
+      "exit_time": "2026-08-04 15:45:35",
+      "shares": 70.0,
+      "entry_price": 1.27,
+      "exit_price": 1.205,
+      "pnl_dollar": -5.09,
+      "pnl_pct": -5.12
+    },
+    {
+      "symbol": "YYGH",
+      "entry_time": "2026-08-04 10:50:29",
+      "exit_time": "2026-08-04 15:45:35",
+      "shares": 1.0,
+      "entry_price": 1.27,
+      "exit_price": 1.205,
+      "pnl_dollar": -0.07,
+      "pnl_pct": -5.12
+    },
+    {
+      "symbol": "ATPC",
+      "entry_time": "2026-08-04 10:07:53",
+      "exit_time": "2026-08-04 15:45:34",
+      "shares": 85.0,
+      "entry_price": 2.48,
+      "exit_price": 2.45,
+      "pnl_dollar": -3.55,
+      "pnl_pct": -1.21
+    },
+    {
+      "symbol": "ATPC",
+      "entry_time": "2026-08-04 10:07:53",
+      "exit_time": "2026-08-04 15:45:34",
+      "shares": 15.0,
+      "entry_price": 2.48,
+      "exit_price": 2.45,
+      "pnl_dollar": -0.98,
+      "pnl_pct": -1.21
+    },
+    {
+      "symbol": "ATPC",
+      "entry_time": "2026-08-04 10:07:53",
+      "exit_time": "2026-08-04 15:45:34",
+      "shares": 20.0,
+      "entry_price": 2.48,
+      "exit_price": 2.452,
+      "pnl_dollar": -1.43,
+      "pnl_pct": -1.13
+    },
+    {
+      "symbol": "SDOT",
+      "entry_time": "2026-08-04 10:44:33",
+      "exit_time": "2026-08-04 15:45:34",
+      "shares": 21.0,
+      "entry_price": 13.96,
+      "exit_price": 13.48,
+      "pnl_dollar": -12.09,
+      "pnl_pct": -3.44
+    },
+    {
+      "symbol": "NVCT",
+      "entry_time": "2026-08-04 09:44:18",
+      "exit_time": "2026-08-04 15:45:33",
+      "shares": 12.0,
+      "entry_price": 19.32,
+      "exit_price": 20.64,
+      "pnl_dollar": 14.61,
+      "pnl_pct": 6.83
+    },
+    {
+      "symbol": "NVCT",
+      "entry_time": "2026-08-04 09:44:18",
+      "exit_time": "2026-08-04 15:45:33",
+      "shares": 3.0,
+      "entry_price": 19.32,
+      "exit_price": 20.64,
+      "pnl_dollar": 3.18,
+      "pnl_pct": 6.83
+    },
+    {
+      "symbol": "BLZE",
+      "entry_time": "2026-08-04 14:01:14",
+      "exit_time": "2026-08-04 15:45:32",
+      "shares": 14.0,
+      "entry_price": 20.9,
+      "exit_price": 20.392,
+      "pnl_dollar": -9.12,
+      "pnl_pct": -2.43
+    },
+    {
+      "symbol": "BAER",
+      "entry_time": "2026-08-04 09:46:04",
+      "exit_time": "2026-08-04 15:45:31",
+      "shares": 1.0,
+      "entry_price": 1.77,
+      "exit_price": 1.775,
+      "pnl_dollar": -0.02,
+      "pnl_pct": 0.28
+    },
+    {
+      "symbol": "BAER",
+      "entry_time": "2026-08-04 09:46:06",
+      "exit_time": "2026-08-04 15:45:31",
+      "shares": 1.0,
+      "entry_price": 1.77,
+      "exit_price": 1.775,
+      "pnl_dollar": -0.02,
+      "pnl_pct": 0.28
+    },
+    {
+      "symbol": "BAER",
+      "entry_time": "2026-08-04 09:46:18",
+      "exit_time": "2026-08-04 15:45:31",
+      "shares": 1.0,
+      "entry_price": 1.77,
+      "exit_price": 1.775,
+      "pnl_dollar": -0.02,
+      "pnl_pct": 0.28
+    },
+    {
+      "symbol": "BAER",
+      "entry_time": "2026-08-04 09:46:19",
+      "exit_time": "2026-08-04 15:45:31",
+      "shares": 1.0,
+      "entry_price": 1.77,
+      "exit_price": 1.775,
+      "pnl_dollar": -0.02,
+      "pnl_pct": 0.28
+    },
+    {
+      "symbol": "BAER",
+      "entry_time": "2026-08-04 09:46:21",
+      "exit_time": "2026-08-04 15:45:31",
+      "shares": 1.0,
+      "entry_price": 1.77,
+      "exit_price": 1.775,
+      "pnl_dollar": -0.02,
+      "pnl_pct": 0.28
+    },
+    {
+      "symbol": "BAER",
+      "entry_time": "2026-08-04 09:46:22",
+      "exit_time": "2026-08-04 15:45:31",
+      "shares": 1.0,
+      "entry_price": 1.77,
+      "exit_price": 1.775,
+      "pnl_dollar": -0.02,
+      "pnl_pct": 0.28
+    },
+    {
+      "symbol": "BAER",
+      "entry_time": "2026-08-04 09:46:23",
+      "exit_time": "2026-08-04 15:45:31",
+      "shares": 1.0,
+      "entry_price": 1.77,
+      "exit_price": 1.775,
+      "pnl_dollar": -0.02,
+      "pnl_pct": 0.28
+    },
+    {
+      "symbol": "BAER",
+      "entry_time": "2026-08-04 09:46:25",
+      "exit_time": "2026-08-04 15:45:31",
+      "shares": 1.0,
+      "entry_price": 1.77,
+      "exit_price": 1.775,
+      "pnl_dollar": -0.02,
+      "pnl_pct": 0.28
+    },
+    {
+      "symbol": "BAER",
+      "entry_time": "2026-08-04 09:46:43",
+      "exit_time": "2026-08-04 15:45:31",
+      "shares": 46.0,
+      "entry_price": 1.77,
+      "exit_price": 1.775,
+      "pnl_dollar": -0.86,
+      "pnl_pct": 0.28
+    },
+    {
+      "symbol": "BAER",
+      "entry_time": "2026-08-04 09:46:43",
+      "exit_time": "2026-08-04 15:45:31",
+      "shares": 115.0,
+      "entry_price": 1.77,
+      "exit_price": 1.775,
+      "pnl_dollar": -0.17,
+      "pnl_pct": 0.28
+    },
+    {
+      "symbol": "XGN",
+      "entry_time": "2026-08-04 09:39:57",
+      "exit_time": "2026-08-04 15:45:30",
+      "shares": 2.0,
+      "entry_price": 6.07,
+      "exit_price": 6.4305,
+      "pnl_dollar": 0.56,
+      "pnl_pct": 5.94
+    },
+    {
+      "symbol": "XGN",
+      "entry_time": "2026-08-04 09:39:58",
+      "exit_time": "2026-08-04 15:45:30",
+      "shares": 2.0,
+      "entry_price": 6.07,
+      "exit_price": 6.4305,
+      "pnl_dollar": 0.56,
+      "pnl_pct": 5.94
+    },
+    {
+      "symbol": "XGN",
+      "entry_time": "2026-08-04 09:39:59",
+      "exit_time": "2026-08-04 15:45:30",
+      "shares": 2.0,
+      "entry_price": 6.07,
+      "exit_price": 6.4305,
+      "pnl_dollar": 0.56,
+      "pnl_pct": 5.94
+    },
+    {
+      "symbol": "XGN",
+      "entry_time": "2026-08-04 09:40:00",
+      "exit_time": "2026-08-04 15:45:30",
+      "shares": 2.0,
+      "entry_price": 6.07,
+      "exit_price": 6.4305,
+      "pnl_dollar": 0.56,
+      "pnl_pct": 5.94
+    },
+    {
+      "symbol": "XGN",
+      "entry_time": "2026-08-04 09:40:04",
+      "exit_time": "2026-08-04 15:45:30",
+      "shares": 1.0,
+      "entry_price": 6.07,
+      "exit_price": 6.4305,
+      "pnl_dollar": 0.28,
+      "pnl_pct": 5.94
+    },
+    {
+      "symbol": "XGN",
+      "entry_time": "2026-08-04 09:40:05",
+      "exit_time": "2026-08-04 15:45:30",
+      "shares": 2.0,
+      "entry_price": 6.07,
+      "exit_price": 6.4305,
+      "pnl_dollar": 0.56,
+      "pnl_pct": 5.94
+    },
+    {
+      "symbol": "XGN",
+      "entry_time": "2026-08-04 09:40:06",
+      "exit_time": "2026-08-04 15:45:30",
+      "shares": 36.0,
+      "entry_price": 6.07,
+      "exit_price": 6.4305,
+      "pnl_dollar": 12.02,
+      "pnl_pct": 5.94
+    },
+    {
+      "symbol": "XGN",
+      "entry_time": "2026-08-04 09:40:06",
+      "exit_time": "2026-08-04 15:45:30",
+      "shares": 2.0,
+      "entry_price": 6.07,
+      "exit_price": 6.4305,
+      "pnl_dollar": 0.56,
+      "pnl_pct": 5.94
+    },
     {
       "symbol": "MWYN",
       "entry_time": "2026-08-04 13:41:17",
       "exit_time": "2026-08-04 15:39:19",
       "shares": 1.0,
       "entry_price": 0.6929,
-      "exit_price": 0.66,
-      "pnl_dollar": -0.05,
-      "pnl_pct": -4.75
-    },
-    {
-      "symbol": "MWYN",
-      "entry_time": "2026-08-04 13:41:18",
-      "exit_time": "2026-08-04 15:39:19",
-      "shares": 187.0,
-      "entry_price": 0.6929,
-      "exit_price": 0.66,
-      "pnl_dollar": -7.9,
-      "pnl_pct": -4.75
-    },
-    {
-      "symbol": "MWYN",
-      "entry_time": "2026-08-04 13:41:18",
-      "exit_time": "2026-08-04 15:39:19",
-      "shares": 100.0,
-      "entry_price": 0.6929,
       "exit_price": 0.6601,
-      "pnl_dollar": -5.39,
+      "pnl_dollar": -0.05,
       "pnl_pct": -4.73
     },
     {
       "symbol": "MWYN",
-      "entry_time": "2026-08-04 10:35:47",
-      "exit_time": "2026-08-04 13:42:19",
-      "shares": 394.0,
-      "entry_price": 0.7574,
-      "exit_price": 0.68,
-      "pnl_dollar": -34.52,
-      "pnl_pct": -10.22
+      "entry_time": "2026-08-04 13:41:18",
+      "exit_time": "2026-08-04 15:39:19",
+      "shares": 99.0,
+      "entry_price": 0.6929,
+      "exit_price": 0.6601,
+      "pnl_dollar": -4.41,
+      "pnl_pct": -4.73
+    },
+    {
+      "symbol": "MWYN",
+      "entry_time": "2026-08-04 13:41:18",
+      "exit_time": "2026-08-04 15:39:19",
+      "shares": 188.0,
+      "entry_price": 0.6929,
+      "exit_price": 0.66,
+      "pnl_dollar": -8.44,
+      "pnl_pct": -4.75
     },
     {
       "symbol": "MWYN",
@@ -5011,6 +5343,16 @@
       "entry_price": 0.7574,
       "exit_price": 0.68,
       "pnl_dollar": -0.19,
+      "pnl_pct": -10.22
+    },
+    {
+      "symbol": "MWYN",
+      "entry_time": "2026-08-04 10:35:47",
+      "exit_time": "2026-08-04 13:42:19",
+      "shares": 394.0,
+      "entry_price": 0.7574,
+      "exit_price": 0.68,
+      "pnl_dollar": -34.52,
       "pnl_pct": -10.22
     },
     {
@@ -5032,443 +5374,13 @@
       "exit_price": 0.195,
       "pnl_dollar": -7.26,
       "pnl_pct": -9.05
-    },
-    {
-      "symbol": "NXTT",
-      "entry_time": "2026-08-04 10:13:03",
-      "exit_time": "2026-08-04 10:33:15",
-      "shares": 200.0,
-      "entry_price": 0.2144,
-      "exit_price": 0.195,
-      "pnl_dollar": -4.86,
-      "pnl_pct": -9.05
-    },
-    {
-      "symbol": "NXTT",
-      "entry_time": "2026-08-04 10:13:03",
-      "exit_time": "2026-08-04 10:33:15",
-      "shares": 500.0,
-      "entry_price": 0.2144,
-      "exit_price": 0.195,
-      "pnl_dollar": -12.74,
-      "pnl_pct": -9.05
-    },
-    {
-      "symbol": "NXTT",
-      "entry_time": "2026-08-04 10:13:03",
-      "exit_time": "2026-08-04 10:33:15",
-      "shares": 400.0,
-      "entry_price": 0.2144,
-      "exit_price": 0.195,
-      "pnl_dollar": -11.69,
-      "pnl_pct": -9.05
-    },
-    {
-      "symbol": "FCUV",
-      "entry_time": "2026-08-04 09:47:20",
-      "exit_time": "2026-08-04 10:26:26",
-      "shares": 23.0,
-      "entry_price": 12.89,
-      "exit_price": 11.5,
-      "pnl_dollar": -33.35,
-      "pnl_pct": -10.78
-    },
-    {
-      "symbol": "FCUV",
-      "entry_time": "2026-08-04 09:47:21",
-      "exit_time": "2026-08-04 10:26:26",
-      "shares": 23.0,
-      "entry_price": 12.83,
-      "exit_price": 11.5,
-      "pnl_dollar": -31.97,
-      "pnl_pct": -10.37
-    },
-    {
-      "symbol": "FCUV",
-      "entry_time": "2026-08-04 09:52:45",
-      "exit_time": "2026-08-04 10:26:26",
-      "shares": 16.0,
-      "entry_price": 11.65,
-      "exit_price": 11.5,
-      "pnl_dollar": -3.67,
-      "pnl_pct": -1.29
-    },
-    {
-      "symbol": "REFR",
-      "entry_time": "2026-08-03 14:03:04",
-      "exit_time": "2026-08-03 15:59:09",
-      "shares": 1.0,
-      "entry_price": 0.4786,
-      "exit_price": 0.4345,
-      "pnl_dollar": -0.06,
-      "pnl_pct": -9.21
-    },
-    {
-      "symbol": "REFR",
-      "entry_time": "2026-08-03 14:03:04",
-      "exit_time": "2026-08-03 15:59:09",
-      "shares": 37.0,
-      "entry_price": 0.4786,
-      "exit_price": 0.4345,
-      "pnl_dollar": -1.98,
-      "pnl_pct": -9.21
-    },
-    {
-      "symbol": "REFR",
-      "entry_time": "2026-08-03 14:03:04",
-      "exit_time": "2026-08-03 15:59:09",
-      "shares": 4.0,
-      "entry_price": 0.4786,
-      "exit_price": 0.4345,
-      "pnl_dollar": -0.21,
-      "pnl_pct": -9.21
-    },
-    {
-      "symbol": "REFR",
-      "entry_time": "2026-08-03 14:03:04",
-      "exit_time": "2026-08-03 15:59:09",
-      "shares": 193.0,
-      "entry_price": 0.4786,
-      "exit_price": 0.4345,
-      "pnl_dollar": -10.36,
-      "pnl_pct": -9.21
-    },
-    {
-      "symbol": "REFR",
-      "entry_time": "2026-08-03 14:03:04",
-      "exit_time": "2026-08-03 15:59:09",
-      "shares": 391.0,
-      "entry_price": 0.4786,
-      "exit_price": 0.4345,
-      "pnl_dollar": -21.95,
-      "pnl_pct": -9.21
-    },
-    {
-      "symbol": "REFR",
-      "entry_time": "2026-08-03 14:03:11",
-      "exit_time": "2026-08-03 15:59:09",
-      "shares": 2.0,
-      "entry_price": 0.4786,
-      "exit_price": 0.4345,
-      "pnl_dollar": -0.11,
-      "pnl_pct": -9.21
-    },
-    {
-      "symbol": "REFR",
-      "entry_time": "2026-08-03 14:03:15",
-      "exit_time": "2026-08-03 15:59:09",
-      "shares": 24.0,
-      "entry_price": 0.4786,
-      "exit_price": 0.4345,
-      "pnl_dollar": -1.28,
-      "pnl_pct": -9.21
-    },
-    {
-      "symbol": "REFR",
-      "entry_time": "2026-08-03 14:03:15",
-      "exit_time": "2026-08-03 15:59:09",
-      "shares": 508.0,
-      "entry_price": 0.4786,
-      "exit_price": 0.4345,
-      "pnl_dollar": -27.14,
-      "pnl_pct": -9.21
-    },
-    {
-      "symbol": "REFR",
-      "entry_time": "2026-08-03 14:03:15",
-      "exit_time": "2026-08-03 15:59:09",
-      "shares": 92.0,
-      "entry_price": 0.4786,
-      "exit_price": 0.4345,
-      "pnl_dollar": -7.34,
-      "pnl_pct": -9.21
-    },
-    {
-      "symbol": "REFR",
-      "entry_time": "2026-08-03 14:03:49",
-      "exit_time": "2026-08-03 15:59:09",
-      "shares": 409.0,
-      "entry_price": 0.4786,
-      "exit_price": 0.4345,
-      "pnl_dollar": -21.85,
-      "pnl_pct": -9.21
-    },
-    {
-      "symbol": "REFR",
-      "entry_time": "2026-08-03 14:03:49",
-      "exit_time": "2026-08-03 15:59:09",
-      "shares": 217.0,
-      "entry_price": 0.4786,
-      "exit_price": 0.4345,
-      "pnl_dollar": -11.59,
-      "pnl_pct": -9.21
-    },
-    {
-      "symbol": "SDST",
-      "entry_time": "2026-08-03 11:33:17",
-      "exit_time": "2026-08-03 15:59:06",
-      "shares": 98.0,
-      "entry_price": 0.602,
-      "exit_price": 0.6923,
-      "pnl_dollar": 7.74,
-      "pnl_pct": 14.99
-    },
-    {
-      "symbol": "SDST",
-      "entry_time": "2026-08-03 11:33:18",
-      "exit_time": "2026-08-03 15:59:06",
-      "shares": 340.0,
-      "entry_price": 0.602,
-      "exit_price": 0.6923,
-      "pnl_dollar": 27.37,
-      "pnl_pct": 14.99
-    },
-    {
-      "symbol": "SDST",
-      "entry_time": "2026-08-03 11:33:18",
-      "exit_time": "2026-08-03 15:59:06",
-      "shares": 60.0,
-      "entry_price": 0.602,
-      "exit_price": 0.6923,
-      "pnl_dollar": 4.74,
-      "pnl_pct": 14.99
-    },
-    {
-      "symbol": "SDST",
-      "entry_time": "2026-08-03 11:58:58",
-      "exit_time": "2026-08-03 15:59:06",
-      "shares": 363.0,
-      "entry_price": 0.5507,
-      "exit_price": 0.6923,
-      "pnl_dollar": 47.67,
-      "pnl_pct": 25.7
-    },
-    {
-      "symbol": "LESL",
-      "entry_time": "2026-08-03 10:00:06",
-      "exit_time": "2026-08-03 15:59:05",
-      "shares": 301.0,
-      "entry_price": 0.9964,
-      "exit_price": 1.085,
-      "pnl_dollar": 23.59,
-      "pnl_pct": 8.89
-    },
-    {
-      "symbol": "MWYN",
-      "entry_time": "2026-08-03 10:26:57",
-      "exit_time": "2026-08-03 15:59:03",
-      "shares": 26.0,
-      "entry_price": 0.7237,
-      "exit_price": 0.6659,
-      "pnl_dollar": -1.83,
-      "pnl_pct": -7.99
-    },
-    {
-      "symbol": "MWYN",
-      "entry_time": "2026-08-03 10:27:11",
-      "exit_time": "2026-08-03 15:59:03",
-      "shares": 357.0,
-      "entry_price": 0.7237,
-      "exit_price": 0.6659,
-      "pnl_dollar": -24.23,
-      "pnl_pct": -7.99
-    },
-    {
-      "symbol": "MWYN",
-      "entry_time": "2026-08-03 10:27:11",
-      "exit_time": "2026-08-03 15:59:03",
-      "shares": 31.0,
-      "entry_price": 0.7237,
-      "exit_price": 0.6659,
-      "pnl_dollar": -3.83,
-      "pnl_pct": -7.99
-    },
-    {
-      "symbol": "MWYN",
-      "entry_time": "2026-08-03 10:38:09",
-      "exit_time": "2026-08-03 15:59:03",
-      "shares": 200.0,
-      "entry_price": 0.6621,
-      "exit_price": 0.6659,
-      "pnl_dollar": -1.29,
-      "pnl_pct": 0.57
-    },
-    {
-      "symbol": "MWYN",
-      "entry_time": "2026-08-03 10:38:09",
-      "exit_time": "2026-08-03 15:59:03",
-      "shares": 2.0,
-      "entry_price": 0.6621,
-      "exit_price": 0.6659,
-      "pnl_dollar": -0.01,
-      "pnl_pct": 0.57
-    },
-    {
-      "symbol": "MWYN",
-      "entry_time": "2026-08-03 10:38:09",
-      "exit_time": "2026-08-03 15:59:03",
-      "shares": 100.0,
-      "entry_price": 0.6621,
-      "exit_price": 0.6659,
-      "pnl_dollar": -0.64,
-      "pnl_pct": 0.57
-    },
-    {
-      "symbol": "DFNS",
-      "entry_time": "2026-08-03 10:07:45",
-      "exit_time": "2026-08-03 15:59:01",
-      "shares": 3.0,
-      "entry_price": 42.55,
-      "exit_price": 61.58,
-      "pnl_dollar": 56.59,
-      "pnl_pct": 44.72
-    },
-    {
-      "symbol": "DFNS",
-      "entry_time": "2026-08-03 10:07:45",
-      "exit_time": "2026-08-03 15:59:01",
-      "shares": 3.0,
-      "entry_price": 42.55,
-      "exit_price": 61.58,
-      "pnl_dollar": 55.09,
-      "pnl_pct": 44.72
-    },
-    {
-      "symbol": "SGLY",
-      "entry_time": "2026-08-03 10:26:43",
-      "exit_time": "2026-08-03 15:59:01",
-      "shares": 45.0,
-      "entry_price": 5.4,
-      "exit_price": 5.5,
-      "pnl_dollar": 3.21,
-      "pnl_pct": 1.85
-    },
-    {
-      "symbol": "SGLY",
-      "entry_time": "2026-08-03 10:26:43",
-      "exit_time": "2026-08-03 15:59:01",
-      "shares": 10.0,
-      "entry_price": 5.4,
-      "exit_price": 5.5,
-      "pnl_dollar": 0.27,
-      "pnl_pct": 1.85
-    },
-    {
-      "symbol": "FNGR",
-      "entry_time": "2026-08-03 11:24:44",
-      "exit_time": "2026-08-03 15:59:00",
-      "shares": 100.0,
-      "entry_price": 0.2189,
-      "exit_price": 0.2156,
-      "pnl_dollar": -0.83,
-      "pnl_pct": -1.51
-    },
-    {
-      "symbol": "FNGR",
-      "entry_time": "2026-08-03 11:26:08",
-      "exit_time": "2026-08-03 15:59:00",
-      "shares": 1270.0,
-      "entry_price": 0.2189,
-      "exit_price": 0.2156,
-      "pnl_dollar": -10.51,
-      "pnl_pct": -1.51
-    },
-    {
-      "symbol": "FNGR",
-      "entry_time": "2026-08-03 11:34:36",
-      "exit_time": "2026-08-03 15:59:00",
-      "shares": 102.0,
-      "entry_price": 0.2003,
-      "exit_price": 0.2156,
-      "pnl_dollar": 1.08,
-      "pnl_pct": 7.64
-    },
-    {
-      "symbol": "FNGR",
-      "entry_time": "2026-08-03 11:34:36",
-      "exit_time": "2026-08-03 15:59:00",
-      "shares": 328.0,
-      "entry_price": 0.2003,
-      "exit_price": 0.2156,
-      "pnl_dollar": 3.44,
-      "pnl_pct": 7.64
-    },
-    {
-      "symbol": "FNGR",
-      "entry_time": "2026-08-03 11:34:36",
-      "exit_time": "2026-08-03 15:59:00",
-      "shares": 100.0,
-      "entry_price": 0.2003,
-      "exit_price": 0.2143,
-      "pnl_dollar": 0.8,
-      "pnl_pct": 6.99
-    },
-    {
-      "symbol": "FNGR",
-      "entry_time": "2026-08-03 11:34:36",
-      "exit_time": "2026-08-03 15:59:00",
-      "shares": 68.0,
-      "entry_price": 0.2003,
-      "exit_price": 0.2145,
-      "pnl_dollar": 0.54,
-      "pnl_pct": 7.09
-    },
-    {
-      "symbol": "FNGR",
-      "entry_time": "2026-08-03 11:34:36",
-      "exit_time": "2026-08-03 15:59:00",
-      "shares": 100.0,
-      "entry_price": 0.2003,
-      "exit_price": 0.2142,
-      "pnl_dollar": 0.66,
-      "pnl_pct": 6.94
-    },
-    {
-      "symbol": "FNGR",
-      "entry_time": "2026-08-03 11:34:36",
-      "exit_time": "2026-08-03 15:59:00",
-      "shares": 100.0,
-      "entry_price": 0.2003,
-      "exit_price": 0.2145,
-      "pnl_dollar": 0.54,
-      "pnl_pct": 7.09
-    },
-    {
-      "symbol": "FNGR",
-      "entry_time": "2026-08-03 11:34:36",
-      "exit_time": "2026-08-03 15:59:00",
-      "shares": 100.0,
-      "entry_price": 0.2003,
-      "exit_price": 0.2142,
-      "pnl_dollar": 0.19,
-      "pnl_pct": 6.94
-    },
-    {
-      "symbol": "FNGR",
-      "entry_time": "2026-08-03 11:34:36",
-      "exit_time": "2026-08-03 15:59:00",
-      "shares": 100.0,
-      "entry_price": 0.2003,
-      "exit_price": 0.2156,
-      "pnl_dollar": -0.57,
-      "pnl_pct": 7.64
-    },
-    {
-      "symbol": "FUSE",
-      "entry_time": "2026-08-03 10:37:22",
-      "exit_time": "2026-08-03 15:58:59",
-      "shares": 100.0,
-      "entry_price": 1.22,
-      "exit_price": 1.33,
-      "pnl_dollar": 9.48,
-      "pnl_pct": 9.02
     }
   ],
   "realized_summary": {
-    "trades": 326,
-    "total": -2199.55,
-    "wins": 78,
-    "win_rate": 23.9
+    "trades": 366,
+    "total": -2193.85,
+    "wins": 89,
+    "win_rate": 24.3
   },
-  "total_realized_pnl": -2199.55
+  "total_realized_pnl": -2193.85
 }
