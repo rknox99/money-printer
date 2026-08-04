@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03 21:13:25",
-  "generated_ts": 1785806005.472484,
+  "generated": "2026-08-03 21:16:35",
+  "generated_ts": 1785806195.583928,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -21,12 +21,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 50m old"
+      "detail": "bars 54m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.4h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
@@ -35,17 +35,17 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 50.3,
+    "newest_bar_age_min": 53.5,
     "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-08-03 09:12:49] launching execution engine",
     "[2026-08-03 09:25:32] penny scheduler started",
     "[2026-08-03 09:25:33] launching execution engine",
     "[2026-08-03 16:05:42] engine finished (rc=0)",
     "[2026-08-03 20:21:47] running Penny Stock Daily Stock Pull.ipynb ...",
-    "[2026-08-03 20:52:23] Penny Stock Daily Stock Pull.ipynb: OK"
+    "[2026-08-03 20:52:23] Penny Stock Daily Stock Pull.ipynb: OK",
+    "[2026-08-03 21:16:23] running Penny Stock Shadow Scorer.ipynb ..."
   ],
   "universe": {
     "symbols": 2223,
@@ -5471,6 +5471,18 @@
     {
       "t": "21:13",
       "v": 75762.65
+    },
+    {
+      "t": "21:14",
+      "v": 75762.65
+    },
+    {
+      "t": "21:15",
+      "v": 75762.65
+    },
+    {
+      "t": "21:16",
+      "v": 75762.65
     }
   ],
   "ladders": [
@@ -5765,7 +5777,7 @@
     {
       "symbol": "FNGR",
       "phase": "flat",
-      "price": 0.2048,
+      "price": 0.206,
       "trig_px": 0.2329,
       "avg": 0.2111,
       "live_shares": 2268,
@@ -5783,7 +5795,7 @@
           "filled": 998
         }
       ],
-      "unreal_pct": -2.97
+      "unreal_pct": -2.4
     },
     {
       "symbol": "TAOP",
