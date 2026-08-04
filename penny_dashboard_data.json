@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-04 16:43:49",
-  "generated_ts": 1785876229.301562,
+  "generated": "2026-08-04 16:47:04",
+  "generated_ts": 1785876424.098354,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -21,12 +21,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.6h old"
+      "detail": "log 0.7h old"
     },
     {
       "name": "Engine",
@@ -35,7 +35,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 1.2,
     "in_rth": false,
     "ok": true
   },
@@ -4411,6 +4411,22 @@
     {
       "t": "16:43",
       "v": 75602.52
+    },
+    {
+      "t": "16:44",
+      "v": 75602.52
+    },
+    {
+      "t": "16:45",
+      "v": 75602.52
+    },
+    {
+      "t": "16:46",
+      "v": 75602.52
+    },
+    {
+      "t": "16:47",
+      "v": 75602.52
     }
   ],
   "ladders": [
@@ -4532,7 +4548,7 @@
     {
       "symbol": "SUGP",
       "phase": "holding",
-      "price": 0.3801,
+      "price": 0.38,
       "trig_px": 0.289,
       "avg": 0.0,
       "live_shares": 0,
@@ -4670,7 +4686,7 @@
     {
       "symbol": "USDE",
       "phase": "holding",
-      "price": 1.96,
+      "price": 1.95,
       "trig_px": 2.025,
       "avg": 0.0,
       "live_shares": 0,
@@ -4716,7 +4732,7 @@
     {
       "symbol": "ATPC",
       "phase": "flat",
-      "price": 2.47,
+      "price": 2.59,
       "trig_px": 2.64,
       "avg": 2.48,
       "live_shares": 0,
@@ -4734,12 +4750,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -0.4
+      "unreal_pct": 4.44
     },
     {
       "symbol": "NXTT",
       "phase": "flat",
-      "price": 0.1262,
+      "price": 0.1271,
       "trig_px": 0.2281,
       "avg": 0.2067,
       "live_shares": 0,
@@ -4757,7 +4773,7 @@
           "filled": 1019
         }
       ],
-      "unreal_pct": -38.95
+      "unreal_pct": -38.52
     },
     {
       "symbol": "MWYN",
@@ -4808,7 +4824,7 @@
     {
       "symbol": "VGAS",
       "phase": "flat",
-      "price": 1.34,
+      "price": 1.32,
       "trig_px": 1.305,
       "avg": 1.23,
       "live_shares": 0,
@@ -4826,7 +4842,7 @@
           "filled": 0
         }
       ],
-      "unreal_pct": 8.94
+      "unreal_pct": 7.32
     },
     {
       "symbol": "MKZR",
