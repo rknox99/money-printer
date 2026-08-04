@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-04 17:31:52",
-  "generated_ts": 1785879112.44308,
+  "generated": "2026-08-04 17:35:05",
+  "generated_ts": 1785879305.022105,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -21,12 +21,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.0h old"
+      "detail": "log 0.1h old"
     },
     {
       "name": "Engine",
@@ -35,17 +35,17 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.7,
     "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-08-03 21:18:33] Penny Stock Shadow Scorer.ipynb: OK",
     "[2026-08-04 07:40:40] penny scheduler started",
     "[2026-08-04 09:12:41] launching execution engine",
     "[2026-08-04 16:06:51] engine finished (rc=0)",
     "[2026-08-04 17:29:58] penny scheduler started",
-    "[2026-08-04 17:29:59] launching execution engine"
+    "[2026-08-04 17:29:59] launching execution engine",
+    "[2026-08-04 17:31:59] engine finished (rc=0)"
   ],
   "universe": {
     "symbols": 2223,
@@ -4603,6 +4603,22 @@
     {
       "t": "17:31",
       "v": 75602.52
+    },
+    {
+      "t": "17:32",
+      "v": 75602.52
+    },
+    {
+      "t": "17:33",
+      "v": 75602.52
+    },
+    {
+      "t": "17:34",
+      "v": 75602.52
+    },
+    {
+      "t": "17:35",
+      "v": 75602.52
     }
   ],
   "ladders": [
@@ -4678,7 +4694,7 @@
     {
       "symbol": "BLZE",
       "phase": "flat",
-      "price": 19.7,
+      "price": 19.81,
       "trig_px": 22.23,
       "avg": 20.9,
       "live_shares": 0,
@@ -4696,12 +4712,12 @@
           "filled": 0
         }
       ],
-      "unreal_pct": -5.74
+      "unreal_pct": -5.22
     },
     {
       "symbol": "IBTA",
       "phase": "holding",
-      "price": 36.46,
+      "price": 36.53,
       "trig_px": 34.545,
       "avg": 0.0,
       "live_shares": 0,
@@ -4724,7 +4740,7 @@
     {
       "symbol": "SUGP",
       "phase": "holding",
-      "price": 0.3847,
+      "price": 0.3962,
       "trig_px": 0.289,
       "avg": 0.0,
       "live_shares": 0,
@@ -4747,7 +4763,7 @@
     {
       "symbol": "FCUV",
       "phase": "flat",
-      "price": 10.21,
+      "price": 10.58,
       "trig_px": 13.71,
       "avg": 12.6061,
       "live_shares": 0,
@@ -4765,7 +4781,7 @@
           "filled": 16
         }
       ],
-      "unreal_pct": -19.01
+      "unreal_pct": -16.07
     },
     {
       "symbol": "NVCT",
@@ -4885,7 +4901,7 @@
     {
       "symbol": "ZEO",
       "phase": "holding",
-      "price": 0.5583,
+      "price": 0.5416,
       "trig_px": 0.529,
       "avg": 0.0,
       "live_shares": 0,
@@ -4931,7 +4947,7 @@
     {
       "symbol": "NXTT",
       "phase": "flat",
-      "price": 0.1169,
+      "price": 0.1202,
       "trig_px": 0.2281,
       "avg": 0.2067,
       "live_shares": 0,
@@ -4949,7 +4965,7 @@
           "filled": 1019
         }
       ],
-      "unreal_pct": -43.45
+      "unreal_pct": -41.86
     },
     {
       "symbol": "MWYN",
