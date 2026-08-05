@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-05 11:29:36",
-  "generated_ts": 1785943776.826431,
+  "generated": "2026-08-05 11:32:45",
+  "generated_ts": 1785943965.898478,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -27,26 +27,26 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.3h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 1.1m"
+      "detail": "heartbeat 1.6m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.1,
+    "newest_bar_age_min": 0.2,
     "in_rth": true,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-08-05 09:36:38] launching execution engine",
     "[2026-08-05 09:55:51] penny scheduler v3 started (nightly: pull 20:20 -> thresholds 21:05 -> shadow 21:15)",
     "[2026-08-05 09:55:51] launching execution engine",
     "[2026-08-05 11:11:21] penny scheduler v4 started (engine 9:12 | short check 10:30 | pull 20:20 | thresholds 21:05 | shadow 21:15)",
     "[2026-08-05 11:11:21] launching execution engine",
-    "[2026-08-05 11:11:21] running Penny Short Check.ipynb ..."
+    "[2026-08-05 11:11:21] running Penny Short Check.ipynb ...",
+    "[2026-08-05 11:30:28] Penny Short Check.ipynb: OK"
   ],
   "universe": {
     "symbols": 2223,
@@ -3140,6 +3140,18 @@
     {
       "t": "11:29",
       "v": 75602.34
+    },
+    {
+      "t": "11:30",
+      "v": 75602.34
+    },
+    {
+      "t": "11:31",
+      "v": 75602.34
+    },
+    {
+      "t": "11:32",
+      "v": 75602.34
     }
   ],
   "ladders": [],
@@ -3147,67 +3159,59 @@
     "mode": "SIM",
     "open": [
       {
-        "symbol": "ZYBT",
+        "symbol": "XGN",
         "rule": "S1968",
-        "entry": 1.58,
-        "last": 3.84,
-        "pnl_pct": -143.04,
-        "mins": 59
-      },
-      {
-        "symbol": "FNGR",
-        "rule": "S1968",
-        "entry": 0.2889,
-        "last": 0.2951,
-        "pnl_pct": -2.15,
-        "mins": 41
+        "entry": 6.775,
+        "last": 6.64,
+        "pnl_pct": 1.99,
+        "mins": 114
       },
       {
         "symbol": "HGBL",
         "rule": "S1968",
         "entry": 1.0997,
-        "last": 1.0801,
-        "pnl_pct": 1.78,
-        "mins": 14
-      },
-      {
-        "symbol": "XGN",
-        "rule": "S1968",
-        "entry": 6.775,
-        "last": 6.66,
-        "pnl_pct": 1.7,
-        "mins": 111
-      },
-      {
-        "symbol": "TCI",
-        "rule": "S1968",
-        "entry": 41.98,
-        "last": 41.49,
-        "pnl_pct": 1.17,
-        "mins": 2
-      },
-      {
-        "symbol": "TBI",
-        "rule": "S2343",
-        "entry": 9.83,
-        "last": 9.93,
-        "pnl_pct": -1.02,
-        "mins": 106
+        "last": 1.08,
+        "pnl_pct": 1.79,
+        "mins": 17
       },
       {
         "symbol": "OESX",
         "rule": "S2343",
         "entry": 15.27,
-        "last": 15.2005,
-        "pnl_pct": 0.46,
-        "mins": 106
+        "last": 15.0,
+        "pnl_pct": 1.77,
+        "mins": 109
+      },
+      {
+        "symbol": "TCI",
+        "rule": "S1968",
+        "entry": 41.98,
+        "last": 41.25,
+        "pnl_pct": 1.74,
+        "mins": 5
+      },
+      {
+        "symbol": "TBI",
+        "rule": "S2343",
+        "entry": 9.83,
+        "last": 9.92,
+        "pnl_pct": -0.92,
+        "mins": 109
+      },
+      {
+        "symbol": "FNGR",
+        "rule": "S1968",
+        "entry": 0.2889,
+        "last": 0.2911,
+        "pnl_pct": -0.76,
+        "mins": 44
       },
       {
         "symbol": "CZFS",
         "rule": "S1968",
         "entry": 81.06,
-        "last": 81.36,
-        "pnl_pct": -0.37,
+        "last": 81.5901,
+        "pnl_pct": -0.65,
         "mins": 0
       }
     ],
@@ -3216,33 +3220,41 @@
         "symbol": "NXDR",
         "rule": "S2343",
         "entry": 2.675,
-        "last": 2.575,
-        "pnl_pct": 3.74,
-        "mins": 106
+        "last": 2.555,
+        "pnl_pct": 4.49,
+        "mins": 109
       },
       {
         "symbol": "VGAS",
         "rule": "S1968",
         "entry": 1.41,
-        "last": 1.435,
-        "pnl_pct": -1.77,
-        "mins": 67
+        "last": 1.46,
+        "pnl_pct": -3.55,
+        "mins": 70
+      },
+      {
+        "symbol": "ZYBT",
+        "rule": "S1968",
+        "entry": 1.58,
+        "last": 3.84,
+        "pnl_pct": -143.04,
+        "mins": 62
       },
       {
         "symbol": "XPEL",
         "rule": "S2343",
         "entry": 51.8499,
-        "last": 50.885,
-        "pnl_pct": 1.86,
-        "mins": 85
+        "last": 50.5,
+        "pnl_pct": 2.6,
+        "mins": 88
       },
       {
         "symbol": "APPS",
         "rule": "S1968",
         "entry": 13.62,
-        "last": 13.405,
-        "pnl_pct": 1.58,
-        "mins": 60
+        "last": 13.41,
+        "pnl_pct": 1.54,
+        "mins": 63
       },
       {
         "symbol": "BEEP",
@@ -3250,40 +3262,40 @@
         "entry": 2.0,
         "last": 2.05,
         "pnl_pct": -2.5,
-        "mins": 59
+        "mins": 62
       },
       {
         "symbol": "LPSN",
         "rule": "S1968",
         "entry": 2.235,
-        "last": 2.08,
-        "pnl_pct": 6.94,
-        "mins": 52
+        "last": 2.06,
+        "pnl_pct": 7.83,
+        "mins": 55
       },
       {
         "symbol": "VMAR",
         "rule": "S1968",
         "entry": 0.7726,
-        "last": 0.7144,
-        "pnl_pct": 7.53,
-        "mins": 56
+        "last": 0.6815,
+        "pnl_pct": 11.79,
+        "mins": 59
       }
     ],
     "by_rule": {
       "S1968": {
         "n": 11,
-        "open": 6,
-        "pnl": 294.3409943274853
+        "open": 5,
+        "pnl": -3198.02230638439
       },
       "S2343": {
         "n": 4,
         "open": 2,
-        "pnl": 139.98165949652662
+        "pnl": 177.23644705341275
       }
     },
-    "day_pnl": 843.56,
-    "n_open": 8,
-    "n_closed": 7
+    "day_pnl": -1780.33,
+    "n_open": 7,
+    "n_closed": 8
   },
   "intents_tail": [
     {
