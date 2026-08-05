@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-05 11:26:24",
-  "generated_ts": 1785943584.019856,
+  "generated": "2026-08-05 11:29:36",
+  "generated_ts": 1785943776.826431,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -22,7 +22,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -32,11 +32,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 1.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.8,
+    "newest_bar_age_min": 0.1,
     "in_rth": true,
     "ok": true
   },
@@ -3128,6 +3128,18 @@
     {
       "t": "11:26",
       "v": 75602.34
+    },
+    {
+      "t": "11:27",
+      "v": 75602.34
+    },
+    {
+      "t": "11:28",
+      "v": 75602.34
+    },
+    {
+      "t": "11:29",
+      "v": 75602.34
     }
   ],
   "ladders": [],
@@ -3138,17 +3150,25 @@
         "symbol": "ZYBT",
         "rule": "S1968",
         "entry": 1.58,
-        "last": 3.08,
-        "pnl_pct": -94.94,
-        "mins": 56
+        "last": 3.84,
+        "pnl_pct": -143.04,
+        "mins": 59
       },
       {
         "symbol": "FNGR",
         "rule": "S1968",
         "entry": 0.2889,
-        "last": 0.3044,
-        "pnl_pct": -5.37,
-        "mins": 38
+        "last": 0.2951,
+        "pnl_pct": -2.15,
+        "mins": 41
+      },
+      {
+        "symbol": "HGBL",
+        "rule": "S1968",
+        "entry": 1.0997,
+        "last": 1.0801,
+        "pnl_pct": 1.78,
+        "mins": 14
       },
       {
         "symbol": "XGN",
@@ -3156,39 +3176,31 @@
         "entry": 6.775,
         "last": 6.66,
         "pnl_pct": 1.7,
-        "mins": 108
+        "mins": 111
       },
       {
         "symbol": "TCI",
         "rule": "S1968",
         "entry": 41.98,
-        "last": 41.46,
-        "pnl_pct": 1.24,
-        "mins": 0
-      },
-      {
-        "symbol": "HGBL",
-        "rule": "S1968",
-        "entry": 1.0997,
-        "last": 1.0891,
-        "pnl_pct": 0.96,
-        "mins": 11
-      },
-      {
-        "symbol": "OESX",
-        "rule": "S2343",
-        "entry": 15.27,
-        "last": 15.4101,
-        "pnl_pct": -0.92,
-        "mins": 103
+        "last": 41.49,
+        "pnl_pct": 1.17,
+        "mins": 2
       },
       {
         "symbol": "TBI",
         "rule": "S2343",
         "entry": 9.83,
-        "last": 9.9,
-        "pnl_pct": -0.71,
-        "mins": 103
+        "last": 9.93,
+        "pnl_pct": -1.02,
+        "mins": 106
+      },
+      {
+        "symbol": "OESX",
+        "rule": "S2343",
+        "entry": 15.27,
+        "last": 15.2005,
+        "pnl_pct": 0.46,
+        "mins": 106
       },
       {
         "symbol": "CZFS",
@@ -3204,33 +3216,33 @@
         "symbol": "NXDR",
         "rule": "S2343",
         "entry": 2.675,
-        "last": 2.595,
-        "pnl_pct": 2.99,
-        "mins": 103
+        "last": 2.575,
+        "pnl_pct": 3.74,
+        "mins": 106
       },
       {
         "symbol": "VGAS",
         "rule": "S1968",
         "entry": 1.41,
-        "last": 1.425,
-        "pnl_pct": -1.06,
-        "mins": 64
+        "last": 1.435,
+        "pnl_pct": -1.77,
+        "mins": 67
       },
       {
         "symbol": "XPEL",
         "rule": "S2343",
         "entry": 51.8499,
-        "last": 50.91,
-        "pnl_pct": 1.81,
-        "mins": 82
+        "last": 50.885,
+        "pnl_pct": 1.86,
+        "mins": 85
       },
       {
         "symbol": "APPS",
         "rule": "S1968",
         "entry": 13.62,
-        "last": 13.2899,
-        "pnl_pct": 2.42,
-        "mins": 57
+        "last": 13.405,
+        "pnl_pct": 1.58,
+        "mins": 60
       },
       {
         "symbol": "BEEP",
@@ -3238,35 +3250,35 @@
         "entry": 2.0,
         "last": 2.05,
         "pnl_pct": -2.5,
-        "mins": 56
+        "mins": 59
       },
       {
         "symbol": "LPSN",
         "rule": "S1968",
         "entry": 2.235,
-        "last": 2.07,
-        "pnl_pct": 7.38,
-        "mins": 49
+        "last": 2.08,
+        "pnl_pct": 6.94,
+        "mins": 52
       },
       {
         "symbol": "VMAR",
         "rule": "S1968",
         "entry": 0.7726,
-        "last": 0.7145,
-        "pnl_pct": 7.52,
-        "mins": 53
+        "last": 0.7144,
+        "pnl_pct": 7.53,
+        "mins": 56
       }
     ],
     "by_rule": {
       "S1968": {
         "n": 11,
         "open": 6,
-        "pnl": 344.06060948984225
+        "pnl": 294.3409943274853
       },
       "S2343": {
         "n": 4,
         "open": 2,
-        "pnl": 120.08466819382804
+        "pnl": 139.98165949652662
       }
     },
     "day_pnl": 843.56,
