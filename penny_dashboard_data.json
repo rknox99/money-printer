@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-04 23:37:24",
-  "generated_ts": 1785901044.970072,
+  "generated": "2026-08-04 23:40:38",
+  "generated_ts": 1785901238.537812,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -21,7 +21,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 194m old"
+      "detail": "bars 198m old"
     },
     {
       "name": "Scheduler",
@@ -35,17 +35,17 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 194.5,
+    "newest_bar_age_min": 197.7,
     "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-08-04 21:18:27] Penny Stock Shadow Scorer.ipynb: OK",
-    "[2026-08-04 23:07:27] penny scheduler v3 started (nightly: pull 20:20 -> thresholds 21:05 -> shadow 21:15)",
-    "[2026-08-04 23:07:28] launching execution engine",
     "[2026-08-04 23:07:28] running Penny Stock Daily Stock Pull.ipynb ...",
     "[2026-08-04 23:35:56] Penny Stock Daily Stock Pull.ipynb: OK",
-    "[2026-08-04 23:35:56] running Penny Export Live Thresholds.ipynb ..."
+    "[2026-08-04 23:35:56] running Penny Export Live Thresholds.ipynb ...",
+    "[2026-08-04 23:38:13] Penny Export Live Thresholds.ipynb: OK",
+    "[2026-08-04 23:38:13] running Penny Stock Shadow Scorer.ipynb ...",
+    "[2026-08-04 23:40:12] Penny Stock Shadow Scorer.ipynb: OK"
   ],
   "universe": {
     "symbols": 2223,
@@ -6066,6 +6066,18 @@
     },
     {
       "t": "23:37",
+      "v": 75602.52
+    },
+    {
+      "t": "23:38",
+      "v": 75602.52
+    },
+    {
+      "t": "23:39",
+      "v": 75602.52
+    },
+    {
+      "t": "23:40",
       "v": 75602.52
     }
   ],
