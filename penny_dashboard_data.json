@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-05 09:53:49",
-  "generated_ts": 1785938029.719693,
+  "generated": "2026-08-05 09:56:58",
+  "generated_ts": 1785938218.854969,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -27,26 +27,26 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.3h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.5m"
+      "detail": "heartbeat 1.8m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.1,
+    "newest_bar_age_min": 0.5,
     "in_rth": true,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-08-05 09:13:57] launching execution engine",
-    "[2026-08-05 09:15:57] ALERT: EXECUTION ENGINE EXITED EARLY (rc=1) at 09:15 -- check/restart it",
     "[2026-08-05 09:21:15] penny scheduler v3 started (nightly: pull 20:20 -> thresholds 21:05 -> shadow 21:15)",
     "[2026-08-05 09:21:15] launching execution engine",
     "[2026-08-05 09:36:37] penny scheduler v3 started (nightly: pull 20:20 -> thresholds 21:05 -> shadow 21:15)",
-    "[2026-08-05 09:36:38] launching execution engine"
+    "[2026-08-05 09:36:38] launching execution engine",
+    "[2026-08-05 09:55:51] penny scheduler v3 started (nightly: pull 20:20 -> thresholds 21:05 -> shadow 21:15)",
+    "[2026-08-05 09:55:51] launching execution engine"
   ],
   "universe": {
     "symbols": 2223,
@@ -2756,10 +2756,30 @@
     {
       "t": "09:53",
       "v": 75602.34
+    },
+    {
+      "t": "09:54",
+      "v": 75602.34
+    },
+    {
+      "t": "09:55",
+      "v": 75602.34
+    },
+    {
+      "t": "09:56",
+      "v": 75602.34
     }
   ],
   "ladders": [],
   "intents_tail": [
+    {
+      "ts": "2026-08-05 09:54:18",
+      "symbol": "GERN",
+      "action": "Buy",
+      "sim_price": 1.515,
+      "shares": 0,
+      "note": "missed_late_lag4"
+    },
     {
       "ts": "2026-08-05 09:50:07",
       "symbol": "YXT",
