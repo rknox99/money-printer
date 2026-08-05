@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-05 09:41:03",
-  "generated_ts": 1785937263.486357,
+  "generated": "2026-08-05 09:44:15",
+  "generated_ts": 1785937455.996255,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -22,7 +22,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -32,11 +32,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.1m"
+      "detail": "heartbeat 0.9m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.7,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -2708,10 +2708,46 @@
     {
       "t": "09:41",
       "v": 75602.34
+    },
+    {
+      "t": "09:42",
+      "v": 75602.34
+    },
+    {
+      "t": "09:43",
+      "v": 75602.34
+    },
+    {
+      "t": "09:44",
+      "v": 75602.34
     }
   ],
   "ladders": [],
   "intents_tail": [
+    {
+      "ts": "2026-08-05 09:43:08",
+      "symbol": "RAIN",
+      "action": "Buy",
+      "sim_price": 1.195,
+      "shares": 0,
+      "note": "missed_late_lag5"
+    },
+    {
+      "ts": "2026-08-05 09:41:38",
+      "symbol": "FLZH",
+      "action": "Buy",
+      "sim_price": 1.1999,
+      "shares": 0,
+      "note": "missed_late_lag5"
+    },
+    {
+      "ts": "2026-08-05 09:41:34",
+      "symbol": "DBGI",
+      "action": "Buy",
+      "sim_price": 28.7501,
+      "shares": 0,
+      "note": "missed_late_lag11"
+    },
     {
       "ts": "2026-08-05 09:40:58",
       "symbol": "ZJYL",
