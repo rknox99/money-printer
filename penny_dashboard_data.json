@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-05 15:15:25",
-  "generated_ts": 1785957325.652444,
+  "generated": "2026-08-05 15:18:38",
+  "generated_ts": 1785957518.291437,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -22,7 +22,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -32,11 +32,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.2m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.8,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -4044,6 +4044,18 @@
     {
       "t": "15:15",
       "v": 75602.34
+    },
+    {
+      "t": "15:16",
+      "v": 75602.34
+    },
+    {
+      "t": "15:17",
+      "v": 75602.34
+    },
+    {
+      "t": "15:18",
+      "v": 75602.34
     }
   ],
   "ladders": [],
@@ -4051,22 +4063,22 @@
     "mode": "SIM",
     "open": [
       {
-        "symbol": "PFX",
-        "rule": "S1968",
-        "entry": 44.7,
-        "last": 45.975,
-        "pnl_pct": -2.85,
-        "reason": "",
-        "mins": 114
-      },
-      {
         "symbol": "EFT",
         "rule": "S2343",
         "entry": 10.87,
         "last": 10.79,
         "pnl_pct": 0.74,
         "reason": "",
-        "mins": 109
+        "mins": 112
+      },
+      {
+        "symbol": "PFX",
+        "rule": "S1968",
+        "entry": 44.7,
+        "last": 45.0,
+        "pnl_pct": -0.67,
+        "reason": "",
+        "mins": 117
       }
     ],
     "closed": [
@@ -4077,16 +4089,16 @@
         "last": 6.6862,
         "pnl_pct": 1.31,
         "reason": "T120 backstop",
-        "mins": 337
+        "mins": 340
       },
       {
         "symbol": "NXDR",
         "rule": "S2343",
         "entry": 2.675,
-        "last": 2.43,
-        "pnl_pct": 9.16,
+        "last": 2.435,
+        "pnl_pct": 8.97,
         "reason": "",
-        "mins": 332
+        "mins": 335
       },
       {
         "symbol": "OESX",
@@ -4095,7 +4107,7 @@
         "last": 15.125,
         "pnl_pct": 0.95,
         "reason": "T120 backstop",
-        "mins": 332
+        "mins": 335
       },
       {
         "symbol": "TBI",
@@ -4104,70 +4116,70 @@
         "last": 10.01,
         "pnl_pct": -1.83,
         "reason": "T120 backstop",
-        "mins": 332
+        "mins": 335
       },
       {
         "symbol": "VGAS",
         "rule": "S1968",
         "entry": 1.41,
-        "last": 1.4801,
-        "pnl_pct": -4.97,
+        "last": 1.49,
+        "pnl_pct": -5.67,
         "reason": "",
-        "mins": 293
+        "mins": 296
       },
       {
         "symbol": "ZYBT",
         "rule": "S1968",
         "entry": 1.58,
-        "last": 2.75,
-        "pnl_pct": -74.05,
+        "last": 2.83,
+        "pnl_pct": -79.11,
         "reason": "",
-        "mins": 285
+        "mins": 288
       },
       {
         "symbol": "XPEL",
         "rule": "S2343",
         "entry": 51.8499,
-        "last": 50.99,
-        "pnl_pct": 1.66,
+        "last": 50.7,
+        "pnl_pct": 2.22,
         "reason": "",
-        "mins": 311
+        "mins": 314
       },
       {
         "symbol": "APPS",
         "rule": "S1968",
         "entry": 13.62,
-        "last": 12.85,
-        "pnl_pct": 5.65,
+        "last": 12.93,
+        "pnl_pct": 5.07,
         "reason": "",
-        "mins": 286
+        "mins": 289
       },
       {
         "symbol": "BEEP",
         "rule": "S1968",
         "entry": 2.0,
-        "last": 2.1,
-        "pnl_pct": -5.0,
+        "last": 2.02,
+        "pnl_pct": -1.0,
         "reason": "",
-        "mins": 285
+        "mins": 288
       },
       {
         "symbol": "LPSN",
         "rule": "S1968",
         "entry": 2.235,
-        "last": 2.095,
-        "pnl_pct": 6.26,
+        "last": 2.0999,
+        "pnl_pct": 6.04,
         "reason": "",
-        "mins": 278
+        "mins": 281
       },
       {
         "symbol": "VMAR",
         "rule": "S1968",
         "entry": 0.7726,
-        "last": 0.6512,
-        "pnl_pct": 15.71,
+        "last": 0.6525,
+        "pnl_pct": 15.54,
         "reason": "",
-        "mins": 282
+        "mins": 285
       },
       {
         "symbol": "FNGR",
@@ -4176,7 +4188,7 @@
         "last": 0.3186,
         "pnl_pct": -10.28,
         "reason": "T120 backstop",
-        "mins": 267
+        "mins": 270
       },
       {
         "symbol": "TCI",
@@ -4185,7 +4197,7 @@
         "last": 40.86,
         "pnl_pct": 2.67,
         "reason": "T120 backstop",
-        "mins": 228
+        "mins": 231
       },
       {
         "symbol": "CZFS",
@@ -4194,7 +4206,7 @@
         "last": 82.5,
         "pnl_pct": -1.78,
         "reason": "T120 backstop",
-        "mins": 223
+        "mins": 226
       },
       {
         "symbol": "HGBL",
@@ -4203,7 +4215,7 @@
         "last": 1.05,
         "pnl_pct": 4.52,
         "reason": "SIG chan floor 0.00",
-        "mins": 240
+        "mins": 243
       },
       {
         "symbol": "FDBC",
@@ -4212,7 +4224,7 @@
         "last": 54.0,
         "pnl_pct": 0.17,
         "reason": "T120 backstop",
-        "mins": 214
+        "mins": 217
       },
       {
         "symbol": "CFFI",
@@ -4221,7 +4233,7 @@
         "last": 85.83,
         "pnl_pct": -1.0,
         "reason": "T120 backstop",
-        "mins": 160
+        "mins": 163
       },
       {
         "symbol": "ALTI",
@@ -4230,7 +4242,7 @@
         "last": 4.66,
         "pnl_pct": -8.62,
         "reason": "T120 backstop",
-        "mins": 136
+        "mins": 139
       },
       {
         "symbol": "VRM",
@@ -4239,19 +4251,19 @@
         "last": 9.09,
         "pnl_pct": 5.71,
         "reason": "SIG chan floor 0.00",
-        "mins": 106
+        "mins": 109
       }
     ],
     "by_rule": {
       "S1968": {
         "n": 16,
         "open": 1,
-        "pnl": -1592.291372966573
+        "pnl": -1660.7986902896541
       },
       "S2343": {
         "n": 5,
         "open": 1,
-        "pnl": 248.43298761397716
+        "pnl": 257.7427596224778
       }
     },
     "day_pnl": -1985.17,
