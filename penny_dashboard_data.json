@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-05 10:16:11",
-  "generated_ts": 1785939371.180073,
+  "generated": "2026-08-05 10:19:23",
+  "generated_ts": 1785939563.181102,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -27,16 +27,16 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.3h old"
+      "detail": "log 0.4h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 2.1m"
+      "detail": "heartbeat 0.8m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.6,
+    "newest_bar_age_min": 0.8,
     "in_rth": true,
     "ok": true
   },
@@ -2848,10 +2848,30 @@
     {
       "t": "10:16",
       "v": 75602.34
+    },
+    {
+      "t": "10:17",
+      "v": 75602.34
+    },
+    {
+      "t": "10:18",
+      "v": 75602.34
+    },
+    {
+      "t": "10:19",
+      "v": 75602.34
     }
   ],
   "ladders": [],
   "intents_tail": [
+    {
+      "ts": "2026-08-05 10:17:32",
+      "symbol": "HY",
+      "action": "Short",
+      "sim_price": 38.155,
+      "shares": 0,
+      "note": "stale_lag10_notfiring"
+    },
     {
       "ts": "2026-08-05 10:11:39",
       "symbol": "SWIM",
