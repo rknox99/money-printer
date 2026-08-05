@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-05 10:09:46",
-  "generated_ts": 1785938986.337284,
+  "generated": "2026-08-05 10:12:58",
+  "generated_ts": 1785939178.541684,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -27,16 +27,16 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.2h old"
+      "detail": "log 0.3h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.1m"
+      "detail": "heartbeat 1.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.0,
+    "newest_bar_age_min": 0.4,
     "in_rth": true,
     "ok": true
   },
@@ -2820,10 +2820,38 @@
     {
       "t": "10:09",
       "v": 75602.34
+    },
+    {
+      "t": "10:10",
+      "v": 75602.34
+    },
+    {
+      "t": "10:11",
+      "v": 75602.34
+    },
+    {
+      "t": "10:12",
+      "v": 75602.34
     }
   ],
   "ladders": [],
   "intents_tail": [
+    {
+      "ts": "2026-08-05 10:11:39",
+      "symbol": "SWIM",
+      "action": "Short",
+      "sim_price": 6.985,
+      "shares": 0,
+      "note": "stale_lag5_notfiring"
+    },
+    {
+      "ts": "2026-08-05 10:10:20",
+      "symbol": "BOTJ",
+      "action": "Short",
+      "sim_price": 28.46,
+      "shares": 0,
+      "note": "stale_lag26_notfiring"
+    },
     {
       "ts": "2026-08-05 09:54:18",
       "symbol": "GERN",
