@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-05 09:18:43",
-  "generated_ts": 1785935923.044042,
+  "generated": "2026-08-05 09:21:52",
+  "generated_ts": 1785936112.540321,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -41,12 +41,12 @@
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-08-04 23:38:13] running Penny Stock Shadow Scorer.ipynb ...",
-    "[2026-08-04 23:40:12] Penny Stock Shadow Scorer.ipynb: OK",
     "[2026-08-04 23:42:12] engine finished (rc=1)",
     "[2026-08-05 09:03:56] penny scheduler v3 started (nightly: pull 20:20 -> thresholds 21:05 -> shadow 21:15)",
     "[2026-08-05 09:13:57] launching execution engine",
-    "[2026-08-05 09:15:57] ALERT: EXECUTION ENGINE EXITED EARLY (rc=1) at 09:15 -- check/restart it"
+    "[2026-08-05 09:15:57] ALERT: EXECUTION ENGINE EXITED EARLY (rc=1) at 09:15 -- check/restart it",
+    "[2026-08-05 09:21:15] penny scheduler v3 started (nightly: pull 20:20 -> thresholds 21:05 -> shadow 21:15)",
+    "[2026-08-05 09:21:15] launching execution engine"
   ],
   "universe": {
     "symbols": 2223,
@@ -2615,6 +2615,18 @@
     },
     {
       "t": "09:18",
+      "v": 75602.34
+    },
+    {
+      "t": "09:19",
+      "v": 75602.34
+    },
+    {
+      "t": "09:20",
+      "v": 75602.34
+    },
+    {
+      "t": "09:21",
       "v": 75602.34
     }
   ],
