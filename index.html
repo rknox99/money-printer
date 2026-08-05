@@ -89,6 +89,68 @@ table.t .right{text-align:right;}
 </style>
 </head>
 <body>
+<!-- ===== SHORTS PANEL (three-short book: SIM today, LIVE Thu) ===== -->
+<div id="shorts-panel" style="margin:12px;padding:12px;border-radius:12px;
+background:#101418;color:#e8eef4;font-family:system-ui,Segoe UI,Roboto,
+sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.35)">
+ <div style="display:flex;justify-content:space-between;align-items:baseline">
+  <b style="font-size:15px">SHORT BOOK <span id="sh-mode"
+    style="font-size:11px;padding:2px 8px;border-radius:10px;
+    background:#2b6cb0">--</span></b>
+  <span>day <b id="sh-pnl">$0</b> &middot; open <b id="sh-open">0</b>
+   &middot; closed <b id="sh-closed">0</b></span>
+ </div>
+ <div id="sh-rules" style="font-size:12px;opacity:.85;margin:6px 0"></div>
+ <table style="width:100%;font-size:12px;border-collapse:collapse">
+  <thead><tr style="text-align:left;opacity:.6">
+   <th>sym</th><th>rule</th><th>entry</th><th>last</th><th>pnl%</th>
+   <th>min</th></tr></thead>
+  <tbody id="sh-rows"></tbody></table>
+</div>
+<script>
+(function(){
+ var RC={FAM:"#d69e2e",S1968:"#38a169",S2343:"#3182ce"};
+ function fmt(x){return (x>=0?"+":"")+x.toFixed(2)+"%";}
+ function render(d){
+  var s=d&&d.shorts; if(!s) return;
+  document.getElementById("sh-mode").textContent=s.mode;
+  document.getElementById("sh-mode").style.background=
+    s.mode==="LIVE"?"#c53030":"#2b6cb0";
+  document.getElementById("sh-pnl").textContent=
+    (s.day_pnl>=0?"+$":"-$")+Math.abs(s.day_pnl).toFixed(0);
+  document.getElementById("sh-pnl").style.color=
+    s.day_pnl>=0?"#68d391":"#fc8181";
+  document.getElementById("sh-open").textContent=s.n_open||0;
+  document.getElementById("sh-closed").textContent=s.n_closed||0;
+  var br=s.by_rule||{},parts=[];
+  Object.keys(br).forEach(function(r){
+   parts.push('<span style="color:'+(RC[r]||"#ccc")+'">'+r+"</span> "+
+    br[r].n+" sig / "+br[r].open+" open / $"+
+    (br[r].pnl||0).toFixed(0));});
+  document.getElementById("sh-rules").innerHTML=
+    parts.join(" &nbsp;&middot;&nbsp; ")||"no signals yet";
+  var rows=(s.open||[]).concat((s.closed||[]).slice(-8).map(
+    function(r){r._c=1;return r;}));
+  document.getElementById("sh-rows").innerHTML=rows.map(function(r){
+   return "<tr style='opacity:"+(r._c?".45":"1")+
+    ";border-top:1px solid #223'>"+
+    "<td><b>"+r.symbol+"</b></td>"+
+    "<td style='color:"+(RC[r.rule]||"#ccc")+"'>"+r.rule+"</td>"+
+    "<td>"+r.entry+"</td><td>"+r.last+"</td>"+
+    "<td style='color:"+(r.pnl_pct>=0?"#68d391":"#fc8181")+"'>"+
+    fmt(r.pnl_pct)+"</td><td>"+r.mins+"m</td></tr>";}).join("");
+ }
+ function tick(){
+  if(window.__DASHBOARD_DATA){render(window.__DASHBOARD_DATA);}
+  else if(window.dashboardData){render(window.dashboardData);}
+  else{try{fetch("penny_dashboard_data.json?ts="+Date.now())
+   .then(function(r){return r.json();}).then(render)
+   .catch(function(){});}catch(e){}}
+ }
+ tick(); setInterval(tick, 15000);
+})();
+</script>
+
 <div class="hdr">
   <div class="hdr-left"><div class="hdr-title">Penny <span>Printer</span> — Live Command Center</div></div>
   <div class="hdr-right"><span id="ib-status"><span class="dot dot-a"></span>IB</span><span id="last-update">--</span><span id="clock">--</span><span id="refresh-btn" onclick="tick()" style="cursor:pointer;padding:2px 10px;border:1px solid #334155;border-radius:6px;margin-left:6px;user-select:none">&#8635;</span></div>
