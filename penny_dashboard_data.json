@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-04 23:34:14",
-  "generated_ts": 1785900854.263917,
+  "generated": "2026-08-04 23:37:24",
+  "generated_ts": 1785901044.970072,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -21,12 +21,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 191m old"
+      "detail": "bars 194m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.4h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
@@ -35,17 +35,17 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 191.3,
+    "newest_bar_age_min": 194.5,
     "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-08-04 20:50:21] Penny Stock Daily Stock Pull.ipynb: OK",
-    "[2026-08-04 21:16:21] running Penny Stock Shadow Scorer.ipynb ...",
     "[2026-08-04 21:18:27] Penny Stock Shadow Scorer.ipynb: OK",
     "[2026-08-04 23:07:27] penny scheduler v3 started (nightly: pull 20:20 -> thresholds 21:05 -> shadow 21:15)",
     "[2026-08-04 23:07:28] launching execution engine",
-    "[2026-08-04 23:07:28] running Penny Stock Daily Stock Pull.ipynb ..."
+    "[2026-08-04 23:07:28] running Penny Stock Daily Stock Pull.ipynb ...",
+    "[2026-08-04 23:35:56] Penny Stock Daily Stock Pull.ipynb: OK",
+    "[2026-08-04 23:35:56] running Penny Export Live Thresholds.ipynb ..."
   ],
   "universe": {
     "symbols": 2223,
@@ -6055,6 +6055,18 @@
     {
       "t": "23:34",
       "v": 75602.52
+    },
+    {
+      "t": "23:35",
+      "v": 75602.52
+    },
+    {
+      "t": "23:36",
+      "v": 75602.52
+    },
+    {
+      "t": "23:37",
+      "v": 75602.52
     }
   ],
   "ladders": [
@@ -6383,7 +6395,7 @@
     {
       "symbol": "NXTT",
       "phase": "flat",
-      "price": 0.1196,
+      "price": 0.12,
       "trig_px": 0.2281,
       "avg": 0.2067,
       "live_shares": 0,
@@ -6401,7 +6413,7 @@
           "filled": 1019
         }
       ],
-      "unreal_pct": -42.15
+      "unreal_pct": -41.95
     },
     {
       "symbol": "MWYN",
