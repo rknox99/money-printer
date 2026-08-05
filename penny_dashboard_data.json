@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-05 11:10:13",
-  "generated_ts": 1785942613.006068,
+  "generated": "2026-08-05 11:13:22",
+  "generated_ts": 1785942802.621741,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -27,26 +27,26 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 1.2h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
-      "ok": true,
-      "detail": "heartbeat 0.1m"
+      "ok": false,
+      "detail": "heartbeat 3.3m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.7,
+    "newest_bar_age_min": 0.8,
     "in_rth": true,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-08-05 09:21:15] penny scheduler v3 started (nightly: pull 20:20 -> thresholds 21:05 -> shadow 21:15)",
-    "[2026-08-05 09:21:15] launching execution engine",
-    "[2026-08-05 09:36:37] penny scheduler v3 started (nightly: pull 20:20 -> thresholds 21:05 -> shadow 21:15)",
     "[2026-08-05 09:36:38] launching execution engine",
     "[2026-08-05 09:55:51] penny scheduler v3 started (nightly: pull 20:20 -> thresholds 21:05 -> shadow 21:15)",
-    "[2026-08-05 09:55:51] launching execution engine"
+    "[2026-08-05 09:55:51] launching execution engine",
+    "[2026-08-05 11:11:21] penny scheduler v4 started (engine 9:12 | short check 10:30 | pull 20:20 | thresholds 21:05 | shadow 21:15)",
+    "[2026-08-05 11:11:21] launching execution engine",
+    "[2026-08-05 11:11:21] running Penny Short Check.ipynb ..."
   ],
   "universe": {
     "symbols": 2223,
@@ -74,7 +74,7 @@
   "active_trade_count": 0,
   "aggregate_unrealized_pnl_dollar": 0,
   "total_position_value": 0,
-  "system_ok": true,
+  "system_ok": false,
   "shadow": {
     "days": 16,
     "signals_wide": 311,
@@ -3063,6 +3063,18 @@
     },
     {
       "t": "11:10",
+      "v": 75602.34
+    },
+    {
+      "t": "11:11",
+      "v": 75602.34
+    },
+    {
+      "t": "11:12",
+      "v": 75602.34
+    },
+    {
+      "t": "11:13",
       "v": 75602.34
     }
   ],
