@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-05 11:41:01",
-  "generated_ts": 1785944461.700773,
+  "generated": "2026-08-05 11:44:14",
+  "generated_ts": 1785944654.562424,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -22,21 +22,21 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.1h old"
+      "detail": "log 0.2h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 1.0m"
+      "detail": "heartbeat 1.7m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.7,
     "in_rth": true,
     "ok": true
   },
@@ -3188,6 +3188,18 @@
     {
       "t": "11:41",
       "v": 75602.34
+    },
+    {
+      "t": "11:42",
+      "v": 75602.34
+    },
+    {
+      "t": "11:43",
+      "v": 75602.34
+    },
+    {
+      "t": "11:44",
+      "v": 75602.34
     }
   ],
   "ladders": [],
@@ -3201,61 +3213,52 @@
         "last": 1.07,
         "pnl_pct": 2.7,
         "reason": "",
-        "mins": 26
-      },
-      {
-        "symbol": "TBI",
-        "rule": "S2343",
-        "entry": 9.83,
-        "last": 10.0,
-        "pnl_pct": -1.73,
-        "reason": "",
-        "mins": 118
+        "mins": 29
       },
       {
         "symbol": "FNGR",
         "rule": "S1968",
         "entry": 0.2889,
-        "last": 0.2939,
-        "pnl_pct": -1.73,
+        "last": 0.295,
+        "pnl_pct": -2.11,
         "reason": "",
-        "mins": 53
+        "mins": 56
       },
       {
-        "symbol": "XGN",
-        "rule": "S1968",
-        "entry": 6.775,
-        "last": 6.69,
-        "pnl_pct": 1.25,
+        "symbol": "TBI",
+        "rule": "S2343",
+        "entry": 9.83,
+        "last": 10.03,
+        "pnl_pct": -2.03,
         "reason": "",
-        "mins": 123
+        "mins": 121
       },
       {
         "symbol": "TCI",
         "rule": "S1968",
         "entry": 41.98,
-        "last": 41.605,
-        "pnl_pct": 0.89,
+        "last": 41.3539,
+        "pnl_pct": 1.49,
         "reason": "",
-        "mins": 14
+        "mins": 17
       },
       {
         "symbol": "CZFS",
         "rule": "S1968",
         "entry": 81.06,
-        "last": 81.5901,
-        "pnl_pct": -0.65,
+        "last": 82.16,
+        "pnl_pct": -1.36,
         "reason": "",
-        "mins": 9
+        "mins": 12
       },
       {
         "symbol": "FDBC",
         "rule": "S1968",
         "entry": 54.09,
-        "last": 54.33,
-        "pnl_pct": -0.44,
+        "last": 54.445,
+        "pnl_pct": -0.66,
         "reason": "",
-        "mins": 0
+        "mins": 3
       },
       {
         "symbol": "OESX",
@@ -3264,10 +3267,19 @@
         "last": 15.225,
         "pnl_pct": 0.29,
         "reason": "",
-        "mins": 118
+        "mins": 121
       }
     ],
     "closed": [
+      {
+        "symbol": "XGN",
+        "rule": "S1968",
+        "entry": 6.775,
+        "last": 6.6862,
+        "pnl_pct": 1.31,
+        "reason": "T120 backstop",
+        "mins": 126
+      },
       {
         "symbol": "NXDR",
         "rule": "S2343",
@@ -3275,87 +3287,87 @@
         "last": 2.525,
         "pnl_pct": 5.61,
         "reason": "",
-        "mins": 118
+        "mins": 121
       },
       {
         "symbol": "VGAS",
         "rule": "S1968",
         "entry": 1.41,
-        "last": 1.4625,
-        "pnl_pct": -3.72,
+        "last": 1.4643,
+        "pnl_pct": -3.85,
         "reason": "",
-        "mins": 79
+        "mins": 82
       },
       {
         "symbol": "ZYBT",
         "rule": "S1968",
         "entry": 1.58,
-        "last": 3.59,
-        "pnl_pct": -127.22,
+        "last": 3.39,
+        "pnl_pct": -114.56,
         "reason": "",
-        "mins": 71
+        "mins": 74
       },
       {
         "symbol": "XPEL",
         "rule": "S2343",
         "entry": 51.8499,
-        "last": 50.73,
-        "pnl_pct": 2.16,
+        "last": 50.9,
+        "pnl_pct": 1.83,
         "reason": "",
-        "mins": 97
+        "mins": 100
       },
       {
         "symbol": "APPS",
         "rule": "S1968",
         "entry": 13.62,
-        "last": 13.12,
-        "pnl_pct": 3.67,
+        "last": 13.05,
+        "pnl_pct": 4.19,
         "reason": "",
-        "mins": 72
+        "mins": 75
       },
       {
         "symbol": "BEEP",
         "rule": "S1968",
         "entry": 2.0,
-        "last": 2.05,
-        "pnl_pct": -2.5,
+        "last": 2.06,
+        "pnl_pct": -3.0,
         "reason": "",
-        "mins": 71
+        "mins": 74
       },
       {
         "symbol": "LPSN",
         "rule": "S1968",
         "entry": 2.235,
-        "last": 2.0699,
-        "pnl_pct": 7.39,
+        "last": 2.055,
+        "pnl_pct": 8.05,
         "reason": "",
-        "mins": 64
+        "mins": 67
       },
       {
         "symbol": "VMAR",
         "rule": "S1968",
         "entry": 0.7726,
-        "last": 0.6661,
-        "pnl_pct": 13.78,
+        "last": 0.6667,
+        "pnl_pct": 13.71,
         "reason": "",
-        "mins": 68
+        "mins": 71
       }
     ],
     "by_rule": {
       "S1968": {
         "n": 12,
-        "open": 6,
-        "pnl": -2714.8968554374324
+        "open": 5,
+        "pnl": -2353.808726340841
       },
       "S2343": {
         "n": 4,
         "open": 2,
-        "pnl": 194.1841270685856
+        "pnl": 185.98738994855253
       }
     },
-    "day_pnl": -1780.33,
-    "n_open": 8,
-    "n_closed": 8
+    "day_pnl": -1747.57,
+    "n_open": 7,
+    "n_closed": 9
   },
   "intents_tail": [
     {
