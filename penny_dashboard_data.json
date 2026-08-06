@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-06 15:58:52",
-  "generated_ts": 1786046332.826077,
+  "generated": "2026-08-06 16:02:03",
+  "generated_ts": 1786046523.75276,
   "system": "penny",
   "positions": [
     {
@@ -39,17 +39,17 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 5.1h old"
+      "detail": "log 5.2h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "off-hours"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.2,
-    "in_rth": true,
+    "newest_bar_age_min": 0.3,
+    "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
@@ -78,11 +78,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 74592.87,
-    "cash": 73677.15
+    "net_liq": 74567.48,
+    "cash": 74567.48
   },
-  "live_account_value": 74592.87,
-  "live_cash": 73677.15,
+  "live_account_value": 74567.48,
+  "live_cash": 74567.48,
   "active_trade_count": 1,
   "aggregate_unrealized_pnl_dollar": 79.88,
   "total_position_value": -915.72,
@@ -3700,6 +3700,22 @@
     {
       "t": "15:58",
       "v": 74592.87
+    },
+    {
+      "t": "15:59",
+      "v": 74596.8
+    },
+    {
+      "t": "16:00",
+      "v": 74587.01
+    },
+    {
+      "t": "16:01",
+      "v": 74567.48
+    },
+    {
+      "t": "16:02",
+      "v": 74567.48
     }
   ],
   "ladders": [],
@@ -3711,118 +3727,118 @@
         "symbol": "SGHT",
         "rule": "S2343",
         "entry": 6.622,
-        "last": 7.06,
-        "pnl_pct": -6.61,
+        "last": 7.09,
+        "pnl_pct": -7.07,
         "reason": "closed",
-        "mins": 383
+        "mins": 387
       },
       {
         "symbol": "PAYS",
         "rule": "S2343",
         "entry": 11.74,
-        "last": 12.31,
-        "pnl_pct": -4.86,
+        "last": 12.4,
+        "pnl_pct": -5.62,
         "reason": "closed",
-        "mins": 380
+        "mins": 384
       },
       {
         "symbol": "AZI",
         "rule": "S1968",
         "entry": 1.49,
-        "last": 1.55,
-        "pnl_pct": -4.03,
+        "last": 1.59,
+        "pnl_pct": -6.71,
         "reason": "closed",
-        "mins": 379
+        "mins": 383
       },
       {
         "symbol": "SUGP",
         "rule": "FAM",
         "entry": 1.93,
-        "last": 1.94,
-        "pnl_pct": -0.52,
+        "last": 1.96,
+        "pnl_pct": -1.55,
         "reason": "closed",
-        "mins": 376
+        "mins": 380
       },
       {
         "symbol": "GCT",
         "rule": "S2343",
         "entry": 52.55,
-        "last": 52.0,
-        "pnl_pct": 1.05,
+        "last": 52.4,
+        "pnl_pct": 0.29,
         "reason": "closed",
-        "mins": 374
+        "mins": 378
       },
       {
         "symbol": "ZYBT",
         "rule": "S1968",
         "entry": 2.08,
-        "last": 2.045,
-        "pnl_pct": 1.68,
+        "last": 2.0202,
+        "pnl_pct": 2.88,
         "reason": "closed",
-        "mins": 374
+        "mins": 378
       },
       {
         "symbol": "HRTG",
         "rule": "S2343",
         "entry": 35.58,
-        "last": 34.97,
-        "pnl_pct": 1.71,
+        "last": 35.21,
+        "pnl_pct": 1.04,
         "reason": "closed",
-        "mins": 372
+        "mins": 376
       },
       {
         "symbol": "TASK",
         "rule": "S2343",
         "entry": 7.52,
-        "last": 7.855,
-        "pnl_pct": -4.45,
+        "last": 7.82,
+        "pnl_pct": -3.99,
         "reason": "closed",
-        "mins": 371
+        "mins": 375
       },
       {
         "symbol": "ZVRA",
         "rule": "S2343",
         "entry": 12.12,
-        "last": 11.895,
-        "pnl_pct": 1.86,
+        "last": 11.88,
+        "pnl_pct": 1.98,
         "reason": "closed",
-        "mins": 371
+        "mins": 375
       },
       {
         "symbol": "KRO",
         "rule": "S2343",
         "entry": 7.73,
-        "last": 8.22,
-        "pnl_pct": -6.34,
+        "last": 8.23,
+        "pnl_pct": -6.47,
         "reason": "closed",
-        "mins": 370
+        "mins": 374
       },
       {
         "symbol": "PRAX",
         "rule": "S2343",
         "entry": 379.04,
-        "last": 370.95,
-        "pnl_pct": 2.13,
+        "last": 370.16,
+        "pnl_pct": 2.34,
         "reason": "closed",
-        "mins": 367
+        "mins": 371
       },
       {
         "symbol": "SBGI",
         "rule": "S2343",
         "entry": 15.69,
-        "last": 14.66,
-        "pnl_pct": 6.56,
+        "last": 14.76,
+        "pnl_pct": 5.93,
         "reason": "closed",
-        "mins": 367
+        "mins": 371
       },
       {
         "symbol": "EOLS",
         "rule": "S2343",
         "entry": 7.422,
-        "last": 7.39,
-        "pnl_pct": 0.43,
+        "last": 7.41,
+        "pnl_pct": 0.16,
         "reason": "closed",
-        "mins": 362
+        "mins": 366
       },
       {
         "symbol": "OESX",
@@ -3831,25 +3847,25 @@
         "last": 17.58,
         "pnl_pct": 11.79,
         "reason": "closed",
-        "mins": 360
+        "mins": 364
       },
       {
         "symbol": "RAIN",
         "rule": "S1968",
         "entry": 1.29,
-        "last": 1.26,
-        "pnl_pct": 2.33,
+        "last": 1.27,
+        "pnl_pct": 1.55,
         "reason": "closed",
-        "mins": 356
+        "mins": 360
       },
       {
         "symbol": "PEPG",
         "rule": "S2343",
         "entry": 2.37,
-        "last": 2.445,
-        "pnl_pct": -3.16,
+        "last": 2.41,
+        "pnl_pct": -1.69,
         "reason": "closed",
-        "mins": 347
+        "mins": 351
       },
       {
         "symbol": "PFAI",
@@ -3858,25 +3874,25 @@
         "last": 2.355,
         "pnl_pct": 13.1,
         "reason": "closed",
-        "mins": 347
+        "mins": 351
       },
       {
         "symbol": "NHTC",
         "rule": "S1968",
         "entry": 1.74,
-        "last": 1.68,
-        "pnl_pct": 3.45,
+        "last": 1.69,
+        "pnl_pct": 2.87,
         "reason": "closed",
-        "mins": 341
+        "mins": 345
       },
       {
         "symbol": "GAUZ",
         "rule": "S1968",
         "entry": 0.3782,
-        "last": 0.4374,
-        "pnl_pct": -15.65,
+        "last": 0.4308,
+        "pnl_pct": -13.91,
         "reason": "closed",
-        "mins": 334
+        "mins": 338
       },
       {
         "symbol": "BRLT",
@@ -3885,69 +3901,69 @@
         "last": 1.21,
         "pnl_pct": 5.47,
         "reason": "closed",
-        "mins": 332
+        "mins": 336
       },
       {
         "symbol": "PN",
         "rule": "S1968",
         "entry": 10.1599,
-        "last": 8.03,
-        "pnl_pct": 20.96,
+        "last": 8.04,
+        "pnl_pct": 20.87,
         "reason": "closed",
-        "mins": 307
+        "mins": 311
       },
       {
         "symbol": "CBAT",
         "rule": "S2343",
         "entry": 0.5935,
-        "last": 0.599,
-        "pnl_pct": -0.93,
+        "last": 0.598,
+        "pnl_pct": -0.76,
         "reason": "closed",
-        "mins": 295
+        "mins": 299
       },
       {
         "symbol": "OPRT",
         "rule": "FAM",
         "entry": 7.84,
-        "last": 8.06,
-        "pnl_pct": -2.81,
+        "last": 8.05,
+        "pnl_pct": -2.68,
         "reason": "closed",
-        "mins": 166
+        "mins": 170
       },
       {
         "symbol": "HCTI",
         "rule": "S2343",
         "entry": 1.28,
-        "last": 1.17,
-        "pnl_pct": 8.59,
+        "last": 1.19,
+        "pnl_pct": 7.03,
         "reason": "closed",
-        "mins": 100
+        "mins": 104
       },
       {
         "symbol": "RMAX",
         "rule": "S2343",
         "entry": 11.02,
-        "last": 10.84,
-        "pnl_pct": 1.63,
+        "last": 10.77,
+        "pnl_pct": 2.27,
         "reason": "closed",
-        "mins": 88
+        "mins": 92
       }
     ],
     "by_rule": {
       "FAM": {
         "n": 4,
         "open": 0,
-        "pnl": 125.22572667781523
+        "pnl": 121.21814797848363
       },
       "S1968": {
         "n": 10,
         "open": 0,
-        "pnl": 1247.24183725377
+        "pnl": 1135.553857355086
       },
       "S2343": {
         "n": 14,
         "open": 0,
-        "pnl": -59.49180612535855
+        "pnl": -113.89035722952303
       }
     },
     "day_pnl": -344.68,
