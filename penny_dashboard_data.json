@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-06 09:45:02",
-  "generated_ts": 1786023902.317887,
+  "generated": "2026-08-06 09:48:10",
+  "generated_ts": 1786024090.364583,
   "system": "penny",
   "positions": [
     {
@@ -78,21 +78,21 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.5h old"
+      "detail": "log 0.6h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.4m"
+      "detail": "heartbeat 0.8m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.5,
+    "newest_bar_age_min": 0.6,
     "in_rth": true,
     "ok": true
   },
@@ -122,11 +122,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 75507.1,
-    "cash": 70373.16
+    "net_liq": 75452.44,
+    "cash": 67282.01
   },
-  "live_account_value": 75507.1,
-  "live_cash": 70373.16,
+  "live_account_value": 75452.44,
+  "live_cash": 67282.01,
   "active_trade_count": 5,
   "aggregate_unrealized_pnl_dollar": -99.55,
   "total_position_value": -5133.94,
@@ -2251,7 +2251,19 @@
     },
     {
       "t": "09:45",
-      "v": 75507.1
+      "v": 75480.89
+    },
+    {
+      "t": "09:46",
+      "v": 75486.54
+    },
+    {
+      "t": "09:47",
+      "v": 75452.44
+    },
+    {
+      "t": "09:48",
+      "v": 75452.44
     }
   ],
   "ladders": [],
@@ -2262,46 +2274,55 @@
         "symbol": "ASPN",
         "rule": "FAM",
         "entry": 7.29,
-        "last": 7.63,
-        "pnl_pct": -4.66,
+        "last": 7.7965,
+        "pnl_pct": -6.95,
         "reason": "",
-        "mins": 14
+        "mins": 17
       },
       {
         "symbol": "HNST",
         "rule": "FAM",
         "entry": 5.4605,
-        "last": 5.689,
-        "pnl_pct": -4.18,
+        "last": 5.7711,
+        "pnl_pct": -5.69,
         "reason": "",
-        "mins": 11
+        "mins": 14
       },
       {
         "symbol": "AZI",
         "rule": "S1968",
         "entry": 1.49,
-        "last": 1.455,
-        "pnl_pct": 2.35,
+        "last": 1.41,
+        "pnl_pct": 5.37,
         "reason": "",
-        "mins": 6
+        "mins": 9
       },
       {
         "symbol": "PAYS",
         "rule": "S2343",
         "entry": 11.74,
-        "last": 11.9403,
-        "pnl_pct": -1.71,
+        "last": 12.194,
+        "pnl_pct": -3.87,
         "reason": "",
-        "mins": 7
+        "mins": 10
+      },
+      {
+        "symbol": "GCT",
+        "rule": "S2343",
+        "entry": 52.55,
+        "last": 52.985,
+        "pnl_pct": -0.83,
+        "reason": "",
+        "mins": 4
       },
       {
         "symbol": "SGHT",
         "rule": "S2343",
         "entry": 6.622,
-        "last": 6.5101,
-        "pnl_pct": 1.69,
+        "last": 6.64,
+        "pnl_pct": -0.27,
         "reason": "",
-        "mins": 10
+        "mins": 13
       }
     ],
     "closed": [
@@ -2309,10 +2330,10 @@
         "symbol": "SURG",
         "rule": "S1968",
         "entry": 0.3698,
-        "last": 0.375,
-        "pnl_pct": -1.41,
+        "last": 0.3595,
+        "pnl_pct": 2.79,
         "reason": "closed",
-        "mins": 13
+        "mins": 16
       }
     ],
     "by_rule": {
@@ -2324,19 +2345,75 @@
       "S1968": {
         "n": 2,
         "open": 1,
-        "pnl": -35.15413737155207
+        "pnl": 69.6322336398055
       },
       "S2343": {
-        "n": 2,
-        "open": 2,
+        "n": 3,
+        "open": 3,
         "pnl": 0.0
       }
     },
     "day_pnl": 0.0,
-    "n_open": 5,
+    "n_open": 6,
     "n_closed": 1
   },
   "intents_tail": [
+    {
+      "ts": "2026-08-06 09:47:50",
+      "symbol": "ZVRA",
+      "action": "Buy",
+      "sim_price": 24.24,
+      "shares": 82,
+      "note": "cat_stop_2x"
+    },
+    {
+      "ts": "2026-08-06 09:47:49",
+      "symbol": "TASK",
+      "action": "Buy",
+      "sim_price": 15.04,
+      "shares": 132,
+      "note": "cat_stop_2x"
+    },
+    {
+      "ts": "2026-08-06 09:47:47",
+      "symbol": "AZI",
+      "action": "Buy",
+      "sim_price": 1.41,
+      "shares": 675,
+      "note": "cover_SIG chan 0.0"
+    },
+    {
+      "ts": "2026-08-06 09:47:21",
+      "symbol": "ZVRA",
+      "action": "Short",
+      "sim_price": 12.12,
+      "shares": 82,
+      "note": "short_entry"
+    },
+    {
+      "ts": "2026-08-06 09:47:14",
+      "symbol": "TASK",
+      "action": "Short",
+      "sim_price": 7.52,
+      "shares": 132,
+      "note": "short_entry"
+    },
+    {
+      "ts": "2026-08-06 09:46:48",
+      "symbol": "HRTG",
+      "action": "Short",
+      "sim_price": 35.58,
+      "shares": 28,
+      "note": "short_entry"
+    },
+    {
+      "ts": "2026-08-06 09:46:21",
+      "symbol": "GCT",
+      "action": "Buy",
+      "sim_price": 105.1,
+      "shares": 19,
+      "note": "cat_stop_2x"
+    },
     {
       "ts": "2026-08-06 09:44:36",
       "symbol": "ZYBT",
@@ -2439,22 +2516,6 @@
       "action": "Short",
       "sim_price": 5.3,
       "shares": 188,
-      "note": "short_entry"
-    },
-    {
-      "ts": "2026-08-06 09:32:32",
-      "symbol": "SURG",
-      "action": "Short",
-      "sim_price": 0.3698,
-      "shares": 2704,
-      "note": "short_entry"
-    },
-    {
-      "ts": "2026-08-06 09:31:59",
-      "symbol": "ASPN",
-      "action": "Short",
-      "sim_price": 7.29,
-      "shares": 137,
       "note": "short_entry"
     }
   ],
