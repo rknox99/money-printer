@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-06 10:10:00",
-  "generated_ts": 1786025400.313366,
+  "generated": "2026-08-06 10:13:08",
+  "generated_ts": 1786025588.971262,
   "system": "penny",
   "positions": [
     {
@@ -149,16 +149,16 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.9h old"
+      "detail": "log 1.0h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.5m"
+      "detail": "heartbeat 1.4m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.4,
+    "newest_bar_age_min": 0.5,
     "in_rth": true,
     "ok": true
   },
@@ -188,11 +188,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 75523.95,
-    "cash": 64348.85
+    "net_liq": 75417.6,
+    "cash": 63107.07
   },
-  "live_account_value": 75523.95,
-  "live_cash": 64348.85,
+  "live_account_value": 75417.6,
+  "live_cash": 63107.07,
   "active_trade_count": 11,
   "aggregate_unrealized_pnl_dollar": -150.04,
   "total_position_value": -11175.11,
@@ -2418,6 +2418,18 @@
     {
       "t": "10:10",
       "v": 75523.95
+    },
+    {
+      "t": "10:11",
+      "v": 75417.6
+    },
+    {
+      "t": "10:12",
+      "v": 75417.6
+    },
+    {
+      "t": "10:13",
+      "v": 75417.6
     }
   ],
   "ladders": [],
@@ -2425,29 +2437,47 @@
     "mode": "LIVE",
     "open": [
       {
+        "symbol": "ASPN",
+        "rule": "FAM",
+        "entry": 7.29,
+        "last": 7.7146,
+        "pnl_pct": -5.82,
+        "reason": "",
+        "mins": 42
+      },
+      {
         "symbol": "PAYS",
         "rule": "S2343",
         "entry": 11.74,
-        "last": 12.425,
-        "pnl_pct": -5.83,
+        "last": 12.35,
+        "pnl_pct": -5.2,
         "reason": "",
-        "mins": 32
+        "mins": 35
+      },
+      {
+        "symbol": "GCT",
+        "rule": "S2343",
+        "entry": 52.55,
+        "last": 55.15,
+        "pnl_pct": -4.95,
+        "reason": "",
+        "mins": 29
+      },
+      {
+        "symbol": "SGHT",
+        "rule": "S2343",
+        "entry": 6.622,
+        "last": 6.87,
+        "pnl_pct": -3.75,
+        "reason": "",
+        "mins": 38
       },
       {
         "symbol": "HNST",
         "rule": "FAM",
         "entry": 5.4605,
-        "last": 5.215,
-        "pnl_pct": 4.5,
-        "reason": "",
-        "mins": 36
-      },
-      {
-        "symbol": "ASPN",
-        "rule": "FAM",
-        "entry": 7.29,
-        "last": 7.59,
-        "pnl_pct": -4.12,
+        "last": 5.3073,
+        "pnl_pct": 2.81,
         "reason": "",
         "mins": 39
       },
@@ -2455,73 +2485,55 @@
         "symbol": "KRO",
         "rule": "S2343",
         "entry": 7.73,
-        "last": 7.98,
-        "pnl_pct": -3.23,
+        "last": 7.87,
+        "pnl_pct": -1.81,
         "reason": "",
-        "mins": 22
-      },
-      {
-        "symbol": "GCT",
-        "rule": "S2343",
-        "entry": 52.55,
-        "last": 54.24,
-        "pnl_pct": -3.22,
-        "reason": "",
-        "mins": 26
-      },
-      {
-        "symbol": "SGHT",
-        "rule": "S2343",
-        "entry": 6.622,
-        "last": 6.82,
-        "pnl_pct": -2.99,
-        "reason": "",
-        "mins": 35
-      },
-      {
-        "symbol": "RAIN",
-        "rule": "S1968",
-        "entry": 1.29,
-        "last": 1.275,
-        "pnl_pct": 1.16,
-        "reason": "",
-        "mins": 8
-      },
-      {
-        "symbol": "TASK",
-        "rule": "S2343",
-        "entry": 7.52,
-        "last": 7.605,
-        "pnl_pct": -1.13,
-        "reason": "",
-        "mins": 23
+        "mins": 25
       },
       {
         "symbol": "ZVRA",
         "rule": "S2343",
         "entry": 12.12,
-        "last": 12.0,
-        "pnl_pct": 0.99,
+        "last": 11.97,
+        "pnl_pct": 1.24,
         "reason": "",
-        "mins": 23
+        "mins": 26
+      },
+      {
+        "symbol": "TASK",
+        "rule": "S2343",
+        "entry": 7.52,
+        "last": 7.6,
+        "pnl_pct": -1.06,
+        "reason": "",
+        "mins": 26
       },
       {
         "symbol": "EOLS",
         "rule": "S2343",
         "entry": 7.422,
-        "last": 7.39,
-        "pnl_pct": 0.43,
+        "last": 7.345,
+        "pnl_pct": 1.04,
         "reason": "",
-        "mins": 14
+        "mins": 17
       },
       {
         "symbol": "SBGI",
         "rule": "S2343",
         "entry": 15.69,
-        "last": 15.72,
-        "pnl_pct": -0.19,
+        "last": 15.815,
+        "pnl_pct": -0.8,
         "reason": "",
-        "mins": 19
+        "mins": 22
+      },
+      {
+        "symbol": "RAIN",
+        "rule": "S1968",
+        "entry": 1.29,
+        "last": 1.3,
+        "pnl_pct": -0.78,
+        "reason": "",
+        "mins": 11
       }
     ],
     "closed": [
@@ -2529,10 +2541,10 @@
         "symbol": "SURG",
         "rule": "S1968",
         "entry": 0.3698,
-        "last": 0.3473,
-        "pnl_pct": 6.08,
+        "last": 0.3481,
+        "pnl_pct": 5.87,
         "reason": "closed",
-        "mins": 38
+        "mins": 41
       },
       {
         "symbol": "AZI",
@@ -2541,69 +2553,69 @@
         "last": 2.08,
         "pnl_pct": -39.6,
         "reason": "closed",
-        "mins": 31
+        "mins": 34
       },
       {
         "symbol": "SUGP",
         "rule": "FAM",
         "entry": 1.93,
-        "last": 2.11,
-        "pnl_pct": -9.33,
+        "last": 2.05,
+        "pnl_pct": -6.22,
         "reason": "closed",
-        "mins": 28
+        "mins": 31
       },
       {
         "symbol": "ZYBT",
         "rule": "S1968",
         "entry": 2.08,
-        "last": 1.94,
-        "pnl_pct": 6.73,
+        "last": 1.96,
+        "pnl_pct": 5.77,
         "reason": "closed",
-        "mins": 26
+        "mins": 29
       },
       {
         "symbol": "HRTG",
         "rule": "S2343",
         "entry": 35.58,
-        "last": 33.27,
-        "pnl_pct": 6.49,
+        "last": 33.255,
+        "pnl_pct": 6.53,
         "reason": "closed",
-        "mins": 24
+        "mins": 27
       },
       {
         "symbol": "PRAX",
         "rule": "S2343",
         "entry": 379.04,
-        "last": 382.505,
-        "pnl_pct": -0.91,
+        "last": 380.16,
+        "pnl_pct": -0.3,
         "reason": "closed",
-        "mins": 19
+        "mins": 22
       },
       {
         "symbol": "OESX",
         "rule": "S1968",
         "entry": 19.93,
-        "last": 19.7,
-        "pnl_pct": 1.15,
+        "last": 19.61,
+        "pnl_pct": 1.61,
         "reason": "closed",
-        "mins": 12
+        "mins": 15
       }
     ],
     "by_rule": {
       "FAM": {
         "n": 3,
         "open": 2,
-        "pnl": -233.16062176165795
+        "pnl": -155.4404145077719
       },
       "S1968": {
         "n": 5,
         "open": 1,
-        "pnl": -640.7034284700304
+        "pnl": -658.8607055383469
       },
       "S2343": {
         "n": 10,
         "open": 8,
-        "pnl": 139.4564981595466
+        "pnl": 155.9771664209641
       }
     },
     "day_pnl": 54.0,
@@ -2611,6 +2623,38 @@
     "n_closed": 7
   },
   "intents_tail": [
+    {
+      "ts": "2026-08-06 10:12:16",
+      "symbol": "PFAI",
+      "action": "Buy",
+      "sim_price": 5.42,
+      "shares": 377,
+      "note": "cat_stop_2x"
+    },
+    {
+      "ts": "2026-08-06 10:12:15",
+      "symbol": "PEPG",
+      "action": "Buy",
+      "sim_price": 4.74,
+      "shares": 4,
+      "note": "cat_stop_2x"
+    },
+    {
+      "ts": "2026-08-06 10:11:16",
+      "symbol": "PFAI",
+      "action": "Short",
+      "sim_price": 2.65,
+      "shares": 377,
+      "note": "short_entry"
+    },
+    {
+      "ts": "2026-08-06 10:11:14",
+      "symbol": "PEPG",
+      "action": "Short",
+      "sim_price": 2.37,
+      "shares": 421,
+      "note": "short_entry"
+    },
     {
       "ts": "2026-08-06 10:03:34",
       "symbol": "RAIN",
@@ -2737,38 +2781,6 @@
       "action": "Short",
       "sim_price": 35.58,
       "shares": 28,
-      "note": "short_entry"
-    },
-    {
-      "ts": "2026-08-06 09:46:21",
-      "symbol": "GCT",
-      "action": "Buy",
-      "sim_price": 105.1,
-      "shares": 19,
-      "note": "cat_stop_2x"
-    },
-    {
-      "ts": "2026-08-06 09:44:36",
-      "symbol": "ZYBT",
-      "action": "Short",
-      "sim_price": 2.08,
-      "shares": 480,
-      "note": "short_entry"
-    },
-    {
-      "ts": "2026-08-06 09:44:05",
-      "symbol": "GCT",
-      "action": "Short",
-      "sim_price": 52.55,
-      "shares": 19,
-      "note": "short_entry"
-    },
-    {
-      "ts": "2026-08-06 09:42:01",
-      "symbol": "SUGP",
-      "action": "Short",
-      "sim_price": 1.93,
-      "shares": 518,
       "note": "short_entry"
     }
   ],
