@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-06 09:54:13",
-  "generated_ts": 1786024453.521111,
+  "generated": "2026-08-06 09:57:21",
+  "generated_ts": 1786024641.512528,
   "system": "penny",
   "positions": [
     {
@@ -132,11 +132,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.3m"
+      "detail": "heartbeat 1.7m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.6,
+    "newest_bar_age_min": 0.7,
     "in_rth": true,
     "ok": true
   },
@@ -166,11 +166,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 75518.11,
-    "cash": 66349.21
+    "net_liq": 75498.52,
+    "cash": 65309.11
   },
-  "live_account_value": 75518.11,
-  "live_cash": 66349.21,
+  "live_account_value": 75498.52,
+  "live_cash": 65309.11,
   "active_trade_count": 9,
   "aggregate_unrealized_pnl_dollar": -155.89,
   "total_position_value": -9168.9,
@@ -2332,6 +2332,18 @@
     {
       "t": "09:54",
       "v": 75518.11
+    },
+    {
+      "t": "09:55",
+      "v": 75502.24
+    },
+    {
+      "t": "09:56",
+      "v": 75498.52
+    },
+    {
+      "t": "09:57",
+      "v": 75498.52
     }
   ],
   "ladders": [],
@@ -2342,44 +2354,26 @@
         "symbol": "ASPN",
         "rule": "FAM",
         "entry": 7.29,
-        "last": 7.71,
-        "pnl_pct": -5.76,
+        "last": 7.67,
+        "pnl_pct": -5.21,
         "reason": "",
-        "mins": 23
+        "mins": 26
       },
       {
         "symbol": "HNST",
         "rule": "FAM",
         "entry": 5.4605,
-        "last": 5.68,
-        "pnl_pct": -4.02,
+        "last": 5.71,
+        "pnl_pct": -4.57,
         "reason": "",
-        "mins": 20
+        "mins": 23
       },
       {
         "symbol": "PAYS",
         "rule": "S2343",
         "entry": 11.74,
-        "last": 12.2,
-        "pnl_pct": -3.92,
-        "reason": "",
-        "mins": 16
-      },
-      {
-        "symbol": "KRO",
-        "rule": "S2343",
-        "entry": 7.73,
-        "last": 7.53,
-        "pnl_pct": 2.59,
-        "reason": "",
-        "mins": 6
-      },
-      {
-        "symbol": "SGHT",
-        "rule": "S2343",
-        "entry": 6.622,
-        "last": 6.745,
-        "pnl_pct": -1.86,
+        "last": 12.26,
+        "pnl_pct": -4.43,
         "reason": "",
         "mins": 19
       },
@@ -2387,37 +2381,55 @@
         "symbol": "TASK",
         "rule": "S2343",
         "entry": 7.52,
-        "last": 7.65,
-        "pnl_pct": -1.73,
+        "last": 7.695,
+        "pnl_pct": -2.33,
         "reason": "",
-        "mins": 7
-      },
-      {
-        "symbol": "ZVRA",
-        "rule": "S2343",
-        "entry": 12.12,
-        "last": 12.08,
-        "pnl_pct": 0.33,
-        "reason": "",
-        "mins": 7
+        "mins": 10
       },
       {
         "symbol": "SBGI",
         "rule": "S2343",
         "entry": 15.69,
-        "last": 15.65,
-        "pnl_pct": 0.25,
+        "last": 15.42,
+        "pnl_pct": 1.72,
         "reason": "",
-        "mins": 3
+        "mins": 6
       },
       {
         "symbol": "GCT",
         "rule": "S2343",
         "entry": 52.55,
-        "last": 52.51,
-        "pnl_pct": 0.08,
+        "last": 53.18,
+        "pnl_pct": -1.2,
+        "reason": "",
+        "mins": 13
+      },
+      {
+        "symbol": "KRO",
+        "rule": "S2343",
+        "entry": 7.73,
+        "last": 7.685,
+        "pnl_pct": 0.58,
+        "reason": "",
+        "mins": 9
+      },
+      {
+        "symbol": "ZVRA",
+        "rule": "S2343",
+        "entry": 12.12,
+        "last": 12.1419,
+        "pnl_pct": -0.18,
         "reason": "",
         "mins": 10
+      },
+      {
+        "symbol": "SGHT",
+        "rule": "S2343",
+        "entry": 6.622,
+        "last": 6.63,
+        "pnl_pct": -0.12,
+        "reason": "",
+        "mins": 22
       }
     ],
     "closed": [
@@ -2425,63 +2437,63 @@
         "symbol": "SURG",
         "rule": "S1968",
         "entry": 0.3698,
-        "last": 0.3789,
-        "pnl_pct": -2.46,
+        "last": 0.3638,
+        "pnl_pct": 1.62,
         "reason": "closed",
-        "mins": 22
+        "mins": 25
       },
       {
         "symbol": "AZI",
         "rule": "S1968",
         "entry": 1.49,
-        "last": 1.585,
-        "pnl_pct": -6.38,
+        "last": 1.54,
+        "pnl_pct": -3.36,
         "reason": "closed",
-        "mins": 15
+        "mins": 18
       },
       {
         "symbol": "SUGP",
         "rule": "FAM",
         "entry": 1.93,
-        "last": 2.075,
-        "pnl_pct": -7.51,
+        "last": 2.0984,
+        "pnl_pct": -8.73,
         "reason": "closed",
-        "mins": 12
+        "mins": 15
       },
       {
         "symbol": "ZYBT",
         "rule": "S1968",
         "entry": 2.08,
-        "last": 2.0,
-        "pnl_pct": 3.85,
+        "last": 2.055,
+        "pnl_pct": 1.2,
         "reason": "closed",
-        "mins": 10
+        "mins": 13
       },
       {
         "symbol": "HRTG",
         "rule": "S2343",
         "entry": 35.58,
-        "last": 33.675,
-        "pnl_pct": 5.35,
+        "last": 33.845,
+        "pnl_pct": 4.88,
         "reason": "closed",
-        "mins": 8
+        "mins": 11
       }
     ],
     "by_rule": {
       "FAM": {
         "n": 3,
         "open": 2,
-        "pnl": -187.8238341968915
+        "pnl": -218.1347150259066
       },
       "S1968": {
         "n": 3,
         "open": 0,
-        "pnl": -124.76186740073247
+        "pnl": -13.28207432864281
       },
       "S2343": {
         "n": 8,
         "open": 7,
-        "pnl": 133.85328836424966
+        "pnl": 121.90837549184931
       }
     },
     "day_pnl": 54.0,
@@ -2489,6 +2501,14 @@
     "n_closed": 5
   },
   "intents_tail": [
+    {
+      "ts": "2026-08-06 09:56:29",
+      "symbol": "EOLS",
+      "action": "Short",
+      "sim_price": 7.38,
+      "shares": 135,
+      "note": "short_entry"
+    },
     {
       "ts": "2026-08-06 09:52:38",
       "symbol": "SBGI",
@@ -2639,14 +2659,6 @@
       "action": "Short",
       "sim_price": 1.48,
       "shares": 675,
-      "note": "short_entry"
-    },
-    {
-      "ts": "2026-08-06 09:38:26",
-      "symbol": "PAYS",
-      "action": "Short",
-      "sim_price": 11.74,
-      "shares": 85,
       "note": "short_entry"
     }
   ],
