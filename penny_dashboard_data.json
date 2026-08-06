@@ -1,38 +1,16 @@
 {
-  "generated": "2026-08-06 11:50:12",
-  "generated_ts": 1786031412.352543,
+  "generated": "2026-08-06 11:53:27",
+  "generated_ts": 1786031607.007816,
   "system": "penny",
   "positions": [
-    {
-      "symbol": "TASK",
-      "shares": -132.0,
-      "avg_cost": 7.5121,
-      "mkt_price": 8.126,
-      "position_value": -1072.63,
-      "unrealized_pnl_dollar": -81.04,
-      "unrealized_pnl": -8.17,
-      "in_universe": true,
-      "position": "short"
-    },
     {
       "symbol": "PFAI",
       "shares": -377.0,
       "avg_cost": 2.7047,
-      "mkt_price": 2.5868,
-      "position_value": -975.24,
-      "unrealized_pnl_dollar": 44.45,
-      "unrealized_pnl": 4.36,
-      "in_universe": true,
-      "position": "short"
-    },
-    {
-      "symbol": "GCT",
-      "shares": -19.0,
-      "avg_cost": 52.4961,
-      "mkt_price": 53.9156,
-      "position_value": -1024.4,
-      "unrealized_pnl_dollar": -26.97,
-      "unrealized_pnl": -2.7,
+      "mkt_price": 2.6081,
+      "position_value": -983.24,
+      "unrealized_pnl_dollar": 36.45,
+      "unrealized_pnl": 3.57,
       "in_universe": true,
       "position": "short"
     },
@@ -40,10 +18,10 @@
       "symbol": "KRO",
       "shares": -131.0,
       "avg_cost": 7.722,
-      "mkt_price": 8.2747,
-      "position_value": -1083.98,
-      "unrealized_pnl_dollar": -72.4,
-      "unrealized_pnl": -7.16,
+      "mkt_price": 8.256,
+      "position_value": -1081.54,
+      "unrealized_pnl_dollar": -69.95,
+      "unrealized_pnl": -6.91,
       "in_universe": true,
       "position": "short"
     }
@@ -77,11 +55,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 2.1m"
+      "detail": "heartbeat 2.6m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.6,
+    "newest_bar_age_min": 0.8,
     "in_rth": true,
     "ok": true
   },
@@ -100,25 +78,25 @@
   "slippage": {
     "configured": true,
     "summary": {
-      "avg_slippage_bps": -321.7,
-      "total_commissions": 426.13,
-      "total_slippage_cost": -309.87,
-      "total_fees_and_slippage": 116.26,
-      "avg_slippage_pct": 0.1125,
-      "trade_count": 431,
+      "avg_slippage_bps": -306.2,
+      "total_commissions": 433.51,
+      "total_slippage_cost": -340.65,
+      "total_fees_and_slippage": 92.86,
+      "avg_slippage_pct": 0.0867,
+      "trade_count": 434,
       "missed_trades": 95,
-      "match_rate": 81.9
+      "match_rate": 82.0
     }
   },
   "account_summary": {
-    "net_liq": 74449.2,
-    "cash": 71312.06
+    "net_liq": 74445.48,
+    "cash": 73462.24
   },
-  "live_account_value": 74449.2,
-  "live_cash": 71312.06,
-  "active_trade_count": 4,
-  "aggregate_unrealized_pnl_dollar": -135.96,
-  "total_position_value": -4156.25,
+  "live_account_value": 74445.48,
+  "live_cash": 73462.24,
+  "active_trade_count": 2,
+  "aggregate_unrealized_pnl_dollar": -33.5,
+  "total_position_value": -2064.78,
   "system_ok": true,
   "shadow": {
     "days": 16,
@@ -2741,6 +2719,18 @@
     {
       "t": "11:50",
       "v": 74449.2
+    },
+    {
+      "t": "11:51",
+      "v": 74445.48
+    },
+    {
+      "t": "11:52",
+      "v": 74445.48
+    },
+    {
+      "t": "11:53",
+      "v": 74445.48
     }
   ],
   "ladders": [],
@@ -2751,28 +2741,10 @@
         "symbol": "GAUZ",
         "rule": "S1968",
         "entry": 0.3782,
-        "last": 0.6618,
-        "pnl_pct": -74.99,
+        "last": 0.6002,
+        "pnl_pct": -58.7,
         "reason": "",
-        "mins": 86
-      },
-      {
-        "symbol": "TASK",
-        "rule": "S2343",
-        "entry": 7.52,
-        "last": 8.115,
-        "pnl_pct": -7.91,
-        "reason": "",
-        "mins": 123
-      },
-      {
-        "symbol": "KRO",
-        "rule": "S2343",
-        "entry": 7.73,
-        "last": 8.265,
-        "pnl_pct": -6.92,
-        "reason": "",
-        "mins": 122
+        "mins": 89
       },
       {
         "symbol": "PFAI",
@@ -2781,7 +2753,7 @@
         "last": 2.7499,
         "pnl_pct": -1.47,
         "reason": "",
-        "mins": 99
+        "mins": 102
       }
     ],
     "closed": [
@@ -2789,55 +2761,55 @@
         "symbol": "ASPN",
         "rule": "FAM",
         "entry": 7.29,
-        "last": 7.655,
-        "pnl_pct": -5.01,
+        "last": 7.62,
+        "pnl_pct": -4.53,
         "reason": "closed",
-        "mins": 139
+        "mins": 142
       },
       {
         "symbol": "SURG",
         "rule": "S1968",
         "entry": 0.3698,
-        "last": 0.333,
-        "pnl_pct": 9.95,
+        "last": 0.3221,
+        "pnl_pct": 12.9,
         "reason": "closed",
-        "mins": 138
+        "mins": 141
       },
       {
         "symbol": "HNST",
         "rule": "FAM",
         "entry": 5.4605,
-        "last": 5.47,
-        "pnl_pct": -0.17,
+        "last": 5.485,
+        "pnl_pct": -0.45,
         "reason": "closed",
-        "mins": 136
+        "mins": 139
       },
       {
         "symbol": "SGHT",
         "rule": "S2343",
         "entry": 6.622,
-        "last": 7.08,
-        "pnl_pct": -6.92,
+        "last": 7.09,
+        "pnl_pct": -7.07,
         "reason": "closed",
-        "mins": 135
+        "mins": 138
       },
       {
         "symbol": "PAYS",
         "rule": "S2343",
         "entry": 11.74,
-        "last": 12.7395,
-        "pnl_pct": -8.51,
+        "last": 12.74,
+        "pnl_pct": -8.52,
         "reason": "closed",
-        "mins": 132
+        "mins": 135
       },
       {
         "symbol": "AZI",
         "rule": "S1968",
         "entry": 1.49,
-        "last": 1.495,
-        "pnl_pct": -0.34,
+        "last": 1.5399,
+        "pnl_pct": -3.35,
         "reason": "closed",
-        "mins": 131
+        "mins": 134
       },
       {
         "symbol": "SUGP",
@@ -2846,16 +2818,16 @@
         "last": 2.0558,
         "pnl_pct": -6.52,
         "reason": "closed",
-        "mins": 128
+        "mins": 131
       },
       {
         "symbol": "GCT",
         "rule": "S2343",
         "entry": 52.55,
-        "last": 54.25,
+        "last": 54.255,
         "pnl_pct": -3.24,
         "reason": "closed",
-        "mins": 126
+        "mins": 129
       },
       {
         "symbol": "ZYBT",
@@ -2864,52 +2836,70 @@
         "last": 1.86,
         "pnl_pct": 10.58,
         "reason": "closed",
-        "mins": 126
+        "mins": 129
       },
       {
         "symbol": "HRTG",
         "rule": "S2343",
         "entry": 35.58,
-        "last": 33.18,
-        "pnl_pct": 6.75,
+        "last": 33.295,
+        "pnl_pct": 6.42,
         "reason": "closed",
-        "mins": 124
+        "mins": 127
+      },
+      {
+        "symbol": "TASK",
+        "rule": "S2343",
+        "entry": 7.52,
+        "last": 8.1362,
+        "pnl_pct": -8.19,
+        "reason": "closed",
+        "mins": 126
       },
       {
         "symbol": "ZVRA",
         "rule": "S2343",
         "entry": 12.12,
-        "last": 11.775,
-        "pnl_pct": 2.85,
+        "last": 11.795,
+        "pnl_pct": 2.68,
         "reason": "closed",
-        "mins": 123
+        "mins": 126
+      },
+      {
+        "symbol": "KRO",
+        "rule": "S2343",
+        "entry": 7.73,
+        "last": 8.268,
+        "pnl_pct": -6.96,
+        "reason": "closed",
+        "mins": 125
       },
       {
         "symbol": "PRAX",
         "rule": "S2343",
         "entry": 379.04,
-        "last": 371.125,
-        "pnl_pct": 2.09,
+        "last": 370.765,
+        "pnl_pct": 2.18,
         "reason": "closed",
-        "mins": 119
+        "mins": 122
       },
       {
         "symbol": "SBGI",
         "rule": "S2343",
         "entry": 15.69,
-        "last": 15.385,
-        "pnl_pct": 1.94,
+        "last": 15.46,
+        "pnl_pct": 1.47,
         "reason": "closed",
-        "mins": 119
+        "mins": 122
       },
       {
         "symbol": "EOLS",
         "rule": "S2343",
         "entry": 7.422,
-        "last": 7.335,
-        "pnl_pct": 1.17,
+        "last": 7.32,
+        "pnl_pct": 1.37,
         "reason": "closed",
-        "mins": 114
+        "mins": 117
       },
       {
         "symbol": "OESX",
@@ -2918,7 +2908,7 @@
         "last": 17.9351,
         "pnl_pct": 10.01,
         "reason": "closed",
-        "mins": 112
+        "mins": 115
       },
       {
         "symbol": "RAIN",
@@ -2927,74 +2917,74 @@
         "last": 1.3,
         "pnl_pct": -0.78,
         "reason": "closed",
-        "mins": 108
+        "mins": 111
       },
       {
         "symbol": "PEPG",
         "rule": "S2343",
         "entry": 2.37,
-        "last": 2.29,
-        "pnl_pct": 3.38,
+        "last": 2.295,
+        "pnl_pct": 3.16,
         "reason": "closed",
-        "mins": 99
+        "mins": 102
       },
       {
         "symbol": "NHTC",
         "rule": "S1968",
         "entry": 1.74,
-        "last": 1.67,
-        "pnl_pct": 4.02,
+        "last": 1.708,
+        "pnl_pct": 1.84,
         "reason": "closed",
-        "mins": 93
+        "mins": 96
       },
       {
         "symbol": "BRLT",
         "rule": "S1968",
         "entry": 1.28,
-        "last": 1.22,
-        "pnl_pct": 4.69,
+        "last": 1.21,
+        "pnl_pct": 5.47,
         "reason": "closed",
-        "mins": 84
+        "mins": 87
       },
       {
         "symbol": "PN",
         "rule": "S1968",
         "entry": 10.1599,
-        "last": 12.87,
-        "pnl_pct": -26.67,
+        "last": 11.33,
+        "pnl_pct": -11.52,
         "reason": "closed",
-        "mins": 59
+        "mins": 62
       },
       {
         "symbol": "CBAT",
         "rule": "S2343",
         "entry": 0.5935,
-        "last": 0.581,
-        "pnl_pct": 2.11,
+        "last": 0.5725,
+        "pnl_pct": 3.54,
         "reason": "closed",
-        "mins": 47
+        "mins": 50
       }
     ],
     "by_rule": {
       "FAM": {
         "n": 3,
         "open": 0,
-        "pnl": -292.47425419112346
+        "pnl": -287.3390136828166
       },
       "S1968": {
         "n": 10,
         "open": 2,
-        "pnl": 286.57607309828995
+        "pnl": 628.8032324159545
       },
       "S2343": {
         "n": 12,
-        "open": 2,
-        "pnl": 40.32166131877938
+        "open": 0,
+        "pnl": -328.84793936241726
       }
     },
-    "day_pnl": 105.97,
-    "n_open": 4,
-    "n_closed": 21
+    "day_pnl": -44.63,
+    "n_open": 2,
+    "n_closed": 23
   },
   "intents_tail": [
     {
@@ -3169,23 +3159,23 @@
     },
     {
       "date": "2026-07-29",
-      "pnl": -454.6
+      "pnl": -454.11
     },
     {
       "date": "2026-07-30",
-      "pnl": -460.84
+      "pnl": -457.3
     },
     {
       "date": "2026-07-31",
-      "pnl": -473.32
+      "pnl": -474.31
     },
     {
       "date": "2026-08-03",
-      "pnl": -90.76
+      "pnl": -89.01
     },
     {
       "date": "2026-08-04",
-      "pnl": -171.54
+      "pnl": -172.02
     }
   ],
   "trade_history": [
@@ -3223,10 +3213,20 @@
       "symbol": "VGAS",
       "entry_time": "2026-08-04 12:10:39",
       "exit_time": "2026-08-04 15:45:36",
-      "shares": 100.0,
+      "shares": 87.0,
       "entry_price": 1.23,
       "exit_price": 1.29,
-      "pnl_dollar": 4.87,
+      "pnl_dollar": 4.12,
+      "pnl_pct": 4.88
+    },
+    {
+      "symbol": "VGAS",
+      "entry_time": "2026-08-04 12:10:39",
+      "exit_time": "2026-08-04 15:45:36",
+      "shares": 13.0,
+      "entry_price": 1.23,
+      "exit_price": 1.29,
+      "pnl_dollar": -0.24,
       "pnl_pct": 4.88
     },
     {
@@ -3236,7 +3236,7 @@
       "shares": 87.0,
       "entry_price": 1.23,
       "exit_price": 1.29,
-      "pnl_dollar": 4.86,
+      "pnl_dollar": 4.97,
       "pnl_pct": 4.88
     },
     {
@@ -3363,31 +3363,31 @@
       "symbol": "ATPC",
       "entry_time": "2026-08-04 10:07:53",
       "exit_time": "2026-08-04 15:45:34",
+      "shares": 35.0,
+      "entry_price": 2.48,
+      "exit_price": 2.45,
+      "pnl_dollar": -2.28,
+      "pnl_pct": -1.21
+    },
+    {
+      "symbol": "ATPC",
+      "entry_time": "2026-08-04 10:07:53",
+      "exit_time": "2026-08-04 15:45:34",
+      "shares": 65.0,
+      "entry_price": 2.48,
+      "exit_price": 2.45,
+      "pnl_dollar": -2.71,
+      "pnl_pct": -1.21
+    },
+    {
+      "symbol": "ATPC",
+      "entry_time": "2026-08-04 10:07:53",
+      "exit_time": "2026-08-04 15:45:34",
       "shares": 20.0,
       "entry_price": 2.48,
       "exit_price": 2.452,
-      "pnl_dollar": -1.06,
+      "pnl_dollar": -0.69,
       "pnl_pct": -1.13
-    },
-    {
-      "symbol": "ATPC",
-      "entry_time": "2026-08-04 10:07:53",
-      "exit_time": "2026-08-04 15:45:34",
-      "shares": 15.0,
-      "entry_price": 2.48,
-      "exit_price": 2.45,
-      "pnl_dollar": -1.47,
-      "pnl_pct": -1.21
-    },
-    {
-      "symbol": "ATPC",
-      "entry_time": "2026-08-04 10:07:53",
-      "exit_time": "2026-08-04 15:45:34",
-      "shares": 85.0,
-      "entry_price": 2.48,
-      "exit_price": 2.45,
-      "pnl_dollar": -3.55,
-      "pnl_pct": -1.21
     },
     {
       "symbol": "SDOT",
@@ -3513,20 +3513,20 @@
       "symbol": "BAER",
       "entry_time": "2026-08-04 09:46:43",
       "exit_time": "2026-08-04 15:45:31",
-      "shares": 115.0,
+      "shares": 46.0,
       "entry_price": 1.77,
       "exit_price": 1.775,
-      "pnl_dollar": -0.17,
+      "pnl_dollar": -0.86,
       "pnl_pct": 0.28
     },
     {
       "symbol": "BAER",
       "entry_time": "2026-08-04 09:46:43",
       "exit_time": "2026-08-04 15:45:31",
-      "shares": 46.0,
+      "shares": 115.0,
       "entry_price": 1.77,
       "exit_price": 1.775,
-      "pnl_dollar": -0.86,
+      "pnl_dollar": -0.17,
       "pnl_pct": 0.28
     },
     {
@@ -3593,20 +3593,20 @@
       "symbol": "XGN",
       "entry_time": "2026-08-04 09:40:06",
       "exit_time": "2026-08-04 15:45:30",
-      "shares": 2.0,
+      "shares": 36.0,
       "entry_price": 6.07,
       "exit_price": 6.4305,
-      "pnl_dollar": 0.56,
+      "pnl_dollar": 12.02,
       "pnl_pct": 5.94
     },
     {
       "symbol": "XGN",
       "entry_time": "2026-08-04 09:40:06",
       "exit_time": "2026-08-04 15:45:30",
-      "shares": 36.0,
+      "shares": 2.0,
       "entry_price": 6.07,
       "exit_price": 6.4305,
-      "pnl_dollar": 12.02,
+      "pnl_dollar": 0.56,
       "pnl_pct": 5.94
     },
     {
@@ -3678,23 +3678,13 @@
       "exit_price": 0.195,
       "pnl_dollar": -7.26,
       "pnl_pct": -9.05
-    },
-    {
-      "symbol": "NXTT",
-      "entry_time": "2026-08-04 10:13:03",
-      "exit_time": "2026-08-04 10:33:15",
-      "shares": 200.0,
-      "entry_price": 0.2144,
-      "exit_price": 0.195,
-      "pnl_dollar": -4.86,
-      "pnl_pct": -9.05
     }
   ],
   "realized_summary": {
-    "trades": 365,
-    "total": -2197.7,
-    "wins": 89,
-    "win_rate": 24.4
+    "trades": 369,
+    "total": -2193.39,
+    "wins": 91,
+    "win_rate": 24.7
   },
-  "total_realized_pnl": -2197.7
+  "total_realized_pnl": -2193.39
 }
