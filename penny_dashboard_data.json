@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-06 12:25:21",
-  "generated_ts": 1786033521.822477,
+  "generated": "2026-08-06 12:28:37",
+  "generated_ts": 1786033717.209354,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -22,7 +22,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
@@ -32,11 +32,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 2.0m"
+      "detail": "heartbeat 0.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.7,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
@@ -2836,40 +2836,42 @@
     {
       "t": "12:25",
       "v": 74512.99
+    },
+    {
+      "t": "12:26",
+      "v": 74512.99
+    },
+    {
+      "t": "12:27",
+      "v": 74512.99
+    },
+    {
+      "t": "12:28",
+      "v": 74512.99
     }
   ],
   "ladders": [],
   "shorts": {
     "mode": "LIVE",
-    "open": [
-      {
-        "symbol": "GAUZ",
-        "rule": "S1968",
-        "entry": 0.3782,
-        "last": 0.5137,
-        "pnl_pct": -35.83,
-        "reason": "",
-        "mins": 121
-      }
-    ],
+    "open": [],
     "closed": [
       {
         "symbol": "ASPN",
         "rule": "FAM",
         "entry": 7.29,
-        "last": 7.68,
-        "pnl_pct": -5.35,
+        "last": 7.7288,
+        "pnl_pct": -6.02,
         "reason": "closed",
-        "mins": 174
+        "mins": 177
       },
       {
         "symbol": "SURG",
         "rule": "S1968",
         "entry": 0.3698,
-        "last": 0.3098,
-        "pnl_pct": 16.22,
+        "last": 0.3084,
+        "pnl_pct": 16.6,
         "reason": "closed",
-        "mins": 173
+        "mins": 176
       },
       {
         "symbol": "HNST",
@@ -2878,79 +2880,79 @@
         "last": 5.605,
         "pnl_pct": -2.65,
         "reason": "closed",
-        "mins": 171
+        "mins": 174
       },
       {
         "symbol": "SGHT",
         "rule": "S2343",
         "entry": 6.622,
-        "last": 7.11,
-        "pnl_pct": -7.37,
+        "last": 7.09,
+        "pnl_pct": -7.07,
         "reason": "closed",
-        "mins": 170
+        "mins": 173
       },
       {
         "symbol": "PAYS",
         "rule": "S2343",
         "entry": 11.74,
-        "last": 12.6001,
-        "pnl_pct": -7.33,
+        "last": 12.5133,
+        "pnl_pct": -6.59,
         "reason": "closed",
-        "mins": 167
+        "mins": 170
       },
       {
         "symbol": "AZI",
         "rule": "S1968",
         "entry": 1.49,
-        "last": 1.5303,
-        "pnl_pct": -2.7,
+        "last": 1.42,
+        "pnl_pct": 4.7,
         "reason": "closed",
-        "mins": 166
+        "mins": 169
       },
       {
         "symbol": "SUGP",
         "rule": "FAM",
         "entry": 1.93,
-        "last": 2.38,
-        "pnl_pct": -23.32,
+        "last": 2.4001,
+        "pnl_pct": -24.36,
         "reason": "closed",
-        "mins": 163
+        "mins": 166
       },
       {
         "symbol": "GCT",
         "rule": "S2343",
         "entry": 52.55,
-        "last": 54.77,
-        "pnl_pct": -4.22,
+        "last": 54.795,
+        "pnl_pct": -4.27,
         "reason": "closed",
-        "mins": 161
+        "mins": 164
       },
       {
         "symbol": "ZYBT",
         "rule": "S1968",
         "entry": 2.08,
-        "last": 1.92,
-        "pnl_pct": 7.69,
+        "last": 1.93,
+        "pnl_pct": 7.21,
         "reason": "closed",
-        "mins": 161
+        "mins": 164
       },
       {
         "symbol": "HRTG",
         "rule": "S2343",
         "entry": 35.58,
-        "last": 34.5,
-        "pnl_pct": 3.04,
+        "last": 34.45,
+        "pnl_pct": 3.18,
         "reason": "closed",
-        "mins": 159
+        "mins": 162
       },
       {
         "symbol": "TASK",
         "rule": "S2343",
         "entry": 7.52,
-        "last": 8.16,
-        "pnl_pct": -8.51,
+        "last": 8.17,
+        "pnl_pct": -8.64,
         "reason": "closed",
-        "mins": 158
+        "mins": 161
       },
       {
         "symbol": "ZVRA",
@@ -2959,88 +2961,97 @@
         "last": 11.63,
         "pnl_pct": 4.04,
         "reason": "closed",
-        "mins": 158
+        "mins": 161
       },
       {
         "symbol": "KRO",
         "rule": "S2343",
         "entry": 7.73,
-        "last": 8.31,
-        "pnl_pct": -7.5,
+        "last": 8.3,
+        "pnl_pct": -7.37,
         "reason": "closed",
-        "mins": 157
+        "mins": 160
       },
       {
         "symbol": "PRAX",
         "rule": "S2343",
         "entry": 379.04,
-        "last": 370.35,
-        "pnl_pct": 2.29,
+        "last": 368.37,
+        "pnl_pct": 2.82,
         "reason": "closed",
-        "mins": 154
+        "mins": 157
       },
       {
         "symbol": "SBGI",
         "rule": "S2343",
         "entry": 15.69,
-        "last": 15.385,
-        "pnl_pct": 1.94,
+        "last": 15.45,
+        "pnl_pct": 1.53,
         "reason": "closed",
-        "mins": 154
+        "mins": 157
       },
       {
         "symbol": "EOLS",
         "rule": "S2343",
         "entry": 7.422,
-        "last": 7.44,
-        "pnl_pct": -0.24,
+        "last": 7.455,
+        "pnl_pct": -0.44,
         "reason": "closed",
-        "mins": 149
+        "mins": 152
       },
       {
         "symbol": "OESX",
         "rule": "S1968",
         "entry": 19.93,
-        "last": 18.12,
-        "pnl_pct": 9.08,
+        "last": 17.6673,
+        "pnl_pct": 11.35,
         "reason": "closed",
-        "mins": 147
+        "mins": 150
       },
       {
         "symbol": "RAIN",
         "rule": "S1968",
         "entry": 1.29,
-        "last": 1.28,
-        "pnl_pct": 0.78,
+        "last": 1.27,
+        "pnl_pct": 1.55,
         "reason": "closed",
-        "mins": 143
+        "mins": 146
       },
       {
         "symbol": "PEPG",
         "rule": "S2343",
         "entry": 2.37,
-        "last": 2.13,
-        "pnl_pct": 10.13,
+        "last": 2.16,
+        "pnl_pct": 8.86,
         "reason": "closed",
-        "mins": 134
+        "mins": 137
       },
       {
         "symbol": "PFAI",
         "rule": "S1968",
         "entry": 2.71,
-        "last": 2.69,
-        "pnl_pct": 0.74,
+        "last": 2.41,
+        "pnl_pct": 11.07,
         "reason": "closed",
-        "mins": 134
+        "mins": 137
       },
       {
         "symbol": "NHTC",
         "rule": "S1968",
         "entry": 1.74,
-        "last": 1.67,
-        "pnl_pct": 4.02,
+        "last": 1.695,
+        "pnl_pct": 2.59,
         "reason": "closed",
-        "mins": 128
+        "mins": 131
+      },
+      {
+        "symbol": "GAUZ",
+        "rule": "S1968",
+        "entry": 0.3782,
+        "last": 0.4496,
+        "pnl_pct": -18.88,
+        "reason": "closed",
+        "mins": 124
       },
       {
         "symbol": "BRLT",
@@ -3049,49 +3060,57 @@
         "last": 1.225,
         "pnl_pct": 4.3,
         "reason": "closed",
-        "mins": 119
+        "mins": 122
       },
       {
         "symbol": "PN",
         "rule": "S1968",
         "entry": 10.1599,
-        "last": 13.42,
-        "pnl_pct": -32.09,
+        "last": 14.46,
+        "pnl_pct": -42.32,
         "reason": "closed",
-        "mins": 94
+        "mins": 97
       },
       {
         "symbol": "CBAT",
         "rule": "S2343",
         "entry": 0.5935,
-        "last": 0.5701,
-        "pnl_pct": 3.94,
+        "last": 0.57,
+        "pnl_pct": 3.96,
         "reason": "closed",
-        "mins": 82
+        "mins": 85
       }
     ],
     "by_rule": {
       "FAM": {
         "n": 3,
         "open": 0,
-        "pnl": -782.8033557059002
+        "pnl": -825.5748789082431
       },
       "S1968": {
         "n": 10,
-        "open": 1,
-        "pnl": 200.98864355299713
+        "open": 0,
+        "pnl": -45.83026501156269
       },
       "S2343": {
         "n": 12,
         "open": 0,
-        "pnl": -244.8098212311011
+        "pnl": -250.11635913863927
       }
     },
-    "day_pnl": 34.54,
-    "n_open": 1,
-    "n_closed": 24
+    "day_pnl": -344.68,
+    "n_open": 0,
+    "n_closed": 25
   },
   "intents_tail": [
+    {
+      "ts": "2026-08-06 12:26:21",
+      "symbol": "GAUZ",
+      "action": "Buy",
+      "sim_price": 0.5154,
+      "shares": 2764,
+      "note": "cover_T120"
+    },
     {
       "ts": "2026-08-06 12:23:56",
       "symbol": "ATNI",
@@ -3243,14 +3262,6 @@
       "sim_price": 20.32,
       "shares": 101,
       "note": "cat_stop_2x"
-    },
-    {
-      "ts": "2026-08-06 10:51:46",
-      "symbol": "PN",
-      "action": "Short",
-      "sim_price": 9.82,
-      "shares": 101,
-      "note": "short_entry"
     }
   ],
   "live_daily": [
