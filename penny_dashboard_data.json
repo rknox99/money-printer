@@ -1,23 +1,10 @@
 {
-  "generated": "2026-08-06 06:16:24",
-  "generated_ts": 1786011384.717526,
+  "generated": "2026-08-06 06:26:11",
+  "generated_ts": 1786011971.110057,
   "system": "penny",
   "positions": [],
-  "ib_all_ok": true,
-  "ib_auth_info": {
-    "authenticated": true,
-    "established": true,
-    "competing": false,
-    "connected": true,
-    "message": "",
-    "MAC": "06:E5:17:B5:F2:EE",
-    "serverInfo": {
-      "serverName": "JisfN7059",
-      "serverVersion": "Build 10.46.2b, Jul 27, 2026 10:58:29 AM"
-    },
-    "hardware_info": "0fb8f7f3|06:E5:17:B5:F2:EE",
-    "fail": ""
-  },
+  "ib_all_ok": false,
+  "ib_auth_info": {},
   "component_checks": [
     {
       "name": "Data Stream",
@@ -27,7 +14,7 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 8.8h old"
+      "detail": "log 9.0h old"
     },
     {
       "name": "Engine",
@@ -36,7 +23,7 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 1.0,
+    "newest_bar_age_min": 0.7,
     "in_rth": false,
     "ok": true
   },
@@ -74,7 +61,7 @@
   "active_trade_count": 0,
   "aggregate_unrealized_pnl_dollar": 0,
   "total_position_value": 0,
-  "system_ok": true,
+  "system_ok": false,
   "shadow": {
     "days": 16,
     "signals_wide": 311,
@@ -1899,6 +1886,14 @@
     },
     {
       "t": "06:16",
+      "v": 75606.65
+    },
+    {
+      "t": "06:17",
+      "v": 75606.65
+    },
+    {
+      "t": "06:18",
       "v": 75606.65
     }
   ],
