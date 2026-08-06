@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-06 08:38:36",
-  "generated_ts": 1786019916.250735,
+  "generated": "2026-08-06 08:41:46",
+  "generated_ts": 1786020106.090684,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -27,7 +27,7 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 11.2h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
@@ -36,17 +36,17 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.1,
+    "newest_bar_age_min": 0.3,
     "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-08-05 20:50:28] running Penny Stock Daily Stock Pull.ipynb ...",
     "[2026-08-05 21:19:41] Penny Stock Daily Stock Pull.ipynb: OK",
     "[2026-08-05 21:21:41] running Penny Export Live Thresholds.ipynb ...",
     "[2026-08-05 21:23:42] Penny Export Live Thresholds.ipynb: OK",
     "[2026-08-05 21:23:42] running Penny Stock Shadow Scorer.ipynb ...",
-    "[2026-08-05 21:25:28] Penny Stock Shadow Scorer.ipynb: OK"
+    "[2026-08-05 21:25:28] Penny Stock Shadow Scorer.ipynb: OK",
+    "[2026-08-06 08:39:56] penny scheduler v4 started (engine 9:12 | short check 10:30 | pull 20:20 | thresholds 21:05 | shadow 21:15)"
   ],
   "universe": {
     "symbols": 2225,
@@ -1935,6 +1935,18 @@
     },
     {
       "t": "08:38",
+      "v": 75606.65
+    },
+    {
+      "t": "08:39",
+      "v": 75606.65
+    },
+    {
+      "t": "08:40",
+      "v": 75606.65
+    },
+    {
+      "t": "08:41",
       "v": 75606.65
     }
   ],
