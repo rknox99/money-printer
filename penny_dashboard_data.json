@@ -1,16 +1,16 @@
 {
-  "generated": "2026-08-07 10:12:26",
-  "generated_ts": 1786111946.623967,
+  "generated": "2026-08-07 10:15:35",
+  "generated_ts": 1786112135.41628,
   "system": "penny",
   "positions": [
     {
       "symbol": "GLXG",
       "shares": -462.0,
       "avg_cost": 1.0866,
-      "mkt_price": 1.1361,
-      "position_value": -524.88,
-      "unrealized_pnl_dollar": -22.88,
-      "unrealized_pnl": -4.56,
+      "mkt_price": 1.1961,
+      "position_value": -552.6,
+      "unrealized_pnl_dollar": -50.6,
+      "unrealized_pnl": -10.08,
       "in_universe": true,
       "position": "short"
     },
@@ -18,10 +18,10 @@
       "symbol": "CPS",
       "shares": -15.0,
       "avg_cost": 31.4125,
-      "mkt_price": 31.604,
-      "position_value": -474.06,
-      "unrealized_pnl_dollar": -2.87,
-      "unrealized_pnl": -0.61,
+      "mkt_price": 31.3945,
+      "position_value": -470.92,
+      "unrealized_pnl_dollar": 0.27,
+      "unrealized_pnl": 0.06,
       "in_universe": true,
       "position": "short"
     },
@@ -29,10 +29,10 @@
       "symbol": "XFOR",
       "shares": -104.0,
       "avg_cost": 4.7801,
-      "mkt_price": 4.726,
-      "position_value": -491.5,
-      "unrealized_pnl_dollar": 5.63,
-      "unrealized_pnl": 1.13,
+      "mkt_price": 4.7065,
+      "position_value": -489.48,
+      "unrealized_pnl_dollar": 7.65,
+      "unrealized_pnl": 1.54,
       "in_universe": true,
       "position": "short"
     },
@@ -40,10 +40,10 @@
       "symbol": "SSP",
       "shares": -140.0,
       "avg_cost": 3.5626,
-      "mkt_price": 3.5971,
-      "position_value": -503.6,
-      "unrealized_pnl_dollar": -4.84,
-      "unrealized_pnl": -0.97,
+      "mkt_price": 3.6309,
+      "position_value": -508.33,
+      "unrealized_pnl_dollar": -9.57,
+      "unrealized_pnl": -1.92,
       "in_universe": true,
       "position": "short"
     },
@@ -51,10 +51,10 @@
       "symbol": "RCEL",
       "shares": -73.0,
       "avg_cost": 6.886,
-      "mkt_price": 6.992,
-      "position_value": -510.42,
-      "unrealized_pnl_dollar": -7.74,
-      "unrealized_pnl": -1.54,
+      "mkt_price": 6.9564,
+      "position_value": -507.82,
+      "unrealized_pnl_dollar": -5.14,
+      "unrealized_pnl": -1.02,
       "in_universe": true,
       "position": "short"
     },
@@ -62,10 +62,10 @@
       "symbol": "UXIN",
       "shares": -409.0,
       "avg_cost": 1.2248,
-      "mkt_price": 1.264,
-      "position_value": -516.98,
-      "unrealized_pnl_dollar": -16.04,
-      "unrealized_pnl": -3.2,
+      "mkt_price": 1.244,
+      "position_value": -508.8,
+      "unrealized_pnl_dollar": -7.86,
+      "unrealized_pnl": -1.57,
       "in_universe": true,
       "position": "short"
     }
@@ -98,11 +98,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.0m"
+      "detail": "heartbeat 0.8m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.8,
+    "newest_bar_age_min": 0.9,
     "in_rth": true,
     "ok": true
   },
@@ -132,14 +132,14 @@
     }
   },
   "account_summary": {
-    "net_liq": 74563.66,
-    "cash": 71523.58
+    "net_liq": 74565.81,
+    "cash": 71527.87
   },
-  "live_account_value": 74563.66,
-  "live_cash": 71523.58,
+  "live_account_value": 74565.81,
+  "live_cash": 71527.87,
   "active_trade_count": 6,
-  "aggregate_unrealized_pnl_dollar": -48.74,
-  "total_position_value": -3021.44,
+  "aggregate_unrealized_pnl_dollar": -65.25,
+  "total_position_value": -3037.95,
   "system_ok": true,
   "shadow": {
     "days": 16,
@@ -2914,6 +2914,18 @@
     {
       "t": "10:12",
       "v": 74563.66
+    },
+    {
+      "t": "10:13",
+      "v": 74563.66
+    },
+    {
+      "t": "10:14",
+      "v": 74565.81
+    },
+    {
+      "t": "10:15",
+      "v": 74565.81
     }
   ],
   "ladders": [],
@@ -2924,37 +2936,19 @@
         "symbol": "GLXG",
         "rule": "S1968",
         "entry": 1.0918,
-        "last": 1.1399,
-        "pnl_pct": -4.41,
+        "last": 1.185,
+        "pnl_pct": -8.54,
         "reason": "",
-        "mins": 26
-      },
-      {
-        "symbol": "UXIN",
-        "rule": "S2343",
-        "entry": 1.23,
-        "last": 1.269,
-        "pnl_pct": -3.17,
-        "reason": "",
-        "mins": 7
-      },
-      {
-        "symbol": "RCEL",
-        "rule": "S2343",
-        "entry": 6.9,
-        "last": 7.012,
-        "pnl_pct": -1.62,
-        "reason": "",
-        "mins": 27
+        "mins": 29
       },
       {
         "symbol": "XFOR",
         "rule": "S2343",
         "entry": 4.79,
-        "last": 4.725,
-        "pnl_pct": 1.36,
+        "last": 4.715,
+        "pnl_pct": 1.57,
         "reason": "",
-        "mins": 9
+        "mins": 12
       },
       {
         "symbol": "SSP",
@@ -2963,16 +2957,34 @@
         "last": 3.61,
         "pnl_pct": -1.12,
         "reason": "",
-        "mins": 27
+        "mins": 30
+      },
+      {
+        "symbol": "RCEL",
+        "rule": "S2343",
+        "entry": 6.9,
+        "last": 6.975,
+        "pnl_pct": -1.09,
+        "reason": "",
+        "mins": 30
       },
       {
         "symbol": "CPS",
         "rule": "S2343",
         "entry": 31.48,
-        "last": 31.4882,
-        "pnl_pct": -0.03,
+        "last": 31.21,
+        "pnl_pct": 0.86,
         "reason": "",
-        "mins": 4
+        "mins": 7
+      },
+      {
+        "symbol": "UXIN",
+        "rule": "S2343",
+        "entry": 1.23,
+        "last": 1.2329,
+        "pnl_pct": -0.24,
+        "reason": "",
+        "mins": 10
       }
     ],
     "closed": [
@@ -2980,73 +2992,73 @@
         "symbol": "AZI",
         "rule": "S1968",
         "entry": 1.77,
-        "last": 1.6821,
-        "pnl_pct": 4.97,
+        "last": 1.69,
+        "pnl_pct": 4.52,
         "reason": "closed",
-        "mins": 40
+        "mins": 43
       },
       {
         "symbol": "VATE",
         "rule": "S1968",
         "entry": 11.46,
-        "last": 11.9715,
-        "pnl_pct": -4.46,
+        "last": 12.35,
+        "pnl_pct": -7.77,
         "reason": "closed",
-        "mins": 40
+        "mins": 43
       },
       {
         "symbol": "YXT",
         "rule": "S1968",
         "entry": 6.96,
-        "last": 6.31,
-        "pnl_pct": 9.34,
+        "last": 6.2401,
+        "pnl_pct": 10.34,
         "reason": "closed",
-        "mins": 40
+        "mins": 43
       },
       {
         "symbol": "EXFY",
         "rule": "S2343",
         "entry": 2.43,
-        "last": 2.5121,
-        "pnl_pct": -3.38,
+        "last": 2.5203,
+        "pnl_pct": -3.72,
         "reason": "closed",
-        "mins": 37
+        "mins": 40
       },
       {
         "symbol": "ZENA",
         "rule": "S1968",
         "entry": 1.73,
-        "last": 1.6503,
-        "pnl_pct": 4.61,
+        "last": 1.655,
+        "pnl_pct": 4.34,
         "reason": "closed",
-        "mins": 29
+        "mins": 32
       },
       {
         "symbol": "UEIC",
         "rule": "S1968",
         "entry": 5.89,
-        "last": 5.505,
-        "pnl_pct": 6.54,
+        "last": 5.51,
+        "pnl_pct": 6.45,
         "reason": "closed",
-        "mins": 28
+        "mins": 31
       },
       {
         "symbol": "CARS",
         "rule": "S2343",
         "entry": 13.08,
-        "last": 13.085,
-        "pnl_pct": -0.04,
+        "last": 13.13,
+        "pnl_pct": -0.38,
         "reason": "closed",
-        "mins": 21
+        "mins": 24
       },
       {
         "symbol": "ZYBT",
         "rule": "S1968",
         "entry": 3.18,
-        "last": 2.435,
-        "pnl_pct": 23.43,
+        "last": 2.355,
+        "pnl_pct": 25.94,
         "reason": "closed",
-        "mins": 18
+        "mins": 21
       },
       {
         "symbol": "CTEV",
@@ -3055,26 +3067,43 @@
         "last": 32.49,
         "pnl_pct": 13.91,
         "reason": "closed",
-        "mins": 17
+        "mins": 20
+      },
+      {
+        "symbol": "SRZN",
+        "rule": "S2343",
+        "entry": 25.28,
+        "last": 25.19,
+        "pnl_pct": 0.36,
+        "reason": "closed",
+        "mins": 10
       }
     ],
     "by_rule": {
       "S1968": {
         "n": 7,
         "open": 1,
-        "pnl": 1110.3235822048546
+        "pnl": 1095.6822738671935
       },
       "S2343": {
-        "n": 8,
+        "n": 9,
         "open": 5,
-        "pnl": 262.3535667645817
+        "pnl": 254.2167517973157
       }
     },
     "day_pnl": 106.41,
     "n_open": 6,
-    "n_closed": 9
+    "n_closed": 10
   },
   "intents_tail": [
+    {
+      "ts": "2026-08-07 10:15:33",
+      "symbol": "BRLT",
+      "action": "Short",
+      "sim_price": 1.28,
+      "shares": 390,
+      "note": "short_entry"
+    },
     {
       "ts": "2026-08-07 10:10:35",
       "symbol": "CPS",
@@ -3225,14 +3254,6 @@
       "action": "Buy",
       "sim_price": 13.8,
       "shares": 73,
-      "note": "cat_stop_2x"
-    },
-    {
-      "ts": "2026-08-07 09:46:21",
-      "symbol": "UEIC",
-      "action": "Buy",
-      "sim_price": 11.78,
-      "shares": 87,
       "note": "cat_stop_2x"
     }
   ],
