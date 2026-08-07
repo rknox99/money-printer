@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-07 09:47:12",
-  "generated_ts": 1786110432.419729,
+  "generated": "2026-08-07 09:50:22",
+  "generated_ts": 1786110622.387174,
   "system": "penny",
   "positions": [
     {
@@ -55,7 +55,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -65,11 +65,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 1.3m"
+      "detail": "heartbeat 1.2m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.5,
+    "newest_bar_age_min": 0.7,
     "in_rth": true,
     "ok": true
   },
@@ -99,11 +99,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 74604.85,
-    "cash": 72587.62
+    "net_liq": 74614.26,
+    "cash": 73104.59
   },
-  "live_account_value": 74604.85,
-  "live_cash": 72587.62,
+  "live_account_value": 74614.26,
+  "live_cash": 73104.59,
   "active_trade_count": 3,
   "aggregate_unrealized_pnl_dollar": -7.95,
   "total_position_value": -1519.1,
@@ -2780,7 +2780,19 @@
     },
     {
       "t": "09:47",
-      "v": 74604.85
+      "v": 74614.26
+    },
+    {
+      "t": "09:48",
+      "v": 74614.26
+    },
+    {
+      "t": "09:49",
+      "v": 74614.26
+    },
+    {
+      "t": "09:50",
+      "v": 74614.26
     }
   ],
   "ladders": [],
@@ -2791,19 +2803,37 @@
         "symbol": "VATE",
         "rule": "S1968",
         "entry": 11.46,
-        "last": 10.475,
-        "pnl_pct": 8.6,
+        "last": 10.39,
+        "pnl_pct": 9.34,
         "reason": "",
-        "mins": 15
+        "mins": 18
+      },
+      {
+        "symbol": "UEIC",
+        "rule": "S1968",
+        "entry": 5.89,
+        "last": 5.7893,
+        "pnl_pct": 1.71,
+        "reason": "",
+        "mins": 6
+      },
+      {
+        "symbol": "RCEL",
+        "rule": "S2343",
+        "entry": 6.9,
+        "last": 6.86,
+        "pnl_pct": 0.58,
+        "reason": "",
+        "mins": 5
       },
       {
         "symbol": "EXFY",
         "rule": "S2343",
         "entry": 2.43,
-        "last": 2.435,
-        "pnl_pct": -0.21,
+        "last": 2.43,
+        "pnl_pct": 0.0,
         "reason": "",
-        "mins": 12
+        "mins": 15
       }
     ],
     "closed": [
@@ -2811,38 +2841,54 @@
         "symbol": "AZI",
         "rule": "S1968",
         "entry": 1.77,
-        "last": 1.545,
-        "pnl_pct": 12.71,
+        "last": 1.51,
+        "pnl_pct": 14.69,
         "reason": "closed",
-        "mins": 15
+        "mins": 18
       },
       {
         "symbol": "YXT",
         "rule": "S1968",
         "entry": 6.96,
-        "last": 6.27,
-        "pnl_pct": 9.91,
+        "last": 6.28,
+        "pnl_pct": 9.77,
         "reason": "closed",
-        "mins": 15
+        "mins": 18
       }
     ],
     "by_rule": {
       "S1968": {
-        "n": 3,
-        "open": 1,
-        "pnl": 565.6414377556987
+        "n": 4,
+        "open": 2,
+        "pnl": 611.4845119812974
       },
       "S2343": {
-        "n": 1,
-        "open": 1,
+        "n": 2,
+        "open": 2,
         "pnl": 0.0
       }
     },
     "day_pnl": 0.0,
-    "n_open": 2,
+    "n_open": 4,
     "n_closed": 2
   },
   "intents_tail": [
+    {
+      "ts": "2026-08-07 09:49:37",
+      "symbol": "GLXG",
+      "action": "Buy",
+      "sim_price": 2.18,
+      "shares": 462,
+      "note": "cat_stop_2x"
+    },
+    {
+      "ts": "2026-08-07 09:48:55",
+      "symbol": "SENS",
+      "action": "Short",
+      "sim_price": 6.2301,
+      "shares": 0,
+      "note": "stale_lag4_notfiring"
+    },
     {
       "ts": "2026-08-07 09:46:48",
       "symbol": "GLXG",
