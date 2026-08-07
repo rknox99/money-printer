@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-07 09:56:45",
-  "generated_ts": 1786111005.109728,
+  "generated": "2026-08-07 09:59:59",
+  "generated_ts": 1786111199.854712,
   "system": "penny",
   "positions": [
     {
@@ -71,16 +71,16 @@
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.3h old"
+      "detail": "log 0.4h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 1.9m"
+      "detail": "heartbeat 1.1m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.1,
+    "newest_bar_age_min": 0.3,
     "in_rth": true,
     "ok": true
   },
@@ -110,11 +110,11 @@
     }
   },
   "account_summary": {
-    "net_liq": 74615.81,
-    "cash": 72608.92
+    "net_liq": 74625.65,
+    "cash": 72628.6
   },
-  "live_account_value": 74615.81,
-  "live_cash": 72608.92,
+  "live_account_value": 74625.65,
+  "live_cash": 72628.6,
   "active_trade_count": 4,
   "aggregate_unrealized_pnl_dollar": 9.16,
   "total_position_value": -2005.67,
@@ -2828,6 +2828,18 @@
     {
       "t": "09:56",
       "v": 74615.81
+    },
+    {
+      "t": "09:57",
+      "v": 74615.81
+    },
+    {
+      "t": "09:58",
+      "v": 74615.81
+    },
+    {
+      "t": "09:59",
+      "v": 74625.65
     }
   ],
   "ladders": [],
@@ -2835,49 +2847,40 @@
     "mode": "LIVE",
     "open": [
       {
-        "symbol": "SSP",
-        "rule": "S2343",
-        "entry": 3.57,
-        "last": 3.51,
-        "pnl_pct": 1.68,
+        "symbol": "UEIC",
+        "rule": "S1968",
+        "entry": 5.89,
+        "last": 5.59,
+        "pnl_pct": 5.09,
         "reason": "",
-        "mins": 11
+        "mins": 16
       },
       {
         "symbol": "GLXG",
         "rule": "S1968",
         "entry": 1.0918,
-        "last": 1.11,
-        "pnl_pct": -1.67,
+        "last": 1.1135,
+        "pnl_pct": -1.99,
         "reason": "",
-        "mins": 10
-      },
-      {
-        "symbol": "EXFY",
-        "rule": "S2343",
-        "entry": 2.43,
-        "last": 2.395,
-        "pnl_pct": 1.44,
-        "reason": "",
-        "mins": 21
+        "mins": 14
       },
       {
         "symbol": "RCEL",
         "rule": "S2343",
         "entry": 6.9,
-        "last": 6.8401,
-        "pnl_pct": 0.87,
+        "last": 7.03,
+        "pnl_pct": -1.88,
         "reason": "",
-        "mins": 11
+        "mins": 15
       },
       {
-        "symbol": "UEIC",
-        "rule": "S1968",
-        "entry": 5.89,
-        "last": 5.8399,
-        "pnl_pct": 0.85,
+        "symbol": "SSP",
+        "rule": "S2343",
+        "entry": 3.57,
+        "last": 3.52,
+        "pnl_pct": 1.4,
         "reason": "",
-        "mins": 12
+        "mins": 15
       }
     ],
     "closed": [
@@ -2885,56 +2888,82 @@
         "symbol": "AZI",
         "rule": "S1968",
         "entry": 1.77,
-        "last": 1.53,
-        "pnl_pct": 13.56,
+        "last": 1.575,
+        "pnl_pct": 11.02,
         "reason": "closed",
-        "mins": 24
+        "mins": 28
       },
       {
         "symbol": "VATE",
         "rule": "S1968",
         "entry": 11.46,
-        "last": 10.95,
-        "pnl_pct": 4.45,
+        "last": 11.0909,
+        "pnl_pct": 3.22,
         "reason": "closed",
-        "mins": 24
+        "mins": 28
       },
       {
         "symbol": "YXT",
         "rule": "S1968",
         "entry": 6.96,
-        "last": 6.28,
-        "pnl_pct": 9.77,
+        "last": 6.37,
+        "pnl_pct": 8.48,
         "reason": "closed",
-        "mins": 24
+        "mins": 28
+      },
+      {
+        "symbol": "EXFY",
+        "rule": "S2343",
+        "entry": 2.43,
+        "last": 2.376,
+        "pnl_pct": 2.22,
+        "reason": "closed",
+        "mins": 25
       },
       {
         "symbol": "ZENA",
         "rule": "S1968",
         "entry": 1.73,
-        "last": 1.6601,
-        "pnl_pct": 4.04,
+        "last": 1.65,
+        "pnl_pct": 4.62,
         "reason": "closed",
-        "mins": 13
+        "mins": 17
+      },
+      {
+        "symbol": "CARS",
+        "rule": "S2343",
+        "entry": 13.08,
+        "last": 13.07,
+        "pnl_pct": 0.08,
+        "reason": "closed",
+        "mins": 9
       }
     ],
     "by_rule": {
       "S1968": {
         "n": 6,
         "open": 2,
-        "pnl": 795.5040296069358
+        "pnl": 683.4751497937453
       },
       "S2343": {
-        "n": 3,
-        "open": 3,
-        "pnl": 0.0
+        "n": 4,
+        "open": 2,
+        "pnl": 57.46687054026527
       }
     },
-    "day_pnl": 58.75,
-    "n_open": 5,
-    "n_closed": 4
+    "day_pnl": 69.0,
+    "n_open": 4,
+    "n_closed": 6
   },
   "intents_tail": [
+    {
+      "ts": "2026-08-07 09:59:19",
+      "symbol": "UEIC",
+      "action": "Buy",
+      "sim_price": 5.61,
+      "shares": 87,
+      "note": "cover_SIG chan 0.0"
+    },
     {
       "ts": "2026-08-07 09:55:44",
       "symbol": "CTEV",
@@ -3086,14 +3115,6 @@
       "sim_price": 2.43,
       "shares": 205,
       "note": "short_entry"
-    },
-    {
-      "ts": "2026-08-07 09:35:10",
-      "symbol": "VATE",
-      "action": "Buy",
-      "sim_price": 22.92,
-      "shares": 45,
-      "note": "cat_stop_2x"
     }
   ],
   "live_daily": [
