@@ -175,7 +175,7 @@ sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.35)">
     <div class="chart-box"><canvas id="mainChart"></canvas></div></div>
   <div class="card"><div class="ch"><span class="ct">Open Positions (live)</span><span class="badge bg" id="pos-badge">--</span></div><div class="pgrid" id="pos-grid"><div class="placeholder">No open positions</div></div></div>
   <div class="card"><div class="ch"><span class="ct">Opening Positions</span><span class="badge ba" id="lad-badge">--</span></div><div class="pgrid" id="lad-grid"><div class="placeholder">No active signals</div></div></div>
-  <div class="card"><div class="ch"><span class="ct">Round Trips (today)</span><span class="badge bb" id="int-badge">--</span></div><div id="int-area"><div class="placeholder">No completed round trips yet</div></div></div>
+  <div class="card"><div class="ch"><span class="ct">Round Trips (since 8/6)</span><span class="badge bb" id="int-badge">--</span></div><div id="int-area"><div class="placeholder">No completed round trips yet</div></div></div>
   <div class="row r2">
     <div class="card"><div class="ch"><span class="ct">Shadow vs Live (three-short book)</span><span class="badge bb" id="board-badge">--</span></div><div id="board-area"></div></div>
     <div class="card"><div class="ch"><span class="ct">Slippage &amp; Fees (pilot)</span><span class="badge ba" id="slip-badge">--</span></div><div id="slip-area"><div class="placeholder">Waiting for matched trades...</div></div></div>
@@ -235,9 +235,9 @@ function renderChart(d){
   var v2=d.shadow.v2;
   var labels=[],ds=[];
   if(v2&&v2.daily&&v2.daily.length){
-    labels=v2.daily.map(function(r){return r.date.slice(5);});
+    labels=['start'].concat(v2.daily.map(function(r){return r.date.slice(5);}));
     var cum=0;
-    ds.push({label:'SHADOW',data:v2.daily.map(function(r){cum+=r.usd;return cum;}),
+    ds.push({label:'SHADOW',data:[0].concat(v2.daily.map(function(r){cum+=r.usd;return cum;})),
       borderColor:'#10b981',backgroundColor:'transparent',borderWidth:2.5,pointRadius:0,tension:0.25});
   } else {return;}
   if(d.live_daily&&d.live_daily.length){var lm={};d.live_daily.forEach(function(r){var L=r.date.slice(5);lm[L]=r.pnl;if(labels.indexOf(L)<0){labels.push(L);ds.forEach(function(s){s.data.push(s.data[s.data.length-1]);});}});
@@ -267,12 +267,18 @@ function renderPositions(d){
 
 function renderBoard(d){
   var a=document.getElementById('board-area');window.__d=d;
-  var v2=(d.shadow||{}).v2;
+  var v2=(d.shadow||{}).v2,lb=d.live_by_rule||{};
   if(!a)return;
   if(!v2||!v2.by_rule){a.innerHTML='<div class="placeholder">No shadow v2 data</div>';return;}
-  var rows=v2.by_rule.map(function(r){return '<tr><td>'+r.rule+'</td><td style="text-align:right">'+r.n+'</td><td style="text-align:right">'+r.win+'%</td><td style="text-align:right;color:'+(r.usd>=0?'var(--green)':'var(--red)')+'">$'+r.usd.toLocaleString()+'</td></tr>';}).join('');
+  var rows=v2.by_rule.map(function(r){var L=lb[r.rule]||{};
+    return '<tr><td>'+r.rule+'</td>'+
+    '<td style="text-align:right">'+r.n+' / '+(L.n!=null?L.n:'--')+'</td>'+
+    '<td style="text-align:right">'+r.win+'% / '+(L.win!=null?L.win+'%':'--')+'</td>'+
+    '<td style="text-align:right;color:'+(r.usd>=0?'var(--green)':'var(--red)')+'">$'+r.usd.toLocaleString()+
+    ' / <span style="color:'+((L.usd||0)>=0?'var(--green)':'var(--red)')+'">'+(L.usd!=null?'$'+L.usd.toLocaleString():'--')+'</span></td></tr>';}).join('');
   var live=(typeof d.total_realized_pnl==='number')?d.total_realized_pnl:null;
-  a.innerHTML='<table class="t"><tr><th>rule</th><th style="text-align:right">n</th><th style="text-align:right">win%</th><th style="text-align:right">$</th></tr>'+rows+'</table>'+
+  a.innerHTML='<div class="sc-sub" style="margin-bottom:4px">shadow / LIVE</div>'+
+  '<table class="t"><tr><th>rule</th><th style="text-align:right">n</th><th style="text-align:right">win%</th><th style="text-align:right">$</th></tr>'+rows+'</table>'+
   '<div class="sc-sub" style="margin-top:6px">shadow total $'+(v2.total_usd||0).toLocaleString()+(live!==null?' | live realized $'+live.toLocaleString():'')+'</div>';
 }
 
@@ -352,7 +358,7 @@ function renderIntents(d){
   if(!R.length){a.innerHTML='<div class="placeholder">No completed round trips yet</div>';return;}
   var rows=R.slice().reverse().map(function(t){
     var dir=t.direction==='short'?'SHORT':'LONG';
-    return '<tr><td><b>'+t.symbol+'</b> <span class="sc-sub">'+dir+'</span></td>'+
+    return '<tr><td><span class="sc-sub">'+String(t.date||'').slice(5)+'</span> <b>'+t.symbol+'</b> <span class="sc-sub">'+dir+'</span></td>'+
     '<td style="text-align:right">'+t.entry_price+' \u2192 '+t.exit_price+'</td>'+
     '<td style="text-align:right;color:'+(t.pnl_dollar>=0?'var(--green)':'var(--red)')+'">'+
     (t.pnl_dollar>=0?'+':'')+'$'+Math.abs(t.pnl_dollar).toLocaleString()+' ('+(t.pnl_pct>=0?'+':'')+t.pnl_pct+'%)</td></tr>';}).join('');
@@ -384,7 +390,7 @@ async function tick(){
   try{var age=(Date.now()-new Date(d.generated.replace(' ','T')))/60000;
     lu.style.color=age>10?'#ef4444':(age>4?'#f59e0b':'#64748b');
     lu.textContent+=' ('+(age<1?'<1':Math.round(age))+'m ago)';}catch(e){}
-  renderHero(d);renderChart(d);renderPositions(d);renderBoard(d);renderSlippage(d);renderTrades(d);renderHealth(d);renderLadders(d);renderIntents(d);renderAcct(d);
+  [renderHero,renderChart,renderPositions,renderBoard,renderSlippage,renderTrades,renderHealth,renderLadders,renderIntents,renderAcct].forEach(function(fn){try{fn(d);}catch(e){console.error('panel '+fn.name+' failed:',e);}});var gEl=document.getElementById('gen-stamp');if(!gEl){gEl=document.createElement('div');gEl.id='gen-stamp';gEl.style.cssText='position:fixed;bottom:4px;right:8px;font-size:10px;color:#64748b;font-family:JetBrains Mono';document.body.appendChild(gEl);}gEl.textContent='data: '+(d.generated_at||'?');
 }
 tick();setInterval(tick,REFRESH);
 </script>
