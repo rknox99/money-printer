@@ -1,8 +1,20 @@
 {
-  "generated": "2026-08-07 09:34:21",
-  "generated_ts": 1786109661.80232,
+  "generated": "2026-08-07 09:37:35",
+  "generated_ts": 1786109855.514487,
   "system": "penny",
-  "positions": [],
+  "positions": [
+    {
+      "symbol": "VATE",
+      "shares": -45.0,
+      "avg_cost": 11.4373,
+      "mkt_price": 11.5,
+      "position_value": -517.5,
+      "unrealized_pnl_dollar": -2.82,
+      "unrealized_pnl": -0.55,
+      "in_universe": true,
+      "position": "short"
+    }
+  ],
   "ib_all_ok": true,
   "ib_auth_info": {
     "authenticated": true,
@@ -21,31 +33,31 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 1m old"
+      "detail": "bars 0m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.3h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
       "ok": true,
-      "detail": "heartbeat 0.7m"
+      "detail": "heartbeat 1.8m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.7,
+    "newest_bar_age_min": 0.0,
     "in_rth": true,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-08-06 21:05:48] running Penny Export Live Thresholds.ipynb ...",
-    "[2026-08-06 21:07:56] Penny Export Live Thresholds.ipynb: OK",
     "[2026-08-06 21:15:56] running Penny Stock Shadow Scorer.ipynb ...",
     "[2026-08-06 21:17:44] Penny Stock Shadow Scorer.ipynb: OK",
     "[2026-08-07 08:15:48] penny scheduler v4 started (engine 9:12 | short check 10:30 | pull 20:20 | thresholds 21:05 | shadow 21:15)",
-    "[2026-08-07 09:13:49] launching execution engine"
+    "[2026-08-07 09:13:49] launching execution engine",
+    "[2026-08-07 09:37:18] penny scheduler v4 started (engine 9:12 | short check 10:30 | pull 20:20 | thresholds 21:05 | shadow 21:15)",
+    "[2026-08-07 09:37:18] launching execution engine"
   ],
   "universe": {
     "symbols": 2227,
@@ -55,24 +67,24 @@
     "configured": true,
     "summary": {
       "avg_slippage_bps": -297.7,
-      "total_commissions": 430.68,
-      "total_slippage_cost": -371.83,
-      "total_fees_and_slippage": 58.85,
-      "avg_slippage_pct": 0.0547,
-      "trade_count": 436,
-      "missed_trades": 100,
-      "match_rate": 81.3
+      "total_commissions": 430.84,
+      "total_slippage_cost": -341.03,
+      "total_fees_and_slippage": 89.81,
+      "avg_slippage_pct": 0.0834,
+      "trade_count": 437,
+      "missed_trades": 101,
+      "match_rate": 81.2
     }
   },
   "account_summary": {
-    "net_liq": 74571.8,
-    "cash": 74571.8
+    "net_liq": 74606.6,
+    "cash": 73629.64
   },
-  "live_account_value": 74571.8,
-  "live_cash": 74571.8,
-  "active_trade_count": 0,
-  "aggregate_unrealized_pnl_dollar": 0,
-  "total_position_value": 0,
+  "live_account_value": 74606.6,
+  "live_cash": 73629.64,
+  "active_trade_count": 1,
+  "aggregate_unrealized_pnl_dollar": -2.82,
+  "total_position_value": -517.5,
   "system_ok": true,
   "shadow": {
     "days": 16,
@@ -2694,20 +2706,91 @@
     },
     {
       "t": "09:34",
-      "v": 74571.8
+      "v": 74568.98
+    },
+    {
+      "t": "09:35",
+      "v": 74568.98
+    },
+    {
+      "t": "09:36",
+      "v": 74606.6
+    },
+    {
+      "t": "09:37",
+      "v": 74606.6
     }
   ],
   "ladders": [],
   "shorts": {
     "mode": "LIVE",
-    "open": [],
-    "closed": [],
-    "by_rule": {},
+    "open": [
+      {
+        "symbol": "VATE",
+        "rule": "S1968",
+        "entry": 11.46,
+        "last": 10.9899,
+        "pnl_pct": 4.1,
+        "reason": "",
+        "mins": 5
+      }
+    ],
+    "closed": [
+      {
+        "symbol": "AZI",
+        "rule": "S1968",
+        "entry": 1.77,
+        "last": 1.6093,
+        "pnl_pct": 9.08,
+        "reason": "closed",
+        "mins": 5
+      },
+      {
+        "symbol": "YXT",
+        "rule": "S1968",
+        "entry": 6.96,
+        "last": 6.735,
+        "pnl_pct": 3.23,
+        "reason": "closed",
+        "mins": 5
+      }
+    ],
+    "by_rule": {
+      "S1968": {
+        "n": 3,
+        "open": 1,
+        "pnl": 307.79636664718487
+      }
+    },
     "day_pnl": 0.0,
-    "n_open": 0,
-    "n_closed": 0
+    "n_open": 1,
+    "n_closed": 2
   },
   "intents_tail": [
+    {
+      "ts": "2026-08-07 09:36:17",
+      "symbol": "EXFY",
+      "action": "Buy",
+      "sim_price": 4.86,
+      "shares": 205,
+      "note": "cat_stop_2x"
+    },
+    {
+      "ts": "2026-08-07 09:35:23",
+      "symbol": "EXFY",
+      "action": "Short",
+      "sim_price": 2.43,
+      "shares": 205,
+      "note": "short_entry"
+    },
+    {
+      "ts": "2026-08-07 09:35:10",
+      "symbol": "VATE",
+      "action": "Buy",
+      "sim_price": 22.92,
+      "shares": 45,
+      "note": "cat_stop_2x"
+    },
     {
       "ts": "2026-08-07 09:32:37",
       "symbol": "YXT",
@@ -2740,23 +2823,23 @@
     },
     {
       "date": "2026-07-28",
-      "pnl": -493.14
+      "pnl": -492.25
     },
     {
       "date": "2026-07-29",
-      "pnl": -454.11
+      "pnl": -454.31
     },
     {
       "date": "2026-07-30",
-      "pnl": -457.3
+      "pnl": -459.18
     },
     {
       "date": "2026-07-31",
-      "pnl": -475.14
+      "pnl": -473.28
     },
     {
       "date": "2026-08-03",
-      "pnl": -86.58
+      "pnl": -87.7
     },
     {
       "date": "2026-08-04",
@@ -3178,20 +3261,20 @@
       "symbol": "XGN",
       "entry_time": "2026-08-04 09:40:06",
       "exit_time": "2026-08-04 15:45:30",
-      "shares": 2.0,
+      "shares": 36.0,
       "entry_price": 6.07,
       "exit_price": 6.4305,
-      "pnl_dollar": 0.56,
+      "pnl_dollar": 12.02,
       "pnl_pct": 5.94
     },
     {
       "symbol": "XGN",
       "entry_time": "2026-08-04 09:40:06",
       "exit_time": "2026-08-04 15:45:30",
-      "shares": 36.0,
+      "shares": 2.0,
       "entry_price": 6.07,
       "exit_price": 6.4305,
-      "pnl_dollar": 12.02,
+      "pnl_dollar": 0.56,
       "pnl_pct": 5.94
     },
     {
@@ -3267,9 +3350,9 @@
   ],
   "realized_summary": {
     "trades": 369,
-    "total": -2191.25,
-    "wins": 88,
-    "win_rate": 23.8
+    "total": -2191.7,
+    "wins": 87,
+    "win_rate": 23.6
   },
-  "total_realized_pnl": -2191.25
+  "total_realized_pnl": -2191.7
 }
