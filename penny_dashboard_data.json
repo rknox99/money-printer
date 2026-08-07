@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-07 09:31:06",
-  "generated_ts": 1786109466.260577,
+  "generated": "2026-08-07 09:34:21",
+  "generated_ts": 1786109661.80232,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -21,7 +21,7 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 0m old"
+      "detail": "bars 1m old"
     },
     {
       "name": "Scheduler",
@@ -31,11 +31,11 @@
     {
       "name": "Engine",
       "ok": true,
-      "detail": "off-hours"
+      "detail": "heartbeat 0.7m"
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 0.5,
+    "newest_bar_age_min": 0.7,
     "in_rth": true,
     "ok": true
   },
@@ -2683,11 +2683,23 @@
     {
       "t": "09:31",
       "v": 74571.8
+    },
+    {
+      "t": "09:32",
+      "v": 74571.8
+    },
+    {
+      "t": "09:33",
+      "v": 74571.8
+    },
+    {
+      "t": "09:34",
+      "v": 74571.8
     }
   ],
   "ladders": [],
   "shorts": {
-    "mode": "SIM",
+    "mode": "LIVE",
     "open": [],
     "closed": [],
     "by_rule": {},
@@ -2695,7 +2707,32 @@
     "n_open": 0,
     "n_closed": 0
   },
-  "intents_tail": [],
+  "intents_tail": [
+    {
+      "ts": "2026-08-07 09:32:37",
+      "symbol": "YXT",
+      "action": "Short",
+      "sim_price": 6.96,
+      "shares": 71,
+      "note": "short_entry"
+    },
+    {
+      "ts": "2026-08-07 09:32:34",
+      "symbol": "VATE",
+      "action": "Short",
+      "sim_price": 10.95,
+      "shares": 45,
+      "note": "short_entry"
+    },
+    {
+      "ts": "2026-08-07 09:32:02",
+      "symbol": "AZI",
+      "action": "Short",
+      "sim_price": 1.77,
+      "shares": 282,
+      "note": "short_entry"
+    }
+  ],
   "live_daily": [
     {
       "date": "2026-07-27",
