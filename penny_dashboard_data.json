@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-06 20:49:11",
-  "generated_ts": 1786063751.810955,
+  "generated": "2026-08-06 20:52:23",
+  "generated_ts": 1786063943.389768,
   "system": "penny",
   "positions": [],
   "ib_all_ok": true,
@@ -22,12 +22,12 @@
     {
       "name": "Data Stream",
       "ok": true,
-      "detail": "bars 49m old"
+      "detail": "bars 52m old"
     },
     {
       "name": "Scheduler",
       "ok": true,
-      "detail": "log 0.5h old"
+      "detail": "log 0.0h old"
     },
     {
       "name": "Engine",
@@ -36,17 +36,17 @@
     }
   ],
   "stream_health": {
-    "newest_bar_age_min": 48.7,
+    "newest_bar_age_min": 51.9,
     "in_rth": false,
     "ok": true
   },
   "scheduler_tail": [
-    "[2026-08-06 08:39:56] penny scheduler v4 started (engine 9:12 | short check 10:30 | pull 20:20 | thresholds 21:05 | shadow 21:15)",
     "[2026-08-06 09:13:56] launching execution engine",
     "[2026-08-06 10:31:58] running Penny Short Check.ipynb ...",
     "[2026-08-06 10:51:02] Penny Short Check.ipynb: OK",
     "[2026-08-06 16:07:09] engine finished (rc=0)",
-    "[2026-08-06 20:21:12] running Penny Stock Daily Stock Pull.ipynb ..."
+    "[2026-08-06 20:21:12] running Penny Stock Daily Stock Pull.ipynb ...",
+    "[2026-08-06 20:51:48] Penny Stock Daily Stock Pull.ipynb: OK"
   ],
   "universe": {
     "symbols": 2227,
@@ -4852,6 +4852,18 @@
     {
       "t": "20:49",
       "v": 74567.48
+    },
+    {
+      "t": "20:50",
+      "v": 74567.48
+    },
+    {
+      "t": "20:51",
+      "v": 74567.48
+    },
+    {
+      "t": "20:52",
+      "v": 74567.48
     }
   ],
   "ladders": [],
@@ -4866,7 +4878,7 @@
         "last": 7.09,
         "pnl_pct": -7.07,
         "reason": "closed",
-        "mins": 674
+        "mins": 677
       },
       {
         "symbol": "PAYS",
@@ -4875,7 +4887,7 @@
         "last": 12.35,
         "pnl_pct": -5.2,
         "reason": "closed",
-        "mins": 671
+        "mins": 674
       },
       {
         "symbol": "AZI",
@@ -4884,7 +4896,7 @@
         "last": 1.52,
         "pnl_pct": -2.01,
         "reason": "closed",
-        "mins": 670
+        "mins": 673
       },
       {
         "symbol": "SUGP",
@@ -4893,7 +4905,7 @@
         "last": 2.04,
         "pnl_pct": -5.7,
         "reason": "closed",
-        "mins": 667
+        "mins": 670
       },
       {
         "symbol": "GCT",
@@ -4902,7 +4914,7 @@
         "last": 52.25,
         "pnl_pct": 0.57,
         "reason": "closed",
-        "mins": 665
+        "mins": 668
       },
       {
         "symbol": "ZYBT",
@@ -4911,7 +4923,7 @@
         "last": 2.14,
         "pnl_pct": -2.88,
         "reason": "closed",
-        "mins": 665
+        "mins": 668
       },
       {
         "symbol": "HRTG",
@@ -4920,7 +4932,7 @@
         "last": 35.21,
         "pnl_pct": 1.04,
         "reason": "closed",
-        "mins": 663
+        "mins": 666
       },
       {
         "symbol": "TASK",
@@ -4929,7 +4941,7 @@
         "last": 7.82,
         "pnl_pct": -3.99,
         "reason": "closed",
-        "mins": 662
+        "mins": 665
       },
       {
         "symbol": "ZVRA",
@@ -4938,7 +4950,7 @@
         "last": 11.88,
         "pnl_pct": 1.98,
         "reason": "closed",
-        "mins": 662
+        "mins": 665
       },
       {
         "symbol": "KRO",
@@ -4947,7 +4959,7 @@
         "last": 8.25,
         "pnl_pct": -6.73,
         "reason": "closed",
-        "mins": 661
+        "mins": 664
       },
       {
         "symbol": "PRAX",
@@ -4956,7 +4968,7 @@
         "last": 370.16,
         "pnl_pct": 2.34,
         "reason": "closed",
-        "mins": 658
+        "mins": 661
       },
       {
         "symbol": "SBGI",
@@ -4965,7 +4977,7 @@
         "last": 14.76,
         "pnl_pct": 5.93,
         "reason": "closed",
-        "mins": 658
+        "mins": 661
       },
       {
         "symbol": "EOLS",
@@ -4974,7 +4986,7 @@
         "last": 7.37,
         "pnl_pct": 0.7,
         "reason": "closed",
-        "mins": 653
+        "mins": 656
       },
       {
         "symbol": "OESX",
@@ -4983,7 +4995,7 @@
         "last": 17.58,
         "pnl_pct": 11.79,
         "reason": "closed",
-        "mins": 651
+        "mins": 654
       },
       {
         "symbol": "RAIN",
@@ -4992,7 +5004,7 @@
         "last": 1.25,
         "pnl_pct": 3.1,
         "reason": "closed",
-        "mins": 647
+        "mins": 650
       },
       {
         "symbol": "PEPG",
@@ -5001,7 +5013,7 @@
         "last": 2.4773,
         "pnl_pct": -4.53,
         "reason": "closed",
-        "mins": 638
+        "mins": 641
       },
       {
         "symbol": "PFAI",
@@ -5010,7 +5022,7 @@
         "last": 2.355,
         "pnl_pct": 13.1,
         "reason": "closed",
-        "mins": 638
+        "mins": 641
       },
       {
         "symbol": "NHTC",
@@ -5019,7 +5031,7 @@
         "last": 1.6979,
         "pnl_pct": 2.42,
         "reason": "closed",
-        "mins": 632
+        "mins": 635
       },
       {
         "symbol": "GAUZ",
@@ -5028,7 +5040,7 @@
         "last": 0.3901,
         "pnl_pct": -3.15,
         "reason": "closed",
-        "mins": 625
+        "mins": 628
       },
       {
         "symbol": "BRLT",
@@ -5037,7 +5049,7 @@
         "last": 1.17,
         "pnl_pct": 8.59,
         "reason": "closed",
-        "mins": 623
+        "mins": 626
       },
       {
         "symbol": "PN",
@@ -5046,7 +5058,7 @@
         "last": 8.14,
         "pnl_pct": 19.88,
         "reason": "closed",
-        "mins": 598
+        "mins": 601
       },
       {
         "symbol": "CBAT",
@@ -5055,7 +5067,7 @@
         "last": 0.5699,
         "pnl_pct": 3.98,
         "reason": "closed",
-        "mins": 586
+        "mins": 589
       },
       {
         "symbol": "OPRT",
@@ -5064,7 +5076,7 @@
         "last": 8.09,
         "pnl_pct": -3.19,
         "reason": "closed",
-        "mins": 457
+        "mins": 460
       },
       {
         "symbol": "HCTI",
@@ -5073,7 +5085,7 @@
         "last": 1.25,
         "pnl_pct": 2.34,
         "reason": "closed",
-        "mins": 391
+        "mins": 394
       },
       {
         "symbol": "RMAX",
@@ -5082,7 +5094,7 @@
         "last": 10.77,
         "pnl_pct": 2.27,
         "reason": "closed",
-        "mins": 379
+        "mins": 382
       }
     ],
     "by_rule": {
