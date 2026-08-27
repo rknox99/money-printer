@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Penny Printer</title>
+<title>T23 Printer</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0b1220">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -11,18 +11,18 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
-:root{--bg:#0a0e17;--card:#111827;--border:#1e293b;--text:#e2e8f0;--dim:#94a3b8;--muted:#64748b;--green:#10b981;--green-bg:#065f46;--red:#ef4444;--red-bg:#7f1d1d;--amber:#f59e0b;--blue:#3b82f6;}
+:root{--bg:#0a0e17;--card:#111827;--border:#1e293b;--text:#e2e8f0;--dim:#94a3b8;--muted:#64748b;--green:#10b981;--green-bg:#065f46;--red:#ef4444;--red-bg:#7f1d1d;--amber:#f59e0b;--blue:#3b82f6;--purple:#a78bfa;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
 body::before{content:'';position:fixed;inset:0;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;}
-.hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,rgba(16,185,129,0.03) 0%,transparent 100%);}
-.hdr-left{display:flex;align-items:center;gap:10px;}.hdr-title{font-size:18px;font-weight:700;letter-spacing:-0.5px;}.hdr-title span{color:var(--green);font-style:italic;}
+.hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,rgba(59,130,246,0.04) 0%,transparent 100%);}
+.hdr-left{display:flex;align-items:center;gap:10px;}.hdr-title{font-size:18px;font-weight:700;letter-spacing:-0.5px;}.hdr-title span{color:var(--blue);font-style:italic;}
 .hdr-right{display:flex;align-items:center;gap:16px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);}
 .dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:5px;animation:pulse 2s infinite;}
 .dot-g{background:var(--green);box-shadow:0 0 6px var(--green);}.dot-r{background:var(--red);box-shadow:0 0 6px var(--red);}.dot-a{background:var(--amber);box-shadow:0 0 6px var(--amber);}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
 .hero{text-align:center;padding:20px 24px 8px;}
-.hero-val{font-size:48px;font-weight:800;letter-spacing:-2px;font-family:'JetBrains Mono',monospace;color:var(--green);}
+.hero-val{font-size:48px;font-weight:800;letter-spacing:-2px;font-family:'JetBrains Mono',monospace;color:var(--blue);}
 .hero-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:2px;margin-top:2px;}
 .hero-sub{font-size:12px;color:var(--dim);font-family:'JetBrains Mono',monospace;margin-top:4px;}
 .stat-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;padding:8px 24px 16px;}
@@ -39,40 +39,21 @@ body::before{content:'';position:fixed;inset:0;background:url("data:image/svg+xm
 .ct{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);font-weight:600;}
 .badge{font-size:10px;padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-weight:500;}
 .bg{background:var(--green-bg);color:var(--green);}.br{background:var(--red-bg);color:var(--red);}.ba{background:rgba(245,158,11,0.15);color:var(--amber);}
-.bb{background:rgba(59,130,246,0.15);color:var(--blue);}
+.bb{background:rgba(59,130,246,0.15);color:var(--blue);}.bp{background:rgba(167,139,250,0.15);color:var(--purple);}
 .chart-box{width:100%;height:250px;position:relative;}
 canvas{width:100%!important;height:100%!important;}
-.tabs{display:flex;gap:6px;}
-.tab{padding:4px 12px;border-radius:4px;font-size:11px;cursor:pointer;border:1px solid var(--border);color:var(--muted);font-family:'JetBrains Mono',monospace;user-select:none;}
-.tab.active{border-color:var(--green);color:var(--green);background:var(--green-bg);}
 .pgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;}
-.pc{background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:8px;padding:12px;text-align:center;transition:all 0.15s;}
-.pc:hover{transform:translateY(-1px);}.pc.al{border-color:var(--green);background:rgba(16,185,129,0.05);}.pc.as{border-color:var(--red);background:rgba(239,68,68,0.05);}.pc.ns{opacity:0.4;}
-.ps{font-size:15px;font-weight:700;}
-.pp{font-size:10px;font-family:'JetBrains Mono',monospace;margin-top:4px;text-transform:uppercase;letter-spacing:1px;}
-.pp.l{color:var(--green);}.pp.s{color:var(--red);}.pp.n{color:var(--muted);}
-.pd{font-size:9px;color:var(--muted);margin-top:3px;font-family:'JetBrains Mono',monospace;}
-.ppnl{font-size:12px;font-weight:600;font-family:'JetBrains Mono',monospace;margin-top:4px;}.ppnl.pos{color:var(--green);}.ppnl.neg{color:var(--red);}
+.pc{background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:8px;padding:12px;transition:all 0.15s;text-align:left;}
+.pc:hover{transform:translateY(-1px);}
+.pc.exiting{border-color:var(--amber);}
 table.t{width:100%;border-collapse:collapse;font-family:'JetBrains Mono',monospace;font-size:11px;}
 table.t th{text-align:left;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:1px;padding:6px 10px;border-bottom:1px solid var(--border);font-weight:500;}
-table.t td{padding:8px 10px;border-bottom:1px solid rgba(30,41,59,0.4);}table.t tr:last-child td{border-bottom:none;}table.t .sym{font-weight:600;}
+table.t td{padding:7px 10px;border-bottom:1px solid rgba(30,41,59,0.4);}table.t tr:last-child td{border-bottom:none;}table.t .sym{font-weight:600;}
 table.t .right{text-align:right;}
-.trade-row-win{background:rgba(16,185,129,0.03);}.trade-row-loss{background:rgba(239,68,68,0.03);}
-.fgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;}
-.fi{text-align:center;padding:8px 4px;border-radius:6px;background:rgba(255,255,255,0.02);border:1px solid var(--border);}
-.fi.ok{border-color:var(--green-bg);}.fi.bad{border-color:var(--red-bg);}
-.fs{font-size:11px;font-weight:600;}.fa{font-size:9px;font-family:'JetBrains Mono',monospace;color:var(--muted);margin-top:3px;}
-.alert{padding:8px 12px;border-radius:6px;font-size:11px;font-family:'JetBrains Mono',monospace;margin-bottom:5px;}
-.alert-r{background:var(--red-bg);color:var(--red);border:1px solid rgba(239,68,68,0.3);}
-.alert-a{background:rgba(245,158,11,0.1);color:var(--amber);border:1px solid rgba(245,158,11,0.3);}
-.alert-g{background:var(--green-bg);color:var(--green);border:1px solid rgba(16,185,129,0.3);}
-.alert-b{background:rgba(59,130,246,0.1);color:var(--blue);border:1px solid rgba(59,130,246,0.3);}
+.chip{display:inline-block;font-size:10px;font-family:'JetBrains Mono',monospace;padding:3px 9px;border-radius:12px;background:rgba(255,255,255,0.04);border:1px solid var(--border);margin:2px;}
+.chip b{color:var(--text);}
 .placeholder{text-align:center;padding:30px;color:var(--muted);font-size:12px;}
-.pnl-hero{text-align:center;padding:16px 0;}
-.pnl-hero-val{font-size:28px;font-weight:700;font-family:'JetBrains Mono',monospace;}
-.pnl-hero-sub{font-size:11px;color:var(--muted);font-family:'JetBrains Mono',monospace;margin-top:4px;}
-@media(max-width:1200px){.pgrid,.fgrid{grid-template-columns:repeat(5,1fr);}.r2{grid-template-columns:1fr;}.stat-strip{grid-template-columns:repeat(3,1fr);}}
-
+@media(max-width:1200px){.pgrid{grid-template-columns:repeat(2,1fr);}.r2{grid-template-columns:1fr;}.stat-strip{grid-template-columns:repeat(3,1fr);}}
 /* ---------- mobile (PWA) overrides ---------- */
 @media (max-width: 760px) {
   body { padding: 8px; }
@@ -89,71 +70,9 @@ table.t .right{text-align:right;}
 </style>
 </head>
 <body>
-<!-- ===== SHORTS PANEL (three-short book: SIM today, LIVE Thu) ===== -->
-<div id="shorts-panel" style="margin:12px;padding:12px;border-radius:12px;
-background:#101418;color:#e8eef4;font-family:system-ui,Segoe UI,Roboto,
-sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.35)">
- <div style="display:flex;justify-content:space-between;align-items:baseline">
-  <b style="font-size:15px">SHORT BOOK <span id="sh-mode"
-    style="font-size:11px;padding:2px 8px;border-radius:10px;
-    background:#2b6cb0">--</span></b>
-  <span>day <b id="sh-pnl">$0</b> &middot; open <b id="sh-open">0</b>
-   &middot; closed <b id="sh-closed">0</b></span>
- </div>
- <div id="sh-rules" style="font-size:12px;opacity:.85;margin:6px 0"></div>
- <table style="width:100%;font-size:12px;border-collapse:collapse">
-  <thead><tr style="text-align:left;opacity:.6">
-   <th>sym</th><th>rule</th><th>entry</th><th>last</th><th>pnl%</th>
-   <th>min</th></tr></thead>
-  <tbody id="sh-rows"></tbody></table>
-</div>
-<script>
-(function(){
- var RC={FAM:"#d69e2e",S1968:"#38a169",S2343:"#3182ce"};
- function fmt(x){return (x>=0?"+":"")+x.toFixed(2)+"%";}
- function render(d){
-  var s=d&&d.shorts; if(!s) return;
-  document.getElementById("sh-mode").textContent=s.mode;
-  document.getElementById("sh-mode").style.background=
-    s.mode==="LIVE"?"#c53030":"#2b6cb0";
-  document.getElementById("sh-pnl").textContent=
-    (s.day_pnl>=0?"+$":"-$")+Math.abs(s.day_pnl).toFixed(0);
-  document.getElementById("sh-pnl").style.color=
-    s.day_pnl>=0?"#68d391":"#fc8181";
-  document.getElementById("sh-open").textContent=s.n_open||0;
-  document.getElementById("sh-closed").textContent=s.n_closed||0;
-  var br=s.by_rule||{},parts=[];
-  Object.keys(br).forEach(function(r){
-   parts.push('<span style="color:'+(RC[r]||"#ccc")+'">'+r+"</span> "+
-    br[r].n+" sig / "+br[r].open+" open / $"+
-    (br[r].pnl||0).toFixed(0));});
-  document.getElementById("sh-rules").innerHTML=
-    parts.join(" &nbsp;&middot;&nbsp; ")||"no signals yet";
-  var rows=(s.open||[]).concat((s.closed||[]).slice(-8).map(
-    function(r){r._c=1;return r;}));
-  document.getElementById("sh-rows").innerHTML=rows.map(function(r){
-   return "<tr style='opacity:"+(r._c?".45":"1")+
-    ";border-top:1px solid #223'>"+
-    "<td><b>"+r.symbol+"</b></td>"+
-    "<td style='color:"+(RC[r.rule]||"#ccc")+"'>"+r.rule+"</td>"+
-    "<td>"+r.entry+"</td><td>"+r.last+"</td>"+
-    "<td style='color:"+(r.pnl_pct>=0?"#68d391":"#fc8181")+"'>"+
-    fmt(r.pnl_pct)+"</td><td>"+r.mins+"m</td></tr>";}).join("");
- }
- function tick(){
-  if(window.__DASHBOARD_DATA){render(window.__DASHBOARD_DATA);}
-  else if(window.dashboardData){render(window.dashboardData);}
-  else{try{fetch("penny_dashboard_data.json?ts="+Date.now())
-   .then(function(r){return r.json();}).then(render)
-   .catch(function(){});}catch(e){}}
- }
- tick(); setInterval(tick, 15000);
-})();
-</script>
-
 <div class="hdr">
-  <div class="hdr-left"><div class="hdr-title">Penny <span>Printer</span> — Live Command Center</div></div>
-  <div class="hdr-right"><span id="ib-status"><span class="dot dot-a"></span>IB</span><span id="last-update">--</span><span id="clock">--</span><span id="refresh-btn" onclick="tick()" style="cursor:pointer;padding:2px 10px;border:1px solid #334155;border-radius:6px;margin-left:6px;user-select:none">&#8635;</span></div>
+  <div class="hdr-left"><div class="hdr-title">T23 <span>Extremes</span> — Live Command Center</div></div>
+  <div class="hdr-right"><span id="mode-badge" class="badge bb">--</span><span id="ib-status"><span class="dot dot-a"></span>IB</span><span id="last-update">--</span><span id="clock">--</span><span onclick="tick()" style="cursor:pointer;padding:2px 10px;border:1px solid #334155;border-radius:6px;margin-left:6px;user-select:none">&#8635;</span></div>
 </div>
 <div class="hero">
   <div class="hero-val" id="h-value">$--</div>
@@ -161,218 +80,98 @@ sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.35)">
   <div class="hero-sub" id="h-sub">--</div>
 </div>
 <div class="stat-strip">
-  <div class="sc"><div class="sc-val neutral" id="h-real">--</div><div class="sc-lbl">Realized P&L (live)</div><div class="sc-sub" id="h-real-sub">--</div></div>
-  <div class="sc"><div class="sc-val neutral" id="h-pnl-dol">--</div><div class="sc-lbl">Open P&L $</div><div class="sc-sub" id="h-pnl-dol-sub">--</div></div>
-  <div class="sc"><div class="sc-val neutral" id="h-posval">--</div><div class="sc-lbl">Position Size</div></div>
-  <div class="sc"><div class="sc-val neutral" id="h-cash">--</div><div class="sc-lbl">Available Cash</div></div>
+  <div class="sc"><div class="sc-val neutral" id="h-real">--</div><div class="sc-lbl">Engine Realized (total)</div><div class="sc-sub" id="h-real-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="h-open-pnl">--</div><div class="sc-lbl">Open P&amp;L $</div><div class="sc-sub" id="h-open-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="h-cash">--</div><div class="sc-lbl">Book Cash</div><div class="sc-sub" id="h-cash-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="h-broker">--</div><div class="sc-lbl">Broker Realized (7d FIFO)</div><div class="sc-sub" id="h-broker-sub">--</div></div>
   <div class="sc"><div class="sc-status ok" id="h-health">--</div><div class="sc-lbl">System Health</div><div class="sc-sub" id="h-health-sub">--</div></div>
-  <div class="sc"><div class="sc-val neutral" id="h-slip">--</div><div class="sc-lbl">Fees + Slippage %</div><div class="sc-sub" id="h-slip-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="h-slip">--</div><div class="sc-lbl">Slippage (routine)</div><div class="sc-sub" id="h-slip-sub">--</div></div>
 </div>
 <div class="dash">
-  <div class="card"><div class="ch"><span class="ct">Account Value (live, today)</span><span class="badge bg" id="acct-badge">--</span></div><div class="chart-box"><canvas id="acctChart"></canvas></div></div>
-  <div class="card"><div class="ch"><span class="ct">Shadow vs Live Daily $ (cumulative)</span>
-    <div class="tabs"><div class="tab active" onclick="switchSpec('wide',event)">WIDE</div><div class="tab" onclick="switchSpec('frozen',event)">FROZEN</div></div></div>
-    <div class="chart-box"><canvas id="mainChart"></canvas></div></div>
-  <div class="card"><div class="ch"><span class="ct">Open Positions (live)</span><span class="badge bg" id="pos-badge">--</span></div><div class="pgrid" id="pos-grid"><div class="placeholder">No open positions</div></div></div>
-  <div class="card"><div class="ch"><span class="ct">Opening Positions</span><span class="badge ba" id="lad-badge">--</span></div><div class="pgrid" id="lad-grid"><div class="placeholder">No active signals</div></div></div>
-  <div class="card"><div class="ch"><span class="ct">Round Trips (since 8/6)</span><span class="badge bb" id="int-badge">--</span></div><div id="int-area"><div class="placeholder">No completed round trips yet</div></div></div>
   <div class="row r2">
-    <div class="card"><div class="ch"><span class="ct">Shadow vs Live (three-short book)</span><span class="badge bb" id="board-badge">--</span></div><div id="board-area"></div></div>
-    <div class="card"><div class="ch"><span class="ct">Slippage &amp; Fees (pilot)</span><span class="badge ba" id="slip-badge">--</span></div><div id="slip-area"><div class="placeholder">Waiting for matched trades...</div></div></div>
+    <div class="card"><div class="ch"><span class="ct">Account Value (live, today)</span><span class="badge bb" id="acct-badge">--</span></div><div class="chart-box"><canvas id="acctChart"></canvas></div></div>
+    <div class="card"><div class="ch"><span class="ct">Engine vs Broker daily $ (cumulative)</span><span class="badge bg" id="pnl-badge">--</span></div><div class="chart-box"><canvas id="pnlChart"></canvas></div></div>
   </div>
-  <div class="card"><div class="ch"><span class="ct">Completed Trades (live, FIFO)</span><span class="badge bb" id="trades-badge">--</span></div><div id="trades-area"><div class="placeholder">Waiting for trade history...</div></div></div>
-  <div class="card"><div class="ch"><span class="ct">System Health</span><span class="badge" id="health-badge">--</span></div><div id="alerts-area"></div><div id="sched-area" style="margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim);"></div></div>
+  <div class="card"><div class="ch"><span class="ct">Open Positions (engine book)</span><span class="badge bg" id="pos-badge">--</span></div><div class="pgrid" id="pos-grid"><div class="placeholder">No open positions</div></div></div>
+  <div class="card"><div class="ch"><span class="ct">Working Entries (limit orders chasing under ceiling)</span><span class="badge ba" id="pend-badge">--</span></div><div class="pgrid" id="pend-grid"><div class="placeholder">No working entries</div></div></div>
+  <div class="card"><div class="ch"><span class="ct">Engine Decisions (today)</span><span class="badge bp" id="dec-badge">--</span></div><div id="dec-chips" style="margin-bottom:8px"></div><div id="dec-area"><div class="placeholder">No decisions yet</div></div></div>
+  <div class="row r2">
+    <div class="card"><div class="ch"><span class="ct">Exits by Kind (engine blotter)</span><span class="badge bb" id="kind-badge">--</span></div><div id="kind-area"><div class="placeholder">No completed trades yet</div></div></div>
+    <div class="card"><div class="ch"><span class="ct">Slippage &amp; Fees (intents vs broker fills)</span><span class="badge ba" id="slip-badge">--</span></div><div id="slip-area"><div class="placeholder">Waiting for matched fills...</div></div></div>
+  </div>
+  <div class="card"><div class="ch"><span class="ct">Completed Trades (engine blotter)</span><span class="badge bb" id="trades-badge">--</span></div><div id="trades-area"><div class="placeholder">Waiting for trades...</div></div></div>
+  <div class="card"><div class="ch"><span class="ct">System Health &amp; Tonight's Pack</span><span class="badge" id="health-badge">--</span></div><div id="alerts-area"></div><div id="pack-area" style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim);"></div></div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<script src="penny_dashboard_data.js"></script>
+<script src="t23_dashboard_data.js"></script>
 <script>
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(function(){});}
-var REFRESH=60000,activeChart=null,currentSpec='wide',lastData=null;
+var REFRESH=60000,acctChart=null,pnlChart=null;
+var RAW_URL='https://raw.githubusercontent.com/rknox99/money-printer/main/t23_dashboard_data.json';
 setInterval(function(){var et=new Date().toLocaleTimeString('en-US',{timeZone:'America/New_York',hour12:false,hour:'2-digit',minute:'2-digit',second:'2-digit'});document.getElementById('clock').textContent=et+' ET';},1000);
 function fmt$(v){if(v==null)return'--';var s=v>=0?'+$':'-$';return s+Math.abs(Math.round(v)).toLocaleString();}
-function pct(v){return v==null?'--':((v>=0?'+':'')+v.toFixed(2)+'%');}
-var RAW_URL='https://raw.githubusercontent.com/rknox99/money-printer/main/penny_dashboard_data.json';
+function fmt$2(v){if(v==null)return'--';var s=v>=0?'+$':'-$';return s+Math.abs(v).toFixed(2);}
+function pct(v){return v==null?'--':((v>=0?'+':'')+Number(v).toFixed(2)+'%');}
+function fetchT(url,ms){
+  var ac=new AbortController();
+  var t=setTimeout(function(){ac.abort();},ms);
+  return fetch(url,{cache:'no-store',signal:ac.signal})
+    .finally(function(){clearTimeout(t);});
+}
 async function loadData(){
-  try{var r=await fetch(RAW_URL+'?t='+Date.now(),{cache:'no-store'});if(r.ok)return await r.json();}catch(e){}
-  try{var r=await fetch('penny_dashboard_data.json?t='+Date.now(),{cache:'no-store'});if(r.ok)return await r.json();}catch(e){}
+  try{var r=await fetchT(RAW_URL+'?t='+Date.now(),4000);if(r.ok)return await r.json();}catch(e){}
+  try{var r2=await fetchT('t23_dashboard_data.json?t='+Date.now(),3000);if(r2.ok)return await r2.json();}catch(e){}
   return new Promise(function(res){var old=document.getElementById('djs');if(old)old.remove();
-    var s=document.createElement('script');s.id='djs';s.src='penny_dashboard_data.js?t='+Date.now();
-    s.onload=function(){res(window.__DASHBOARD_DATA||null);};s.onerror=function(){res(window.__DASHBOARD_DATA||null);};
+    var s=document.createElement('script');s.id='djs';s.src='t23_dashboard_data.js?t='+Date.now();
+    s.onload=function(){res(window.__T23_DATA__||null);};s.onerror=function(){res(window.__T23_DATA__||null);};
     document.body.appendChild(s);});
 }
-function switchSpec(v,ev){currentSpec=v;ev.target.parentElement.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active');});ev.target.classList.add('active');renderChart(lastData);}
 
 function renderHero(d){
-  var val=d.live_account_value;
-  document.getElementById('h-value').textContent=val?'$'+val.toLocaleString(undefined,{minimumFractionDigits:2}):'$--';
-  var sh=d.shadow||{};
-  document.getElementById('h-sub').textContent=(d.active_trade_count||0)+' open \u00b7 '+((d.universe&&d.universe.symbols)||'--')+' symbols \u00b7 shadow day '+(sh.days||0);
-  var rl=d.total_realized_pnl,rs=d.realized_summary||{};
+  var acct=d.account_summary||{};
+  var val=d.live_account_value!=null?d.live_account_value:acct.net_liq;
+  document.getElementById('h-value').textContent=val!=null?'$'+Number(val).toLocaleString(undefined,{minimumFractionDigits:2}):'$--';
+  var bk=d.book||{},pk=d.pack||{};
+  document.getElementById('h-sub').textContent=(bk.n_open||0)+' open · '+(bk.pending?bk.pending.length:0)+' working · '+(pk.universe||'--')+' symbols (t2 '+(pk.t2||'--')+' / t3 '+(pk.t3||'--')+')';
+  var totalReal=(bk.realized!=null)?bk.realized:null;
   var rEl=document.getElementById('h-real');
-  rEl.textContent=fmt$(rl);rEl.className='sc-val '+(rl>0?'pos':(rl<0?'neg':'neutral'));
-  document.getElementById('h-real-sub').textContent=rs.trades?(rs.trades+' trades \u00b7 '+(rs.win_rate||0)+'% win'):'No fills yet';
-  var dol=d.aggregate_unrealized_pnl_dollar,ac=d.active_trade_count||0;
-  var dEl=document.getElementById('h-pnl-dol');
-  if(ac>0){dEl.textContent=fmt$(dol);dEl.className='sc-val '+(dol>=0?'pos':'neg');document.getElementById('h-pnl-dol-sub').textContent=ac+' open';}
-  else{dEl.textContent='\u2014';dEl.className='sc-val neutral';document.getElementById('h-pnl-dol-sub').textContent='No open trades';}
-  document.getElementById('h-posval').textContent=d.total_position_value?'$'+Math.round(d.total_position_value).toLocaleString():'\u2014';
-  document.getElementById('h-cash').textContent=d.live_cash!=null?'$'+Math.round(d.live_cash).toLocaleString():'--';
+  rEl.textContent=fmt$2(totalReal);rEl.className='sc-val '+(totalReal>0?'pos':(totalReal<0?'neg':'neutral'));
+  var bl=d.blotter||{};
+  document.getElementById('h-real-sub').textContent=bl.n?(bl.n+' trades · '+(bl.win_rate||0)+'% win · swept $'+Math.round(bk.swept||0).toLocaleString()):'No completed trades yet';
+  var open=(bk.open||[]),oPnl=0,haveMark=0;
+  open.forEach(function(p){if(p.unreal_usd!=null){oPnl+=p.unreal_usd;haveMark++;}});
+  var oEl=document.getElementById('h-open-pnl');
+  if(open.length){oEl.textContent=fmt$2(oPnl);oEl.className='sc-val '+(oPnl>=0?'pos':'neg');document.getElementById('h-open-sub').textContent=haveMark+'/'+open.length+' marked';}
+  else{oEl.textContent='—';oEl.className='sc-val neutral';document.getElementById('h-open-sub').textContent='No open positions';}
+  document.getElementById('h-cash').textContent=bk.cash!=null?'$'+Math.round(bk.cash).toLocaleString():'--';
+  document.getElementById('h-cash-sub').textContent='of $70,000 book';
+  var br=d.total_realized_pnl,rs=d.realized_summary||{};
+  var bEl=document.getElementById('h-broker');
+  bEl.textContent=fmt$2(br);bEl.className='sc-val '+(br>0?'pos':(br<0?'neg':'neutral'));
+  document.getElementById('h-broker-sub').textContent=rs.trades?(rs.trades+' round trips'):'No broker fills yet';
   var ib=document.getElementById('ib-status');
-  ib.innerHTML='<span class="dot '+(d.ib_all_ok?'dot-g':'dot-r')+'"></span>IB';
+  var ibOk=(d.health||{}).ib_auth;
+  ib.innerHTML='<span class="dot '+(ibOk?'dot-g':'dot-r')+'"></span>IB';
   var hEl=document.getElementById('h-health'),hSub=document.getElementById('h-health-sub');
-  if(d.system_ok){hEl.innerHTML='\u2705 ALL GO';hEl.className='sc-status ok';hSub.textContent='IB \u00b7 Stream \u00b7 Procs';}
-  else{var iss=[];if(!d.ib_all_ok)iss.push('IB');
-    if(d.stream_health&&!d.stream_health.ok)iss.push('Stream '+Math.round(d.stream_health.newest_bar_age_min)+'m');
-    (d.component_checks||[]).forEach(function(c){if(!c.ok)iss.push(c.name);});
-    hEl.innerHTML='\u26a0\ufe0f ISSUES';hEl.className='sc-status bad';hSub.textContent=iss.join(' \u00b7 ')||'Check below';}
+  if(d.system_ok){hEl.innerHTML='✅ ALL GO';hEl.className='sc-status ok';hSub.textContent=(d.component_checks||[]).map(function(c){return c.name;}).join(' · ');}
+  else{var iss=(d.component_checks||[]).filter(function(c){return !c.ok;}).map(function(c){return c.name;});
+    hEl.innerHTML='⚠️ ISSUES';hEl.className='sc-status bad';hSub.textContent=iss.join(' · ')||'Check below';}
   var slip=d.slippage,sEl=document.getElementById('h-slip'),sSub=document.getElementById('h-slip-sub');
-  if(slip&&slip.configured){sEl.textContent=(slip.summary.avg_slippage_pct||0).toFixed(3)+'%';sEl.className='sc-val neutral';sSub.textContent=slip.summary.trade_count+' matched';}
-  else{sEl.textContent='\u2014';sSub.textContent='Awaiting fills';}
+  if(slip&&slip.configured&&slip.summary){sEl.textContent=(slip.summary.avg_slippage_bps||0)+' bps';sEl.className='sc-val neutral';sSub.textContent=slip.summary.trade_count+' legs matched';}
+  else{sEl.textContent='—';sSub.textContent='Awaiting fills';}
+  var mode=document.getElementById('mode-badge');
+  var eng=(d.component_checks||[]).find(function(c){return c.name==='engine';});
+  mode.textContent=eng&&eng.ok?'ENGINE LIVE':'ENGINE ?';
+  mode.className='badge '+(eng&&eng.ok?'bg':'br');
 }
 
-function renderChart(d){
-  if(!d||!d.shadow)return;
-  var v2=d.shadow.v2;
-  var labels=[],ds=[];
-  if(v2&&v2.daily&&v2.daily.length){
-    labels=['start'].concat(v2.daily.map(function(r){return r.date.slice(5);}));
-    var cum=0;
-    ds.push({label:'SHADOW',data:[0].concat(v2.daily.map(function(r){cum+=r.usd;return cum;})),
-      borderColor:'#10b981',backgroundColor:'transparent',borderWidth:2.5,pointRadius:0,tension:0.25});
-  } else {return;}
-  if(d.live_daily&&d.live_daily.length){var lm={};d.live_daily.forEach(function(r){var L=r.date.slice(5);lm[L]=r.pnl;if(labels.indexOf(L)<0){labels.push(L);ds.forEach(function(s){s.data.push(s.data[s.data.length-1]);});}});
-    var cum2=0,live=labels.map(function(L){if(lm[L]!=null)cum2+=lm[L];return cum2;});
-    ds.push({label:'LIVE',data:live,borderColor:'#e2e8f0',backgroundColor:'transparent',borderWidth:2,borderDash:[6,4],pointRadius:0,tension:0.25});}
-  var ctx=document.getElementById('mainChart').getContext('2d');
-  if(activeChart){activeChart.destroy();}
-  activeChart=new Chart(ctx,{type:'line',data:{labels:labels,datasets:ds},
-    options:{responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:'index',intersect:false},
-      plugins:{legend:{labels:{color:'#94a3b8',font:{family:'JetBrains Mono',size:10},boxWidth:14}}},
-      scales:{x:{ticks:{color:'#64748b',font:{size:9}},grid:{color:'#1e293b'}},
-              y:{ticks:{color:'#64748b',font:{size:9},callback:function(v){return '$'+v.toLocaleString();}},grid:{color:'#1e293b'}}}}});
-}
-
-function renderPositions(d){
-  var g=document.getElementById('pos-grid');
-  document.getElementById('pos-badge').textContent=(d.positions||[]).length+' open';
-  if(!d.positions||!d.positions.length){g.innerHTML='<div class="placeholder">No open positions</div>';return;}
-  g.innerHTML=d.positions.map(function(p){
-    var cls=p.unrealized_pnl_dollar>=0?'pos':'neg';
-    return '<div class="sc" style="text-align:left"><div style="display:flex;justify-content:space-between">'+
-      '<b>'+p.symbol+'</b><span class="sc-val '+cls+'">'+fmt$(p.unrealized_pnl_dollar)+'</span></div>'+
-      '<div class="sc-sub">'+p.shares+' sh @ '+p.avg_cost+' \u2192 '+p.mkt_price+' ('+pct(p.unrealized_pnl)+')'+
-      (p.in_universe?'':' \u00b7 <span style="color:var(--amber)">not in universe</span>')+'</div></div>';
-  }).join('');
-}
-
-function renderBoard(d){
-  var a=document.getElementById('board-area');window.__d=d;
-  var v2=(d.shadow||{}).v2,lb=d.live_by_rule||{};
-  if(!a)return;
-  if(!v2||!v2.by_rule){a.innerHTML='<div class="placeholder">No shadow v2 data</div>';return;}
-  var rows=v2.by_rule.map(function(r){var L=lb[r.rule]||{};
-    return '<tr><td>'+r.rule+'</td>'+
-    '<td style="text-align:right">'+r.n+' / '+(L.n!=null?L.n:'--')+'</td>'+
-    '<td style="text-align:right">'+r.win+'% / '+(L.win!=null?L.win+'%':'--')+'</td>'+
-    '<td style="text-align:right;color:'+(r.usd>=0?'var(--green)':'var(--red)')+'">$'+r.usd.toLocaleString()+
-    ' / <span style="color:'+((L.usd||0)>=0?'var(--green)':'var(--red)')+'">'+(L.usd!=null?'$'+L.usd.toLocaleString():'--')+'</span></td></tr>';}).join('');
-  var live=(typeof d.total_realized_pnl==='number')?d.total_realized_pnl:null;
-  a.innerHTML='<div class="sc-sub" style="margin-bottom:4px">shadow / LIVE</div>'+
-  '<table class="t"><tr><th>rule</th><th style="text-align:right">n</th><th style="text-align:right">win%</th><th style="text-align:right">$</th></tr>'+rows+'</table>'+
-  '<div class="sc-sub" style="margin-top:6px">shadow total $'+(v2.total_usd||0).toLocaleString()+(live!==null?' | live realized $'+live.toLocaleString():'')+'</div>';
-}
-
-function renderSlippage(d){
-  var a=document.getElementById('slip-area'),s=d.slippage;
-  if(!s||!s.configured){a.innerHTML='<div class="placeholder">Waiting for matched trades...</div>';document.getElementById('slip-badge').textContent='--';return;}
-  var m=s.summary;
-  document.getElementById('slip-badge').textContent=m.match_rate+'% matched';
-  function cost(v){if(v==null)return'--';var good=v<=0;return '<span style="color:'+(good?'var(--green)':'var(--red)')+'">'+(good?'+':'-')+'$'+Math.abs(v).toFixed(2)+'</span>';}
-  a.innerHTML='<table style="width:100%;font-family:JetBrains Mono,monospace;font-size:11px">'+
-    '<tr><td style="color:var(--muted)">Avg slippage vs sim</td><td style="text-align:right">'+m.avg_slippage_bps+' bps</td></tr>'+
-    '<tr><td style="color:var(--muted)">Slippage</td><td style="text-align:right">'+cost(m.total_slippage_cost)+'</td></tr>'+
-    '<tr><td style="color:var(--muted)">Commissions paid</td><td style="text-align:right">$'+Math.abs(m.total_commissions).toFixed(2)+'</td></tr>'+
-    '<tr><td style="color:var(--muted)">All-in fees+slip</td><td style="text-align:right"><b>'+cost(m.total_fees_and_slippage)+'</b> ('+(m.avg_slippage_pct>0?'-':'+')+Math.abs(m.avg_slippage_pct||0).toFixed(3)+'% of traded $)</td></tr>'+
-    '<tr><td style="color:var(--muted)">Fills matched / NO-INTENT fills</td><td style="text-align:right">'+m.trade_count+' / '+m.missed_trades+'</td></tr></table>';
-}
-
-function renderTrades(d){
-  var a=document.getElementById('trades-area'),h=d.trade_history;
-  if(!h||!h.length){a.innerHTML='<div class="placeholder">Waiting for trade history...</div>';document.getElementById('trades-badge').textContent='--';return;}
-  document.getElementById('trades-badge').textContent=h.length+' shown';
-  var rows=h.slice(0,25).map(function(t){
-    return '<tr><td><b>'+t.symbol+'</b></td><td style="color:var(--dim)">'+t.exit_time.slice(5,16)+'</td>'+
-      '<td>'+t.shares+'</td><td>'+t.entry_price+'\u2192'+t.exit_price+'</td>'+
-      '<td style="text-align:right;color:'+(t.pnl_dollar>=0?'var(--green)':'var(--red)')+'">'+fmt$(t.pnl_dollar)+' ('+pct(t.pnl_pct)+')</td></tr>';
-  }).join('');
-  a.innerHTML='<table style="width:100%;font-family:JetBrains Mono,monospace;font-size:10px;border-collapse:collapse">'+rows+'</table>';
-}
-
-function renderHealth(d){
-  var a=document.getElementById('alerts-area'),items=[];
-  var badge=document.getElementById('health-badge');
-  badge.textContent=d.system_ok?'HEALTHY':'ISSUES';
-  badge.className='badge '+(d.system_ok?'bg':'br');
-  if(d.stream_health)items.push('Stream: newest bars '+d.stream_health.newest_bar_age_min+' min old '+(d.stream_health.ok?'\u2705':'\u26a0\ufe0f'));
-  items.push('Components: '+(d.component_checks||[]).map(function(c){return c.name+' '+(c.ok?'\u2705':'\u274c')+' ('+c.detail+')';}).join(' \u00b7 '));
-  if(d.universe)items.push('Universe: '+d.universe.symbols+' symbols \u00b7 '+d.universe.removals_7d+' removals (7d)');
-  a.innerHTML=items.map(function(i){return '<div style="font-size:11px;color:var(--dim);margin:3px 0">'+i+'</div>';}).join('');
-  var sc=document.getElementById('sched-area');
-  sc.innerHTML=(d.scheduler_tail||[]).map(function(l){return '<div>'+l.replace(/</g,'&lt;')+'</div>';}).join('');
-}
-
-
-function levelRow(name,target,price,filledTxt,hit){
-  var state,color;
-  if(filledTxt){state=filledTxt;color='var(--green)';}
-  else if(hit){state='\u25c9 HIT';color='var(--amber)';}
-  else if(price&&target){var d=(price/target-1)*100;state=(d>=0?'+':'')+d.toFixed(1)+'% away';color='var(--dim)';}
-  else{state='--';color='var(--muted)';}
-  return '<div style="display:flex;justify-content:space-between;font-size:10px;margin:2px 0">'+
-    '<span style="color:var(--muted)">'+name+'</span><span>'+(target!=null?target:'--')+'</span>'+
-    '<span style="color:'+color+'">'+state+'</span></div>';
-}
-function renderLadders(d){
-  var g=document.getElementById('lad-grid'),L=d.ladders||[];
-  document.getElementById('lad-badge').textContent=L.length+' active';
-  if(!L.length){g.innerHTML='<div class="placeholder">No active signals</div>';return;}
-  g.innerHTML=L.map(function(x){
-    var ph=x.phase,phc=ph==='flat'?'var(--muted)':(ph==='flattening'?'var(--amber)':'var(--green)');
-    var hdr='<div style="display:flex;justify-content:space-between;margin-bottom:4px"><b>'+x.symbol+'</b>'+
-      '<span style="font-size:9px;color:'+phc+';text-transform:uppercase">'+ph+(x.be_armed?' \u00b7 BE':'')+'</span></div>';
-    var pr='<div style="font-family:JetBrains Mono,monospace;font-size:13px;margin-bottom:4px">'+(x.price!=null?x.price:'--')+
-      (x.unreal_pct!=null&&x.live_shares>0?' <span style="font-size:10px;color:'+(x.unreal_pct>=0?'var(--green)':'var(--red)')+'">('+(x.unreal_pct>=0?'+':'')+x.unreal_pct+'%)</span>':'')+'</div>';
-    var rows='';
-    (x.rungs||[]).forEach(function(r,i){
-      var filledTxt=r.filled>0?('FILLED '+r.filled):null;
-      rows+=levelRow('R'+(i+1)+' buy',r.px,x.price,filledTxt,x.price!=null&&x.price<=r.px&&r.filled===0&&r.sh>0);
-    });
-    if(x.stop!=null)rows+=levelRow(x.be_armed?'BE stop':'Stop',x.stop,x.price,null,x.price!=null&&x.price<=x.stop);
-    return '<div class="sc" style="text-align:left">'+hdr+pr+rows+'</div>';
-  }).join('');
-}
-function renderIntents(d){
-  var a=document.getElementById('int-area'),R=d.round_trips||d.trade_history||[];
-  var b=document.getElementById('int-badge');if(b)b.textContent=R.length;
-  if(!a)return;
-  if(!R.length){a.innerHTML='<div class="placeholder">No completed round trips yet</div>';return;}
-  var rows=R.slice().reverse().map(function(t){
-    var dir=t.direction==='short'?'SHORT':'LONG';
-    return '<tr><td><span class="sc-sub">'+String(t.date||'').slice(5)+'</span> <b>'+t.symbol+'</b> <span class="sc-sub">'+dir+'</span></td>'+
-    '<td style="text-align:right">'+t.entry_price+' \u2192 '+t.exit_price+'</td>'+
-    '<td style="text-align:right;color:'+(t.pnl_dollar>=0?'var(--green)':'var(--red)')+'">'+
-    (t.pnl_dollar>=0?'+':'')+'$'+Math.abs(t.pnl_dollar).toLocaleString()+' ('+(t.pnl_pct>=0?'+':'')+t.pnl_pct+'%)</td></tr>';}).join('');
-  a.innerHTML='<table class="t"><tr><th>position</th><th style="text-align:right">entry \u2192 exit</th><th style="text-align:right">result</th></tr>'+rows+'</table>';
-}
-
-var acctChart=null;
 function renderAcct(d){
   var s=d.account_series_1d||[];
   document.getElementById('acct-badge').textContent=s.length?('$'+Math.round(s[s.length-1].v).toLocaleString()):'--';
   if(!s.length)return;
   var ctx=document.getElementById('acctChart').getContext('2d');
   if(acctChart){acctChart.destroy();}
-  var first=s[0].v,last=s[s.length-1].v,up=last>=first;
+  var up=s[s.length-1].v>=s[0].v;
   acctChart=new Chart(ctx,{type:'line',data:{labels:s.map(function(r){return r.t;}),
     datasets:[{label:'Net Liq',data:s.map(function(r){return r.v;}),
       borderColor:up?'#10b981':'#ef4444',backgroundColor:'transparent',borderWidth:2,pointRadius:0,tension:0.2}]},
@@ -382,15 +181,137 @@ function renderAcct(d){
               y:{ticks:{color:'#64748b',font:{size:9},callback:function(v){return '$'+v.toLocaleString();}},grid:{color:'#1e293b'}}}}});
 }
 
+function renderPnl(d){
+  var bl=d.blotter||{},daily=bl.daily||[];
+  document.getElementById('pnl-badge').textContent=bl.total!=null?fmt$(bl.total):'--';
+  if(!daily.length)return;
+  var labels=['start'].concat(daily.map(function(r){return r.date.slice(5);}));
+  var cum=0,eng=[0].concat(daily.map(function(r){cum+=r.pnl;return Math.round(cum*100)/100;}));
+  var ds=[{label:'ENGINE',data:eng,borderColor:'#3b82f6',backgroundColor:'transparent',borderWidth:2.5,pointRadius:0,tension:0.25}];
+  var ld=d.live_daily||[];
+  if(ld.length){var lm={};ld.forEach(function(r){lm[r.date.slice(5)]=r.pnl;});
+    var cum2=0,brk=labels.map(function(L,i){if(i===0)return 0;if(lm[L]!=null)cum2+=lm[L];return Math.round(cum2*100)/100;});
+    ds.push({label:'BROKER',data:brk,borderColor:'#e2e8f0',backgroundColor:'transparent',borderWidth:2,borderDash:[6,4],pointRadius:0,tension:0.25});}
+  var ctx=document.getElementById('pnlChart').getContext('2d');
+  if(pnlChart){pnlChart.destroy();}
+  pnlChart=new Chart(ctx,{type:'line',data:{labels:labels,datasets:ds},
+    options:{responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:'index',intersect:false},
+      plugins:{legend:{labels:{color:'#94a3b8',font:{family:'JetBrains Mono',size:10},boxWidth:14}}},
+      scales:{x:{ticks:{color:'#64748b',font:{size:9}},grid:{color:'#1e293b'}},
+              y:{ticks:{color:'#64748b',font:{size:9},callback:function(v){return '$'+v.toLocaleString();}},grid:{color:'#1e293b'}}}}});
+}
+
+function renderPositions(d){
+  var g=document.getElementById('pos-grid'),bk=d.book||{},open=bk.open||[];
+  document.getElementById('pos-badge').textContent=open.length+' open';
+  if(!open.length){g.innerHTML='<div class="placeholder">No open positions</div>';return;}
+  g.innerHTML=open.map(function(p){
+    var cls=(p.unreal_usd||0)>=0?'pos':'neg';
+    var ex=p.exit_pending?'<span class="badge ba" style="font-size:8px">EXITING: '+p.exit_pending+'</span>':'';
+    return '<div class="pc'+(p.exit_pending?' exiting':'')+'"><div style="display:flex;justify-content:space-between;align-items:center">'+
+      '<b>'+p.symbol+'</b><span class="sc-val '+cls+'" style="font-size:13px">'+fmt$2(p.unreal_usd)+'</span></div>'+
+      '<div class="sc-sub">t'+p.tier+' · C'+p.cluster+' · '+String(p.hz||'').replace('ret_','')+' · sess '+p.sessions+'</div>'+
+      '<div class="sc-sub">'+p.shares+' sh @ '+p.entry_px+' → '+(p.mark!=null?p.mark:'--')+' ('+pct(p.unreal_pct)+')</div>'+
+      '<div style="margin-top:3px">'+ex+'</div></div>';
+  }).join('');
+}
+
+function renderPending(d){
+  var g=document.getElementById('pend-grid'),pend=(d.book||{}).pending||[];
+  document.getElementById('pend-badge').textContent=pend.length+' working';
+  if(!pend.length){g.innerHTML='<div class="placeholder">No working entries</div>';return;}
+  g.innerHTML=pend.map(function(p){
+    return '<div class="pc"><div style="display:flex;justify-content:space-between"><b>'+p.symbol+'</b>'+
+      '<span class="sc-sub">try '+(p.tries||0)+'/3</span></div>'+
+      '<div class="sc-sub">t'+p.tier+' · C'+p.cluster+' · ceiling '+p.ceiling+'</div></div>';
+  }).join('');
+}
+
+function renderDecisions(d){
+  var chips=document.getElementById('dec-chips'),area=document.getElementById('dec-area');
+  var counts=d.decision_counts||{},tail=d.decisions_tail||[];
+  var total=Object.keys(counts).reduce(function(a,k){return a+counts[k];},0);
+  document.getElementById('dec-badge').textContent=total+' today';
+  var order=['CANDIDATE','ENTRY-FILL','ENTRY-FILLED','EXIT','SKIP-CASH','SKIP-KILLSWITCH','SKIPPED-UNFILLABLE','SKIPPED-PARTICIPATION','SKIP-CLUSTERCAP','ORDER-FAILED'];
+  var keys=Object.keys(counts).sort(function(a,b){var ia=order.indexOf(a),ib=order.indexOf(b);return (ia<0?99:ia)-(ib<0?99:ib);});
+  chips.innerHTML=keys.map(function(k){
+    var col=k.indexOf('FILL')>=0||k==='CANDIDATE'?'var(--green)':(k==='EXIT'?'var(--blue)':(k==='ORDER-FAILED'?'var(--red)':'var(--muted)'));
+    return '<span class="chip" style="color:'+col+'">'+k+' <b>'+counts[k]+'</b></span>';
+  }).join('');
+  if(!tail.length){area.innerHTML='<div class="placeholder">No decisions yet</div>';return;}
+  var rows=tail.map(function(r){
+    var k=String(r.kind||'');
+    var col=k.indexOf('FILL')>=0?'var(--green)':(k==='EXIT'?'var(--blue)':(k==='CANDIDATE'?'var(--text)':(k==='ORDER-FAILED'?'var(--red)':'var(--muted)')));
+    return '<tr><td style="color:var(--dim)">'+String(r.logged||'').slice(11,19)+'</td>'+
+      '<td style="color:'+col+'">'+k+'</td><td class="sym">'+r.symbol+'</td>'+
+      '<td style="color:var(--dim)">'+String(r.note||'').slice(0,60)+'</td></tr>';
+  }).join('');
+  area.innerHTML='<table class="t"><tr><th>time</th><th>kind</th><th>sym</th><th>note</th></tr>'+rows+'</table>';
+}
+
+function renderKinds(d){
+  var a=document.getElementById('kind-area'),bl=d.blotter||{},bk=bl.by_kind||{};
+  var kinds=Object.keys(bk);
+  document.getElementById('kind-badge').textContent=bl.n?bl.n+' trades':'--';
+  if(!kinds.length){a.innerHTML='<div class="placeholder">No completed trades yet</div>';return;}
+  var rows=kinds.map(function(k){var g=bk[k];
+    return '<tr><td class="sym">'+k+'</td><td class="right">'+g.n+'</td>'+
+      '<td class="right">'+pct(g.avg_ret)+'</td>'+
+      '<td class="right" style="color:'+(g.usd>=0?'var(--green)':'var(--red)')+'">'+fmt$2(g.usd)+'</td></tr>';
+  }).join('');
+  a.innerHTML='<table class="t"><tr><th>exit kind</th><th class="right">n</th><th class="right">avg ret</th><th class="right">$</th></tr>'+rows+'</table>';
+}
+
+function renderSlippage(d){
+  var a=document.getElementById('slip-area'),s=d.slippage;
+  if(!s||!s.configured||!s.summary){a.innerHTML='<div class="placeholder">Waiting for matched fills...</div>';document.getElementById('slip-badge').textContent='--';return;}
+  var m=s.summary;
+  document.getElementById('slip-badge').textContent=(m.match_rate||0)+'% matched';
+  function cost(v){if(v==null)return'--';var good=v<=0;return '<span style="color:'+(good?'var(--green)':'var(--red)')+'">'+(good?'+':'-')+'$'+Math.abs(v).toFixed(2)+'</span>';}
+  a.innerHTML='<table class="t">'+
+    '<tr><td style="color:var(--muted)">Routine slippage vs reference</td><td class="right">'+(m.avg_slippage_bps||0)+' bps · '+cost(m.total_slippage_cost)+' ('+(m.routine_legs||0)+' legs)</td></tr>'+
+    '<tr><td style="color:var(--muted)">Stop/cap-event slippage</td><td class="right">'+((m.stop_event_pct||0)*100).toFixed(1)+' bps · '+cost(m.stop_event_cost)+' ('+(m.stop_event_legs||0)+' legs)</td></tr>'+
+    '<tr><td style="color:var(--muted)">Commissions paid</td><td class="right">$'+Math.abs(m.total_commissions||0).toFixed(2)+'</td></tr>'+
+    '<tr><td style="color:var(--muted)">All-in fees + slippage</td><td class="right"><b>'+cost(m.total_fees_and_slippage)+'</b></td></tr>'+
+    '<tr><td style="color:var(--muted)">Legs matched / unmatched</td><td class="right">'+(m.trade_count||0)+' / '+(m.missed_trades||0)+'</td></tr></table>';
+}
+
+function renderTrades(d){
+  var a=document.getElementById('trades-area'),bl=d.blotter||{},rec=bl.recent||[];
+  if(!rec.length){a.innerHTML='<div class="placeholder">Waiting for trades...</div>';document.getElementById('trades-badge').textContent='--';return;}
+  document.getElementById('trades-badge').textContent=rec.length+' shown';
+  var rows=rec.map(function(t){
+    return '<tr><td class="sym">'+t.symbol+'</td><td style="color:var(--dim)">t'+t.tier+' C'+t.cluster+' '+String(t.hz||'').replace('ret_','')+'</td>'+
+      '<td style="color:var(--dim)">'+String(t.exit_ts||'').slice(5,16)+'</td>'+
+      '<td>'+t.shares+' @ '+t.entry_px+' → '+t.exit_px+'</td><td>'+t.exit_kind+'</td>'+
+      '<td class="right" style="color:'+(t.pnl_usd>=0?'var(--green)':'var(--red)')+'">'+fmt$2(t.pnl_usd)+' ('+pct(t.ret_pct)+')</td></tr>';
+  }).join('');
+  a.innerHTML='<table class="t"><tr><th>sym</th><th>book</th><th>exit</th><th>fill</th><th>kind</th><th class="right">result</th></tr>'+rows+'</table>';
+}
+
+function renderHealth(d){
+  var a=document.getElementById('alerts-area');
+  var badge=document.getElementById('health-badge');
+  badge.textContent=d.system_ok?'HEALTHY':'ISSUES';
+  badge.className='badge '+(d.system_ok?'bg':'br');
+  a.innerHTML=(d.component_checks||[]).map(function(c){
+    return '<div style="font-size:11px;color:var(--dim);margin:3px 0">'+c.name+' '+(c.ok?'✅':'❌')+' <span style="color:var(--muted)">('+c.detail+')</span></div>';
+  }).join('');
+  var pk=d.pack||{};
+  document.getElementById('pack-area').innerHTML=pk.hash?
+    ('pack '+pk.hash+' · built '+pk.built+' · '+pk.clusters_active+' clusters · universe '+pk.universe+' (t2 '+pk.t2+' / t3 '+pk.t3+')'):'no pack info';
+}
+
 async function tick(){
   var d=await loadData();
   if(!d)return;
-  lastData=d;
-  var lu=document.getElementById('last-update');lu.textContent='updated '+d.generated;
-  try{var age=(Date.now()-new Date(d.generated.replace(' ','T')))/60000;
+  var lu=document.getElementById('last-update');
+  lu.textContent='updated '+(d.generated_at||'--');
+  try{var age=(Date.now()-new Date(String(d.generated_at).replace(' ','T')))/60000;
     lu.style.color=age>10?'#ef4444':(age>4?'#f59e0b':'#64748b');
     lu.textContent+=' ('+(age<1?'<1':Math.round(age))+'m ago)';}catch(e){}
-  [renderHero,renderChart,renderPositions,renderBoard,renderSlippage,renderTrades,renderHealth,renderLadders,renderIntents,renderAcct].forEach(function(fn){try{fn(d);}catch(e){console.error('panel '+fn.name+' failed:',e);}});var gEl=document.getElementById('gen-stamp');if(!gEl){gEl=document.createElement('div');gEl.id='gen-stamp';gEl.style.cssText='position:fixed;bottom:4px;right:8px;font-size:10px;color:#64748b;font-family:JetBrains Mono';document.body.appendChild(gEl);}gEl.textContent='data: '+(d.generated_at||'?');
+  [renderHero,renderAcct,renderPnl,renderPositions,renderPending,renderDecisions,renderKinds,renderSlippage,renderTrades,renderHealth]
+    .forEach(function(fn){try{fn(d);}catch(e){console.error('panel '+fn.name+' failed:',e);}});
 }
 tick();setInterval(tick,REFRESH);
 </script>
