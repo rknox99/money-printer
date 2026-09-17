@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>T23 Printer</title>
+<title>ETF and Stock Printer</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0b1220">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -25,7 +25,11 @@ body::before{content:'';position:fixed;inset:0;background:url("data:image/svg+xm
 .hero-val{font-size:48px;font-weight:800;letter-spacing:-2px;font-family:'JetBrains Mono',monospace;color:var(--blue);}
 .hero-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:2px;margin-top:2px;}
 .hero-sub{font-size:12px;color:var(--dim);font-family:'JetBrains Mono',monospace;margin-top:4px;}
-.stat-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;padding:8px 24px 16px;}
+.stat-strip{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;padding:8px 24px 16px;}
+.etf-kv{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-family:'JetBrains Mono',monospace;font-size:11px;margin-bottom:10px;}
+.etf-kv .k{color:var(--muted);text-transform:uppercase;font-size:9px;letter-spacing:1px;padding-top:2px;}
+.sub-ct{font-size:9px;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted);font-weight:600;margin:10px 0 6px;}
+pre.console{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim);background:rgba(0,0,0,0.25);border:1px solid var(--border);border-radius:6px;padding:8px 10px;max-height:220px;overflow:auto;white-space:pre-wrap;word-break:break-word;}
 .sc{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px;text-align:center;}.sc:hover{border-color:#334155;}
 .sc-val{font-size:15px;font-weight:700;font-family:'JetBrains Mono',monospace;}
 .sc-val.pos{color:var(--green);}.sc-val.neg{color:var(--red);}.sc-val.neutral{color:var(--text);}
@@ -53,7 +57,7 @@ table.t .right{text-align:right;}
 .chip{display:inline-block;font-size:10px;font-family:'JetBrains Mono',monospace;padding:3px 9px;border-radius:12px;background:rgba(255,255,255,0.04);border:1px solid var(--border);margin:2px;}
 .chip b{color:var(--text);}
 .placeholder{text-align:center;padding:30px;color:var(--muted);font-size:12px;}
-@media(max-width:1200px){.pgrid{grid-template-columns:repeat(2,1fr);}.r2{grid-template-columns:1fr;}.stat-strip{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:1200px){.pgrid{grid-template-columns:repeat(2,1fr);}.r2{grid-template-columns:1fr;}.stat-strip{grid-template-columns:repeat(4,1fr);}}
 /* ---------- mobile (PWA) overrides ---------- */
 @media (max-width: 760px) {
   body { padding: 8px; }
@@ -71,8 +75,8 @@ table.t .right{text-align:right;}
 </head>
 <body>
 <div class="hdr">
-  <div class="hdr-left"><div class="hdr-title">T23 <span>Extremes</span> — Live Command Center</div></div>
-  <div class="hdr-right"><span id="mode-badge" class="badge bb">--</span><span id="ib-status"><span class="dot dot-a"></span>IB</span><span id="last-update">--</span><span id="clock">--</span><span onclick="tick()" style="cursor:pointer;padding:2px 10px;border:1px solid #334155;border-radius:6px;margin-left:6px;user-select:none">&#8635;</span></div>
+  <div class="hdr-left"><div class="hdr-title">ETF <span>and Stock</span> — Live Command Center</div></div>
+  <div class="hdr-right"><span id="mode-badge" class="badge bb">--</span><span id="etf-mode-badge" class="badge bb">--</span><span id="ib-status"><span class="dot dot-a"></span>IB</span><span id="last-update">--</span><span id="clock">--</span><span onclick="tick()" style="cursor:pointer;padding:2px 10px;border:1px solid #334155;border-radius:6px;margin-left:6px;user-select:none">&#8635;</span></div>
 </div>
 <div class="hero">
   <div class="hero-val" id="h-value">$--</div>
@@ -82,7 +86,8 @@ table.t .right{text-align:right;}
 <div class="stat-strip">
   <div class="sc"><div class="sc-val neutral" id="h-real">--</div><div class="sc-lbl">Engine Realized (total)</div><div class="sc-sub" id="h-real-sub">--</div></div>
   <div class="sc"><div class="sc-val neutral" id="h-open-pnl">--</div><div class="sc-lbl">Open P&amp;L $</div><div class="sc-sub" id="h-open-sub">--</div></div>
-  <div class="sc"><div class="sc-val neutral" id="h-cash">--</div><div class="sc-lbl">Book Cash</div><div class="sc-sub" id="h-cash-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="h-cash">--</div><div class="sc-lbl">Stock Book Cash</div><div class="sc-sub" id="h-cash-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="h-etf">--</div><div class="sc-lbl">ETF Leg (overnight)</div><div class="sc-sub" id="h-etf-sub">--</div></div>
   <div class="sc"><div class="sc-val neutral" id="h-broker">--</div><div class="sc-lbl">Broker Realized (7d FIFO)</div><div class="sc-sub" id="h-broker-sub">--</div></div>
   <div class="sc"><div class="sc-status ok" id="h-health">--</div><div class="sc-lbl">System Health</div><div class="sc-sub" id="h-health-sub">--</div></div>
   <div class="sc"><div class="sc-val neutral" id="h-slip">--</div><div class="sc-lbl">Slippage (routine)</div><div class="sc-sub" id="h-slip-sub">--</div></div>
@@ -92,9 +97,14 @@ table.t .right{text-align:right;}
     <div class="card"><div class="ch"><span class="ct">Account Value (live, today)</span><span class="badge bb" id="acct-badge">--</span></div><div class="chart-box"><canvas id="acctChart"></canvas></div></div>
     <div class="card"><div class="ch"><span class="ct">Engine vs Broker daily $ (cumulative)</span><span class="badge bg" id="pnl-badge">--</span></div><div class="chart-box"><canvas id="pnlChart"></canvas></div></div>
   </div>
-  <div class="card"><div class="ch"><span class="ct">Open Positions (engine book)</span><span class="badge bg" id="pos-badge">--</span></div><div class="pgrid" id="pos-grid"><div class="placeholder">No open positions</div></div></div>
+  <div class="card"><div class="ch"><span class="ct">ETF Leg — overnight rotation (broker positions)</span><span class="badge bb" id="etf-badge">--</span></div><div class="etf-kv" id="etf-kv"></div><div class="pgrid" id="etf-grid"><div class="placeholder">No ETF positions</div></div></div>
+  <div class="card"><div class="ch"><span class="ct">Stock Leg — open intraday positions (engine book)</span><span class="badge bg" id="pos-badge">--</span></div><div class="pgrid" id="pos-grid"><div class="placeholder">No open positions</div></div></div>
   <div class="card"><div class="ch"><span class="ct">Working Entries (limit orders chasing under ceiling)</span><span class="badge ba" id="pend-badge">--</span></div><div class="pgrid" id="pend-grid"><div class="placeholder">No working entries</div></div></div>
-  <div class="card"><div class="ch"><span class="ct">Engine Decisions (today)</span><span class="badge bp" id="dec-badge">--</span></div><div id="dec-chips" style="margin-bottom:8px"></div><div id="dec-area"><div class="placeholder">No decisions yet</div></div></div>
+  <div class="row r2">
+    <div class="card"><div class="ch"><span class="ct">ETF Orders &amp; Fills (MOC at 16:00)</span><span class="badge ba" id="etf-fill-badge">--</span></div><div id="etf-fill-area"><div class="placeholder">No ETF fills yet</div></div></div>
+    <div class="card"><div class="ch"><span class="ct">ETF Ledger (one row per session)</span><span class="badge bp" id="etf-led-badge">--</span></div><div id="etf-led-area"><div class="placeholder">No ledger rows yet</div></div><div class="sub-ct">Engine console (tail)</div><pre class="console" id="etf-console">--</pre></div>
+  </div>
+  <div class="card"><div class="ch"><span class="ct">Stock Engine Decisions (today)</span><span class="badge bp" id="dec-badge">--</span></div><div id="dec-chips" style="margin-bottom:8px"></div><div id="dec-area"><div class="placeholder">No decisions yet</div></div></div>
   <div class="row r2">
     <div class="card"><div class="ch"><span class="ct">Exits by Kind (engine blotter)</span><span class="badge bb" id="kind-badge">--</span></div><div id="kind-area"><div class="placeholder">No completed trades yet</div></div></div>
     <div class="card"><div class="ch"><span class="ct">Slippage &amp; Fees (intents vs broker fills)</span><span class="badge ba" id="slip-badge">--</span></div><div id="slip-area"><div class="placeholder">Waiting for matched fills...</div></div></div>
@@ -132,7 +142,14 @@ function renderHero(d){
   var val=d.live_account_value!=null?d.live_account_value:acct.net_liq;
   document.getElementById('h-value').textContent=val!=null?'$'+Number(val).toLocaleString(undefined,{minimumFractionDigits:2}):'$--';
   var bk=d.book||{},pk=d.pack||{};
-  document.getElementById('h-sub').textContent=(bk.n_open||0)+' open · '+(bk.pending?bk.pending.length:0)+' working · '+(pk.universe||'--')+' symbols (t2 '+(pk.t2||'--')+' / t3 '+(pk.t3||'--')+')';
+  var etfPos=d.positions_etf||[];
+  document.getElementById('h-sub').textContent='stocks: '+(bk.n_open||0)+' open · '+(bk.pending?bk.pending.length:0)+' working · '+(pk.universe||'--')+' symbols  |  ETFs: '+etfPos.length+' held ($'+Math.round(d.etf_position_value||0).toLocaleString()+')';
+  var et=d.etf||{},etT=et.today,eEl=document.getElementById('h-etf'),eSub=document.getElementById('h-etf-sub');
+  var etfPnl=0;etfPos.forEach(function(p){etfPnl+=(p.unrealized_pnl_dollar||0);});
+  if(etfPos.length){eEl.textContent=fmt$2(etfPnl);eEl.className='sc-val '+(etfPnl>=0?'pos':'neg');}
+  else{eEl.textContent='—';eEl.className='sc-val neutral';}
+  if(etT){eSub.textContent='expo '+Math.round((etT.exposure||0)*100)+'% · '+String(etT.target||'cash').replace(/:\d\.\d{4}/g,function(m){return ':'+Math.round(parseFloat(m.slice(1))*100)+'%';});}
+  else{eSub.textContent=etfPos.length?'today\'s decision at 15:45':(et.configured?'no run yet today':'engine not configured');}
   var totalReal=(bk.realized!=null)?bk.realized:null;
   var rEl=document.getElementById('h-real');
   rEl.textContent=fmt$2(totalReal);rEl.className='sc-val '+(totalReal>0?'pos':(totalReal<0?'neg':'neutral'));
@@ -161,8 +178,70 @@ function renderHero(d){
   else{sEl.textContent='—';sSub.textContent='Awaiting fills';}
   var mode=document.getElementById('mode-badge');
   var eng=(d.component_checks||[]).find(function(c){return c.name==='engine';});
-  mode.textContent=eng&&eng.ok?'ENGINE LIVE':'ENGINE ?';
+  mode.textContent=eng&&eng.ok?'STOCK ENGINE OK':'STOCK ENGINE ?';
   mode.className='badge '+(eng&&eng.ok?'bg':'br');
+  var em=document.getElementById('etf-mode-badge');
+  var ec=(d.component_checks||[]).find(function(c){return c.name==='etf engine';});
+  var emode=(etT&&etT.mode)||((et.ledger_tail||[])[0]||{}).mode||'';
+  em.textContent='ETF '+(emode||'ENGINE')+(ec?(ec.ok?' OK':' ?'):'');
+  em.className='badge '+(ec&&ec.ok?(emode==='LIVE'?'bg':'ba'):'br');
+}
+
+function wts(s){return String(s||'cash').split(' ').map(function(kv){var p=kv.split(':');return p.length>1?p[0]+' '+Math.round(parseFloat(p[1])*100)+'%':kv;}).join(' · ');}
+function renderEtf(d){
+  var et=d.etf||{},t=et.today,kv=document.getElementById('etf-kv'),g=document.getElementById('etf-grid'),badge=document.getElementById('etf-badge');
+  var pos=d.positions_etf||[];
+  if(et.reconcile==='MATCH'){badge.textContent='MATCHES BACKTEST';badge.className='badge bg';}
+  else if(et.reconcile==='MISMATCH'){badge.textContent='MISMATCH vs BACKTEST';badge.className='badge br';}
+  else{badge.textContent=t?'RAN TODAY':(et.configured?'runs 15:38–16:12':'not configured');badge.className='badge '+(t?'bg':'bb');}
+  var src=t||((et.ledger_tail||[])[0]);
+  if(src){
+    var halt=/halt/i.test(String(src.note||''))&&!/no halt/i.test(String(src.note||''));
+    kv.innerHTML=
+      '<div class="k">'+(t?'today':'last run')+'</div><div>'+src.date+' · '+(src.mode||'')+' · NLV $'+Math.round(src.nlv||0).toLocaleString()+'</div>'+
+      '<div class="k">target</div><div><b>'+wts(src.target)+'</b>'+(src.target_shares?' <span style="color:var(--muted)">('+src.target_shares+')</span>':'')+'</div>'+
+      '<div class="k">exposure</div><div>'+Math.round((src.exposure||0)*100)+'% of NLV'+(halt?' <span class="badge br">MARKET HALT</span>':'')+'</div>'+
+      '<div class="k">orders</div><div>'+(src.orders||'none')+'</div>'+
+      '<div class="k">fills</div><div>'+(src.fills||'none')+'</div>'+
+      '<div class="k">note</div><div style="color:var(--dim)">'+String(src.note||'')+'</div>';
+  } else {kv.innerHTML='<div class="k">status</div><div style="color:var(--muted)">no ETF ledger rows yet</div>';}
+  if(!pos.length){g.innerHTML='<div class="placeholder">No ETF positions (cash)</div>';return;}
+  g.innerHTML=pos.map(function(p){
+    var u=p.unrealized_pnl_dollar||0,cls=u>=0?'pos':'neg';
+    return '<div class="pc"><div style="display:flex;justify-content:space-between;align-items:center"><b>'+p.symbol+'</b><span class="sc-val '+cls+'" style="font-size:13px">'+fmt$2(u)+'</span></div>'+
+      '<div class="sc-sub">'+p.shares+' sh @ '+p.avg_cost+' → '+p.mkt_price+' ('+pct(p.unrealized_pnl)+')</div>'+
+      '<div class="sc-sub">$'+Math.round(p.position_value||0).toLocaleString()+' · '+(p.position||'long')+'</div></div>';
+  }).join('');
+}
+
+function renderEtfFills(d){
+  var et=d.etf||{},a=document.getElementById('etf-fill-area'),b=document.getElementById('etf-fill-badge'),f=et.fills_recent||[];
+  b.textContent=et.avg_slip_bp!=null?('avg slip '+et.avg_slip_bp+' bp'):'--';
+  if(!f.length){a.innerHTML='<div class="placeholder">No ETF fills yet</div>';return;}
+  var rows=f.map(function(r){
+    var sb=r.slip_bp,col=sb==null?'var(--muted)':(sb<=0?'var(--green)':'var(--red)');
+    return '<tr><td style="color:var(--dim)">'+String(r.date||'').slice(5)+'</td><td class="sym">'+r.symbol+'</td>'+
+      '<td style="color:'+(r.side==='BUY'?'var(--green)':'var(--red)')+'">'+r.side+'</td><td>'+(r.kind||'')+'</td>'+
+      '<td class="right">'+r.filled+'/'+r.want+'</td><td class="right">'+(r.avg_price!=null?Number(r.avg_price).toFixed(2):'--')+'</td>'+
+      '<td class="right" style="color:'+col+'">'+(sb==null?'--':Number(sb).toFixed(1))+'</td>'+
+      '<td class="right">$'+Number(r.commission||0).toFixed(2)+'</td></tr>';
+  }).join('');
+  a.innerHTML='<table class="t"><tr><th>date</th><th>sym</th><th>side</th><th>kind</th><th class="right">filled</th><th class="right">avg</th><th class="right">slip bp</th><th class="right">comm</th></tr>'+rows+'</table>';
+}
+
+function renderEtfLedger(d){
+  var et=d.etf||{},a=document.getElementById('etf-led-area'),b=document.getElementById('etf-led-badge'),L=et.ledger_tail||[];
+  b.textContent=L.length?(L.length+' sessions'):'--';
+  if(L.length){
+    var rows=L.map(function(r){
+      return '<tr><td style="color:var(--dim)">'+String(r.date||'').slice(5)+'</td><td>'+(r.mode||'')+'</td>'+
+        '<td class="right">'+Math.round((r.exposure||0)*100)+'%</td><td class="sym">'+wts(r.target)+'</td>'+
+        '<td style="color:var(--dim)">'+(r.orders||'—')+'</td></tr>';
+    }).join('');
+    a.innerHTML='<table class="t"><tr><th>date</th><th>mode</th><th class="right">expo</th><th>target</th><th>orders</th></tr>'+rows+'</table>';
+  } else a.innerHTML='<div class="placeholder">No ledger rows yet</div>';
+  var c=et.console_tail||[];
+  document.getElementById('etf-console').textContent=c.length?c.join('\n'):'(no console output yet)';
 }
 
 function renderAcct(d){
@@ -310,7 +389,7 @@ async function tick(){
   try{var age=(Date.now()-new Date(String(d.generated_at).replace(' ','T')))/60000;
     lu.style.color=age>10?'#ef4444':(age>4?'#f59e0b':'#64748b');
     lu.textContent+=' ('+(age<1?'<1':Math.round(age))+'m ago)';}catch(e){}
-  [renderHero,renderAcct,renderPnl,renderPositions,renderPending,renderDecisions,renderKinds,renderSlippage,renderTrades,renderHealth]
+  [renderHero,renderAcct,renderPnl,renderEtf,renderPositions,renderPending,renderEtfFills,renderEtfLedger,renderDecisions,renderKinds,renderSlippage,renderTrades,renderHealth]
     .forEach(function(fn){try{fn(d);}catch(e){console.error('panel '+fn.name+' failed:',e);}});
 }
 tick();setInterval(tick,REFRESH);
