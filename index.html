@@ -84,11 +84,11 @@ table.t .right{text-align:right;}
   <div class="hero-sub" id="h-sub">--</div>
 </div>
 <div class="stat-strip">
-  <div class="sc"><div class="sc-val neutral" id="h-real">--</div><div class="sc-lbl">Engine Realized (total)</div><div class="sc-sub" id="h-real-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="h-real">--</div><div class="sc-lbl" id="h-real-lbl">Stock Leg Realized</div><div class="sc-sub" id="h-real-sub">--</div></div>
   <div class="sc"><div class="sc-val neutral" id="h-open-pnl">--</div><div class="sc-lbl">Open P&amp;L $</div><div class="sc-sub" id="h-open-sub">--</div></div>
   <div class="sc"><div class="sc-val neutral" id="h-cash">--</div><div class="sc-lbl">Stock Book Cash</div><div class="sc-sub" id="h-cash-sub">--</div></div>
   <div class="sc"><div class="sc-val neutral" id="h-etf">--</div><div class="sc-lbl">ETF Leg (overnight)</div><div class="sc-sub" id="h-etf-sub">--</div></div>
-  <div class="sc"><div class="sc-val neutral" id="h-broker">--</div><div class="sc-lbl">Broker Realized (7d FIFO)</div><div class="sc-sub" id="h-broker-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="h-broker">--</div><div class="sc-lbl" id="h-broker-lbl">Broker Realized (FIFO)</div><div class="sc-sub" id="h-broker-sub">--</div></div>
   <div class="sc"><div class="sc-status ok" id="h-health">--</div><div class="sc-lbl">System Health</div><div class="sc-sub" id="h-health-sub">--</div></div>
   <div class="sc"><div class="sc-val neutral" id="h-slip">--</div><div class="sc-lbl">Slippage (routine)</div><div class="sc-sub" id="h-slip-sub">--</div></div>
 </div>
@@ -150,11 +150,13 @@ function renderHero(d){
   else{eEl.textContent='—';eEl.className='sc-val neutral';}
   if(etT){eSub.textContent='expo '+Math.round((etT.exposure||0)*100)+'% · '+String(etT.target||'cash').replace(/:\d\.\d{4}/g,function(m){return ':'+Math.round(parseFloat(m.slice(1))*100)+'%';});}
   else{eSub.textContent=etfPos.length?'today\'s decision at 15:45':(et.configured?'no run yet today':'engine not configured');}
-  var totalReal=(bk.realized!=null)?bk.realized:null;
+  var bl=d.blotter||{},paper=bk.mode&&bk.mode!=='LIVE';
+  var totalReal=(bl.total!=null)?bl.total:null;   // blotter since dash_start (not the engine's lifetime counter)
   var rEl=document.getElementById('h-real');
-  rEl.textContent=fmt$2(totalReal);rEl.className='sc-val '+(totalReal>0?'pos':(totalReal<0?'neg':'neutral'));
-  var bl=d.blotter||{};
-  document.getElementById('h-real-sub').textContent=bl.n?(bl.n+' trades · '+(bl.win_rate||0)+'% win · swept $'+Math.round(bk.swept||0).toLocaleString()):'No completed trades yet';
+  rEl.textContent=fmt$2(totalReal);rEl.className='sc-val '+(paper?'neutral':(totalReal>0?'pos':(totalReal<0?'neg':'neutral')));
+  document.getElementById('h-real-lbl').textContent='Stock Leg Realized'+(paper?' ('+bk.mode+' · paper)':'');
+  document.getElementById('h-real-sub').textContent=(bl.n?(bl.n+' trades · '+(bl.win_rate||0)+'% win'):'No completed trades')+' · since '+(d.dash_start||'--');
+  document.getElementById('h-broker-lbl').textContent='Broker Realized (FIFO since '+String(d.dash_start||'').slice(5)+')';
   var open=(bk.open||[]),oPnl=0,haveMark=0;
   open.forEach(function(p){if(p.unreal_usd!=null){oPnl+=p.unreal_usd;haveMark++;}});
   var oEl=document.getElementById('h-open-pnl');
@@ -178,8 +180,9 @@ function renderHero(d){
   else{sEl.textContent='—';sSub.textContent='Awaiting fills';}
   var mode=document.getElementById('mode-badge');
   var eng=(d.component_checks||[]).find(function(c){return c.name==='engine';});
-  mode.textContent=eng&&eng.ok?'STOCK ENGINE OK':'STOCK ENGINE ?';
-  mode.className='badge '+(eng&&eng.ok?'bg':'br');
+  var smode=bk.mode||'';
+  mode.textContent='STOCK '+(smode||'ENGINE')+(eng?(eng.ok?' OK':' ?'):'');
+  mode.className='badge '+(eng&&eng.ok?(smode==='LIVE'?'bg':'ba'):'br');
   var em=document.getElementById('etf-mode-badge');
   var ec=(d.component_checks||[]).find(function(c){return c.name==='etf engine';});
   var emode=(etT&&etT.mode)||((et.ledger_tail||[])[0]||{}).mode||'';
@@ -282,7 +285,8 @@ function renderPnl(d){
 
 function renderPositions(d){
   var g=document.getElementById('pos-grid'),bk=d.book||{},open=bk.open||[];
-  document.getElementById('pos-badge').textContent=open.length+' open';
+  var pb=document.getElementById('pos-badge'),paper=bk.mode&&bk.mode!=='LIVE';
+  pb.textContent=open.length+' open'+(paper?' · '+bk.mode+' (paper)':'');pb.className='badge '+(paper?'ba':'bg');
   if(!open.length){g.innerHTML='<div class="placeholder">No open positions</div>';return;}
   g.innerHTML=open.map(function(p){
     var cls=(p.unreal_usd||0)>=0?'pos':'neg';
