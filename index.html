@@ -156,7 +156,7 @@ function renderHero(d){
   rEl.textContent=fmt$2(totalReal);rEl.className='sc-val '+(paper?'neutral':(totalReal>0?'pos':(totalReal<0?'neg':'neutral')));
   document.getElementById('h-real-lbl').textContent='Stock Leg Realized'+(paper?' ('+bk.mode+' · paper)':'');
   document.getElementById('h-real-sub').textContent=(bl.n?(bl.n+' trades · '+(bl.win_rate||0)+'% win'):'No completed trades')+' · since '+(d.dash_start||'--');
-  document.getElementById('h-broker-lbl').textContent='Broker Realized (FIFO since '+String(d.dash_start||'').slice(5)+')';
+  document.getElementById('h-broker-lbl').textContent='Broker Realized (FIFO since '+String(d.broker_start||d.dash_start||'').slice(5)+')';
   var open=(bk.open||[]),oPnl=0,haveMark=0;
   open.forEach(function(p){if(p.unreal_usd!=null){oPnl+=p.unreal_usd;haveMark++;}});
   var oEl=document.getElementById('h-open-pnl');
