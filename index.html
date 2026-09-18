@@ -163,7 +163,7 @@ function renderHero(d){
   if(open.length){oEl.textContent=fmt$2(oPnl);oEl.className='sc-val '+(oPnl>=0?'pos':'neg');document.getElementById('h-open-sub').textContent=haveMark+'/'+open.length+' marked';}
   else{oEl.textContent='—';oEl.className='sc-val neutral';document.getElementById('h-open-sub').textContent='No open positions';}
   document.getElementById('h-cash').textContent=bk.cash!=null?'$'+Math.round(bk.cash).toLocaleString():'--';
-  document.getElementById('h-cash-sub').textContent='of $70,000 book';
+  document.getElementById('h-cash-sub').textContent='of $'+Math.round(bk.pot||70000).toLocaleString()+' pot';
   var br=d.total_realized_pnl,rs=d.realized_summary||{};
   var bEl=document.getElementById('h-broker');
   bEl.textContent=fmt$2(br);bEl.className='sc-val '+(br>0?'pos':(br<0?'neg':'neutral'));
@@ -293,7 +293,7 @@ function renderPositions(d){
     var ex=p.exit_pending?'<span class="badge ba" style="font-size:8px">EXITING: '+p.exit_pending+'</span>':'';
     return '<div class="pc'+(p.exit_pending?' exiting':'')+'"><div style="display:flex;justify-content:space-between;align-items:center">'+
       '<b>'+p.symbol+'</b><span class="sc-val '+cls+'" style="font-size:13px">'+fmt$2(p.unreal_usd)+'</span></div>'+
-      '<div class="sc-sub">t'+p.tier+' · C'+p.cluster+' · '+String(p.hz||'').replace('ret_','')+' · sess '+p.sessions+'</div>'+
+      '<div class="sc-sub">t'+p.tier+' · '+(isNaN(p.cluster)?p.cluster:'C'+p.cluster)+' · '+(p.side||String(p.hz||'').replace('ret_',''))+'</div>'+
       '<div class="sc-sub">'+p.shares+' sh @ '+p.entry_px+' → '+(p.mark!=null?p.mark:'--')+' ('+pct(p.unreal_pct)+')</div>'+
       '<div style="margin-top:3px">'+ex+'</div></div>';
   }).join('');
@@ -306,7 +306,7 @@ function renderPending(d){
   g.innerHTML=pend.map(function(p){
     return '<div class="pc"><div style="display:flex;justify-content:space-between"><b>'+p.symbol+'</b>'+
       '<span class="sc-sub">try '+(p.tries||0)+'/3</span></div>'+
-      '<div class="sc-sub">t'+p.tier+' · C'+p.cluster+' · ceiling '+p.ceiling+'</div></div>';
+      '<div class="sc-sub">t'+p.tier+' · '+(isNaN(p.cluster)?p.cluster:'C'+p.cluster)+' · band '+p.ceiling+'</div></div>';
   }).join('');
 }
 
@@ -364,7 +364,7 @@ function renderTrades(d){
   if(!rec.length){a.innerHTML='<div class="placeholder">Waiting for trades...</div>';document.getElementById('trades-badge').textContent='--';return;}
   document.getElementById('trades-badge').textContent=rec.length+' shown';
   var rows=rec.map(function(t){
-    return '<tr><td class="sym">'+t.symbol+'</td><td style="color:var(--dim)">t'+t.tier+' C'+t.cluster+' '+String(t.hz||'').replace('ret_','')+'</td>'+
+    return '<tr><td class="sym">'+t.symbol+'</td><td style="color:var(--dim)">t'+t.tier+' '+(isNaN(t.cluster)?t.cluster:'C'+t.cluster)+' '+String(t.hz||'').replace('ret_','')+'</td>'+
       '<td style="color:var(--dim)">'+String(t.exit_ts||'').slice(5,16)+'</td>'+
       '<td>'+t.shares+' @ '+t.entry_px+' → '+t.exit_px+'</td><td>'+t.exit_kind+'</td>'+
       '<td class="right" style="color:'+(t.pnl_usd>=0?'var(--green)':'var(--red)')+'">'+fmt$2(t.pnl_usd)+' ('+pct(t.ret_pct)+')</td></tr>';
