@@ -58,6 +58,11 @@ table.t .right{text-align:right;}
 .chip b{color:var(--text);}
 .placeholder{text-align:center;padding:30px;color:var(--muted);font-size:12px;}
 @media(max-width:1200px){.pgrid{grid-template-columns:repeat(2,1fr);}.r2{grid-template-columns:1fr;}.stat-strip{grid-template-columns:repeat(4,1fr);}}
+.win{display:inline-flex;border:1px solid var(--border);border-radius:6px;overflow:hidden;font-family:'JetBrains Mono',monospace;font-size:10px;}
+.win span{padding:3px 10px;cursor:pointer;color:var(--dim);user-select:none;}.win span:hover{color:var(--text);}.win span.on{background:rgba(59,130,246,0.18);color:var(--blue);font-weight:600;}
+.truth-kv{display:grid;grid-template-columns:1fr auto;gap:5px 14px;font-family:'JetBrains Mono',monospace;font-size:11px;}
+.truth-kv .k{color:var(--muted);}.truth-kv .v{text-align:right;}.truth-kv .tot{border-top:1px solid var(--border);padding-top:5px;font-weight:700;}
+.note{font-size:10px;color:var(--muted);margin-top:8px;line-height:1.5;}
 /* ---------- mobile (PWA) overrides ---------- */
 @media (max-width: 760px) {
   body { padding: 8px; }
@@ -75,27 +80,29 @@ table.t .right{text-align:right;}
 </head>
 <body>
 <div class="hdr">
-  <div class="hdr-left"><div class="hdr-title">ETF <span>and Stock</span> — Live Command Center</div></div>
+  <div class="hdr-left"><div class="hdr-title">ETF <span>and Stock</span> — Live Command Center</div>
+    <div class="win" id="win"><span data-w="5">5D</span><span data-w="10">10D</span><span data-w="30">30D</span><span data-w="0">ALL</span></div></div>
   <div class="hdr-right"><span id="mode-badge" class="badge bb">--</span><span id="etf-mode-badge" class="badge bb">--</span><span id="ib-status"><span class="dot dot-a"></span>IB</span><span id="last-update">--</span><span id="clock">--</span><span onclick="tick()" style="cursor:pointer;padding:2px 10px;border:1px solid #334155;border-radius:6px;margin-left:6px;user-select:none">&#8635;</span></div>
 </div>
 <div class="hero">
   <div class="hero-val" id="h-value">$--</div>
   <div class="hero-lbl">Account Value</div>
   <div class="hero-sub" id="h-sub">--</div>
+  <div class="hero-sub" id="h-since" style="margin-top:6px;color:var(--text)">--</div>
 </div>
 <div class="stat-strip">
-  <div class="sc"><div class="sc-val neutral" id="h-real">--</div><div class="sc-lbl" id="h-real-lbl">Stock Leg Realized</div><div class="sc-sub" id="h-real-sub">--</div></div>
-  <div class="sc"><div class="sc-val neutral" id="h-open-pnl">--</div><div class="sc-lbl">Open P&amp;L $</div><div class="sc-sub" id="h-open-sub">--</div></div>
-  <div class="sc"><div class="sc-val neutral" id="h-cash">--</div><div class="sc-lbl">Stock Book Cash</div><div class="sc-sub" id="h-cash-sub">--</div></div>
-  <div class="sc"><div class="sc-val neutral" id="h-etf">--</div><div class="sc-lbl">ETF Leg (overnight)</div><div class="sc-sub" id="h-etf-sub">--</div></div>
-  <div class="sc"><div class="sc-val neutral" id="h-broker">--</div><div class="sc-lbl" id="h-broker-lbl">Broker Realized (FIFO)</div><div class="sc-sub" id="h-broker-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="t-acct">--</div><div class="sc-lbl" id="t-acct-lbl">Account P&amp;L</div><div class="sc-sub" id="t-acct-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="t-stock">--</div><div class="sc-lbl">Stock Realized (broker, net)</div><div class="sc-sub" id="t-stock-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="t-etf">--</div><div class="sc-lbl" id="t-etf-lbl">ETF Leg</div><div class="sc-sub" id="t-etf-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="t-fees">--</div><div class="sc-lbl">Commissions Paid</div><div class="sc-sub" id="t-fees-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="t-gap">--</div><div class="sc-lbl">Reality vs Backtest</div><div class="sc-sub" id="t-gap-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="h-open-pnl">--</div><div class="sc-lbl">Open P&amp;L (stock, today)</div><div class="sc-sub" id="h-open-sub">--</div></div>
   <div class="sc"><div class="sc-status ok" id="h-health">--</div><div class="sc-lbl">System Health</div><div class="sc-sub" id="h-health-sub">--</div></div>
-  <div class="sc"><div class="sc-val neutral" id="h-slip">--</div><div class="sc-lbl">Slippage (routine)</div><div class="sc-sub" id="h-slip-sub">--</div></div>
 </div>
 <div class="dash">
   <div class="row r2">
     <div class="card"><div class="ch"><span class="ct">Account Value (live, today)</span><span class="badge bb" id="acct-badge">--</span></div><div class="chart-box"><canvas id="acctChart"></canvas></div></div>
-    <div class="card"><div class="ch"><span class="ct">Engine vs Broker daily $ (cumulative)</span><span class="badge bg" id="pnl-badge">--</span></div><div class="chart-box"><canvas id="pnlChart"></canvas></div></div>
+    <div class="card"><div class="ch"><span class="ct" id="pnl-title">Account P&amp;L by session</span><span class="badge bg" id="pnl-badge">--</span></div><div class="chart-box"><canvas id="pnlChart"></canvas></div></div>
   </div>
   <div class="card"><div class="ch"><span class="ct">ETF Leg — overnight rotation (broker positions)</span><span class="badge bb" id="etf-badge">--</span></div><div class="etf-kv" id="etf-kv"></div><div class="pgrid" id="etf-grid"><div class="placeholder">No ETF positions</div></div></div>
   <div class="card"><div class="ch"><span class="ct">Stock Leg — open intraday positions (engine book)</span><span class="badge bg" id="pos-badge">--</span></div><div class="pgrid" id="pos-grid"><div class="placeholder">No open positions</div></div></div>
@@ -107,7 +114,11 @@ table.t .right{text-align:right;}
   <div class="card"><div class="ch"><span class="ct">Stock Engine Decisions (today)</span><span class="badge bp" id="dec-badge">--</span></div><div id="dec-chips" style="margin-bottom:8px"></div><div id="dec-area"><div class="placeholder">No decisions yet</div></div></div>
   <div class="row r2">
     <div class="card"><div class="ch"><span class="ct">Exits by Kind (engine blotter)</span><span class="badge bb" id="kind-badge">--</span></div><div id="kind-area"><div class="placeholder">No completed trades yet</div></div></div>
-    <div class="card"><div class="ch"><span class="ct">Slippage &amp; Fees (intents vs broker fills)</span><span class="badge ba" id="slip-badge">--</span></div><div id="slip-area"><div class="placeholder">Waiting for matched fills...</div></div></div>
+    <div class="card"><div class="ch"><span class="ct" id="slip-title">Reality vs Backtest &amp; Fees</span><span class="badge ba" id="slip-badge">--</span></div><div id="slip-area"><div class="placeholder">Waiting for parity files...</div></div></div>
+  </div>
+  <div class="row r2">
+    <div class="card"><div class="ch"><span class="ct" id="rec-title">Where the money came from</span><span class="badge bb" id="rec-badge">--</span></div><div id="rec-area"><div class="placeholder">--</div></div></div>
+    <div class="card"><div class="ch"><span class="ct">Paired round trips — backtest paper vs real</span><span class="badge bb" id="pair-badge">--</span></div><div id="pair-area" style="max-height:330px;overflow:auto"><div class="placeholder">No paired trades yet</div></div></div>
   </div>
   <div class="card"><div class="ch"><span class="ct">Completed Trades (engine blotter)</span><span class="badge bb" id="trades-badge">--</span></div><div id="trades-area"><div class="placeholder">Waiting for trades...</div></div></div>
   <div class="card"><div class="ch"><span class="ct">System Health &amp; Tonight's Pack</span><span class="badge" id="health-badge">--</span></div><div id="alerts-area"></div><div id="pack-area" style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim);"></div></div>
@@ -116,7 +127,41 @@ table.t .right{text-align:right;}
 <script src="t23_dashboard_data.js"></script>
 <script>
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(function(){});}
-var REFRESH=60000,acctChart=null,pnlChart=null;
+var REFRESH=60000,acctChart=null,pnlChart=null,LASTD=null;
+var WIN=10;try{var w0=localStorage.getItem('t23win');if(w0!=null)WIN=parseInt(w0,10);}catch(e){}
+function setWin(w){WIN=w;try{localStorage.setItem('t23win',String(w));}catch(e){}
+  document.querySelectorAll('#win span').forEach(function(el){el.className=(parseInt(el.getAttribute('data-w'),10)===WIN)?'on':'';});
+  if(LASTD)renderAll(LASTD);}
+document.querySelectorAll('#win span').forEach(function(el){el.onclick=function(){setWin(parseInt(el.getAttribute('data-w'),10));};});
+function winLabel(){return WIN?('last '+WIN+' sessions'):'since go-live';}
+function todayET(){return new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'});}
+function bp(v){return v==null?'--':((v>=0?'+':'')+v.toFixed(1)+' bp');}
+/* the window slice of the truth ledger: sums of the per-day rows + NLV start/end */
+function winStats(d){
+  var tr=d.truth||{},rows=(tr.days||[]).filter(function(r){return r.date>=tr.cutover;}),today=todayET();
+  var active=rows.filter(function(r){return r.stock_trips||r.etf_trips||r.blotter_n||r.date===today;});
+  var sel=WIN?active.slice(-WIN):rows.slice();
+  if(!sel.length)return null;
+  var first=sel[0].date,last=sel[sel.length-1].date;
+  var inWin=rows.filter(function(r){return r.date>=first&&r.date<=last;});
+  var S={n:sel.length,first:first,last:last,stock:0,gross:0,sfees:0,efees:0,etf_real:0,blot:0,blot_n:0,trips:0,paper:0,real:0,clip:0,np:0,paper_day:0,blot_match:0,eslip:0,cf:0,bars:[]};
+  inWin.forEach(function(r){S.stock+=r.stock_real;S.gross+=r.stock_gross;S.sfees+=r.stock_fees;S.efees+=r.etf_fees;S.etf_real+=r.etf_real;S.blot+=r.blotter;S.blot_n+=r.blotter_n;S.trips+=r.stock_trips;
+    S.paper+=r.paper_paired;S.real+=r.real_paired;S.clip+=r.clip_paired;S.np+=r.n_paired;S.eslip+=r.etf_slip;S.cf+=(r.cash_flow||0);
+    if(r.paper_day!=null){S.paper_day+=r.paper_day;S.blot_match+=r.blotter;}});
+  /* NLV at the start of the window = the close before the first selected day (baseline when the window reaches go-live) */
+  var before=rows.filter(function(r){return r.date<first&&r.nlv_close!=null;});
+  S.nlv0=before.length?before[before.length-1].nlv_close:tr.baseline_nlv;S.nlv0_is_baseline=!before.length;
+  var nowv=tr.nlv_now!=null?tr.nlv_now:((d.account_summary||{}).net_liq);
+  var lastRow=inWin[inWin.length-1];
+  S.nlv1=(last===today&&nowv!=null)?nowv:(lastRow&&lastRow.nlv_close!=null?lastRow.nlv_close:nowv);
+  S.acct=(S.nlv0!=null&&S.nlv1!=null)?(S.nlv1-S.nlv0-S.cf):null;
+  S.etf_other=S.acct!=null?S.acct-S.stock:null;
+  /* per-day bars: stock real + (ETF+other = dNLV - stock) */
+  var prev=S.nlv0;
+  inWin.forEach(function(r){var v=(r.date===today&&nowv!=null)?nowv:r.nlv_close;var dn=(prev!=null&&v!=null)?v-prev-(r.cash_flow||0):null;
+    S.bars.push({date:r.date,stock:r.stock_real,other:dn!=null?dn-r.stock_real:null,acct:dn,nlv:v});if(v!=null)prev=v;});
+  return S;
+}
 var RAW_URL='https://raw.githubusercontent.com/rknox99/money-printer/main/t23_dashboard_data.json';
 setInterval(function(){var et=new Date().toLocaleTimeString('en-US',{timeZone:'America/New_York',hour12:false,hour:'2-digit',minute:'2-digit',second:'2-digit'});document.getElementById('clock').textContent=et+' ET';},1000);
 function fmt$(v){if(v==null)return'--';var s=v>=0?'+$':'-$';return s+Math.abs(Math.round(v)).toLocaleString();}
@@ -138,36 +183,30 @@ async function loadData(){
 }
 
 function renderHero(d){
-  var acct=d.account_summary||{};
+  var acct=d.account_summary||{},tr=d.truth||{};
   var val=d.live_account_value!=null?d.live_account_value:acct.net_liq;
   document.getElementById('h-value').textContent=val!=null?'$'+Number(val).toLocaleString(undefined,{minimumFractionDigits:2}):'$--';
   var bk=d.book||{},pk=d.pack||{};
   var etfPos=d.positions_etf||[];
   document.getElementById('h-sub').textContent='stocks: '+(bk.n_open||0)+' open · '+(bk.pending?bk.pending.length:0)+' working · '+(pk.universe||'--')+' symbols  |  ETFs: '+etfPos.length+' held ($'+Math.round(d.etf_position_value||0).toLocaleString()+')';
-  var et=d.etf||{},etT=et.today,eEl=document.getElementById('h-etf'),eSub=document.getElementById('h-etf-sub');
-  var etfPnl=0;etfPos.forEach(function(p){etfPnl+=(p.unrealized_pnl_dollar||0);});
-  if(etfPos.length){eEl.textContent=fmt$2(etfPnl);eEl.className='sc-val '+(etfPnl>=0?'pos':'neg');}
-  else{eEl.textContent='—';eEl.className='sc-val neutral';}
-  if(etT){eSub.textContent='expo '+Math.round((etT.exposure||0)*100)+'% · '+String(etT.target||'cash').replace(/:\d\.\d{4}/g,function(m){return ':'+Math.round(parseFloat(m.slice(1))*100)+'%';});}
-  else{eSub.textContent=etfPos.length?'today\'s decision at 15:45':(et.configured?'no run yet today':'engine not configured');}
-  var bl=d.blotter||{},paper=bk.mode&&bk.mode!=='LIVE';
-  var totalReal=(bl.total!=null)?bl.total:null;   // blotter since dash_start (not the engine's lifetime counter)
-  var rEl=document.getElementById('h-real');
-  rEl.textContent=fmt$2(totalReal);rEl.className='sc-val '+(paper?'neutral':(totalReal>0?'pos':(totalReal<0?'neg':'neutral')));
-  document.getElementById('h-real-lbl').textContent='Stock Leg Realized'+(paper?' ('+bk.mode+' · paper)':'');
-  document.getElementById('h-real-sub').textContent=(bl.n?(bl.n+' trades · '+(bl.win_rate||0)+'% win'):'No completed trades')+' · since '+(d.dash_start||'--');
-  document.getElementById('h-broker-lbl').textContent='Broker Realized (FIFO since '+String(d.broker_start||d.dash_start||'').slice(5)+')';
+  var since=document.getElementById('h-since');
+  if(tr.account_pnl!=null){since.innerHTML='since go-live '+String(tr.cutover||'').slice(5)+': <b style="color:'+(tr.account_pnl>=0?'var(--green)':'var(--red)')+'">'+fmt$2(tr.account_pnl)+' ('+pct(tr.account_pnl_pct)+')</b> <span style="color:var(--muted)">· NLV '+Math.round(tr.baseline_nlv).toLocaleString()+' → '+Math.round(tr.nlv_now).toLocaleString()+' · this is the whole truth: fills, fees, slippage, interest, open marks</span>';}
+  else since.textContent=tr.configured?'go-live baseline not available yet':'truth ledger not configured';
+  var S=winStats(d),L=winLabel();
+  function tile(id,v,sub,lbl){var el=document.getElementById(id);el.textContent=v==null?'—':fmt$2(v);el.className='sc-val '+(v==null?'neutral':(v>0?'pos':(v<0?'neg':'neutral')));document.getElementById(id+'-sub').textContent=sub;if(lbl)document.getElementById(id+'-lbl').textContent=lbl;}
+  if(S){
+    tile('t-acct',S.acct,'ΔNLV · '+S.n+' sessions'+(S.nlv0_is_baseline?' · from go-live':''),'Account P&L ('+L+')');
+    tile('t-stock',S.stock,S.trips+' round trips · engine book '+fmt$2(S.blot)+(Math.abs(S.blot-S.stock)<5?' ✓':' (see below)'));
+    if(!WIN||S.nlv0_is_baseline){var eo=(tr.etf_unreal_now||0);tile('t-etf',S.etf_real+eo,'realized '+fmt$2(S.etf_real)+' · open '+fmt$2(eo)+' · other '+fmt$2(S.acct!=null?S.acct-S.stock-S.etf_real-eo:null),'ETF Leg (realized + open)');}
+    else tile('t-etf',S.etf_other,'ΔNLV minus stock leg · incl. open marks, interest','ETF Leg + other ('+L+')');
+    tile('t-fees',-(S.sfees+S.efees),'stock $'+S.sfees.toFixed(2)+' · ETF $'+S.efees.toFixed(2)+' · already inside the numbers above');
+    var gap=S.real-S.paper;tile('t-gap',S.np?gap:null,S.np?(S.np+' paired trips · '+bp(S.clip?gap/S.clip*1e4:null)+'/trip · + = better than paper'):'no paired trips in window');
+  } else {['t-acct','t-stock','t-etf','t-fees','t-gap'].forEach(function(id){document.getElementById(id).textContent='—';document.getElementById(id+'-sub').textContent='no truth rows yet';});}
   var open=(bk.open||[]),oPnl=0,haveMark=0;
   open.forEach(function(p){if(p.unreal_usd!=null){oPnl+=p.unreal_usd;haveMark++;}});
   var oEl=document.getElementById('h-open-pnl');
   if(open.length){oEl.textContent=fmt$2(oPnl);oEl.className='sc-val '+(oPnl>=0?'pos':'neg');document.getElementById('h-open-sub').textContent=haveMark+'/'+open.length+' marked';}
   else{oEl.textContent='—';oEl.className='sc-val neutral';document.getElementById('h-open-sub').textContent='No open positions';}
-  document.getElementById('h-cash').textContent=bk.cash!=null?'$'+Math.round(bk.cash).toLocaleString():'--';
-  document.getElementById('h-cash-sub').textContent='of $'+Math.round(bk.pot||70000).toLocaleString()+' pot';
-  var br=d.total_realized_pnl,rs=d.realized_summary||{};
-  var bEl=document.getElementById('h-broker');
-  bEl.textContent=fmt$2(br);bEl.className='sc-val '+(br>0?'pos':(br<0?'neg':'neutral'));
-  document.getElementById('h-broker-sub').textContent=rs.trades?(rs.trades+' round trips'):'No broker fills yet';
   var ib=document.getElementById('ib-status');
   var ibOk=(d.health||{}).ib_auth;
   ib.innerHTML='<span class="dot '+(ibOk?'dot-g':'dot-r')+'"></span>IB';
@@ -175,14 +214,12 @@ function renderHero(d){
   if(d.system_ok){hEl.innerHTML='✅ ALL GO';hEl.className='sc-status ok';hSub.textContent=(d.component_checks||[]).map(function(c){return c.name;}).join(' · ');}
   else{var iss=(d.component_checks||[]).filter(function(c){return !c.ok;}).map(function(c){return c.name;});
     hEl.innerHTML='⚠️ ISSUES';hEl.className='sc-status bad';hSub.textContent=iss.join(' · ')||'Check below';}
-  var slip=d.slippage,sEl=document.getElementById('h-slip'),sSub=document.getElementById('h-slip-sub');
-  if(slip&&slip.configured&&slip.summary){sEl.textContent=(slip.summary.avg_slippage_bps||0)+' bps';sEl.className='sc-val neutral';sSub.textContent=slip.summary.trade_count+' legs matched';}
-  else{sEl.textContent='—';sSub.textContent='Awaiting fills';}
   var mode=document.getElementById('mode-badge');
   var eng=(d.component_checks||[]).find(function(c){return c.name==='engine';});
   var smode=bk.mode||'';
   mode.textContent='STOCK '+(smode||'ENGINE')+(eng?(eng.ok?' OK':' ?'):'');
   mode.className='badge '+(eng&&eng.ok?(smode==='LIVE'?'bg':'ba'):'br');
+  var et=d.etf||{},etT=et.today;
   var em=document.getElementById('etf-mode-badge');
   var ec=(d.component_checks||[]).find(function(c){return c.name==='etf engine';});
   var emode=(etT&&etT.mode)||((et.ledger_tail||[])[0]||{}).mode||'';
@@ -264,23 +301,22 @@ function renderAcct(d){
 }
 
 function renderPnl(d){
-  var bl=d.blotter||{},daily=bl.daily||[];
-  document.getElementById('pnl-badge').textContent=bl.total!=null?fmt$(bl.total):'--';
-  if(!daily.length)return;
-  var labels=['start'].concat(daily.map(function(r){return r.date.slice(5);}));
-  var cum=0,eng=[0].concat(daily.map(function(r){cum+=r.pnl;return Math.round(cum*100)/100;}));
-  var ds=[{label:'ENGINE',data:eng,borderColor:'#3b82f6',backgroundColor:'transparent',borderWidth:2.5,pointRadius:0,tension:0.25}];
-  var ld=d.live_daily||[];
-  if(ld.length){var lm={};ld.forEach(function(r){lm[r.date.slice(5)]=r.pnl;});
-    var cum2=0,brk=labels.map(function(L,i){if(i===0)return 0;if(lm[L]!=null)cum2+=lm[L];return Math.round(cum2*100)/100;});
-    ds.push({label:'BROKER',data:brk,borderColor:'#e2e8f0',backgroundColor:'transparent',borderWidth:2,borderDash:[6,4],pointRadius:0,tension:0.25});}
+  var S=winStats(d);
+  document.getElementById('pnl-title').textContent='Account P&L by session ('+winLabel()+')';
+  document.getElementById('pnl-badge').textContent=S&&S.acct!=null?fmt$(S.acct):'--';
+  if(!S||!S.bars.length)return;
+  var labels=S.bars.map(function(b){return b.date.slice(5);}),cum=0;
+  var acc=S.bars.map(function(b){if(b.acct!=null)cum+=b.acct;return Math.round(cum*100)/100;});
+  var ds=[{type:'bar',label:'STOCK (broker, net)',data:S.bars.map(function(b){return Math.round(b.stock*100)/100;}),backgroundColor:'rgba(59,130,246,0.75)',stack:'s',order:2},
+          {type:'bar',label:'ETF + other (ΔNLV − stock)',data:S.bars.map(function(b){return b.other==null?null:Math.round(b.other*100)/100;}),backgroundColor:'rgba(167,139,250,0.65)',stack:'s',order:2},
+          {type:'line',label:'ACCOUNT cumulative',data:acc,borderColor:'#e2e8f0',backgroundColor:'transparent',borderWidth:2,borderDash:[6,4],pointRadius:0,tension:0.2,order:1}];
   var ctx=document.getElementById('pnlChart').getContext('2d');
   if(pnlChart){pnlChart.destroy();}
-  pnlChart=new Chart(ctx,{type:'line',data:{labels:labels,datasets:ds},
+  pnlChart=new Chart(ctx,{data:{labels:labels,datasets:ds},
     options:{responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:'index',intersect:false},
       plugins:{legend:{labels:{color:'#94a3b8',font:{family:'JetBrains Mono',size:10},boxWidth:14}}},
-      scales:{x:{ticks:{color:'#64748b',font:{size:9}},grid:{color:'#1e293b'}},
-              y:{ticks:{color:'#64748b',font:{size:9},callback:function(v){return '$'+v.toLocaleString();}},grid:{color:'#1e293b'}}}}});
+      scales:{x:{stacked:true,ticks:{color:'#64748b',font:{size:9}},grid:{color:'#1e293b'}},
+              y:{stacked:true,ticks:{color:'#64748b',font:{size:9},callback:function(v){return '$'+v.toLocaleString();}},grid:{color:'#1e293b'}}}}});
 }
 
 function renderPositions(d){
@@ -346,17 +382,57 @@ function renderKinds(d){
 }
 
 function renderSlippage(d){
-  var a=document.getElementById('slip-area'),s=d.slippage;
-  if(!s||!s.configured||!s.summary){a.innerHTML='<div class="placeholder">Waiting for matched fills...</div>';document.getElementById('slip-badge').textContent='--';return;}
-  var m=s.summary;
-  document.getElementById('slip-badge').textContent=(m.match_rate||0)+'% matched';
-  function cost(v){if(v==null)return'--';var good=v<=0;return '<span style="color:'+(good?'var(--green)':'var(--red)')+'">'+(good?'+':'-')+'$'+Math.abs(v).toFixed(2)+'</span>';}
-  a.innerHTML='<table class="t">'+
-    '<tr><td style="color:var(--muted)">Routine slippage vs reference</td><td class="right">'+(m.avg_slippage_bps||0)+' bps · '+cost(m.total_slippage_cost)+' ('+(m.routine_legs||0)+' legs)</td></tr>'+
-    '<tr><td style="color:var(--muted)">Stop/cap-event slippage</td><td class="right">'+((m.stop_event_pct||0)*100).toFixed(1)+' bps · '+cost(m.stop_event_cost)+' ('+(m.stop_event_legs||0)+' legs)</td></tr>'+
-    '<tr><td style="color:var(--muted)">Commissions paid</td><td class="right">$'+Math.abs(m.total_commissions||0).toFixed(2)+'</td></tr>'+
-    '<tr><td style="color:var(--muted)">All-in fees + slippage</td><td class="right"><b>'+cost(m.total_fees_and_slippage)+'</b></td></tr>'+
-    '<tr><td style="color:var(--muted)">Legs matched / unmatched</td><td class="right">'+(m.trade_count||0)+' / '+(m.missed_trades||0)+'</td></tr></table>';
+  var a=document.getElementById('slip-area'),S=winStats(d),tr=d.truth||{};
+  document.getElementById('slip-title').textContent='Reality vs Backtest & Fees ('+winLabel()+')';
+  if(!S){a.innerHTML='<div class="placeholder">Waiting for the truth ledger...</div>';document.getElementById('slip-badge').textContent='--';return;}
+  document.getElementById('slip-badge').textContent=S.np+' paired trips';
+  function col(v,inv){if(v==null)return'<span style="color:var(--muted)">--</span>';var good=inv?v<=0:v>=0;return '<span style="color:'+(good?'var(--green)':'var(--red)')+'">'+fmt$2(v)+'</span>';}
+  var gap=S.real-S.paper,gapbp=S.clip?gap/S.clip*1e4:null,allow=0;
+  (tr.paired_recent||[]).forEach(function(p){if(p.date>=S.first&&p.date<=S.last)allow+=(p.bt_cost_allowance||0);});
+  var dayGap=S.paper_day!=null&&S.blot_match?S.blot_match-S.paper_day:null;
+  a.innerHTML='<div class="truth-kv">'+
+    '<div class="k">Backtest paper P&L on the trips we both took <span style="color:var(--muted)">(sim fill, its own 20/30 bp cost)</span></div><div class="v">'+fmt$2(S.paper)+'</div>'+
+    '<div class="k">Real P&L on those same trips <span style="color:var(--muted)">(actual fills, net of commission)</span></div><div class="v">'+fmt$2(S.real)+'</div>'+
+    '<div class="k tot">Reality minus backtest <span style="color:var(--muted)">(+ = we did better)</span></div><div class="v tot">'+col(gap)+' <span style="color:var(--muted)">'+bp(gapbp)+' per trip · '+S.np+' trips</span></div>'+
+    '<div class="k">Full-day: engine realized vs the replay\'s whole day <span style="color:var(--muted)">(parity-match days only; includes names only one side took)</span></div><div class="v">'+(dayGap==null?'--':col(dayGap)+' <span style="color:var(--muted)">('+fmt$2(S.blot_match)+' vs '+fmt$2(S.paper_day)+')</span>')+'</div>'+
+    '<div class="k" style="margin-top:6px">Stock commissions actually paid (both legs)</div><div class="v" style="margin-top:6px">$'+S.sfees.toFixed(2)+(S.gross?' <span style="color:var(--muted)">('+(S.sfees/S.gross*100).toFixed(1)+'% of gross)</span>':'')+'</div>'+
+    '<div class="k">Stock gross → net <span style="color:var(--muted)">(broker FIFO)</span></div><div class="v">'+fmt$2(S.gross)+' → <b>'+fmt$2(S.stock)+'</b></div>'+
+    '<div class="k">ETF: MOC fill vs the close the backtest uses, + commissions <span style="color:var(--muted)">(+ = cost)</span></div><div class="v">'+col(S.eslip,true)+' <span style="color:var(--muted)">+ $'+S.efees.toFixed(2)+' comm</span></div>'+
+    '</div><div class="note">Every tile on this page is derived from IB\'s own fills and NLV. Slippage and fees are not added back anywhere — the account P&L already paid them. '+
+    'The line that matters for the strategy is "Reality minus backtest": it is the only place where paper and real are compared like for like.</div>';
+}
+
+function renderRecon(d){
+  var a=document.getElementById('rec-area'),S=winStats(d),tr=d.truth||{};
+  document.getElementById('rec-title').textContent='Where the money came from ('+winLabel()+')';
+  if(!S||S.acct==null){a.innerHTML='<div class="placeholder">needs NLV history</div>';document.getElementById('rec-badge').textContent='--';return;}
+  document.getElementById('rec-badge').textContent=S.first.slice(5)+' → '+S.last.slice(5);
+  function row(k,v,cls){return '<div class="k'+(cls||'')+'">'+k+'</div><div class="v'+(cls||'')+'" style="color:'+(v==null?'var(--muted)':(v>=0?'var(--green)':'var(--red)'))+'">'+(v==null?'--':fmt$2(v))+'</div>';}
+  var full=(!WIN||S.nlv0_is_baseline),eo=tr.etf_unreal_now||0;
+  var html='<div class="truth-kv">'+
+    '<div class="k">NLV at start'+(S.nlv0_is_baseline?' (go-live '+String(tr.baseline_at||'').slice(0,16)+')':' (close before '+S.first.slice(5)+')')+'</div><div class="v">$'+Math.round(S.nlv0).toLocaleString()+'</div>'+
+    '<div class="k">NLV now / at '+S.last.slice(5)+'</div><div class="v">$'+Math.round(S.nlv1).toLocaleString()+'</div>'+
+    (S.cf?'<div class="k">deposits / withdrawals excluded</div><div class="v">'+fmt$2(S.cf)+'</div>':'')+
+    row('<b>Account P&L</b> (ΔNLV)',S.acct,' tot')+
+    row('Stock leg realized — broker FIFO, net of commissions',S.stock)+
+    (full?row('ETF leg realized — broker FIFO, net',S.etf_real)+row('ETF leg open P&L — live marks',eo)+row('Other — interest, borrow fees, dividends, rounding',S.acct-S.stock-S.etf_real-eo):row('ETF leg + other (ΔNLV − stock; open marks move inside this)',S.etf_other))+
+    '</div><div class="note">Engine blotter for the same window: '+fmt$2(S.blot)+' on '+S.blot_n+' trades'+(Math.abs(S.blot-S.stock)<5?' — agrees with the broker.':' — differs from the broker by '+fmt$2(S.stock-S.blot)+' (a blotter row with an estimated fill or commission; the broker number is the truth).')+'</div>';
+  a.innerHTML=html;
+}
+
+function renderPaired(d){
+  var a=document.getElementById('pair-area'),S=winStats(d),tr=d.truth||{},P=(tr.paired_recent||[]);
+  if(S)P=P.filter(function(p){return p.date>=S.first&&p.date<=S.last;});
+  document.getElementById('pair-badge').textContent=P.length?(P.length+' shown'):'--';
+  if(!P.length){a.innerHTML='<div class="placeholder">No paired trades in this window</div>';return;}
+  var rows=P.map(function(p){
+    return '<tr><td style="color:var(--dim)">'+p.date.slice(5)+'</td><td class="sym">'+p.symbol+'</td>'+
+      '<td class="right" style="color:var(--dim)">'+(p.replay_fill!=null?Number(p.replay_fill).toFixed(3):'--')+' → '+(p.replay_exit!=null?Number(p.replay_exit).toFixed(3):'--')+'</td>'+
+      '<td class="right">'+(p.live_fill!=null?Number(p.live_fill).toFixed(3):'--')+' → '+(p.live_exit!=null?Number(p.live_exit).toFixed(3):'--')+'</td>'+
+      '<td class="right">'+fmt$2(p.paper)+'</td><td class="right">'+fmt$2(p.real)+'</td>'+
+      '<td class="right" style="color:'+(p.gap>=0?'var(--green)':'var(--red)')+'">'+fmt$2(p.gap)+'</td></tr>';
+  }).join('');
+  a.innerHTML='<table class="t"><tr><th>date</th><th>sym</th><th class="right">paper fills</th><th class="right">real fills</th><th class="right">paper $</th><th class="right">real $</th><th class="right">gap</th></tr>'+rows+'</table>';
 }
 
 function renderTrades(d){
@@ -393,10 +469,13 @@ async function tick(){
   try{var age=(Date.now()-new Date(String(d.generated_at).replace(' ','T')))/60000;
     lu.style.color=age>10?'#ef4444':(age>4?'#f59e0b':'#64748b');
     lu.textContent+=' ('+(age<1?'<1':Math.round(age))+'m ago)';}catch(e){}
-  [renderHero,renderAcct,renderPnl,renderEtf,renderPositions,renderPending,renderEtfFills,renderEtfLedger,renderDecisions,renderKinds,renderSlippage,renderTrades,renderHealth]
+  LASTD=d;renderAll(d);
+}
+function renderAll(d){
+  [renderHero,renderAcct,renderPnl,renderEtf,renderPositions,renderPending,renderEtfFills,renderEtfLedger,renderDecisions,renderKinds,renderSlippage,renderRecon,renderPaired,renderTrades,renderHealth]
     .forEach(function(fn){try{fn(d);}catch(e){console.error('panel '+fn.name+' failed:',e);}});
 }
-tick();setInterval(tick,REFRESH);
+setWin(WIN);tick();setInterval(tick,REFRESH);
 </script>
 </body>
 </html>
