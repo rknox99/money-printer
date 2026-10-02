@@ -95,7 +95,7 @@ table.t .right{text-align:right;}
   <div class="sc"><div class="sc-val neutral" id="t-stock">--</div><div class="sc-lbl">Stock Realized (broker, net)</div><div class="sc-sub" id="t-stock-sub">--</div></div>
   <div class="sc"><div class="sc-val neutral" id="t-etf">--</div><div class="sc-lbl" id="t-etf-lbl">ETF Leg</div><div class="sc-sub" id="t-etf-sub">--</div></div>
   <div class="sc"><div class="sc-val neutral" id="t-fees">--</div><div class="sc-lbl">Commissions Paid</div><div class="sc-sub" id="t-fees-sub">--</div></div>
-  <div class="sc"><div class="sc-val neutral" id="t-gap">--</div><div class="sc-lbl">Reality vs Backtest</div><div class="sc-sub" id="t-gap-sub">--</div></div>
+  <div class="sc"><div class="sc-val neutral" id="t-cost">--</div><div class="sc-lbl">Round-trip Cost (slippage + fees)</div><div class="sc-sub" id="t-cost-sub">--</div></div>
   <div class="sc"><div class="sc-val neutral" id="h-open-pnl">--</div><div class="sc-lbl">Open P&amp;L (stock, today)</div><div class="sc-sub" id="h-open-sub">--</div></div>
   <div class="sc"><div class="sc-status ok" id="h-health">--</div><div class="sc-lbl">System Health</div><div class="sc-sub" id="h-health-sub">--</div></div>
 </div>
@@ -144,9 +144,9 @@ function winStats(d){
   if(!sel.length)return null;
   var first=sel[0].date,last=sel[sel.length-1].date;
   var inWin=rows.filter(function(r){return r.date>=first&&r.date<=last;});
-  var S={n:sel.length,first:first,last:last,stock:0,gross:0,sfees:0,efees:0,etf_real:0,blot:0,blot_n:0,trips:0,paper:0,real:0,clip:0,np:0,paper_day:0,blot_match:0,eslip:0,cf:0,bars:[]};
+  var S={n:sel.length,first:first,last:last,stock:0,gross:0,sfees:0,efees:0,etf_real:0,blot:0,blot_n:0,trips:0,paper:0,real:0,clip:0,np:0,paper_day:0,blot_match:0,eslip:0,cf:0,rslip:0,rcomm:0,rnot:0,rn:0,bars:[]};
   inWin.forEach(function(r){S.stock+=r.stock_real;S.gross+=r.stock_gross;S.sfees+=r.stock_fees;S.efees+=r.etf_fees;S.etf_real+=r.etf_real;S.blot+=r.blotter;S.blot_n+=r.blotter_n;S.trips+=r.stock_trips;
-    S.paper+=r.paper_paired;S.real+=r.real_paired;S.clip+=r.clip_paired;S.np+=r.n_paired;S.eslip+=r.etf_slip;S.cf+=(r.cash_flow||0);
+    S.paper+=r.paper_paired;S.real+=r.real_paired;S.clip+=r.clip_paired;S.np+=r.n_paired;S.eslip+=r.etf_slip;S.cf+=(r.cash_flow||0);S.rslip+=(r.rt_slip||0);S.rcomm+=(r.rt_comm||0);S.rnot+=(r.rt_notional||0);S.rn+=(r.rt_n||0);
     if(r.paper_day!=null){S.paper_day+=r.paper_day;S.blot_match+=r.blotter;}});
   /* NLV at the start of the window = the close before the first selected day (baseline when the window reaches go-live) */
   var before=rows.filter(function(r){return r.date<first&&r.nlv_close!=null;});
@@ -200,8 +200,11 @@ function renderHero(d){
     if(!WIN||S.nlv0_is_baseline){var eo=(tr.etf_unreal_now||0);tile('t-etf',S.etf_real+eo,'realized '+fmt$2(S.etf_real)+' · open '+fmt$2(eo)+' · other '+fmt$2(S.acct!=null?S.acct-S.stock-S.etf_real-eo:null),'ETF Leg (realized + open)');}
     else tile('t-etf',S.etf_other,'ΔNLV minus stock leg · incl. open marks, interest','ETF Leg + other ('+L+')');
     tile('t-fees',-(S.sfees+S.efees),'stock $'+S.sfees.toFixed(2)+' · ETF $'+S.efees.toFixed(2)+' · already inside the numbers above');
-    var gap=S.real-S.paper;tile('t-gap',S.np?gap:null,S.np?(S.np+' paired trips · '+bp(S.clip?gap/S.clip*1e4:null)+'/trip · + = better than paper'):'no paired trips in window');
-  } else {['t-acct','t-stock','t-etf','t-fees','t-gap'].forEach(function(id){document.getElementById(id).textContent='—';document.getElementById(id+'-sub').textContent='no truth rows yet';});}
+    var cEl=document.getElementById('t-cost'),cSub=document.getElementById('t-cost-sub');
+    if(S.rn&&S.rnot){var cp=(S.rslip+S.rcomm)/S.rnot*100;cEl.textContent=cp.toFixed(3)+'%';cEl.className='sc-val '+(cp<=0.2?'pos':(cp<=0.3?'neutral':'neg'));
+      cSub.textContent='slippage '+(S.rslip/S.rnot*100).toFixed(3)+'% + commissions '+(S.rcomm/S.rnot*100).toFixed(3)+'% · '+S.rn+' trips · backtest allows 0.20/0.30%';}
+    else{cEl.textContent='—';cEl.className='sc-val neutral';cSub.textContent='no paired trips in window';}
+  } else {['t-acct','t-stock','t-etf','t-fees','t-cost'].forEach(function(id){document.getElementById(id).textContent='—';document.getElementById(id+'-sub').textContent='no truth rows yet';});}
   var open=(bk.open||[]),oPnl=0,haveMark=0;
   open.forEach(function(p){if(p.unreal_usd!=null){oPnl+=p.unreal_usd;haveMark++;}});
   var oEl=document.getElementById('h-open-pnl');
@@ -390,7 +393,12 @@ function renderSlippage(d){
   var gap=S.real-S.paper,gapbp=S.clip?gap/S.clip*1e4:null,allow=0;
   (tr.paired_recent||[]).forEach(function(p){if(p.date>=S.first&&p.date<=S.last)allow+=(p.bt_cost_allowance||0);});
   var dayGap=S.paper_day!=null&&S.blot_match?S.blot_match-S.paper_day:null;
+  var cp=(S.rn&&S.rnot)?(S.rslip+S.rcomm)/S.rnot*100:null;
   a.innerHTML='<div class="truth-kv">'+
+    '<div class="k tot" style="border-top:none;padding-top:0">Round-trip cost: slippage + commissions, % of notional <span style="color:var(--muted)">(vs the sim\'s fills; + = cost)</span></div><div class="v tot" style="border-top:none;padding-top:0">'+(cp==null?'--':'<b>'+cp.toFixed(3)+'%</b> <span style="color:var(--muted)">on '+S.rn+' trips · $'+Math.round(S.rnot).toLocaleString()+' notional</span>')+'</div>'+
+    '<div class="k">&nbsp;&nbsp;price slippage, both legs</div><div class="v">'+(cp==null?'--':(S.rslip/S.rnot*100).toFixed(3)+'% · '+fmt$2(-S.rslip))+'</div>'+
+    '<div class="k">&nbsp;&nbsp;commissions, both legs (actual IB)</div><div class="v">'+(cp==null?'--':(S.rcomm/S.rnot*100).toFixed(3)+'% · -$'+S.rcomm.toFixed(2))+'</div>'+
+    '<div class="k" style="margin-bottom:6px">&nbsp;&nbsp;what the backtest charged itself</div><div class="v" style="margin-bottom:6px">0.20% (t3) / 0.30% (t2)</div>'+
     '<div class="k">Backtest paper P&L on the trips we both took <span style="color:var(--muted)">(sim fill, its own 20/30 bp cost)</span></div><div class="v">'+fmt$2(S.paper)+'</div>'+
     '<div class="k">Real P&L on those same trips <span style="color:var(--muted)">(actual fills, net of commission)</span></div><div class="v">'+fmt$2(S.real)+'</div>'+
     '<div class="k tot">Reality minus backtest <span style="color:var(--muted)">(+ = we did better)</span></div><div class="v tot">'+col(gap)+' <span style="color:var(--muted)">'+bp(gapbp)+' per trip · '+S.np+' trips</span></div>'+
@@ -430,9 +438,10 @@ function renderPaired(d){
       '<td class="right" style="color:var(--dim)">'+(p.replay_fill!=null?Number(p.replay_fill).toFixed(3):'--')+' → '+(p.replay_exit!=null?Number(p.replay_exit).toFixed(3):'--')+'</td>'+
       '<td class="right">'+(p.live_fill!=null?Number(p.live_fill).toFixed(3):'--')+' → '+(p.live_exit!=null?Number(p.live_exit).toFixed(3):'--')+'</td>'+
       '<td class="right">'+fmt$2(p.paper)+'</td><td class="right">'+fmt$2(p.real)+'</td>'+
-      '<td class="right" style="color:'+(p.gap>=0?'var(--green)':'var(--red)')+'">'+fmt$2(p.gap)+'</td></tr>';
+      '<td class="right" style="color:'+(p.gap>=0?'var(--green)':'var(--red)')+'">'+fmt$2(p.gap)+'</td>'+
+      '<td class="right" style="color:'+(p.rt&&p.rt.cost_pct!=null?(p.rt.cost_pct<=0.3?'var(--dim)':'var(--red)'):'var(--muted)')+'">'+(p.rt&&p.rt.cost_pct!=null?p.rt.cost_pct.toFixed(2)+'%':'--')+'</td></tr>';
   }).join('');
-  a.innerHTML='<table class="t"><tr><th>date</th><th>sym</th><th class="right">paper fills</th><th class="right">real fills</th><th class="right">paper $</th><th class="right">real $</th><th class="right">gap</th></tr>'+rows+'</table>';
+  a.innerHTML='<table class="t"><tr><th>date</th><th>sym</th><th class="right">paper fills</th><th class="right">real fills</th><th class="right">paper $</th><th class="right">real $</th><th class="right">gap</th><th class="right">cost</th></tr>'+rows+'</table>';
 }
 
 function renderTrades(d){
